@@ -15,6 +15,7 @@ const PAGES = ["index.html", "enseignant.html", "resultats.html", "classement.ht
   try {
     const cat = fs.readFileSync(path.join(RACINE, "commun", "donnees", "catalogue.js"), "utf8");
     const dossiers = [...cat.matchAll(/"dossier":\s*"([^"]+)"/g)].map(m => m[1]);
+    const nbJeux = [...cat.split('"legers"')[0].matchAll(/"num":\s*"/g)].length;   // un jeu peut n'avoir que la version immersive (dossier vide)
     ok(dossiers.length >= 1, "le catalogue contient au moins un jeu (" + dossiers.join(", ") + ")");
     for (const p of PAGES) {
       console.log("\n== " + p + " ==");
@@ -27,7 +28,7 @@ const PAGES = ["index.html", "enseignant.html", "resultats.html", "classement.ht
       ok(!trouve.length, p + " : pas de CM1 / CM2 affiché" + (trouve.length ? " → " + trouve.slice(0, 3).join(" | ") : ""));
       if (p === "enseignant.html") {
         const lignes = await attendreQue(() => { const l = w.document.querySelectorAll("#corps-jeux tr"); return l.length ? l : null; }, 5000);
-        ok(lignes && lignes.length === dossiers.length, "enseignant : une ligne par jeu du catalogue (" + (lignes ? lignes.length : 0) + ")");
+        ok(lignes && lignes.length === nbJeux, "enseignant : une ligne par jeu du catalogue (" + (lignes ? lignes.length : 0) + ")");
         const liens = [...w.document.querySelectorAll("#corps-jeux a")].map(a => a.getAttribute("href"));
         ok(dossiers.every(d => liens.includes(d + "/") && liens.includes(d + "/prof.html")), "enseignant : liens jouer et tableau de bord pour chaque jeu");
         ok(!/adopter|annee\.html|periode\.html|faq\.html|presentation\//.test(w.document.documentElement.innerHTML), "enseignant : aucun lien vers une page de l'école");

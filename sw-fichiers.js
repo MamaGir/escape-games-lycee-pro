@@ -1,6 +1,6 @@
 /* Fichier GÉNÉRÉ par outils-pwa/maj-hors-ligne.py — ne pas modifier à la main.
    Liste des fichiers gardés hors connexion par sw.js (application installable). */
-self.VERSION_HORS_LIGNE = "6831a7d8c5";
+self.VERSION_HORS_LIGNE = "338d2048c1";
 self.FICHIERS_CODE = [
 "classement.html",
 "commun/css/animations.css",
@@ -63,6 +63,7 @@ self.FICHIERS_CODE = [
 "commun/polices/opendyslexic-latin-400-normal.woff2",
 "commun/polices/opendyslexic-latin-700-normal.woff2",
 "enseignant.html",
+"four-verrouille/index.html",
 "immersifs/pates-ceramiques/assets/data/decors-fx.json",
 "immersifs/pates-ceramiques/assets/data/dialogues.json",
 "immersifs/pates-ceramiques/assets/data/enigmes.json",
@@ -94,6 +95,37 @@ self.FICHIERS_CODE = [
 "immersifs/pates-ceramiques/medias.html",
 "immersifs/pates-ceramiques/prof.html",
 "immersifs/pates-ceramiques/sw.js",
+"immersifs/preparation-pates/assets/data/decors-fx.json",
+"immersifs/preparation-pates/assets/data/dialogues.json",
+"immersifs/preparation-pates/assets/data/enigmes.json",
+"immersifs/preparation-pates/assets/data/lecons.json",
+"immersifs/preparation-pates/assets/data/personnages.json",
+"immersifs/preparation-pates/css/enigmes-nautilus.css",
+"immersifs/preparation-pates/css/nautilus.css",
+"immersifs/preparation-pates/css/theme.css",
+"immersifs/preparation-pates/index.html",
+"immersifs/preparation-pates/js/app.js",
+"immersifs/preparation-pates/js/bibliotheque.js",
+"immersifs/preparation-pates/js/decors-secours.js",
+"immersifs/preparation-pates/js/donnees-embarquees.js",
+"immersifs/preparation-pates/js/donnees.js",
+"immersifs/preparation-pates/js/jeu-config.js",
+"immersifs/preparation-pates/js/journal.js",
+"immersifs/preparation-pates/js/moteur.js",
+"immersifs/preparation-pates/js/niveaux.js",
+"immersifs/preparation-pates/js/personnages.js",
+"immersifs/preparation-pates/js/reglages.js",
+"immersifs/preparation-pates/js/scene.js",
+"immersifs/preparation-pates/js/solutions.js",
+"immersifs/preparation-pates/js/sons.js",
+"immersifs/preparation-pates/js/sync-nautilus.js",
+"immersifs/preparation-pates/js/type-circuit.js",
+"immersifs/preparation-pates/js/voix.js",
+"immersifs/preparation-pates/lecons-imprimables.html",
+"immersifs/preparation-pates/manifest.webmanifest",
+"immersifs/preparation-pates/medias.html",
+"immersifs/preparation-pates/prof.html",
+"immersifs/preparation-pates/sw.js",
 "index.html",
 "manifest.webmanifest",
 "passeport.html",
@@ -114,12 +146,38 @@ self.FICHIERS_CODE = [
 "pates-ceramiques/js/reglages.js",
 "pates-ceramiques/lecons-imprimables.html",
 "pates-ceramiques/prof.html",
+"preparation-pates/assets/data/dialogues.json",
+"preparation-pates/assets/data/enigmes.json",
+"preparation-pates/assets/data/evaluations.json",
+"preparation-pates/assets/data/lecons-a4.json",
+"preparation-pates/assets/data/lecons.json",
 "resultats.html",
 "trophees.html",
 "verifier.html"
 ];
 self.IMAGES_JEUX = {
 "immersifs": [
-"immersifs/pates-ceramiques/assets/images/ui/icone.svg"
+"immersifs/pates-ceramiques/assets/images/ui/icone.svg",
+"immersifs/preparation-pates/assets/images/cartes/q-alsing.jpg",
+"immersifs/preparation-pates/assets/images/cartes/q-atomiseur.jpg",
+"immersifs/preparation-pates/assets/images/cartes/q-boudineuse.jpg",
+"immersifs/preparation-pates/assets/images/cartes/q-coulage.jpg",
+"immersifs/preparation-pates/assets/images/cartes/q-delayeur.jpg",
+"immersifs/preparation-pates/assets/images/cartes/q-filtre.jpg",
+"immersifs/preparation-pates/assets/images/cartes/q-pompe.jpg",
+"immersifs/preparation-pates/assets/images/cartes/q-silo.jpg",
+"immersifs/preparation-pates/assets/images/cartes/q-tamis.jpg",
+"immersifs/preparation-pates/assets/images/ui/icone.svg"
+],
+"preparation-pates": [
+"preparation-pates/assets/images/cartes/q-alsing.jpg",
+"preparation-pates/assets/images/cartes/q-atomiseur.jpg",
+"preparation-pates/assets/images/cartes/q-boudineuse.jpg",
+"preparation-pates/assets/images/cartes/q-coulage.jpg",
+"preparation-pates/assets/images/cartes/q-delayeur.jpg",
+"preparation-pates/assets/images/cartes/q-filtre.jpg",
+"preparation-pates/assets/images/cartes/q-pompe.jpg",
+"preparation-pates/assets/images/cartes/q-silo.jpg",
+"preparation-pates/assets/images/cartes/q-tamis.jpg"
 ]
 };

@@ -108,13 +108,29 @@ footer{color:var(--doux);font-size:.9rem;padding-block:0 30px}
   <div class="jeux" id="jeux"><p>Chargement du catalogue…</p></div>
 
   <section class="prof" aria-labelledby="t-prof">
-    <h2 id="t-prof">Pour l'enseignant</h2>
+    <h2 id="t-prof">Pour l'enseignant · trois façons de jouer</h2>
     <ol>
-      <li><b>En ligne</b> : partagez l'adresse de cette page ; chaque jeu s'ouvre dans le navigateur, sans installation.</li>
-      <li><b>En classe sans Internet</b> : double-cliquez sur <code>lancer.bat</code> (Windows) à la racine du dossier. Les élèves se connectent à l'adresse affichée dans la fenêtre noire.</li>
-      <li><b>Suivi des équipes</b> : ouvrez le tableau de bord <i>Enseignant</i> du jeu sur votre poste, pendant que le serveur tourne.</li>
-      <li><b>Leçons A4</b> : chaque jeu propose ses leçons imprimables, aux niveaux Essentiel et Expert.</li>
+      <li><b>En ligne, partout</b> : partagez l'adresse de cette page ; chaque jeu s'ouvre dans le navigateur de n'importe quel appareil, sans installation.</li>
+      <li><b>En classe sans Internet (réseau local)</b> : double-cliquez sur <code>lancer.bat</code> (Windows) ou <code>lancer-mac.command</code> (Mac) à la racine du dossier. Les élèves, connectés au même réseau, tapent l'adresse affichée dans la fenêtre noire. Le suivi des équipes en direct, le classement et les résultats de la classe ne fonctionnent que dans ce mode.</li>
+      <li><b>Hors connexion</b> : application à installer une fois (bloc ci-dessous), ou archive à décompresser puis double-clic sur <code>JOUER.html</code>.</li>
     </ol>
+    <p style="margin:10px 0 0">
+      <a class="btn plein" href="enseignant.html">Espace enseignant</a>
+      <a class="btn" href="verifier.html">Vérifier les jeux</a>
+      <a class="btn" href="classement.html">Classement en direct</a>
+      <a class="btn" href="resultats.html">Résultats de la classe</a>
+    </p>
+  </section>
+
+  <section class="prof" id="hors-ligne" aria-labelledby="t-hl">
+    <h2 id="t-hl">📲 Sur tablette ou ordinateur, sans Internet</h2>
+    <p id="hl-etat">Ouvrez cette page une fois avec Internet : les jeux restent ensuite jouables hors connexion.</p>
+    <p id="hl-images" hidden></p>
+    <p style="font-size:.92rem">📦 <b>Sans serveur ni Internet, sur n'importe quel ordinateur</b> : <a href="https://github.com/MamaGir/escape-games-lycee-pro/releases/tag/hors-ligne">une archive par jeu</a> à décompresser, puis double-clic sur <code>JOUER.html</code>.</p>
+    <p>
+      <button class="btn plein" id="hl-installer" type="button" hidden>📲 Installer l'application</button>
+      <button class="btn" id="hl-preparer" type="button" hidden>📥 Garder aussi les images de tous les jeux</button>
+    </p>
   </section>
 </main>
 <footer class="cadre">Personnages et manufacture inventés. Contenus tirés des cours de l'enseignant. Moteur repris des escape games CM1-CM2 du même auteur.</footer>
@@ -135,6 +151,8 @@ footer{color:var(--doux);font-size:.9rem;padding-block:0 30px}
         (classique ? '<a class="btn" href="' + esc(classique) + '">Version classique</a>' : '') +
         (classique ? '<a class="btn discret" href="' + esc(classique) + 'prof.html">Enseignant</a>' : '') +
         (classique ? '<a class="btn discret" href="' + esc(classique) + 'lecons-imprimables.html">Leçons A4</a>' : '') +
+        (!classique && j.immersif ? '<a class="btn discret" href="' + esc(j.immersif) + '/prof.html">Enseignant</a>' : '') +
+        (!classique && j.immersif ? '<a class="btn discret" href="' + esc(j.immersif) + '/lecons-imprimables.html">Leçons A4</a>' : '') +
       '</div></div></article>';
   }).join("") + (CATALOGUE.legers || []).map(function(j){
     return '<article class="jeu">' +
@@ -142,6 +160,43 @@ footer{color:var(--doux);font-size:.9rem;padding-block:0 30px}
       '<div class="corps"><p style="margin:0">' + esc(j.resume) + '</p><p class="meta" style="margin:0">' + esc(j.competences) + '</p>' +
       '<div class="actions"><a class="btn plein" href="' + esc(j.fichier) + '">Jouer</a></div></div></article>';
   }).join("");
+})();
+</script>
+<script src="commun/js/pwa.js?c1"></script>
+<script>
+/* Hors connexion : installation et état du service worker */
+(function(){
+  var etat = document.getElementById("hl-etat"), img = document.getElementById("hl-images");
+  var inst = document.getElementById("hl-installer"), prep = document.getElementById("hl-preparer"), invite = null;
+  window.addEventListener("beforeinstallprompt", function(e){ e.preventDefault(); invite = e; inst.hidden = false; });
+  inst.addEventListener("click", function(){ if(!invite) return; invite.prompt(); invite.userChoice.then(function(){ invite = null; inst.hidden = true; }); });
+  if(!("serviceWorker" in navigator) || !/^https?:$/.test(location.protocol)){
+    etat.textContent = "Mode hors connexion indisponible ici (page ouverte en double-clic, ou adresse locale non sécurisée) : utilisez l'adresse en ligne dans Chrome ou Edge.";
+    return;
+  }
+  function demander(){ navigator.serviceWorker.ready.then(function(r){ if(r.active) r.active.postMessage({ type: "etat" }); }); }
+  navigator.serviceWorker.addEventListener("message", function(ev){
+    var m = ev.data || {};
+    if(m.demande === "etat"){
+      var pret = m.code >= m.codeTotal;
+      etat.innerHTML = pret ? "✅ <b>Prêt hors connexion</b> sur cet appareil (version " + m.version + "). Les vidéos, trop lourdes, sont remplacées par les images ou les décors dessinés."
+                            : "⏳ Préparation du hors-connexion : " + m.code + " / " + m.codeTotal + " fichiers…";
+      var jeux = Object.keys(m.images || {}), total = 0, gardees = 0;
+      jeux.forEach(function(k){ total += m.images[k].total; gardees += m.images[k].gardees; });
+      img.hidden = false; img.textContent = "Images gardées : " + gardees + " / " + total + ".";
+      prep.hidden = gardees >= total;
+      if(!pret) setTimeout(demander, 2500);
+    }
+    if(m.demande === "preparer-images") setTimeout(demander, 300);
+  });
+  prep.addEventListener("click", function(){
+    prep.disabled = true; prep.textContent = "⏳ Téléchargement des images…";
+    navigator.serviceWorker.ready.then(function(r){
+      var noms = ["immersifs"].concat((typeof CATALOGUE !== "undefined" ? CATALOGUE.jeux : []).map(function(j){ return j.dossier; }).filter(Boolean));
+      noms.forEach(function(j){ r.active.postMessage({ type: "preparer-images", jeu: j }); });
+    });
+  });
+  demander();
 })();
 </script>
 </body>

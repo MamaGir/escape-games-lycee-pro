@@ -454,16 +454,12 @@ def main():
     print()
     print("  👨‍🏫 TABLEAUX DE BORD ENSEIGNANT :")
     for j in JEUX_LYCEE:
-<<<<<<< HEAD
-        print("     http://127.0.0.1:{}/{}/prof.html".format(PORT, j))
+        dossier = j if os.path.isfile(os.path.join(j, "prof.html")) else "immersifs/" + j
+        print("     http://127.0.0.1:{}/{}/prof.html".format(PORT, dossier))
     print("     http://127.0.0.1:{}/enseignant.html   (espace enseignant : résultats, passeport, trophées)".format(PORT))
     print()
     print("  🔍 VÉRIFICATION (énigmes, données, médias) :")
     print("     http://127.0.0.1:{}/verifier.html".format(PORT))
-=======
-        dossier = j if os.path.isfile(os.path.join(j, "prof.html")) else "immersifs/" + j
-        print("     http://127.0.0.1:{}/{}/prof.html".format(PORT, dossier))
->>>>>>> 7a2364e8bbb7873704e5f1508f43f3840a8afb75
     print()
     print("  ⌨️  Ctrl+C pour arrêter le serveur.")
     print()
