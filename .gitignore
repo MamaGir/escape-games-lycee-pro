@@ -7,3 +7,20 @@ cle-agnes.txt
 cles-api.local
 diag.txt
 RECAP-*.md
+
+# Archives hors ligne, régénérées par outils-pwa/archives-hors-ligne.py
+archives-hors-ligne/
+
+# ---- Résultats des élèves (serveur local) : données personnelles, JAMAIS publiées ----
+resultats-classe.jsonl
+dossier-donnees.txt
+difficulte-classe.json
+
+# ---- Divers ----
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+outils-tests/node_modules/
+outils-tests/package-lock.json
+outils-tests/captures-responsive/

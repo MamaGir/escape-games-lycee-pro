@@ -6,6 +6,59 @@ Escape games pédagogiques pour le **CAP Décoration sur céramique**, séparés
 |---|---|---|---|
 | C01 · Les fiches du four | Les pâtes céramiques (CAP 1) | `pates-ceramiques/` | `immersifs/pates-ceramiques/` |
 
+## Accès aux jeux
+
+Trois façons de jouer, avec les mêmes jeux et les mêmes outils d'enseignant.
+
+| Mode | Adresse | Suivi en direct, classement, résultats |
+|---|---|---|
+| **En ligne, partout** (GitHub Pages) | https://mamagir.github.io/escape-games-lycee-pro/ | non |
+| **Réseau local** (classe, sans Internet) | `http://<adresse du poste>:8000/` | oui |
+| **Hors connexion** | application installée, ou archive zip par jeu | non |
+
+### En ligne (une seule mise en route)
+
+Outil : le site github.com, connecté avec le compte **MamaGir**.
+
+1. Ouvrir https://github.com/MamaGir/escape-games-lycee-pro.
+2. **Settings** (onglet en haut à droite) → **Pages** (menu de gauche).
+3. Sous **Build and deployment** → **Source** : choisir **Deploy from a branch**.
+4. **Branch** : `main`, dossier `/ (root)`, puis **Save**.
+5. Attendre une à deux minutes, recharger la page : l'adresse du site s'affiche en haut (https://mamagir.github.io/escape-games-lycee-pro/).
+6. Après chaque modification poussée sur `main`, le site se met à jour en une minute (Ctrl + F5 pour voir la nouvelle version).
+
+### Réseau local (classe)
+
+Outil : l'explorateur de fichiers, puis la fenêtre noire du serveur.
+
+1. Ouvrir le dossier du dépôt dans l'Explorateur.
+2. Double-cliquer sur `lancer.bat` (Windows, Python installé) ou `lancer-mac.command` (Mac).
+3. Si Windows demande d'autoriser Python : cocher **Réseaux privés**, puis **Autoriser l'accès**.
+4. Le navigateur s'ouvre sur le portail. La fenêtre noire affiche **« ADRESSES À DONNER AUX ÉLÈVES »** : les élèves, sur le même Wi-Fi ou le même réseau filaire, tapent cette adresse (de la forme `http://192.168.x.x:8000/pates-ceramiques/`).
+5. Sur le poste de l'enseignant : http://127.0.0.1:8000/enseignant.html (espace enseignant), http://127.0.0.1:8000/verifier.html (vérification), http://127.0.0.1:8000/classement.html (classement à projeter).
+6. Fermer la fenêtre noire pour arrêter le serveur.
+
+Les résultats des élèves sont gardés dans `resultats-classe.jsonl` sur le poste de l'enseignant ; ce fichier n'est jamais publié (`.gitignore`). Sur une adresse locale en `http://`, l'installation de l'application n'est pas proposée par les navigateurs : c'est normal.
+
+### Hors connexion
+
+- **Application** : ouvrir le site en ligne une fois avec Internet dans Chrome ou Edge, attendre « Prêt hors connexion » dans le bloc du portail, puis **Installer l'application**.
+- **Archive zip par jeu** : https://github.com/MamaGir/escape-games-lycee-pro/releases/tag/hors-ligne (fabriquée automatiquement après chaque publication). Décompresser, double-clic sur `JOUER.html`.
+
+### Contrôle et synthèse (espace enseignant)
+
+| Page | Rôle |
+|---|---|
+| `enseignant.html` | tout au même endroit : jouer, tableau de bord, guides, leçons A4, points à vérifier, jeu par jeu |
+| `<jeu>/prof.html` | tableau de bord d'un jeu, en direct (réseau local) |
+| `classement.html` | classement des équipes, à projeter (réseau local) |
+| `resultats.html` | bilan de la classe, énigme par énigme |
+| `passeport.html` | compétences travaillées par élève |
+| `trophees.html` | trophées des équipes |
+| `verifier.html` | contrôle des énigmes, des données et des médias, accès direct à chaque énigme |
+
+Ces pages se construisent à partir de `commun/donnees/catalogue.js` : un jeu ajouté au catalogue y apparaît seul.
+
 ## Arborescence
 
 ```
@@ -20,7 +73,14 @@ outils/immersif/theme-pates-ceramiques.json     thème immersif (mots, grades, p
 outils/immersif/completer-pates-ceramiques.py   décors, zones et narration de la version immersive
 outils/photos/deposer-photos.py                 planche photo de la leçon 3
 outils-tests/                   moteur de test (jsdom)
-serveur.py · lancer.bat         serveur local (classe sans Internet, tableau de bord)
+serveur.py · lancer.bat · lancer-mac.command    serveur local (classe sans Internet, tableau de bord)
+enseignant.html · verifier.html · resultats.html · classement.html · passeport.html · trophees.html
+sw.js · sw-fichiers.js · manifest.webmanifest   application installable, hors connexion
+outils-pwa/                     liste des fichiers gardés hors connexion, archives zip par jeu
+outils-tests/ · commun/tests/   tests automatiques (Node + jsdom)
+.github/workflows/              archives hors connexion publiées dans la release « hors-ligne »
+.claude/skills/produire-escape-lycee-pro-cap/   skill de production d'un nouveau jeu
+PLAN-PRODUCTION.md              chapitres du cours à transformer en escape games
 ```
 
 ## Jouer en classe sans Internet (Windows)
@@ -40,10 +100,21 @@ node pates-ceramiques/tests/test-jeu.js
 node immersifs/pates-ceramiques/tests/test-immersif.js
 ```
 
-Les tests Node demandent jsdom une fois : `npm install jsdom@24`.
+Les tests Node demandent jsdom une fois : `cd outils-tests`, `npm install`, `cd ..`.
+
+Tous les tests d'un coup : `node outils-tests/tous.js` (quelques minutes). Contrôles avant publication :
+
+```
+node outils-tests/verifier-enigmes.js
+node outils-tests/verifier-liens-internes.js
+python outils-pwa/maj-hors-ligne.py          (puis git add sw-fichiers.js)
+```
 
 ## Ajouter un jeu
 
 1. Écrire un générateur `outils/generer-<jeu>.py` sur le modèle de celui des pâtes céramiques, copier `pates-ceramiques/` comme squelette.
 2. Version immersive : depuis le dépôt de l'école, `python vingt-mille-lieues/outils/immersif/migrer-jeu.py <jeu> --theme <thème> --vers immersifs/<jeu>`, puis copier le dossier ici.
 3. Ajouter une entrée dans `commun/donnees/catalogue.js` et le nom du dossier dans `JEUX_LYCEE` (`serveur.py`).
+4. `python outils-pwa/maj-hors-ligne.py`, puis les tests ci-dessus.
+
+Pour produire un jeu de bout en bout (cours → données → version immersive → médias → publication), utiliser le skill `produire-escape-lycee-pro-cap` (dossier `.claude/skills/`, ou fichier `produire-escape-lycee-pro-cap.skill` à importer dans Claude).

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vérification des escape games — lycée pro · CAP</title>
+<link rel="icon" href="commun/icones/icone-192.png">
+<!--
+  VÉRIFICATION DES JEUX DU LYCÉE PRO (contrôle automatique)
+  ---------------------------------------------------------
+  Pilotée par commun/donnees/catalogue.js : un jeu ajouté au catalogue apparaît ici sans autre modification.
+  Pour chaque jeu :
+   1. Énigmes : contrôle de assets/data/enigmes.json (nombre par salle et par niveau, 3 indices,
+      correction, source, leçon, types qui se suivent, manipulation par salle) + accès direct à
+      chaque énigme, en Essentiel et en Expert, en version classique et immersive.
+   2. Données : les cinq fichiers JSON du jeu se chargent-ils ?
+   3. Médias : médias attendus (medias.csv de la variante immersive) et fichiers réellement déposés.
+  Inventaire des fichiers : serveur local (/api/fichiers), sinon dépôt GitHub, sinon détection un par un.
+-->
+<style>
+  :root{ --bleu:#0F4C81; --bleu2:#2F75B5; --clair:#DCEEFF; --fond:#F3F8FD; --encre:#0B2A4A; --ok:#1d7a46; --ko:#b42318; --att:#b45309; --ligne:#BCD3E8; }
+  *{ box-sizing:border-box }
+  body{ margin:0; font-family:Calibri,"Segoe UI",Arial,sans-serif; background:var(--fond); color:var(--encre); }
+  header{ background:linear-gradient(135deg,var(--bleu),#0B2540); color:#fff; padding:18px 20px 14px; }
+  header h1{ margin:6px 0 2px; font-size:1.6rem } header p{ margin:0; opacity:.9 }
+  header a{ color:#fff; margin-right:14px; font-size:.95rem }
+  main{ max-width:1200px; margin:0 auto; padding:14px 16px 40px }
+  .onglets{ display:flex; flex-wrap:wrap; gap:6px; margin:14px 0 }
+  .onglets button{ border:1px solid var(--ligne); background:#fff; color:var(--bleu); padding:8px 14px; border-radius:999px; cursor:pointer; font:inherit }
+  .onglets button[aria-selected=true]{ background:var(--bleu); color:#fff; border-color:var(--bleu) }
+  section.bloc{ background:#fff; border:1px solid var(--ligne); border-radius:12px; padding:14px 16px; margin:12px 0 }
+  section.bloc h2{ margin:0 0 8px; font-size:1.15rem; color:var(--bleu) }
+  .bilan{ display:flex; flex-wrap:wrap; gap:10px; margin:8px 0 }
+  .pastille{ padding:4px 12px; border-radius:999px; font-weight:600; font-size:.92rem; background:var(--clair) }
+  .pastille.ok{ background:#d7f3e3; color:var(--ok) } .pastille.ko{ background:#fde2e0; color:var(--ko) } .pastille.att{ background:#fdebd0; color:var(--att) }
+  table{ border-collapse:collapse; width:100%; font-size:.92rem }
+  th,td{ border:1px solid var(--ligne); padding:5px 8px; text-align:left; vertical-align:top }
+  th{ background:var(--clair) }
+  td.c{ text-align:center; white-space:nowrap }
+  .ok{ color:var(--ok) } .ko{ color:var(--ko) } .att{ color:var(--att) }
+  .source{ font-size:.88rem; opacity:.85; margin:4px 0 }
+  .vignette{ max-width:120px; max-height:68px; display:block }
+  .liste-pb{ margin:6px 0 0; padding-left:20px } .liste-pb li{ margin:2px 0 }
+  a{ color:var(--bleu2) } small{ opacity:.8 }
+  .salle td{ background:#eef5fc; font-weight:600 }
+  @media (max-width:700px){ table{ font-size:.82rem } th,td{ padding:4px 5px } }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html">← Portail</a><a href="enseignant.html">Espace enseignant</a><a href="resultats.html">Résultats</a>
+  <h1>Vérification des escape games</h1>
+  <p>Contrôle des énigmes, des données et des médias — lycée professionnel, CAP Décoration sur céramique.</p>
+</header>
+<main>
+  <div class="onglets" id="onglets" role="tablist" aria-label="Choisir un jeu"></div>
+  <div class="source" id="source">Recherche des fichiers…</div>
+  <div id="contenu"></div>
+</main>
+
+<script src="commun/donnees/catalogue.js"></script>
+<script>
+const DEPOT = { owner: "MamaGir", repo: "escape-games-lycee-pro", branche: "main" };
+const EN_FICHIER = location.protocol === "file:";
+const JEUX = (typeof CATALOGUE !== "undefined" ? CATALOGUE.jeux : []).filter(j => j.dossier);
+const TYPES_MANIP = ["ordre", "plan", "tri"];
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const enc = encodeURI;
+const mo = o => o >= 1e6 ? (o / 1e6).toFixed(1).replace(".", ",") + " Mo" : Math.max(1, Math.round(o / 1e3)) + " Ko";
+let INVENTAIRE = { source: "…", fichiers: null };
+let actif = JEUX.some(j => "#" + j.id === location.hash) ? location.hash.slice(1) : (JEUX[0] || {}).id;
+
+async function json(chemin){
+  const r = await fetch(chemin, { cache: "no-store" });
+  if(!r.ok) throw new Error(chemin + " (" + r.status + ")");
+  return r.json();
+}
+async function texte(chemin){
+  const r = await fetch(chemin, { cache: "no-store" });
+  if(!r.ok) throw new Error(chemin + " (" + r.status + ")");
+  return r.text();
+}
+
+/* ---------- Quels fichiers existent ? ---------- */
+async function inventaire(){
+  if(EN_FICHIER) return { source: "fichier", fichiers: null };
+  try{
+    const r = await fetch("/api/fichiers", { cache: "no-store" });
+    if(r.ok){ const j = await r.json(); if(j && j.fichiers) return { source: "local", fichiers: new Map(Object.entries(j.fichiers)) }; }
+  }catch(e){}
+  if(location.hostname.endsWith("github.io")){
+    try{
+      const r = await fetch(`https://api.github.com/repos/${DEPOT.owner}/${DEPOT.repo}/git/trees/${DEPOT.branche}?recursive=1`, { cache: "no-store" });
+      if(r.ok){
+        const j = await r.json(), m = new Map();
+        (j.tree || []).forEach(t => { if(t.type === "blob") m.set(t.path, t.size || 0); });
+        return { source: "github", fichiers: m };
+      }
+    }catch(e){}
+  }
+  return { source: "sonde", fichiers: null };
+}
+async function existe(chemin){
+  if(INVENTAIRE.fichiers) return INVENTAIRE.fichiers.has(chemin) ? { taille: INVENTAIRE.fichiers.get(chemin) } : null;
+  if(EN_FICHIER) return null;
+  try{ const r = await fetch(enc(chemin), { method: "HEAD", cache: "no-store" }); return r.ok ? { taille: +r.headers.get("content-length") || 0 } : null; }catch(e){ return null; }
+}
+function afficherSource(){
+  document.getElementById("source").innerHTML = ({
+    local:  "📁 <b>Version locale</b> : fichiers du dossier de l'ordinateur (serveur lancé avec <code>lancer.bat</code>).",
+    github: "🌐 <b>Version en ligne</b> : contenu du dépôt GitHub.",
+    sonde:  "🔎 Détection fichier par fichier (pas d'inventaire disponible).",
+    fichier:"⚠️ Page ouverte par double-clic : le contrôle des énigmes et des médias demande le serveur local ou la version en ligne."
+  })[INVENTAIRE.source] || "";
+}
+
+/* ---------- 1. Contrôle des énigmes ---------- */
+function niveauxDe(e){ return e.niveaux && e.niveaux.length ? e.niveaux : ["CM1", "CM2"]; }
+function controleEnigmes(d){
+  const pb = [], lignes = [];
+  const salles = d.salles || [];
+  const motsCles = [];
+  salles.forEach(s => {
+    const parNiveau = { CM1: [], CM2: [] };
+    (s.enigmes || []).forEach((e, i) => {
+      niveauxDe(e).forEach(n => parNiveau[n].push(e));
+      const loc = `Salle ${s.num}, énigme ${e.id}`;
+      const manques = [];
+      if(!e.titre) manques.push("titre");
+      if(!e.correction) manques.push("correction");
+      if(!e.source) manques.push("source");
+      if(!e.lecon) manques.push("leçon");
+      if(!e.consigne) manques.push("consigne");
+      niveauxDe(e).forEach(n => {
+        const cle = n.toLowerCase();
+        const ind = e.indices && (e.indices[cle] || (Array.isArray(e.indices) ? e.indices : null));
+        if(!ind || ind.length !== 3) manques.push(`3 indices ${n === "CM1" ? "Essentiel" : "Expert"} (${ind ? ind.length : 0})`);
+        const data = e.commun || e[cle];
+        if(!data) manques.push("données " + (n === "CM1" ? "Essentiel" : "Expert"));
+      });
+      if(manques.length) pb.push(`${loc} : manque ${manques.join(", ")}.`);
+      lignes.push({ salle: s.num, e, manques });
+    });
+    // 3 énigmes en Essentiel, 4 en Expert
+    if(parNiveau.CM1.length !== 3) pb.push(`Salle ${s.num} : ${parNiveau.CM1.length} énigmes en Essentiel (attendu : 3).`);
+    if(parNiveau.CM2.length !== 4) pb.push(`Salle ${s.num} : ${parNiveau.CM2.length} énigmes en Expert (attendu : 4).`);
+    ["CM1", "CM2"].forEach(n => {
+      const l = parNiveau[n];
+      for(let i = 1; i < l.length; i++) if(l[i].type === l[i - 1].type) pb.push(`Salle ${s.num}, ${n === "CM1" ? "Essentiel" : "Expert"} : deux énigmes « ${l[i].type} » se suivent (${l[i - 1].id} et ${l[i].id}).`);
+      if(!l.some(e => TYPES_MANIP.includes(e.type))) pb.push(`Salle ${s.num}, ${n === "CM1" ? "Essentiel" : "Expert"} : aucune manipulation (ordre, plan ou tri).`);
+    });
+  });
+  if(salles.length !== 5) pb.push(`${salles.length} salles (attendu : 5).`);
+  return { pb, lignes, nbSalles: salles.length };
+}
+
+function ligneTest(j, num, k, niveau, libelle){
+  const q = `?salle=${num}&niveau=${niveau}&enigme=${k}`;
+  let h = `<a href="${j.dossier}/${q}" target="_blank" rel="noopener">${libelle}</a>`;
+  if(j.immersif) h += ` · <a href="${j.immersif}/${q}" target="_blank" rel="noopener">imm.</a>`;
+  return h;
+}
+function tableauEnigmes(j, c){
+  let h = `<table><thead><tr><th>Énigme</th><th>Type</th><th>Niveaux</th><th>Leçon</th><th>Contrôle</th><th>Tester</th></tr></thead><tbody>`;
+  let salleCourante = null;
+  c.lignes.forEach(({ salle, e, manques }) => {
+    if(salle !== salleCourante){
+      salleCourante = salle;
+      h += `<tr class="salle"><td colspan="6">Salle ${salle} — <a href="${j.dossier}/?salle=${salle}&niveau=CM2" target="_blank" rel="noopener">ouvrir la salle</a></td></tr>`;
+    }
+    const niv = niveauxDe(e);
+    h += `<tr><td>${esc(e.id)} · ${esc(e.titre)}</td><td>${esc(e.type)}</td><td class="c">${niv.length === 2 ? "Essentiel + Expert" : "Expert seul"}</td><td>${esc(e.lecon || "")}</td>` +
+         `<td class="c ${manques.length ? "ko" : "ok"}">${manques.length ? "⚠️ " + esc(manques.join(", ")) : "✅"}</td>` +
+         `<td class="c">${niv.includes("CM1") ? ligneTest(j, salle, numDansNiveau(c, salle, e, "CM1"), "CM1", "Essentiel") + " · " : ""}${ligneTest(j, salle, numDansNiveau(c, salle, e, "CM2"), "CM2", "Expert")}</td></tr>`;
+  });
+  return h + `</tbody></table>`;
+}
+/* rang de l'énigme parmi celles du niveau (le moteur numérote ?enigme=… dans le niveau joué) */
+function numDansNiveau(c, salle, e, niveau){
+  const l = c.lignes.filter(x => x.salle === salle && niveauxDe(x.e).includes(niveau));
+  return l.findIndex(x => x.e === e) + 1;
+}
+
+/* ---------- 2. Données du jeu ---------- */
+const FICHIERS_DONNEES = ["enigmes.json", "dialogues.json", "lecons.json", "lecons-a4.json", "evaluations.json"];
+async function controleDonnees(j){
+  const res = [];
+  for(const f of FICHIERS_DONNEES){
+    try{ await json(`${j.dossier}/assets/data/${f}`); res.push({ f, ok: true }); }
+    catch(e){ res.push({ f, ok: false, msg: e.message }); }
+  }
+  if(j.immersif){
+    for(const f of ["enigmes.json", "dialogues.json", "lecons.json", "personnages.json", "decors-fx.json"]){
+      try{ await json(`${j.immersif}/assets/data/${f}`); res.push({ f: "immersif · " + f, ok: true }); }
+      catch(e){ res.push({ f: "immersif · " + f, ok: false, msg: e.message }); }
+    }
+  }
+  return res;
+}
+
+/* ---------- 3. Médias attendus (medias.csv de la variante immersive) ---------- */
+function lireCsv(t){
+  const lignes = []; let champ = "", ligne = [], q = false;
+  for(let i = 0; i < t.length; i++){
+    const c = t[i];
+    if(q){ if(c === '"'){ if(t[i + 1] === '"'){ champ += '"'; i++; } else q = false; } else champ += c; }
+    else if(c === '"') q = true;
+    else if(c === ";"){ ligne.push(champ); champ = ""; }
+    else if(c === "\n"){ ligne.push(champ.replace(/\r$/, "")); champ = ""; if(ligne.length > 1 || ligne[0]) lignes.push(ligne); ligne = []; }
+    else champ += c;
+  }
+  if(champ || ligne.length){ ligne.push(champ); lignes.push(ligne); }
+  const [tete, ...corps] = lignes;
+  return corps.map(l => Object.fromEntries(tete.map((k, i) => [k, l[i] || ""])));
+}
+async function controleMedias(j){
+  if(!j.immersif) return { absent: true };
+  let lignes;
+  try{ lignes = lireCsv(await texte(`${j.immersif}/medias.csv`)); }catch(e){ return { erreur: e.message }; }
+  const out = [];
+  for(const m of lignes){
+    const chemin = `${j.immersif}/${m.fichier}`;
+    // le moteur accepte aussi une autre extension d'image : on cherche la base
+    const base = chemin.replace(/\.[a-z0-9]+$/i, "");
+    let trouve = null;
+    for(const ext of (m.type === "image" ? [".webp", ".jpg", ".jpeg", ".png"] : [".mp4", ".webm"])){
+      trouve = await existe(base + ext);
+      if(trouve){ trouve.chemin = base + ext; break; }
+    }
+    out.push({ m, trouve });
+  }
+  return { lignes: out };
+}
+function tableauMedias(j, r){
+  if(r.absent) return `<p>Pas de variante immersive : aucun média attendu.</p>`;
+  if(r.erreur) return `<p class="ko">⚠️ ${esc(r.erreur)}</p>`;
+  const presents = r.lignes.filter(x => x.trouve).length;
+  let h = `<div class="bilan"><span class="pastille ${presents === r.lignes.length ? "ok" : "att"}">${presents} / ${r.lignes.length} médias déposés</span>` +
+          `<span class="pastille">Les médias manquants sont remplacés par des décors dessinés : le jeu reste jouable.</span></div>`;
+  h += `<table><thead><tr><th>Média</th><th>Type</th><th>Fichier attendu</th><th>État</th><th>Aperçu</th></tr></thead><tbody>`;
+  r.lignes.forEach(({ m, trouve }) => {
+    let apercu = "";
+    if(trouve){
+      apercu = /\.(mp4|webm)$/i.test(trouve.chemin) ? `<a href="${enc(trouve.chemin)}" target="_blank" rel="noopener">▶ vidéo</a>`
+                                                      : `<img class="vignette" loading="lazy" alt="" src="${enc(trouve.chemin)}">`;
+    }
+    const lourd = trouve && trouve.taille > (/\.(mp4|webm)$/i.test(trouve.chemin) ? 20e6 : 3e6);
+    h += `<tr><td>${esc(m.id)}</td><td>${esc(m.type)}</td><td><code>${esc(m.fichier)}</code></td>` +
+         `<td class="${trouve ? (lourd ? "att" : "ok") : "att"}">${trouve ? (lourd ? "⚠️ lourd (" + mo(trouve.taille) + ")" : "✅ " + (trouve.taille ? mo(trouve.taille) : "déposé")) : "à produire (" + esc(m.statut || "") + ")"}</td><td>${apercu}</td></tr>`;
+  });
+  return h + `</tbody></table><p class="source">Pour déposer un média : <a href="https://github.com/${DEPOT.owner}/${DEPOT.repo}/upload/${DEPOT.branche}/${j.immersif}/assets" target="_blank" rel="noopener">envoyer un fichier sur GitHub</a> ou le copier dans <code>${esc(j.immersif)}/assets/</code>. Aperçu visuel côte à côte : <a href="${j.immersif}/medias.html">medias.html</a>.</p>`;
+}
+
+/* ---------- Affichage ---------- */
+async function afficher(){
+  const j = JEUX.find(x => x.id === actif) || JEUX[0];
+  const zone = document.getElementById("contenu");
+  if(!j){ zone.innerHTML = `<section class="bloc"><p>Aucun jeu dans le catalogue.</p></section>`; return; }
+  zone.innerHTML = `<section class="bloc"><p>Contrôle de « ${esc(j.titre)} » en cours…</p></section>`;
+  let enig = null, errEnig = "";
+  try{ enig = await json(`${j.dossier}/assets/data/enigmes.json`); }catch(e){ errEnig = e.message; }
+  const [donnees, medias] = await Promise.all([controleDonnees(j), controleMedias(j)]);
+  let h = `<section class="bloc"><h2>${esc(j.icone || "")} ${esc(j.titre)} <small>${esc(j.num || "")} · ${esc(j.classe || "")}</small></h2>` +
+          `<p>${esc(j.resume || "")}</p><div class="bilan">` +
+          `<a class="pastille" href="${j.dossier}/" target="_blank" rel="noopener">▶ Classique</a>` +
+          (j.immersif ? `<a class="pastille" href="${j.immersif}/" target="_blank" rel="noopener">▶ Immersif</a>` : "") +
+          `<a class="pastille" href="${j.dossier}/prof.html" target="_blank" rel="noopener">👨‍🏫 Tableau de bord</a></div></section>`;
+  if(enig){
+    const c = controleEnigmes(enig);
+    h += `<section class="bloc"><h2>1 · Énigmes</h2><div class="bilan"><span class="pastille ${c.pb.length ? "ko" : "ok"}">${c.pb.length ? c.pb.length + " point(s) à corriger" : "✅ Aucune anomalie"}</span>` +
+         `<span class="pastille">${c.nbSalles} salles · ${c.lignes.length} énigmes (dont ${c.lignes.filter(l => niveauxDe(l.e).length === 1).length} réservées à l'Expert)</span></div>` +
+         (c.pb.length ? `<ul class="liste-pb">${c.pb.map(p => `<li class="ko">${esc(p)}</li>`).join("")}</ul>` : "") +
+         tableauEnigmes(j, c) + `</section>`;
+  }else{
+    h += `<section class="bloc"><h2>1 · Énigmes</h2><p class="ko">⚠️ Impossible de lire enigmes.json : ${esc(errEnig)}</p></section>`;
+  }
+  const ko = donnees.filter(d => !d.ok);
+  h += `<section class="bloc"><h2>2 · Données</h2><div class="bilan"><span class="pastille ${ko.length ? "ko" : "ok"}">${ko.length ? ko.length + " fichier(s) illisible(s)" : "✅ " + donnees.length + " fichiers de données chargés"}</span></div>` +
+       (ko.length ? `<ul class="liste-pb">${ko.map(d => `<li class="ko">${esc(d.f)} : ${esc(d.msg)}</li>`).join("")}</ul>` : "") + `</section>`;
+  h += `<section class="bloc"><h2>3 · Médias</h2>${tableauMedias(j, medias)}</section>`;
+  zone.innerHTML = h;
+}
+function onglets(){
+  const o = document.getElementById("onglets");
+  o.innerHTML = JEUX.map(j => `<button role="tab" aria-selected="${j.id === actif}" data-id="${esc(j.id)}">${esc(j.icone || "")} ${esc(j.titre)}</button>`).join("");
+  o.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { actif = b.dataset.id; location.hash = actif; onglets(); afficher(); }));
+}
+(async function(){
+  INVENTAIRE = await inventaire();
+  afficherSource(); onglets(); afficher();
+})();
+</script>
+<script src="commun/lycee-pro/libelles.js"></script>
+</body>
+</html>

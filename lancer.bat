@@ -4,7 +4,7 @@ title Escape Games pedagogiques - Serveur local
 cls
 echo.
 echo  ============================================================
-echo    ESCAPE GAMES PEDAGOGIQUES - CM1/CM2 - Serveur local
+echo    ESCAPE GAMES LYCEE PRO (CAP) - Serveur local
 echo  ============================================================
 echo.
 echo  Verification de Python...
@@ -27,7 +27,7 @@ echo.
 echo  Solutions :
 echo    1. Installer Python : https://www.python.org/downloads/
 echo       (cocher "Add Python to PATH" pendant l'installation)
-echo    2. OU jouer en ligne : (adresse GitHub Pages du depot escape-games-lycee-pro)
+echo    2. OU jouer en ligne : https://mamagir.github.io/escape-games-lycee-pro/
 echo.
 pause
 exit /b 1
@@ -43,6 +43,14 @@ echo  ^>^> LES FICHES DU FOUR (pates ceramiques) :
 echo      Classique : http://127.0.0.1:8000/pates-ceramiques/
 echo      Immersif  : http://127.0.0.1:8000/immersifs/pates-ceramiques/
 echo      Enseignant: http://127.0.0.1:8000/pates-ceramiques/prof.html
+echo.
+echo  ^>^> ESPACE ENSEIGNANT (resultats, passeport, verification) :
+echo      http://127.0.0.1:8000/enseignant.html
+echo      http://127.0.0.1:8000/verifier.html
+echo.
+echo  ^>^> POUR LES ELEVES (meme reseau Wi-Fi / filaire) : taper l'adresse
+echo      "ADRESSES A DONNER AUX ELEVES" affichee plus bas par le serveur.
+echo      Si Windows demande d'autoriser Python : cocher "Reseaux prives", Autoriser.
 echo.
 echo  Fermez cette fenetre pour arreter le serveur.
 echo.

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ============================================================
- ESCAPE GAMES PÉDAGOGIQUES — Serveur local · CM1-CM2
+ ESCAPE GAMES PÉDAGOGIQUES — Serveur local · Lycée pro (CAP)
  Sert les jeux (declaration/, tour-du-monde/, mission-geo/,
  constitution/, station-meteo/, melanges/, moyen-age-abbaye/,
  pates-ceramiques/ (jeux du lycée professionnel),
@@ -368,7 +368,7 @@ class Handler(BaseHTTPRequestHandler):
             self.json_reponse({"fichiers": fichiers})
         elif path == "/api/info" and methode == "GET":
             self.json_reponse({
-                "serveur": "Escape games pédagogiques CM1-CM2",
+                "serveur": "Escape games lycée pro (CAP)",
                 "ip": get_ip_locale(),
                 "port": PORT,
                 "equipes_connectees": len(ETATS_EQUIPES)
@@ -436,13 +436,14 @@ def main():
     preparer_console()
     ip = get_ip_locale()
     print("=" * 62)
-    print("  ESCAPE GAMES PÉDAGOGIQUES — Serveur local · CM1-CM2")
+    print("  ESCAPE GAMES PÉDAGOGIQUES — Serveur local · Lycée pro (CAP)")
     print("=" * 62)
     print()
     print("  ✅ Serveur démarré sur le port {} (multi-thread, vidéo activée)".format(PORT))
     print("  🗂️  Résultats de la classe : {}".format(os.path.abspath(FICHIER_RESULTATS)))
     print()
     print("  🏠 ACCUEIL (tous les jeux)  →  http://{}:{}/".format(ip, PORT))
+    print("  📺 CLASSEMENT À PROJETER   →  http://{}:{}/classement.html".format(ip, PORT))
     print()
     print("  📱 ADRESSES À DONNER AUX ÉLÈVES :")
     for j in JEUX_LYCEE:
@@ -451,6 +452,10 @@ def main():
     print("  👨‍🏫 TABLEAUX DE BORD ENSEIGNANT :")
     for j in JEUX_LYCEE:
         print("     http://127.0.0.1:{}/{}/prof.html".format(PORT, j))
+    print("     http://127.0.0.1:{}/enseignant.html   (espace enseignant : résultats, passeport, trophées)".format(PORT))
+    print()
+    print("  🔍 VÉRIFICATION (énigmes, données, médias) :")
+    print("     http://127.0.0.1:{}/verifier.html".format(PORT))
     print()
     print("  ⌨️  Ctrl+C pour arrêter le serveur.")
     print()

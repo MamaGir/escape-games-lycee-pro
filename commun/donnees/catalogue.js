@@ -20,6 +20,7 @@ var CATALOGUE = {
    "titre": "Les fiches du four",
    "matiere": "Technologie céramique",
    "classe": "CAP 1",
+   "periodes": [],
    "competences": "Les pâtes céramiques : matières premières, minéraux argileux, argiles primaires et secondaires, principales argiles, dégraissants, sécurité, familles de pâtes, cuisson, recettes.",
    "dossier": "pates-ceramiques",
    "immersif": "immersifs/pates-ceramiques",
