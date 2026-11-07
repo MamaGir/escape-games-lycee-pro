@@ -1,0 +1,178 @@
+{
+  "_commentaire": "Brouillon généré par le migrateur : reformuler dans le ton de chaque personnage.",
+  "accueil": {
+    "personnage": "nadia",
+    "texte": "Bonjour, je suis Nadia, technicienne de maintenance de l'usine Terres et Feux. Vendredi, 16 h 50 : la ligne de préparation des pâtes s'est arrêtée d'un coup. Le chef d'atelier est parti en laissant le coffre de relance verrouillé, les écrans sont noirs et les plaques des machines sont tombées. Vous êtes en stage : traversez les cinq salles, résolvez les énigmes, récupérez les cinq mots du coffre et relancez la production avant la fermeture. On commence par le laboratoire ?"
+  },
+  "coffre": {
+    "personnage": "nadia",
+    "texte": "Le coffre ne s'ouvre qu'avec les mots de chaque salle, dans l'ordre. Vous les avez notés, j'espère."
+  },
+  "cinematiques": {
+    "transition-e1": {
+      "titre": "Salle 1 — Le laboratoire",
+      "plans": [
+        {
+          "decor": "laboratoire",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "karim",
+          "texte": "Entrez, ne touchez à rien. Quand la ligne s'est arrêtée, le chef a verrouillé le coffre de relance. Pour l'ouvrir, il faut cinq mots : un par salle. Le premier est ici. Mais d'abord, montrez-moi que vous connaissez le vocabulaire et les deux méthodes de préparation : voie humide et voie sèche.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e1": {
+      "titre": "Fin de la salle 1",
+      "plans": [
+        {
+          "decor": "laboratoire",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "karim",
+          "texte": "Bien. Le mot écrit sur ma fiche est BARBOTINE : le liquide de départ de toute la voie humide. Passez à la salle de broyage, Élodie vous attend.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e2": {
+      "titre": "Salle 2 — La salle de broyage",
+      "plans": [
+        {
+          "decor": "broyage",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "elodie",
+          "texte": "Ici, on prépare la barbotine : on pèse, on ajoute l'eau, on broie, on tamise, on délaie. Ces étapes se ressemblent pour tous les produits de la voie humide. Les plaques de mes machines sont tombées et la recette est brouillée. Remettez de l'ordre, et je vous donne le deuxième mot.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e2": {
+      "titre": "Fin de la salle 2",
+      "plans": [
+        {
+          "decor": "broyage",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "elodie",
+          "texte": "Les machines ont retrouvé leur nom et la recette est en ordre. Mon mot est DÉLAYAGE : on remue la barbotine sans s'arrêter. Hugo vous attend dans le hall.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e3": {
+      "titre": "Salle 3 — Le hall de production",
+      "plans": [
+        {
+          "decor": "hall",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "hugo",
+          "texte": "Bienvenue dans le hall. Après les étapes communes, le procédé change selon le produit : pâtes plastiques, barbotine de coulage ou poudres atomisées. Trois chariots, des commandes de clients qui attendent. Montrez-moi que vous savez qui fait quoi.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e3": {
+      "titre": "Fin de la salle 3",
+      "plans": [
+        {
+          "decor": "hall",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "hugo",
+          "texte": "Les commandes partent chez les bons clients. Mon mot est PRODUITS : trois produits, trois procédés. Sofiane vous attend à la tour d'atomisation.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e4": {
+      "titre": "Salle 4 — La tour d'atomisation",
+      "plans": [
+        {
+          "decor": "atomisation",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "sofiane",
+          "texte": "L'atomiseur est à l'arrêt, et c'est lui qui a déclenché la panne. Avant de le relancer, je dois être sûr que vous connaissez la tour, le silo, les machines du hall, et que vous savez qu'une usine ne fabrique pas forcément les trois produits.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e4": {
+      "titre": "Fin de la salle 4",
+      "plans": [
+        {
+          "decor": "atomisation",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "sofiane",
+          "texte": "La tour peut repartir. Mon mot est ATOMISEUR . Il reste la dernière salle, celle de la voie sèche : Samia vous attend.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e5": {
+      "titre": "Salle 5 — L'atelier voie sèche",
+      "plans": [
+        {
+          "decor": "voie-seche",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "samia",
+          "texte": "Dernière salle. Ici, on ne part pas d'une barbotine mais de blocs d'argile sèche. L'eau, on la met peu à peu. Et attention : les poudres sont fines et volatiles. Prouvez-moi que vous connaissez la voie sèche et les bons gestes, et le coffre s'ouvrira.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e5": {
+      "titre": "Fin de la salle 5",
+      "plans": [
+        {
+          "decor": "voie-seche",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "nadia",
+          "texte": "Samia vous a donné le dernier mot : EXTRUSION . Vous avez les cinq mots ! Tapez-les dans le coffre de relance, dans l'ordre des salles, et la ligne repartira avant la fermeture. N'oubliez pas : cette usine est un exemple, ailleurs les machines et les étapes peuvent être différentes.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "fin": {
+      "titre": "Fin de « Panne à l'usine »",
+      "plans": [
+        {
+          "decor": "voie-seche",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "samia",
+          "texte": "Le coffre est ouvert : toutes les pages sont rassemblées. Bravo, équipe !",
+          "mouvement": "zoom"
+        }
+      ]
+    }
+  },
+  "fin_escale": {
+    "1": {
+      "personnage": "karim",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "2": {
+      "personnage": "elodie",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "3": {
+      "personnage": "hugo",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "4": {
+      "personnage": "sofiane",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "5": {
+      "personnage": "samia",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "personnages": {
+    "nadia": {
+      "nom": "Nadia",
+      "court": "Nadia",
+      "voix": {
+        "rate": 0.95,
+        "pitch": 1.0
+      },
+      "ton": "à préciser",
+      "fiche": "Technicienne de maintenance, elle accueille les stagiaires et guide l'équipe",
+      "portrait": {}
+    },
+    "karim": {
+      "nom": "Karim",
+      "court": "Karim",
+      "voix": {
+        "rate": 1.0,
+        "pitch": 1.15
+      },
+      "ton": "à préciser",
+      "fiche": "Technicien du laboratoire",
+      "portrait": {}
+    },
+    "elodie": {
+      "nom": "Élodie",
+      "court": "Élodie",
+      "voix": {
+        "rate": 0.9,
+        "pitch": 0.9
+      },
+      "ton": "à préciser",
+      "fiche": "Conductrice de la salle de broyage",
+      "portrait": {}
+    },
+    "hugo": {
+      "nom": "Hugo",
+      "court": "Hugo",
+      "voix": {
+        "rate": 1.05,
+        "pitch": 1.2
+      },
+      "ton": "à préciser",
+      "fiche": "Responsable du hall de production",
+      "portrait": {}
+    },
+    "sofiane": {
+      "nom": "Sofiane",
+      "court": "Sofiane",
+      "voix": {
+        "rate": 0.92,
+        "pitch": 1.05
+      },
+      "ton": "à préciser",
+      "fiche": "Conducteur de l'atomiseur",
+      "portrait": {}
+    },
+    "samia": {
+      "nom": "Samia",
+      "court": "Samia",
+      "voix": {
+        "rate": 1.0,
+        "pitch": 0.85
+      },
+      "ton": "à préciser",
+      "fiche": "Responsable de l'atelier voie sèche",
+      "portrait": {}
+    }
+  }
+}

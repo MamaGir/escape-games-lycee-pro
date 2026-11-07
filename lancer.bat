@@ -44,6 +44,10 @@ echo      Classique : http://127.0.0.1:8000/pates-ceramiques/
 echo      Immersif  : http://127.0.0.1:8000/immersifs/pates-ceramiques/
 echo      Enseignant: http://127.0.0.1:8000/pates-ceramiques/prof.html
 echo.
+echo  ^>^> PANNE A L'USINE (preparation des pates) :
+echo      Immersif  : http://127.0.0.1:8000/immersifs/preparation-pates/
+echo      Enseignant: http://127.0.0.1:8000/immersifs/preparation-pates/prof.html
+echo.
 echo  Fermez cette fenetre pour arreter le serveur.
 echo.
 

@@ -27,6 +27,20 @@ var CATALOGUE = {
    "couleurs": ["#0F4C81", "#C2410C"],
    "resume": "À la manufacture des Trois Fours, les cinq fiches du cahier de fabrication sont restées chez cinq collègues : l'équipe doit les récupérer avant la cuisson du soir.",
    "programme": []
+  },
+  {
+   "num": "C02",
+   "id": "preparation-pates",
+   "titre": "Panne à l'usine",
+   "matiere": "Technologie céramique",
+   "classe": "CAP",
+   "competences": "La préparation des pâtes céramiques : voie humide et voie sèche, étapes communes, pâtes plastiques, barbotine de coulage, poudres atomisées, équipements, sécurité avec les poudres.",
+   "dossier": "",
+   "immersif": "immersifs/preparation-pates",
+   "icone": "🏭",
+   "couleurs": ["#0F4C81", "#C2410C"],
+   "resume": "Vendredi, 16 h 50 : la ligne de préparation des pâtes de l'usine Terres et Feux s'est arrêtée. L'équipe de stagiaires traverse cinq salles, rassemble cinq mots et rouvre le coffre de relance avant la fermeture.",
+   "programme": []
   }
  ]
 };

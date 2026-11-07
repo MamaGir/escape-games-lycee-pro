@@ -1,0 +1,1642 @@
+{
+ "metadata": {
+  "jeu": "Panne à l'usine",
+  "version": 1,
+  "differenciation": "Essentiel (clé cm1) : 3 énigmes par salle (15). Expert (clé cm2) : 4 énigmes par salle (20). Le champ \"niveaux\": [\"CM2\"] réserve une énigme au niveau Expert.",
+  "types": [
+   "qcm",
+   "vraifaux",
+   "association",
+   "ordre",
+   "tri",
+   "trous",
+   "code",
+   "intrus",
+   "plan"
+  ],
+  "sources": "Cours « La préparation des pâtes céramiques », CAP (version V9, document de l'enseignant). Points à confirmer : A-VERIFIER.md.",
+  "media": "Photos des machines : assets/images/cartes/q-*.jpg (fournies par l'enseignant), insérées dans les questions des énigmes 2-2 et 4-1."
+ },
+ "salles": [
+  {
+   "num": 1,
+   "titre": "Le laboratoire — Les deux méthodes et le vocabulaire",
+   "enigmes": [
+    {
+     "id": "1-1",
+     "titre": "Le tableau des mots",
+     "type": "association",
+     "consigne": {
+      "cm1": "Le tableau du laboratoire a perdu ses définitions. Relie chaque mot à sa définition : clique sur un mot, puis sur la bonne définition.",
+      "cm2": "Six mots du métier ont perdu leur définition. Reconstitue les six paires."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, encadré « Mots à connaître »",
+     "correction": "Barbotine : mélange liquide d'argile et d'eau. Défloculant : produit qui rend la barbotine plus fluide, sans ajouter d'eau. Filtre-presse : machine qui presse la barbotine pour retirer l'eau. Atomiseur : tour qui sèche la barbotine en gouttelettes pour faire des granules. Boudineuse-désaéreuse : machine qui enlève l'air de la pâte et la fait sortir en boudin. Banc de coulage : poste où l'on remplit les moules de barbotine.",
+     "indices": {
+      "cm1": [
+       "Les définitions sont dans l'encadré « Mots à connaître » au début du cours.",
+       "Le nom d'une machine dit souvent ce qu'elle fait : « filtre-presse ».",
+       "La barbotine est liquide, comme une crème."
+      ],
+      "cm2": [
+       "Commence par les mots que tu es sûr de connaître.",
+       "« Désaéreuse » : qui enlève l'air.",
+       "Défloculant : plus fluide, mais sans ajouter d'eau."
+      ]
+     },
+     "cm1": {
+      "paires": [
+       {
+        "g": "Barbotine",
+        "d": "Mélange liquide d'argile et d'eau"
+       },
+       {
+        "g": "Défloculant",
+        "d": "Produit qui rend la barbotine plus fluide, sans ajouter d'eau"
+       },
+       {
+        "g": "Filtre-presse",
+        "d": "Machine qui presse la barbotine pour retirer l'eau"
+       },
+       {
+        "g": "Atomiseur",
+        "d": "Tour qui sèche la barbotine en gouttelettes pour faire des granules"
+       }
+      ]
+     },
+     "cm2": {
+      "paires": [
+       {
+        "g": "Barbotine",
+        "d": "Mélange liquide d'argile et d'eau"
+       },
+       {
+        "g": "Défloculant",
+        "d": "Produit qui rend la barbotine plus fluide, sans ajouter d'eau"
+       },
+       {
+        "g": "Filtre-presse",
+        "d": "Machine qui presse la barbotine pour retirer l'eau"
+       },
+       {
+        "g": "Atomiseur",
+        "d": "Tour qui sèche la barbotine en gouttelettes pour faire des granules"
+       },
+       {
+        "g": "Boudineuse-désaéreuse",
+        "d": "Machine qui enlève l'air de la pâte et la fait sortir en boudin"
+       },
+       {
+        "g": "Banc de coulage",
+        "d": "Poste où l'on remplit les moules de barbotine"
+       }
+      ]
+     },
+     "lecon": "deux-methodes"
+    },
+    {
+     "id": "1-2",
+     "titre": "Préparer une pâte, c'est…",
+     "type": "plan",
+     "consigne": {
+      "cm1": "Le panneau de consignes du laboratoire est incomplet. Place chaque action sur la bonne ligne : clique sur une étiquette, puis sur la case. Une étiquette est en trop.",
+      "cm2": "Pour chaque but, retrouve l'action qui permet de l'atteindre. Deux étiquettes sont en trop."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie I",
+     "correction": "Préparer une pâte, c'est : ajouter des dégraissants (ils limitent les fissures et les déformations), épurer le mélange (enlever les impuretés), régler l'humidité (ni trop sèche, ni trop molle) et obtenir une pâte homogène (la même partout, sans grumeaux).",
+     "indices": {
+      "cm1": [
+       "Relis la liste « Préparer une pâte, c'est » en haut de la partie I.",
+       "Les dégraissants sont du sable ou de la chamotte.",
+       "Homogène veut dire : la même partout."
+      ],
+      "cm2": [
+       "Chaque but correspond à une action de la partie I.",
+       "Une impureté est enlevée quand on épure.",
+       "Cuire et émailler ne sont pas des étapes de la préparation."
+      ]
+     },
+     "cm1": {
+      "titre": "Préparer une pâte, c'est…",
+      "colonnes": 2,
+      "cases": [
+       {
+        "libelle": "Éviter les fissures et les déformations",
+        "reponse": "Ajouter des dégraissants"
+       },
+       {
+        "libelle": "Enlever les impuretés",
+        "reponse": "Épurer le mélange"
+       },
+       {
+        "libelle": "Ni trop sèche, ni trop molle",
+        "reponse": "Régler l'humidité"
+       },
+       {
+        "libelle": "La même pâte partout, sans grumeaux",
+        "reponse": "Obtenir une pâte homogène"
+       }
+      ],
+      "etiquettes": [
+       "Ajouter des dégraissants",
+       "Épurer le mélange",
+       "Régler l'humidité",
+       "Obtenir une pâte homogène",
+       "Cuire la pièce"
+      ]
+     },
+     "cm2": {
+      "titre": "Préparer une pâte, c'est…",
+      "colonnes": 2,
+      "cases": [
+       {
+        "libelle": "Les dégraissants (sable, chamotte) limitent les fissures et les déformations : que fait-on ?",
+        "reponse": "Ajouter des dégraissants"
+       },
+       {
+        "libelle": "On retire les impuretés du mélange : que fait-on ?",
+        "reponse": "Épurer le mélange"
+       },
+       {
+        "libelle": "La pâte ne doit pas être trop sèche, ni trop molle : que fait-on ?",
+        "reponse": "Régler l'humidité"
+       },
+       {
+        "libelle": "On veut la même pâte partout, sans grumeaux : que cherche-t-on ?",
+        "reponse": "Obtenir une pâte homogène"
+       }
+      ],
+      "etiquettes": [
+       "Ajouter des dégraissants",
+       "Épurer le mélange",
+       "Régler l'humidité",
+       "Obtenir une pâte homogène",
+       "Cuire la pièce",
+       "Émailler la pièce"
+      ]
+     },
+     "lecon": "deux-methodes"
+    },
+    {
+     "id": "1-3",
+     "titre": "Le carnet de Karim",
+     "type": "vraifaux",
+     "consigne": {
+      "cm1": "Karim, le technicien du laboratoire, a noté quatre phrases dans son carnet. Pour chacune, dis si elle est vraie ou fausse.",
+      "cm2": "Vérifie les cinq phrases du carnet de Karim : vraie ou fausse ?"
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie I",
+     "correction": "La barbotine est un mélange liquide d'argile et d'eau. Par voie humide, on part d'une barbotine, avec beaucoup d'eau. Par voie sèche, on part de blocs d'argile sèche et l'on ajoute l'eau peu à peu.",
+     "indices": {
+      "cm1": [
+       "Relis l'encadré des deux méthodes, partie I.",
+       "Voie humide : beaucoup d'eau.",
+       "Voie sèche : on part d'argile sèche."
+      ],
+      "cm2": [
+       "Relis la partie I : une phrase pour chaque méthode.",
+       "Voie humide : on obtient un liquide.",
+       "À la fin de la voie sèche, on extrude des pains de terre."
+      ]
+     },
+     "cm1": {
+      "affirmations": [
+       {
+        "txt": "La barbotine est un mélange liquide d'argile et d'eau.",
+        "vrai": true,
+        "explication": "C'est sa définition."
+       },
+       {
+        "txt": "Par voie humide, on part d'argile sèche.",
+        "vrai": false,
+        "explication": "On part d'une barbotine."
+       },
+       {
+        "txt": "Par voie sèche, on ajoute l'eau peu à peu.",
+        "vrai": true,
+        "explication": "On part de blocs d'argile sèche."
+       },
+       {
+        "txt": "Le défloculant rend la barbotine plus épaisse.",
+        "vrai": false,
+        "explication": "Il la rend plus fluide, sans ajouter d'eau."
+       }
+      ]
+     },
+     "cm2": {
+      "affirmations": [
+       {
+        "txt": "Par voie humide, on mélange l'argile avec beaucoup d'eau pour obtenir un liquide.",
+        "vrai": true,
+        "explication": "Ce liquide est la barbotine."
+       },
+       {
+        "txt": "Par voie sèche, on met beaucoup d'eau dès le début.",
+        "vrai": false,
+        "explication": "On part de blocs d'argile sèche et on ajoute l'eau peu à peu."
+       },
+       {
+        "txt": "Par voie sèche, on extrude ensuite des pains de terre.",
+        "vrai": true,
+        "explication": "La pâte sort en boudins."
+       },
+       {
+        "txt": "Une pâte homogène est la même partout, sans grumeaux.",
+        "vrai": true,
+        "explication": "C'est l'un des buts de la préparation."
+       },
+       {
+        "txt": "Les dégraissants favorisent les fissures et les déformations.",
+        "vrai": false,
+        "explication": "Ils les limitent."
+       }
+      ]
+     },
+     "lecon": "deux-methodes"
+    },
+    {
+     "id": "1-4",
+     "titre": "La fiche des deux méthodes",
+     "type": "trous",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Complète la fiche de Karim avec les bonnes étiquettes. Deux étiquettes sont en trop."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie I",
+     "correction": "Par voie humide, on part d'une barbotine : on mélange l'argile avec beaucoup d'eau. Par voie sèche, on part de blocs d'argile sèche et on ajoute l'eau peu à peu, puis on extrude des pains de terre.",
+     "indices": {
+      "cm2": [
+       "Une méthode part d'un liquide, l'autre de blocs.",
+       "« Peu à peu » : l'eau n'arrive pas d'un coup.",
+       "Les étiquettes en trop parlent de cuisson et d'émail."
+      ]
+     },
+     "commun": {
+      "texte": "<p>Par voie [[humide]], on part d'une [[barbotine]] : l'argile est mélangée avec beaucoup d'[[eau]]. Par voie [[sèche]], on part de [[blocs]] d'argile sèche, on ajoute l'eau peu à peu, puis on extrude des [[pains]] de terre.</p>",
+      "etiquettes": [
+       "humide",
+       "barbotine",
+       "eau",
+       "sèche",
+       "blocs",
+       "pains",
+       "émail",
+       "cuisson"
+      ]
+     },
+     "lecon": "deux-methodes"
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "titre": "La salle de broyage — Les étapes communes et leurs machines",
+   "enigmes": [
+    {
+     "id": "2-1",
+     "titre": "La recette brouillée",
+     "type": "ordre",
+     "consigne": {
+      "cm1": "L'écran affiche la recette de la barbotine de coulage, mais les six étapes sont dans le désordre. Range-les de la première (en haut) à la dernière (en bas), puis vérifie.",
+      "cm2": "Remets dans l'ordre les six étapes de la barbotine de coulage, sans l'aide des repères."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, procédé de la barbotine de coulage",
+     "correction": "Barbotine de coulage : pesée, ajout de l'eau et du défloculant, broyage Alsing, tamisage, délayage, transfert vers les moules. Les cinq premières étapes se ressemblent pour les autres produits de la voie humide.",
+     "indices": {
+      "cm1": [
+       "On commence par peser les poudres.",
+       "Le défloculant arrive avec l'eau.",
+       "La barbotine finit dans les moules, envoyée par une pompe."
+      ],
+      "cm2": [
+       "Relis le tableau des trois procédés côte à côte.",
+       "Le tamisage vient après le broyage.",
+       "Le délayage précède le transfert."
+      ]
+     },
+     "cm1": {
+      "items": [
+       {
+        "txt": "Pesée",
+        "sous": "on pèse avec précision",
+        "rang": 1
+       },
+       {
+        "txt": "Ajout de l'eau et du défloculant",
+        "sous": "on obtient une barbotine fluide",
+        "rang": 2
+       },
+       {
+        "txt": "Broyage Alsing",
+        "sous": "le grand tambour qui tourne",
+        "rang": 3
+       },
+       {
+        "txt": "Tamisage",
+        "sous": "retient les grumeaux",
+        "rang": 4
+       },
+       {
+        "txt": "Délayage",
+        "sous": "on remue en continu",
+        "rang": 5
+       },
+       {
+        "txt": "Transfert vers les moules",
+        "sous": "par une pompe",
+        "rang": 6
+       }
+      ]
+     },
+     "cm2": {
+      "items": [
+       {
+        "txt": "Pesée",
+        "rang": 1
+       },
+       {
+        "txt": "Ajout de l'eau et du défloculant",
+        "rang": 2
+       },
+       {
+        "txt": "Broyage Alsing",
+        "rang": 3
+       },
+       {
+        "txt": "Tamisage",
+        "rang": 4
+       },
+       {
+        "txt": "Délayage",
+        "rang": 5
+       },
+       {
+        "txt": "Transfert vers les moules",
+        "rang": 6
+       }
+      ]
+     },
+     "lecon": "etapes-communes"
+    },
+    {
+     "id": "2-2",
+     "titre": "Les plaques tombées",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Les plaques de trois machines sont tombées. Remets le bon nom sous chaque photo.",
+      "cm2": "Quatre machines ont perdu leur plaque. Retrouve le nom de chacune à partir de sa photo."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, photos des équipements",
+     "correction": "Le broyeur Alsing est un grand tambour qui tourne : il broie les matières avec l'eau. Le tamis à secousses retient les grumeaux et les grains trop gros. Le délayeur remue la barbotine en continu. La boudineuse malaxe la pâte, enlève l'air et la fait sortir en boudin.",
+     "indices": {
+      "cm1": [
+       "Le broyeur est un grand tambour.",
+       "Le tamis vibre.",
+       "Le délayeur est une cuve avec un agitateur."
+      ],
+      "cm2": [
+       "La boudineuse fait sortir la pâte en boudins.",
+       "Le tamis retient les grumeaux.",
+       "Le délayeur garde la barbotine bien mélangée."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "<img src=\"assets/images/cartes/q-alsing.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Broyeur Alsing",
+         "Délayeur",
+         "Atomiseur"
+        ],
+        "bonne": 0,
+        "explication": "Grand tambour qui tourne et broie les matières avec l'eau."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-tamis.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Filtre-presse",
+         "Tamis à secousses",
+         "Silo"
+        ],
+        "bonne": 1,
+        "explication": "Il vibre et retient les grumeaux et les grains trop gros."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-delayeur.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Délayeur",
+         "Banc de coulage",
+         "Broyeur Alsing"
+        ],
+        "bonne": 0,
+        "explication": "Une cuve qui remue la barbotine en continu."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "<img src=\"assets/images/cartes/q-alsing.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Broyeur Alsing",
+         "Délayeur",
+         "Atomiseur",
+         "Concasseur"
+        ],
+        "bonne": 0,
+        "explication": "Grand tambour qui tourne et broie les matières avec l'eau."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-tamis.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Filtre-presse",
+         "Boudineuse",
+         "Tamis à secousses",
+         "Silo"
+        ],
+        "bonne": 2,
+        "explication": "Il retient les grumeaux et les grains trop gros."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-delayeur.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Banc de coulage",
+         "Délayeur",
+         "Broyeur Alsing",
+         "Pompe"
+        ],
+        "bonne": 1,
+        "explication": "La barbotine y est remuée en continu pour rester bien mélangée."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-boudineuse.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Atomiseur",
+         "Filtre-presse",
+         "Boudineuse",
+         "Délayeur"
+        ],
+        "bonne": 2,
+        "explication": "Elle malaxe la pâte, enlève l'air et la fait sortir en boudin."
+       }
+      ]
+     },
+     "lecon": "etapes-communes"
+    },
+    {
+     "id": "2-3",
+     "titre": "Le rôle de chaque machine",
+     "type": "association",
+     "consigne": {
+      "cm1": "Relie chaque machine à ce qu'elle fait dans la salle de broyage.",
+      "cm2": "Relie chaque équipement à son rôle exact dans les étapes communes."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, étapes 3 à 5",
+     "correction": "Le broyeur Alsing broie les matières premières avec l'eau. Le tamis à secousses retient les grumeaux et les grains trop gros. Le délayeur remue la barbotine en continu pour garder la même consistance. La pompe envoie la barbotine d'une machine à l'autre.",
+     "indices": {
+      "cm1": [
+       "Chaque étape du cours explique ce que fait la machine.",
+       "Le tamis retient ce qui est trop gros.",
+       "La pompe déplace la barbotine."
+      ],
+      "cm2": [
+       "Relis les étapes 3, 4 et 5 de la partie II.",
+       "« Même consistance partout » : le délayeur.",
+       "La pompe est utilisée au tamisage et au transfert."
+      ]
+     },
+     "cm1": {
+      "paires": [
+       {
+        "g": "Broyeur Alsing",
+        "d": "Broie les matières avec l'eau"
+       },
+       {
+        "g": "Tamis à secousses",
+        "d": "Retient les grumeaux et les grains trop gros"
+       },
+       {
+        "g": "Délayeur",
+        "d": "Remue la barbotine pour qu'elle reste bien mélangée"
+       },
+       {
+        "g": "Pompe",
+        "d": "Envoie la barbotine d'une machine à l'autre"
+       }
+      ]
+     },
+     "cm2": {
+      "paires": [
+       {
+        "g": "Broyeur Alsing",
+        "d": "Grand tambour qui broie les matières avec l'eau : les grains deviennent très fins"
+       },
+       {
+        "g": "Tamis à secousses",
+        "d": "Retient les grumeaux et les grains trop gros"
+       },
+       {
+        "g": "Délayeur",
+        "d": "Remue la barbotine en continu pour garder la même consistance partout"
+       },
+       {
+        "g": "Pompe",
+        "d": "Envoie la barbotine sur le tamis, puis vers la suite du procédé"
+       },
+       {
+        "g": "Défloculant",
+        "d": "Ajouté en petite quantité pour rendre la barbotine plus fluide"
+       }
+      ]
+     },
+     "lecon": "etapes-communes"
+    },
+    {
+     "id": "2-4",
+     "titre": "Le cadenas du broyeur",
+     "type": "code",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Le cadenas de l'armoire du broyeur a deux molettes. Trouve les deux nombres dans le cours."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, tableau des trois procédés",
+     "correction": "Les étapes 1 à 5 se ressemblent pour les trois produits de la voie humide : 5 étapes communes. La barbotine de coulage compte 6 étapes au total.",
+     "indices": {
+      "cm2": [
+       "Le premier nombre compte les étapes qui se ressemblent (en gris dans le tableau).",
+       "Le second nombre est le total des étapes de la barbotine de coulage.",
+       "Relis « À retenir » sous le tableau des trois procédés."
+      ]
+     },
+     "commun": {
+      "champs": [
+       {
+        "libelle": "Nombre d'étapes communes aux trois produits",
+        "valeur": "5",
+        "longueur": 1
+       },
+       {
+        "libelle": "Nombre d'étapes de la barbotine de coulage",
+        "valeur": "6",
+        "longueur": 1
+       }
+      ]
+     },
+     "lecon": "etapes-communes"
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "titre": "Le hall de production — Les trois produits de la voie humide",
+   "enigmes": [
+    {
+     "id": "3-1",
+     "titre": "Le tri des chariots",
+     "type": "tri",
+     "consigne": {
+      "cm1": "Trois chariots attendent : pâtes plastiques, barbotine de coulage, poudres atomisées. Range chaque étiquette dans le chariot où elle intervient.",
+      "cm2": "Après les étapes communes, les opérations ont été déchargées en vrac. Range les dix étiquettes dans le bon chariot."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, les 3 procédés côte à côte",
+     "correction": "Pâtes plastiques : filtre-presse, boudineuse-désaéreuse, extrusion (colombin). Barbotine de coulage : défloculant avec l'eau, transfert vers les moules, banc de coulage. Poudres atomisées : atomiseur, pulvérisation par une tête centrifuge, air chaud d'environ 400 °C, stockage dans un silo.",
+     "indices": {
+      "cm1": [
+       "Pâtes plastiques : on retire l'eau, puis l'air, et la pâte sort en boudin.",
+       "Coulage : on remplit des moules.",
+       "Poudres : on sèche très vite et on stocke."
+      ],
+      "cm2": [
+       "Relis le tableau des trois procédés côte à côte.",
+       "Le défloculant est ajouté pour la barbotine de coulage.",
+       "L'air chaud et le silo vont avec l'atomiseur."
+      ]
+     },
+     "cm1": {
+      "colonnes": [
+       {
+        "id": "pla",
+        "titre": "Pâtes plastiques"
+       },
+       {
+        "id": "cou",
+        "titre": "Barbotine de coulage"
+       },
+       {
+        "id": "pou",
+        "titre": "Poudres atomisées"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Filtre-presse",
+        "col": "pla"
+       },
+       {
+        "txt": "Boudineuse-désaéreuse",
+        "col": "pla"
+       },
+       {
+        "txt": "Banc de coulage",
+        "col": "cou"
+       },
+       {
+        "txt": "Remplissage des moules",
+        "col": "cou"
+       },
+       {
+        "txt": "Atomiseur",
+        "col": "pou"
+       },
+       {
+        "txt": "Silo de stockage",
+        "col": "pou"
+       }
+      ]
+     },
+     "cm2": {
+      "colonnes": [
+       {
+        "id": "pla",
+        "titre": "Pâtes plastiques"
+       },
+       {
+        "id": "cou",
+        "titre": "Barbotine de coulage"
+       },
+       {
+        "id": "pou",
+        "titre": "Poudres atomisées"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Filtre-presse",
+        "col": "pla"
+       },
+       {
+        "txt": "Boudineuse-désaéreuse",
+        "col": "pla"
+       },
+       {
+        "txt": "Colombin (boudin)",
+        "col": "pla"
+       },
+       {
+        "txt": "Défloculant ajouté à l'eau",
+        "col": "cou"
+       },
+       {
+        "txt": "Banc de coulage",
+        "col": "cou"
+       },
+       {
+        "txt": "Remplissage des moules",
+        "col": "cou"
+       },
+       {
+        "txt": "Atomiseur",
+        "col": "pou"
+       },
+       {
+        "txt": "Pulvérisation (tête centrifuge)",
+        "col": "pou"
+       },
+       {
+        "txt": "Air chaud (environ 400 °C)",
+        "col": "pou"
+       },
+       {
+        "txt": "Silo de stockage",
+        "col": "pou"
+       }
+      ]
+     },
+     "lecon": "trois-produits"
+    },
+    {
+     "id": "3-2",
+     "titre": "Les commandes clients",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Trois clients ont laissé une commande. Choisis le bon produit pour chacun.",
+      "cm2": "Quatre clients ont laissé une commande. Livre le bon produit à chacun."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, les trois produits",
+     "correction": "Barbotine de coulage : liquide bien fluide, pour remplir les moules. Pâte plastique : ferme et malléable, pour modeler et tourner. Poudre atomisée : petits granules secs, pour le pressage industriel.",
+     "indices": {
+      "cm1": [
+       "Liquide : pense au coulage.",
+       "Pâte ferme : on la modèle ou on la tourne.",
+       "Granules secs : pour une presse."
+      ],
+      "cm2": [
+       "Relis les trois cartes de la partie II.",
+       "Un moule en plâtre se remplit avec un liquide.",
+       "Le pressage industriel utilise des petits granules secs."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "Je veux remplir des moules en plâtre.",
+        "options": [
+         "Barbotine",
+         "Pâte plastique",
+         "Poudre atomisée"
+        ],
+        "bonne": 0,
+        "explication": "La barbotine de coulage est un liquide bien fluide."
+       },
+       {
+        "q": "Je veux modeler ou tourner une pièce à la main.",
+        "options": [
+         "Barbotine",
+         "Pâte plastique",
+         "Poudre atomisée"
+        ],
+        "bonne": 1,
+        "explication": "Pâte ferme et malléable."
+       },
+       {
+        "q": "Je veux presser des pièces avec une machine, en industrie.",
+        "options": [
+         "Barbotine",
+         "Pâte plastique",
+         "Poudre atomisée"
+        ],
+        "bonne": 2,
+        "explication": "Petits granules secs, pour le pressage industriel."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "Je veux remplir des moules en plâtre.",
+        "options": [
+         "Barbotine",
+         "Pâte plastique",
+         "Poudre atomisée"
+        ],
+        "bonne": 0,
+        "explication": "La barbotine de coulage est un liquide bien fluide."
+       },
+       {
+        "q": "Je veux modeler ou tourner une pièce à la main.",
+        "options": [
+         "Barbotine",
+         "Pâte plastique",
+         "Poudre atomisée"
+        ],
+        "bonne": 1,
+        "explication": "Pâte ferme et malléable."
+       },
+       {
+        "q": "Je veux presser des pièces avec une machine, en industrie.",
+        "options": [
+         "Barbotine",
+         "Pâte plastique",
+         "Poudre atomisée"
+        ],
+        "bonne": 2,
+        "explication": "Petits granules secs, pour le pressage industriel."
+       },
+       {
+        "q": "Je veux un liquide bien fluide qui remplit régulièrement les moules.",
+        "options": [
+         "Barbotine",
+         "Pâte plastique",
+         "Poudre atomisée"
+        ],
+        "bonne": 0,
+        "explication": "C'est le rôle de la barbotine de coulage, rendue fluide par le défloculant."
+       }
+      ]
+     },
+     "lecon": "trois-produits"
+    },
+    {
+     "id": "3-3",
+     "titre": "Les huit étapes des pâtes plastiques",
+     "type": "ordre",
+     "consigne": {
+      "cm1": "Une pâte plastique passe par huit étapes. Range-les de la première (en haut) à la dernière (en bas).",
+      "cm2": "Remets dans l'ordre les huit étapes de la préparation des pâtes plastiques, sans repères."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, 1. Les pâtes plastiques",
+     "correction": "Pâtes plastiques en 8 étapes : pesée, ajout de l'eau, broyage, tamisage, délayage, filtration (filtre-presse), désaération (boudineuse-désaéreuse), extrusion (tête d'extrusion, souvent en colombin).",
+     "indices": {
+      "cm1": [
+       "Les cinq premières étapes sont les étapes communes.",
+       "On retire l'eau avant d'enlever l'air.",
+       "La pâte sort en boudin à la fin."
+      ],
+      "cm2": [
+       "Après le délayage vient la filtration.",
+       "Le filtre-presse précède la boudineuse.",
+       "L'extrusion est la dernière étape."
+      ]
+     },
+     "cm1": {
+      "items": [
+       {
+        "txt": "Pesée",
+        "sous": "étape commune",
+        "rang": 1
+       },
+       {
+        "txt": "Ajout de l'eau",
+        "sous": "on obtient une barbotine",
+        "rang": 2
+       },
+       {
+        "txt": "Broyage",
+        "sous": "broyeur Alsing",
+        "rang": 3
+       },
+       {
+        "txt": "Tamisage",
+        "sous": "tamis à secousses",
+        "rang": 4
+       },
+       {
+        "txt": "Délayage",
+        "sous": "délayeur",
+        "rang": 5
+       },
+       {
+        "txt": "Filtration",
+        "sous": "filtre-presse : on retire l'eau",
+        "rang": 6
+       },
+       {
+        "txt": "Désaération",
+        "sous": "boudineuse : on retire l'air",
+        "rang": 7
+       },
+       {
+        "txt": "Extrusion",
+        "sous": "la pâte sort en boudin",
+        "rang": 8
+       }
+      ]
+     },
+     "cm2": {
+      "items": [
+       {
+        "txt": "Pesée",
+        "rang": 1
+       },
+       {
+        "txt": "Ajout de l'eau",
+        "rang": 2
+       },
+       {
+        "txt": "Broyage",
+        "rang": 3
+       },
+       {
+        "txt": "Tamisage",
+        "rang": 4
+       },
+       {
+        "txt": "Délayage",
+        "rang": 5
+       },
+       {
+        "txt": "Filtration (filtre-presse)",
+        "rang": 6
+       },
+       {
+        "txt": "Désaération (boudineuse)",
+        "rang": 7
+       },
+       {
+        "txt": "Extrusion",
+        "rang": 8
+       }
+      ]
+     },
+     "lecon": "trois-produits"
+    },
+    {
+     "id": "3-4",
+     "titre": "L'étape de trop",
+     "type": "intrus",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Sur le chariot de la barbotine de coulage, une étape n'a rien à y faire : trouve l'intrus."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, 2. La barbotine de coulage",
+     "correction": "La barbotine de coulage n'est pas filtrée : on ne retire pas l'eau, car elle doit rester très fluide. La filtration au filtre-presse appartient aux pâtes plastiques.",
+     "indices": {
+      "cm2": [
+       "Une seule étape sert à retirer l'eau.",
+       "La barbotine de coulage doit rester fluide.",
+       "Cette machine presse la barbotine entre des toiles."
+      ]
+     },
+     "commun": {
+      "cartes": [
+       {
+        "txt": "Broyage Alsing",
+        "sous": "étape 3",
+        "intrus": false
+       },
+       {
+        "txt": "Tamisage",
+        "sous": "étape 4",
+        "intrus": false
+       },
+       {
+        "txt": "Délayage",
+        "sous": "étape 5",
+        "intrus": false
+       },
+       {
+        "txt": "Filtration (filtre-presse)",
+        "sous": "on retire l'eau",
+        "intrus": true
+       },
+       {
+        "txt": "Transfert vers les moules",
+        "sous": "étape 6",
+        "intrus": false
+       }
+      ]
+     },
+     "lecon": "trois-produits"
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "titre": "La tour d'atomisation — Les poudres atomisées, les machines du hall, les entreprises",
+   "enigmes": [
+    {
+     "id": "4-1",
+     "titre": "Les machines du hall",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Trois grandes machines du hall n'ont plus de plaque. Rends-leur leur nom.",
+      "cm2": "Cinq grandes machines du hall n'ont plus de plaque. Rends-leur leur nom."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, photos des équipements",
+     "correction": "Le filtre-presse presse la barbotine entre des toiles pour retirer l'eau. L'atomiseur est une grande tour qui sèche la barbotine pulvérisée. Le silo stocke la poudre sèche. La pompe envoie la barbotine d'une machine à l'autre. Le banc de coulage sert à remplir les moules.",
+     "indices": {
+      "cm1": [
+       "Le silo stocke la poudre.",
+       "L'atomiseur est une tour.",
+       "Le filtre-presse presse la barbotine entre des plaques."
+      ],
+      "cm2": [
+       "La pompe envoie la barbotine d'une machine à l'autre.",
+       "Le banc de coulage sert à remplir les moules.",
+       "Relis les photos des procédés dans la partie II."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "<img src=\"assets/images/cartes/q-filtre.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Filtre-presse",
+         "Silo",
+         "Atomiseur"
+        ],
+        "bonne": 0,
+        "explication": "Elle presse la barbotine entre des toiles pour retirer l'eau."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-atomiseur.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Silo",
+         "Atomiseur",
+         "Banc de coulage"
+        ],
+        "bonne": 1,
+        "explication": "Une grande tour qui sèche la barbotine pulvérisée avec de l'air chaud."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-silo.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Silo",
+         "Pompe",
+         "Filtre-presse"
+        ],
+        "bonne": 0,
+        "explication": "La poudre sèche y est stockée."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "<img src=\"assets/images/cartes/q-coulage.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette installation ?",
+        "options": [
+         "Banc de coulage",
+         "Filtre-presse",
+         "Silo",
+         "Pompe"
+        ],
+        "bonne": 0,
+        "explication": "Le poste où l'on place les moules pour les remplir de barbotine."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-filtre.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Atomiseur",
+         "Filtre-presse",
+         "Boudineuse",
+         "Délayeur"
+        ],
+        "bonne": 1,
+        "explication": "Elle presse la barbotine entre des toiles pour retirer l'eau."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-pompe.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quel est cet équipement ?",
+        "options": [
+         "Silo",
+         "Tamis à secousses",
+         "Pompe",
+         "Concasseur"
+        ],
+        "bonne": 2,
+        "explication": "Elle envoie la barbotine d'une machine à l'autre."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-atomiseur.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quelle est cette machine ?",
+        "options": [
+         "Atomiseur",
+         "Broyeur Alsing",
+         "Silo",
+         "Banc de coulage"
+        ],
+        "bonne": 0,
+        "explication": "Une tour où la barbotine pulvérisée est séchée par de l'air chaud."
+       },
+       {
+        "q": "<img src=\"assets/images/cartes/q-silo.jpg\" alt=\"Photo d'une machine de l'usine\" style=\"display:block;margin:0 auto 6px;max-width:100%;max-height:170px;border-radius:8px\"><br>Quel est cet équipement ?",
+        "options": [
+         "Délayeur",
+         "Atomiseur",
+         "Filtre-presse",
+         "Silo"
+        ],
+        "bonne": 3,
+        "explication": "La poudre sèche est évacuée vers un silo pour être stockée."
+       }
+      ]
+     },
+     "lecon": "atomisation-machines"
+    },
+    {
+     "id": "4-2",
+     "titre": "La tour d'atomisation",
+     "type": "ordre",
+     "consigne": {
+      "cm1": "Sur l'écran de l'atomiseur, les cinq dernières étapes des poudres atomisées se sont mélangées. Range-les de la première (en haut) à la dernière (en bas).",
+      "cm2": "Sur l'écran de l'atomiseur, les dix étapes des poudres atomisées se sont mélangées. Remets-les dans l'ordre, des cinq étapes communes jusqu'au stockage."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, 3. Les poudres atomisées",
+     "correction": "Poudres atomisées en 10 étapes : pesée, ajout de l'eau, broyage, tamisage, délayage, transfert vers l'atomiseur, pulvérisation (gouttelettes), séchage (air chaud, environ 400 °C), granules, stockage dans un silo.",
+     "indices": {
+      "cm1": [
+       "Après le délayage, une pompe envoie la barbotine vers l'atomiseur.",
+       "Une tête centrifuge fait des gouttelettes.",
+       "Les granules sont stockés à la fin."
+      ],
+      "cm2": [
+       "Les cinq premières étapes sont les étapes communes.",
+       "Pulvérisation avant séchage : d'abord les gouttelettes.",
+       "L'eau s'évapore très vite : il reste des granules."
+      ]
+     },
+     "cm1": {
+      "items": [
+       {
+        "txt": "Transfert vers l'atomiseur",
+        "sous": "une pompe envoie la barbotine",
+        "rang": 1
+       },
+       {
+        "txt": "Pulvérisation",
+        "sous": "tête centrifuge : gouttelettes",
+        "rang": 2
+       },
+       {
+        "txt": "Séchage",
+        "sous": "air chaud, environ 400 °C",
+        "rang": 3
+       },
+       {
+        "txt": "Granules",
+        "sous": "l'eau s'évapore très vite",
+        "rang": 4
+       },
+       {
+        "txt": "Stockage",
+        "sous": "dans un silo",
+        "rang": 5
+       }
+      ]
+     },
+     "cm2": {
+      "items": [
+       {
+        "txt": "Pesée",
+        "rang": 1
+       },
+       {
+        "txt": "Ajout de l'eau",
+        "rang": 2
+       },
+       {
+        "txt": "Broyage",
+        "rang": 3
+       },
+       {
+        "txt": "Tamisage",
+        "rang": 4
+       },
+       {
+        "txt": "Délayage",
+        "rang": 5
+       },
+       {
+        "txt": "Transfert vers l'atomiseur",
+        "rang": 6
+       },
+       {
+        "txt": "Pulvérisation",
+        "rang": 7
+       },
+       {
+        "txt": "Séchage",
+        "rang": 8
+       },
+       {
+        "txt": "Granules",
+        "rang": 9
+       },
+       {
+        "txt": "Stockage",
+        "rang": 10
+       }
+      ]
+     },
+     "lecon": "atomisation-machines"
+    },
+    {
+     "id": "4-3",
+     "titre": "Le cahier du chef",
+     "type": "vraifaux",
+     "consigne": {
+      "cm1": "Le cahier de consignes du chef d'atelier contient des erreurs. Pour chaque phrase, dis si elle est vraie ou fausse.",
+      "cm2": "Six phrases du cahier du chef d'atelier : trouve les erreurs et lis les corrections."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, encadré « Mots à connaître » et partie II",
+     "correction": "Le défloculant rend la barbotine plus fluide. Dans l'atomiseur, les gouttelettes sont séchées par de l'air chaud. La boudineuse-désaéreuse enlève l'air de la pâte. Le filtre-presse retire l'eau de la barbotine.",
+     "indices": {
+      "cm1": [
+       "Défloculant : plus fluide.",
+       "Atomiseur : de l'air chaud.",
+       "Filtre-presse : il presse pour retirer l'eau."
+      ],
+      "cm2": [
+       "Relis l'encadré « Mots à connaître ».",
+       "Le filtre-presse retire l'eau, il n'en ajoute pas.",
+       "La boudineuse-désaéreuse enlève l'air."
+      ]
+     },
+     "cm1": {
+      "affirmations": [
+       {
+        "txt": "Dans l'atomiseur, les gouttelettes sont séchées par de l'air chaud.",
+        "vrai": true,
+        "explication": "Environ 400 °C."
+       },
+       {
+        "txt": "Le filtre-presse ajoute de l'eau à la pâte.",
+        "vrai": false,
+        "explication": "Il enlève l'excès d'eau de la barbotine."
+       },
+       {
+        "txt": "La boudineuse-désaéreuse enlève l'air de la pâte.",
+        "vrai": true,
+        "explication": "Elle malaxe aussi la pâte et la fait sortir en boudin."
+       },
+       {
+        "txt": "Le défloculant rend la barbotine plus épaisse.",
+        "vrai": false,
+        "explication": "Il la rend plus fluide, sans ajouter d'eau."
+       }
+      ]
+     },
+     "cm2": {
+      "affirmations": [
+       {
+        "txt": "La barbotine est un mélange d'argile et d'eau.",
+        "vrai": true,
+        "explication": "Un mélange liquide, de la consistance d'une crème."
+       },
+       {
+        "txt": "Le défloculant rend la barbotine plus épaisse.",
+        "vrai": false,
+        "explication": "Correction : il la rend plus fluide, sans ajouter d'eau."
+       },
+       {
+        "txt": "Dans l'atomiseur, les gouttelettes sont séchées par de l'air chaud.",
+        "vrai": true,
+        "explication": "Courant d'air chaud d'environ 400 °C."
+       },
+       {
+        "txt": "Par voie sèche, on met beaucoup d'eau dès le début.",
+        "vrai": false,
+        "explication": "Correction : on ajoute l'eau peu à peu."
+       },
+       {
+        "txt": "La boudineuse-désaéreuse enlève l'air de la pâte.",
+        "vrai": true,
+        "explication": "Sans bulles d'air, on évite les défauts à la cuisson."
+       },
+       {
+        "txt": "Le filtre-presse ajoute de l'eau à la pâte.",
+        "vrai": false,
+        "explication": "Correction : il enlève l'excès d'eau de la barbotine."
+       }
+      ]
+     },
+     "lecon": "atomisation-machines"
+    },
+    {
+     "id": "4-4",
+     "titre": "Les trois entreprises",
+     "type": "qcm",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Trois entreprises visitent l'usine. Elles travaillent par voie humide, mais pas avec les mêmes produits. Réponds à chaque question."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II et synthèse",
+     "correction": "Par voie humide, une entreprise peut fabriquer un seul produit, deux ou trois. Elle n'utilise que les équipements utiles à ses produits, mais toutes commencent par les étapes communes.",
+     "indices": {
+      "cm2": [
+       "Chaque entreprise ne suit que le procédé de ses produits.",
+       "Les étapes 1 à 5 se ressemblent pour tous les produits de la voie humide.",
+       "Relis la phrase en gras sous le tableau : « une entreprise peut ne faire qu'un seul de ces produits »."
+      ]
+     },
+     "commun": {
+      "questions": [
+       {
+        "q": "L'entreprise A ne fabrique que de la barbotine de coulage. A-t-elle besoin d'un atomiseur ?",
+        "options": [
+         "Oui",
+         "Non"
+        ],
+        "bonne": 1,
+        "explication": "L'atomiseur sert seulement aux poudres atomisées."
+       },
+       {
+        "q": "L'entreprise B ne fabrique que des pâtes plastiques. A-t-elle besoin d'un filtre-presse ?",
+        "options": [
+         "Oui",
+         "Non"
+        ],
+        "bonne": 0,
+        "explication": "La filtration fait partie du procédé des pâtes plastiques."
+       },
+       {
+        "q": "L'entreprise C ne fabrique que des poudres atomisées. A-t-elle besoin d'un banc de coulage ?",
+        "options": [
+         "Oui",
+         "Non"
+        ],
+        "bonne": 1,
+        "explication": "Le banc de coulage sert à remplir les moules de barbotine."
+       },
+       {
+        "q": "Les trois entreprises commencent-elles toutes par peser les poudres et ajouter de l'eau ?",
+        "options": [
+         "Oui",
+         "Non"
+        ],
+        "bonne": 0,
+        "explication": "Les étapes 1 à 5 se ressemblent pour les trois produits."
+       },
+       {
+        "q": "Une entreprise qui travaille par voie humide doit-elle fabriquer obligatoirement les trois produits ?",
+        "options": [
+         "Oui",
+         "Non"
+        ],
+        "bonne": 1,
+        "explication": "Elle peut en fabriquer un seul, deux ou trois."
+       }
+      ]
+     },
+     "lecon": "atomisation-machines"
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "titre": "L'atelier voie sèche — Partir d'argile sèche, et la sécurité",
+   "enigmes": [
+    {
+     "id": "5-1",
+     "titre": "Le cahier de l'atelier",
+     "type": "trous",
+     "consigne": {
+      "cm1": "Le cahier de l'atelier est taché : il manque un mot dans chaque phrase. Place les mots dans les trous.",
+      "cm2": "Il manque un mot dans chaque phrase du cahier. Attention : une étiquette est en trop."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie III",
+     "correction": "Voie sèche : concassage (on casse les gros blocs), mouillage (on humidifie l'argile), mélange de l'argile et de l'eau, désaération dans la boudineuse-désaéreuse, extrusion (la pâte sort en boudins).",
+     "indices": {
+      "cm1": [
+       "Suis l'ordre du cours : concassage, mouillage, mélange, désaération, extrusion.",
+       "On casse d'abord les gros blocs.",
+       "À la fin, la pâte sort en boudins."
+      ],
+      "cm2": [
+       "Étape 4 : la machine enlève l'air.",
+       "Mouiller, c'est humidifier.",
+       "Une étiquette appartient à la voie humide."
+      ]
+     },
+     "cm1": {
+      "texte": "<p>Étape 1 : le [[concassage]] de l'argile (on casse les gros blocs).<br>Étape 2 : le [[mouillage]] (on humidifie l'argile).<br>Étape 3 : le [[mélange]] de l'argile et de l'eau.<br>Étape 4 : la [[boudineuse-désaéreuse]], qui enlève l'air de la pâte.<br>Étape 5 : l'[[extrusion]] : la pâte sort en boudins.</p>",
+      "etiquettes": [
+       "concassage",
+       "mouillage",
+       "mélange",
+       "boudineuse-désaéreuse",
+       "extrusion"
+      ]
+     },
+     "cm2": {
+      "texte": "<p>Étape 1 : le [[concassage]] de l'argile (on casse les gros blocs).<br>Étape 2 : le [[mouillage]] (on humidifie l'argile).<br>Étape 3 : le [[mélange]] de l'argile et de l'eau, pour obtenir une pâte homogène.<br>Étape 4 : le passage dans la [[boudineuse-désaéreuse]], qui enlève l'air de la pâte.<br>Étape 5 : l'[[extrusion]] : la pâte sort en boudins.</p>",
+      "etiquettes": [
+       "concassage",
+       "mouillage",
+       "mélange",
+       "boudineuse-désaéreuse",
+       "extrusion",
+       "tamisage"
+      ]
+     },
+     "lecon": "voie-seche-securite"
+    },
+    {
+     "id": "5-2",
+     "titre": "Humide, sèche ou les deux",
+     "type": "tri",
+     "consigne": {
+      "cm1": "Les étiquettes du magasin sont mélangées. Range chacune dans la bonne colonne : voie humide, voie sèche ou les deux.",
+      "cm2": "Range les neuf étiquettes : voie humide, voie sèche ou les deux méthodes."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, synthèse, tableau des deux méthodes",
+     "correction": "Voie humide : broyeur Alsing, atomiseur, filtre-presse, départ d'une barbotine. Voie sèche : concasseur, mélangeur, départ de blocs d'argile sèche. Les deux méthodes : boudineuse-désaéreuse et tête d'extrusion.",
+     "indices": {
+      "cm1": [
+       "Deux machines servent dans les deux méthodes : celle qui enlève l'air et celle qui fait sortir le boudin.",
+       "Le concasseur casse des blocs secs.",
+       "L'Alsing travaille avec l'eau."
+      ],
+      "cm2": [
+       "Relis le tableau « Les deux méthodes » de la synthèse.",
+       "Le mélangeur n'apparaît qu'en voie sèche.",
+       "La boudineuse-désaéreuse est dans les deux colonnes du tableau des machines."
+      ]
+     },
+     "cm1": {
+      "colonnes": [
+       {
+        "id": "hum",
+        "titre": "Voie humide"
+       },
+       {
+        "id": "sec",
+        "titre": "Voie sèche"
+       },
+       {
+        "id": "les",
+        "titre": "Les deux"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Broyeur Alsing",
+        "col": "hum"
+       },
+       {
+        "txt": "Atomiseur",
+        "col": "hum"
+       },
+       {
+        "txt": "Concasseur",
+        "col": "sec"
+       },
+       {
+        "txt": "Mélangeur",
+        "col": "sec"
+       },
+       {
+        "txt": "Boudineuse-désaéreuse",
+        "col": "les"
+       },
+       {
+        "txt": "Tête d'extrusion",
+        "col": "les"
+       }
+      ]
+     },
+     "cm2": {
+      "colonnes": [
+       {
+        "id": "hum",
+        "titre": "Voie humide"
+       },
+       {
+        "id": "sec",
+        "titre": "Voie sèche"
+       },
+       {
+        "id": "les",
+        "titre": "Les deux"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Broyeur Alsing",
+        "col": "hum"
+       },
+       {
+        "txt": "Atomiseur",
+        "col": "hum"
+       },
+       {
+        "txt": "On part d'une barbotine",
+        "col": "hum"
+       },
+       {
+        "txt": "Filtre-presse",
+        "col": "hum"
+       },
+       {
+        "txt": "Concasseur",
+        "col": "sec"
+       },
+       {
+        "txt": "Mélangeur",
+        "col": "sec"
+       },
+       {
+        "txt": "On part de blocs d'argile sèche",
+        "col": "sec"
+       },
+       {
+        "txt": "Boudineuse-désaéreuse",
+        "col": "les"
+       },
+       {
+        "txt": "Tête d'extrusion",
+        "col": "les"
+       }
+      ]
+     },
+     "lecon": "voie-seche-securite"
+    },
+    {
+     "id": "5-3",
+     "titre": "Le dernier verrou",
+     "type": "intrus",
+     "consigne": {
+      "cm1": "Avant d'ouvrir les sacs de poudre, il faut les bons réflexes. Un seul de ces gestes est dangereux : trouve-le.",
+      "cm2": "Les poudres de matières premières sont fines et volatiles. Un seul de ces gestes est dangereux : trouve l'intrus."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II, étape 1 (pesée : poudres fines et volatiles)",
+     "correction": "Les poudres sont fines et volatiles : elles se mettent en suspension dans l'air. On porte un masque anti-poussières, on ouvre les sacs avec précaution et on évite de respirer la poudre. Souffler sur de la poudre renversée la met en suspension dans l'air.",
+     "indices": {
+      "cm1": [
+       "Une poudre volatile se soulève facilement.",
+       "Trois gestes protègent.",
+       "Un geste fait voler la poudre."
+      ],
+      "cm2": [
+       "Une poudre volatile se met en suspension dans l'air.",
+       "Les bons gestes évitent de soulever la poudre et de la respirer.",
+       "L'intrus envoie la poudre dans l'air."
+      ]
+     },
+     "cm1": {
+      "cartes": [
+       {
+        "txt": "Porter un masque anti-poussières",
+        "intrus": false
+       },
+       {
+        "txt": "Ouvrir les sacs avec précaution",
+        "intrus": false
+       },
+       {
+        "txt": "Souffler sur la poudre renversée pour nettoyer",
+        "intrus": true
+       },
+       {
+        "txt": "Éviter de respirer la poudre",
+        "intrus": false
+       }
+      ]
+     },
+     "cm2": {
+      "cartes": [
+       {
+        "txt": "Porter un masque anti-poussières",
+        "sous": "protège les poumons",
+        "intrus": false
+       },
+       {
+        "txt": "Ouvrir les sacs avec précaution",
+        "sous": "sans soulever la poudre",
+        "intrus": false
+       },
+       {
+        "txt": "Éviter de respirer la poudre",
+        "sous": "poudre fine et volatile",
+        "intrus": false
+       },
+       {
+        "txt": "Ouvrir le sac d'un coup sec, en hauteur",
+        "sous": "pour gagner du temps",
+        "intrus": true
+       },
+       {
+        "txt": "Garder le masque pour peser",
+        "sous": "même pour une petite quantité",
+        "intrus": false
+       }
+      ]
+     },
+     "lecon": "voie-seche-securite"
+    },
+    {
+     "id": "5-4",
+     "titre": "La voie sèche dans l'ordre",
+     "type": "ordre",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Le tableau de la voie sèche est tombé. Remets dans l'ordre les cinq étapes, du concassage à l'extrusion."
+     },
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie III",
+     "correction": "Voie sèche : concassage (concasseur), mouillage, mélange, désaération (boudineuse-désaéreuse), extrusion. On obtient des pains de terre.",
+     "indices": {
+      "cm2": [
+       "On commence par casser les gros blocs.",
+       "L'eau est ajoutée avant le mélange.",
+       "L'extrusion est la dernière étape : la pâte sort en boudins."
+      ]
+     },
+     "commun": {
+      "items": [
+       {
+        "txt": "Concassage",
+        "rang": 1
+       },
+       {
+        "txt": "Mouillage",
+        "rang": 2
+       },
+       {
+        "txt": "Mélange",
+        "rang": 3
+       },
+       {
+        "txt": "Désaération",
+        "rang": 4
+       },
+       {
+        "txt": "Extrusion",
+        "rang": 5
+       }
+      ]
+     },
+     "lecon": "voie-seche-securite"
+    }
+   ]
+  }
+ ]
+}

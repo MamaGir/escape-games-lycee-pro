@@ -1,0 +1,285 @@
+{
+ "lecons": [
+  {
+   "id": "deux-methodes",
+   "salle": 1,
+   "icone": "I",
+   "titre": "Les deux méthodes de préparation",
+   "duree": "3 min",
+   "niveau": "Essentiel · Expert",
+   "objectifs": [
+    "Dire ce que veut dire préparer une pâte",
+    "Distinguer la voie humide et la voie sèche",
+    "Connaître le vocabulaire de base"
+   ],
+   "contenu": {
+    "cm1": "<h4>Préparer une pâte</h4><p>Une <b>pâte céramique</b> est un mélange d'argile, d'eau et d'autres matières. Pour la travailler, il faut la <b>préparer</b> : ajouter des <b>dégraissants</b>, enlever les impuretés, régler l'humidité et obtenir une pâte <b>homogène</b>.</p><h4>Deux méthodes</h4><p><b>Voie humide</b> : on part d'une <b>barbotine</b>, un liquide d'argile et de beaucoup d'eau.<br><b>Voie sèche</b> : on part de <b>blocs d'argile sèche</b> et on ajoute l'eau peu à peu.</p>",
+    "cm2": "<h4>Préparer une pâte, c'est…</h4><ul><li>ajouter des <b>dégraissants</b> (sable, chamotte…), qui limitent les fissures et les déformations ;</li><li><b>épurer</b> le mélange : enlever les impuretés ;</li><li><b>régler l'humidité</b> : ni trop sèche, ni trop molle ;</li><li>obtenir une pâte <b>homogène</b> : la même partout, sans grumeaux.</li></ul><h4>Deux méthodes</h4><p>Par <b>voie humide</b>, on mélange l'argile avec beaucoup d'eau : on obtient un liquide, la <b>barbotine</b>. On la transforme ensuite en pâtes plastiques, en barbotine de coulage ou en poudres atomisées.</p><p>Par <b>voie sèche</b>, on part de blocs d'argile sèche et on ajoute l'eau peu à peu. On extrude ensuite des pains de terre.</p><div class='encadre'>Le <b>défloculant</b> est un produit, ajouté en petite quantité, qui rend la barbotine plus fluide sans ajouter d'eau.</div><p>Une entreprise ne fait pas forcément tout : chacune choisit ses produits et ses équipements.</p><h4>Pourquoi préparer ?</h4><p>Une argile brute ne se travaille pas telle quelle. Il faut limiter les fissures et les déformations avec des dégraissants, retirer les impuretés, trouver la bonne humidité et obtenir une pâte identique partout : sans grumeaux, elle se comportera de la même façon à chaque geste. La méthode choisie dépend du produit voulu : la voie humide part d'un liquide et permet trois produits, la voie sèche part de blocs et donne des pains de terre.</p>"
+   },
+   "lexique": [
+    {
+     "mot": "barbotine",
+     "def": "mélange liquide d'argile et d'eau, de la consistance d'une crème"
+    },
+    {
+     "mot": "dégraissants",
+     "def": "matières ajoutées à l'argile pour éviter les fissures et les déformations"
+    },
+    {
+     "mot": "défloculant",
+     "def": "produit qui rend la barbotine plus fluide, sans ajouter d'eau"
+    },
+    {
+     "mot": "homogène",
+     "def": "la même partout, sans grumeaux"
+    }
+   ],
+   "frise": [
+    {
+     "date": "voie humide",
+     "evt": "on part d'une barbotine (beaucoup d'eau)"
+    },
+    {
+     "date": "voie sèche",
+     "evt": "on part d'argile sèche (eau ajoutée peu à peu)"
+    }
+   ],
+   "frise_titre": "Les deux méthodes",
+   "document": {
+    "type": "text",
+    "titre": "Une pâte céramique",
+    "contenu": "Pâte céramique : mélange d'argile et d'autres matières, prêt à être mis en forme.",
+    "source": "Cours « La préparation des pâtes céramiques », CAP, « Mots à connaître »."
+   },
+   "sources": "Cours « La préparation des pâtes céramiques », CAP, encadré « Mots à connaître » et partie I."
+  },
+  {
+   "id": "etapes-communes",
+   "salle": 2,
+   "icone": "II",
+   "titre": "Les étapes communes de la voie humide",
+   "duree": "3 min",
+   "niveau": "Essentiel · Expert",
+   "objectifs": [
+    "Citer dans l'ordre les cinq étapes communes",
+    "Associer chaque étape à sa machine",
+    "Ordonner la barbotine de coulage"
+   ],
+   "contenu": {
+    "cm1": "<h4>Cinq étapes qui se ressemblent</h4><ol><li><b>Pesée</b> des poudres.</li><li><b>Ajout de l'eau</b> : on obtient la barbotine.</li><li><b>Broyage</b> dans un broyeur Alsing.</li><li><b>Tamisage</b> sur un tamis à secousses.</li><li><b>Délayage</b> dans un délayeur.</li></ol><p>Pour la barbotine de coulage, une 6e étape : le <b>transfert vers les moules</b>.</p>",
+    "cm2": "<h4>De la poudre à la barbotine</h4><ol><li><b>Pesée</b> : on pèse avec précision les matières premières en poudre, fines et volatiles. La recette dépend des qualités voulues pour la pièce finie.</li><li><b>Ajout de l'eau</b> : on obtient un liquide, la barbotine. Pour le coulage, on ajoute aussi du <b>défloculant</b>.</li><li><b>Broyage</b> : dans un <b>broyeur Alsing</b>, grand tambour qui tourne, les grains deviennent très fins.</li><li><b>Tamisage</b> : une pompe envoie la barbotine sur un <b>tamis à secousses</b>, qui retient les grumeaux et les grains trop gros.</li><li><b>Délayage</b> : la barbotine est remuée en continu dans un <b>délayeur</b> pour garder la même consistance partout.</li></ol><div class='encadre'>Les étapes 1 à 5 se ressemblent : c'est la suite qui change selon le produit voulu.</div><p>Barbotine de coulage : <b>6 étapes</b>. La 6e est le transfert vers les moules, par une pompe, sur le banc de coulage.</p><h4>Pourquoi ces cinq étapes ?</h4><p>La pesée fixe la recette. L'eau transforme les poudres en barbotine. Le broyage rend les grains très fins, le tamisage retire ce qui est trop gros, et le délayage garde la barbotine bien mélangée. Une pompe déplace la barbotine d'une machine à l'autre, par exemple vers le tamis. Pour la barbotine de coulage, le défloculant la rend très fluide sans ajouter d'eau, afin qu'elle remplisse bien les moules.</p>"
+   },
+   "lexique": [
+    {
+     "mot": "broyeur Alsing",
+     "def": "grand tambour qui tourne et broie les matières premières avec l'eau"
+    },
+    {
+     "mot": "délayage",
+     "def": "on remue doucement et longtemps la barbotine pour qu'elle reste bien mélangée"
+    },
+    {
+     "mot": "tamis à secousses",
+     "def": "il retient les grumeaux et les grains trop gros"
+    }
+   ],
+   "frise": [
+    {
+     "date": "1",
+     "evt": "pesée"
+    },
+    {
+     "date": "2",
+     "evt": "ajout de l'eau"
+    },
+    {
+     "date": "3",
+     "evt": "broyage Alsing"
+    },
+    {
+     "date": "4",
+     "evt": "tamisage"
+    },
+    {
+     "date": "5",
+     "evt": "délayage"
+    }
+   ],
+   "frise_titre": "Les cinq étapes communes",
+   "sources": "Cours « La préparation des pâtes céramiques », CAP, partie II."
+  },
+  {
+   "id": "trois-produits",
+   "salle": 3,
+   "icone": "III",
+   "titre": "Les trois produits de la voie humide",
+   "duree": "4 min",
+   "niveau": "Essentiel · Expert",
+   "objectifs": [
+    "Citer les trois produits et leur usage",
+    "Dire ce qui change après les étapes communes",
+    "Ordonner les étapes des pâtes plastiques"
+   ],
+   "contenu": {
+    "cm1": "<ul><li><b>Pâtes plastiques</b> : pâte ferme et malléable, pour modeler et tourner. 8 étapes : on retire l'eau (filtre-presse), l'air (boudineuse-désaéreuse), puis la pâte sort en boudin.</li><li><b>Barbotine de coulage</b> : liquide bien fluide, pour remplir les moules. 6 étapes.</li><li><b>Poudres atomisées</b> : petits granules secs, pour le pressage industriel. 10 étapes.</li></ul>",
+    "cm2": "<p>Après les étapes communes, le procédé change selon le produit.</p><ul><li><b>Pâtes plastiques</b> (pâte ferme et malléable, pour modeler et tourner), <b>8 étapes</b> : après le délayage, la <b>filtration</b> au filtre-presse (sous pression, l'eau traverse les toiles et la terre reste), la <b>désaération</b> dans la boudineuse-désaéreuse (on malaxe et on enlève les bulles d'air), puis l'<b>extrusion</b> par une tête d'extrusion, souvent en colombin.</li><li><b>Barbotine de coulage</b> (liquide bien fluide, pour le coulage en moule), <b>6 étapes</b> : avec du défloculant, puis transfert vers les moules sur le banc de coulage.</li><li><b>Poudres atomisées</b> (petits granules secs, pour le pressage industriel), <b>10 étapes</b> : transfert, pulvérisation, séchage, granules, stockage.</li></ul><div class='encadre'>Je veux remplir des moules : barbotine. Modeler ou tourner : pâte plastique. Presser avec une machine : poudre atomisée.</div><h4>Trois procédés côte à côte</h4><p>Les cinq premières étapes sont les mêmes ; seule la suite change. Pour la pâte plastique, on doit enlever l'eau (filtre-presse), puis l'air (boudineuse-désaéreuse), avant de former le boudin. Pour le coulage, la barbotine reste liquide : une pompe l'envoie dans des tuyaux jusqu'aux moules du banc de coulage. Pour les poudres, on sèche très vite la barbotine pour obtenir de petits grains que l'on stocke.</p>"
+   },
+   "lexique": [
+    {
+     "mot": "filtre-presse",
+     "def": "machine qui presse la barbotine entre des toiles pour retirer l'eau"
+    },
+    {
+     "mot": "boudineuse-désaéreuse",
+     "def": "machine qui malaxe la pâte, enlève l'air et la fait sortir en boudin"
+    },
+    {
+     "mot": "extrusion",
+     "def": "action de faire sortir la pâte par une ouverture pour former un boudin"
+    },
+    {
+     "mot": "banc de coulage",
+     "def": "poste où l'on place les moules pour les remplir de barbotine"
+    }
+   ],
+   "frise": [
+    {
+     "date": "plastiques",
+     "evt": "filtration, désaération, extrusion (8 étapes)"
+    },
+    {
+     "date": "coulage",
+     "evt": "transfert vers les moules (6 étapes)"
+    },
+    {
+     "date": "poudres",
+     "evt": "transfert, pulvérisation, séchage, granules, stockage (10 étapes)"
+    }
+   ],
+   "frise_titre": "Après les étapes communes",
+   "sources": "Cours « La préparation des pâtes céramiques », CAP, partie II."
+  },
+  {
+   "id": "atomisation-machines",
+   "salle": 4,
+   "icone": "IV",
+   "titre": "L'atomiseur, les machines du hall, les entreprises",
+   "duree": "3 min",
+   "niveau": "Essentiel · Expert",
+   "objectifs": [
+    "Expliquer l'atomisation étape par étape",
+    "Reconnaître les équipements du hall",
+    "Comprendre qu'une entreprise choisit ses produits"
+   ],
+   "contenu": {
+    "cm1": "<h4>L'atomisation</h4><p>On sèche très vite la barbotine pour obtenir une poudre. Après les étapes communes : <b>transfert</b> par une pompe vers l'<b>atomiseur</b>, <b>pulvérisation</b> en gouttelettes, <b>séchage</b> par de l'air chaud, <b>granules</b>, <b>stockage</b> dans un silo.</p><h4>Les machines</h4><p>Filtre-presse, pompe, banc de coulage, atomiseur, silo.</p><div class='encadre'>Une entreprise peut ne faire qu'un seul produit, ou deux, ou trois.</div>",
+    "cm2": "<h4>Les poudres atomisées en 10 étapes</h4><p>Après le délayage (étape 5) :</p><ol start='6'><li><b>Transfert</b> : une pompe envoie la barbotine vers l'atomiseur.</li><li><b>Pulvérisation</b> : une tête centrifuge, qui tourne très vite, la pulvérise en petites gouttelettes.</li><li><b>Séchage</b> : un courant d'air chaud, environ <b>400 °C</b>, sèche les gouttelettes dans l'atomiseur.</li><li><b>Granules</b> : l'eau s'évapore très vite, il reste de petits grains solides.</li><li><b>Stockage</b> : la poudre sèche est évacuée vers un <b>silo</b>.</li></ol><h4>Les équipements du hall</h4><p>Le <b>banc de coulage</b> remplit les moules ; le <b>filtre-presse</b> retire l'eau ; la <b>pompe</b> envoie la barbotine d'une machine à l'autre ; l'<b>atomiseur</b> est la grande tour de séchage ; le <b>silo</b> stocke la poudre.</p><div class='encadre'>Les procédés du cours sont des exemples : une entreprise peut ne fabriquer qu'un seul de ces produits, ou deux, ou trois. Elle n'utilise que les équipements utiles.</div><h4>Une usine est un exemple</h4><p>Dans la réalité, une entreprise peut ne fabriquer qu'un seul produit, ou deux, ou trois. Elle choisit ses produits et ses équipements : pas d'atomiseur si elle ne fait que de la barbotine de coulage, pas de banc de coulage si elle ne fait que des poudres. En revanche, toutes celles qui travaillent par voie humide commencent par peser, ajouter de l'eau, broyer, tamiser et délayer.</p>"
+   },
+   "lexique": [
+    {
+     "mot": "atomiseur",
+     "def": "grande tour qui sèche la barbotine pulvérisée en fines gouttelettes avec de l'air chaud"
+    },
+    {
+     "mot": "granules",
+     "def": "petits grains solides qui restent quand l'eau s'évapore"
+    },
+    {
+     "mot": "silo",
+     "def": "réservoir où la poudre sèche est stockée"
+    }
+   ],
+   "frise": [
+    {
+     "date": "6",
+     "evt": "transfert vers l'atomiseur"
+    },
+    {
+     "date": "7",
+     "evt": "pulvérisation"
+    },
+    {
+     "date": "8",
+     "evt": "séchage (≈ 400 °C)"
+    },
+    {
+     "date": "9",
+     "evt": "granules"
+    },
+    {
+     "date": "10",
+     "evt": "stockage (silo)"
+    }
+   ],
+   "frise_titre": "Les étapes de l'atomisation",
+   "document": {
+    "type": "text",
+    "titre": "Extrait du cours",
+    "contenu": "Une entreprise peut ne faire qu'un seul de ces produits, ou deux, ou trois.",
+    "source": "Cours « La préparation des pâtes céramiques », CAP, synthèse."
+   },
+   "sources": "Cours « La préparation des pâtes céramiques », CAP, partie II (3. Les poudres atomisées) et synthèse."
+  },
+  {
+   "id": "voie-seche-securite",
+   "salle": 5,
+   "icone": "V",
+   "titre": "La voie sèche et la sécurité",
+   "duree": "3 min",
+   "niveau": "Essentiel · Expert",
+   "objectifs": [
+    "Citer dans l'ordre les cinq étapes de la voie sèche",
+    "Comparer voie humide et voie sèche",
+    "Adopter les bons gestes avec les poudres"
+   ],
+   "contenu": {
+    "cm1": "<h4>Cinq étapes</h4><ol><li><b>Concassage</b> : on casse les gros blocs.</li><li><b>Mouillage</b> : on humidifie l'argile.</li><li><b>Mélange</b> de l'argile et de l'eau.</li><li><b>Désaération</b> : la boudineuse enlève l'air.</li><li><b>Extrusion</b> : la pâte sort en boudins.</li></ol><div class='encadre'>Les poudres sont fines et volatiles : masque, gestes lents, on évite de les respirer.</div>",
+    "cm2": "<h4>La voie sèche : un seul produit</h4><p>On part d'argile sèche, on ajoute l'eau peu à peu, puis on extrude des pains de terre.</p><ol><li><b>Concassage</b> (concasseur) : on casse les gros blocs en petits morceaux, le mélange sera plus homogène.</li><li><b>Mouillage</b> : on humidifie l'argile, l'eau doit être bien répartie.</li><li><b>Mélange</b> : on mélange longuement l'argile et l'eau pour obtenir une pâte homogène.</li><li><b>Désaération</b> : la boudineuse-désaéreuse forme des boudins et enlève l'air. Sans bulles d'air, on évite les défauts à la cuisson.</li><li><b>Extrusion</b> : la pâte sort en boudins, que l'on peut façonner, couper, et transformer en objets.</li></ol><h4>Voie humide ou voie sèche ?</h4><p>Machines de la voie humide : broyeur Alsing, tamis, délayeur, filtre-presse, boudineuse-désaéreuse, atomiseur. Voie sèche : concasseur, mélangeur, boudineuse-désaéreuse. La boudineuse-désaéreuse sert dans les deux méthodes.</p><div class='encadre'>Les matières premières en poudre sont fines et volatiles : on les pèse avec précision, avec précaution.</div><h4>Pourquoi concasser, mouiller, mélanger ?</h4><p>Casser les gros blocs permet un mélange plus homogène. Humidifier l'argile avec une eau bien répartie évite les zones trop sèches. Un long mélange donne une pâte homogène, puis la boudineuse-désaéreuse enlève l'air : sans bulles d'air, on évite les défauts à la cuisson. Les boudins peuvent alors être façonnés, coupés, et transformés en objets en céramique.</p>"
+   },
+   "lexique": [
+    {
+     "mot": "concassage",
+     "def": "on casse les gros blocs d'argile en morceaux plus petits"
+    },
+    {
+     "mot": "mouillage",
+     "def": "on humidifie l'argile : l'eau doit être bien répartie"
+    },
+    {
+     "mot": "extrusion",
+     "def": "la pâte sort par une ouverture, en boudins"
+    }
+   ],
+   "frise": [
+    {
+     "date": "1",
+     "evt": "concassage"
+    },
+    {
+     "date": "2",
+     "evt": "mouillage"
+    },
+    {
+     "date": "3",
+     "evt": "mélange"
+    },
+    {
+     "date": "4",
+     "evt": "désaération"
+    },
+    {
+     "date": "5",
+     "evt": "extrusion"
+    }
+   ],
+   "frise_titre": "Les cinq étapes de la voie sèche",
+   "document": {
+    "type": "text",
+    "titre": "Extrait du cours",
+    "contenu": "La voie sèche part d'argile sèche. On ajoute peu à peu de l'eau pour obtenir une pâte façonnable, puis on extrude des pains de terre.",
+    "source": "Cours « La préparation des pâtes céramiques », CAP, partie III."
+   },
+   "sources": "Cours « La préparation des pâtes céramiques », CAP, partie III et synthèse."
+  }
+ ]
+}

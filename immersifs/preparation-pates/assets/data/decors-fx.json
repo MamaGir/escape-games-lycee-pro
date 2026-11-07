@@ -1,0 +1,364 @@
+{
+  "decors": {
+    "laboratoire": {
+      "titre": "Le laboratoire de l'usine Terres et Feux",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le tableau des mots",
+          "x": 5,
+          "y": 15,
+          "w": 33,
+          "h": 30,
+          "description": "Le tableau du laboratoire : les mots sont là, les définitions ont disparu."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le panneau des consignes",
+          "x": 42,
+          "y": 17,
+          "w": 18.5,
+          "h": 30,
+          "description": "Un panneau « Préparer une pâte » dont les lignes sont incomplètes."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Le carnet de Karim",
+          "x": 67,
+          "y": 59,
+          "w": 13,
+          "h": 11,
+          "description": "Le carnet de notes du technicien, posé sur la paillasse."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "La fiche des deux méthodes",
+          "x": 82,
+          "y": 19,
+          "w": 13.5,
+          "h": 29,
+          "description": "Une fiche épinglée au mur, à moitié effacée."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      }
+    },
+    "broyage": {
+      "titre": "La salle de broyage, derrière le laboratoire",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "L'écran de la recette",
+          "x": 36.5,
+          "y": 15.3,
+          "w": 26.5,
+          "h": 26,
+          "description": "L'écran de la salle affiche une recette dont les étapes sont mélangées."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le panneau des plaques",
+          "x": 4.5,
+          "y": 17.8,
+          "w": 29.5,
+          "h": 28,
+          "description": "Les plaques des machines : l'une est tombée de travers, les autres sont illisibles."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Le tamis et le délayeur",
+          "x": 51.5,
+          "y": 28,
+          "w": 33,
+          "h": 49,
+          "description": "Le tamis à secousses sur son châssis et la cuve du délayeur."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "L'armoire à cadenas",
+          "x": 89.5,
+          "y": 33,
+          "w": 8.5,
+          "h": 43,
+          "description": "Une armoire fermée par un cadenas à deux molettes."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      }
+    },
+    "hall": {
+      "titre": "Le hall de production de l'usine",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Les trois chariots",
+          "x": 2.5,
+          "y": 57.5,
+          "w": 46,
+          "h": 17,
+          "description": "Trois chariots attendent, leurs étiquettes mélangées."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Les commandes clients",
+          "x": 3.5,
+          "y": 15,
+          "w": 19.5,
+          "h": 30,
+          "description": "Des bons de commande punaisés sur un panneau."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Le filtre-presse",
+          "x": 49.5,
+          "y": 34,
+          "w": 29.5,
+          "h": 40,
+          "description": "Un empilement de plaques filtrantes et la boudineuse dessous."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "Le banc de coulage",
+          "x": 81,
+          "y": 52,
+          "w": 17.5,
+          "h": 22,
+          "description": "Des moules en plâtre alignés sur le banc de coulage."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      }
+    },
+    "atomisation": {
+      "titre": "La tour d'atomisation, au fond du hall",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le panneau des plaques",
+          "x": 3.5,
+          "y": 17.4,
+          "w": 17.5,
+          "h": 29,
+          "description": "Cinq plaques de machines, toutes illisibles."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "La tour d'atomisation",
+          "x": 35,
+          "y": 5,
+          "w": 27,
+          "h": 70,
+          "description": "La grande tour, avec son écran qui affiche les étapes."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Le cahier du chef",
+          "x": 7,
+          "y": 60,
+          "w": 14,
+          "h": 9,
+          "description": "Le cahier du chef d'atelier, ouvert sur son bureau."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "Le panneau des visiteurs",
+          "x": 77,
+          "y": 18.1,
+          "w": 19,
+          "h": 27,
+          "description": "Trois entreprises, A, B et C, visitent l'usine."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      }
+    },
+    "voie-seche": {
+      "titre": "L'atelier voie sèche, au bout du bâtiment",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le cahier de l'atelier",
+          "x": 4,
+          "y": 56,
+          "w": 16,
+          "h": 12,
+          "description": "Le cahier de l'atelier, taché, sur son pupitre."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le tableau des colonnes",
+          "x": 5,
+          "y": 17.9,
+          "w": 33,
+          "h": 27,
+          "description": "Des étiquettes à ranger : voie humide, voie sèche ou les deux."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Les sacs, le masque et le coffre",
+          "x": 80.5,
+          "y": 48,
+          "w": 18,
+          "h": 26,
+          "description": "Des sacs de poudre fine, un masque accroché au mur, et le coffre de relance."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "La plaque tombée",
+          "x": 40.5,
+          "y": 15,
+          "w": 22,
+          "h": 22,
+          "description": "La plaque du procédé, tombée de travers."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      }
+    }
+  }
+}

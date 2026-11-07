@@ -135,6 +135,8 @@ footer{color:var(--doux);font-size:.9rem;padding-block:0 30px}
         (classique ? '<a class="btn" href="' + esc(classique) + '">Version classique</a>' : '') +
         (classique ? '<a class="btn discret" href="' + esc(classique) + 'prof.html">Enseignant</a>' : '') +
         (classique ? '<a class="btn discret" href="' + esc(classique) + 'lecons-imprimables.html">Leçons A4</a>' : '') +
+        (!classique && j.immersif ? '<a class="btn discret" href="' + esc(j.immersif) + '/prof.html">Enseignant</a>' : '') +
+        (!classique && j.immersif ? '<a class="btn discret" href="' + esc(j.immersif) + '/lecons-imprimables.html">Leçons A4</a>' : '') +
       '</div></div></article>';
   }).join("");
 })();
