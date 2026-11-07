@@ -1,0 +1,70 @@
+{
+ "_commentaire": "Généré par outils/generer-preparation-pates.py — ne pas modifier à la main.",
+ "jeu": {
+  "titre": "Panne à l'usine",
+  "matiere": "Technologie céramique",
+  "theme": "La préparation des pâtes céramiques",
+  "couleur": "#0F4C81",
+  "accent": "#C2410C",
+  "couleur_pale": "#DCEEFF",
+  "accent_pale": "#FFE9DB"
+ },
+ "lecons": {
+  "deux-methodes": {
+   "competence": "Expliquer ce qu'est préparer une pâte et distinguer voie humide et voie sèche.",
+   "visuels": []
+  },
+  "etapes-communes": {
+   "competence": "Citer dans l'ordre les cinq étapes communes et leurs machines.",
+   "visuels": [
+    {
+     "type": "svg",
+     "titre": "Les cinq étapes communes",
+     "legende": "De la poudre à la barbotine.",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 130\" role=\"img\" aria-label=\"Les étapes communes de la voie humide\" font-family=\"Segoe UI, Helvetica, Arial, sans-serif\"><rect width=\"380\" height=\"130\" fill=\"#f3f8fd\"/><text x=\"190.0\" y=\"20\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">Les étapes communes de la voie humide</text><rect x=\"10.0\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"40.4\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">1. Pesée</text><text x=\"40.4\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">balance</text><path d=\"M72.8 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"84.8\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"115.2\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">2. Eau</text><text x=\"115.2\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">barbotine</text><path d=\"M147.6 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"159.6\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"190.0\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">3. Broyage</text><text x=\"190.0\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">Alsing</text><path d=\"M222.4 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"234.4\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"264.8\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">4. Tamisage</text><text x=\"264.8\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">tamis</text><path d=\"M297.2 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"309.2\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"339.6\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">5. Délayage</text><text x=\"339.6\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">délayeur</text></svg>",
+     "etiquette": "Schéma",
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II."
+    }
+   ]
+  },
+  "trois-produits": {
+   "competence": "Citer les trois produits de la voie humide, leur procédé et leur usage.",
+   "visuels": [
+    {
+     "type": "svg",
+     "titre": "Les trois produits",
+     "legende": "Après les étapes communes, le procédé change.",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 190\" role=\"img\" aria-label=\"Les trois produits de la voie humide\" font-family=\"Segoe UI, Helvetica, Arial, sans-serif\"><rect width=\"380\" height=\"190\" fill=\"#f3f8fd\"/><rect x=\"10\" y=\"12\" width=\"360\" height=\"26\" rx=\"5\" fill=\"#9fb0c0\"/><text x=\"190\" y=\"29\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">Étapes communes : pesée, eau, broyage, tamisage, délayage</text><path d=\"M30 40 l0 8 m-4 -4 l4 4 l4 -4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"10\" y=\"54\" width=\"360\" height=\"34\" rx=\"5\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"20\" y=\"69\" font-size=\"11\" font-weight=\"bold\" fill=\"#0b2a4a\">Pâtes plastiques (8 étapes)</text><text x=\"20\" y=\"82\" font-size=\"9\" fill=\"#0F4C81\">filtration, désaération, extrusion</text><path d=\"M30 84 l0 8 m-4 -4 l4 4 l4 -4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"10\" y=\"98\" width=\"360\" height=\"34\" rx=\"5\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"20\" y=\"113\" font-size=\"11\" font-weight=\"bold\" fill=\"#0b2a4a\">Barbotine de coulage (6 étapes)</text><text x=\"20\" y=\"126\" font-size=\"9\" fill=\"#0F4C81\">transfert vers les moules</text><path d=\"M30 128 l0 8 m-4 -4 l4 4 l4 -4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"10\" y=\"142\" width=\"360\" height=\"34\" rx=\"5\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"20\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#0b2a4a\">Poudres atomisées (10 étapes)</text><text x=\"20\" y=\"170\" font-size=\"9\" fill=\"#0F4C81\">transfert, pulvérisation, séchage, granules, stockage</text></svg>",
+     "etiquette": "Schéma",
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II."
+    }
+   ]
+  },
+  "atomisation-machines": {
+   "competence": "Expliquer l'atomisation ; reconnaître les équipements du hall.",
+   "visuels": [
+    {
+     "type": "svg",
+     "titre": "L'atomisation",
+     "legende": "Des gouttelettes aux granules.",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 130\" role=\"img\" aria-label=\"Les dernières étapes des poudres atomisées\" font-family=\"Segoe UI, Helvetica, Arial, sans-serif\"><rect width=\"380\" height=\"130\" fill=\"#f3f8fd\"/><text x=\"190.0\" y=\"20\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">Les dernières étapes des poudres atomisées</text><rect x=\"10.0\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"40.4\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">1. Transfert</text><text x=\"40.4\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">pompe</text><path d=\"M72.8 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"84.8\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"115.2\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">2. Pulvérisation</text><text x=\"115.2\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">tête centrifuge</text><path d=\"M147.6 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"159.6\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"190.0\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">3. Séchage</text><text x=\"190.0\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">air chaud</text><path d=\"M222.4 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"234.4\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"264.8\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">4. Granules</text><text x=\"264.8\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">grains secs</text><path d=\"M297.2 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"309.2\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"339.6\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">5. Stockage</text><text x=\"339.6\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">silo</text></svg>",
+     "etiquette": "Schéma",
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie II."
+    }
+   ]
+  },
+  "voie-seche-securite": {
+   "competence": "Citer dans l'ordre les étapes de la voie sèche ; adopter les bons gestes avec les poudres.",
+   "visuels": [
+    {
+     "type": "svg",
+     "titre": "La voie sèche",
+     "legende": "De l'argile sèche aux pains de terre.",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 130\" role=\"img\" aria-label=\"La voie sèche\" font-family=\"Segoe UI, Helvetica, Arial, sans-serif\"><rect width=\"380\" height=\"130\" fill=\"#f3f8fd\"/><text x=\"190.0\" y=\"20\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">La voie sèche</text><rect x=\"10.0\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"40.4\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">1. Concassage</text><text x=\"40.4\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">concasseur</text><path d=\"M72.8 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"84.8\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"115.2\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">2. Mouillage</text><text x=\"115.2\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">eau</text><path d=\"M147.6 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"159.6\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"190.0\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">3. Mélange</text><text x=\"190.0\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">mélangeur</text><path d=\"M222.4 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"234.4\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"264.8\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">4. Désaération</text><text x=\"264.8\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">boudineuse</text><path d=\"M297.2 70 l10 0 m-4 -4 l4 4 l-4 4\" fill=\"none\" stroke=\"#C2410C\" stroke-width=\"2\"/><rect x=\"309.2\" y=\"40\" width=\"60.8\" height=\"60\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0F4C81\" stroke-width=\"2\"/><text x=\"339.6\" y=\"58\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0b2a4a\">5. Extrusion</text><text x=\"339.6\" y=\"76\" font-size=\"7\" text-anchor=\"middle\" fill=\"#0F4C81\">boudin</text></svg>",
+     "etiquette": "Schéma",
+     "source": "Cours « La préparation des pâtes céramiques », CAP, partie III."
+    }
+   ]
+  }
+ }
+}

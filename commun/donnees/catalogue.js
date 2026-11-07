@@ -20,7 +20,6 @@ var CATALOGUE = {
    "titre": "Les fiches du four",
    "matiere": "Technologie céramique",
    "classe": "CAP 1",
-   "periodes": [],
    "competences": "Les pâtes céramiques : matières premières, minéraux argileux, argiles primaires et secondaires, principales argiles, dégraissants, sécurité, familles de pâtes, cuisson, recettes.",
    "dossier": "pates-ceramiques",
    "immersif": "immersifs/pates-ceramiques",
@@ -28,6 +27,18 @@ var CATALOGUE = {
    "couleurs": ["#0F4C81", "#C2410C"],
    "resume": "À la manufacture des Trois Fours, les cinq fiches du cahier de fabrication sont restées chez cinq collègues : l'équipe doit les récupérer avant la cuisson du soir.",
    "programme": []
+  }
+ ],
+ "legers": [
+  {
+   "num": "L01",
+   "id": "four-verrouille",
+   "titre": "Le four verrouillé",
+   "matiere": "Technologie céramique",
+   "classe": "CAP 1",
+   "competences": "Les pâtes céramiques : version légère en un seul fichier, sans tableau de bord ni leçons imprimables.",
+   "fichier": "four-verrouille/",
+   "resume": "Le four est verrouillé : huit salles à franchir, une lettre par salle, pour retrouver le code à huit lettres qui ouvre le four."
   }
  ]
 };

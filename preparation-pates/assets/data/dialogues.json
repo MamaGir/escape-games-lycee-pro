@@ -1,0 +1,155 @@
+{
+ "metadata": {
+  "jeu": "Panne à l'usine",
+  "sujet": "La préparation des pâtes céramiques : voie humide et voie sèche, étapes communes, pâtes plastiques, barbotine de coulage, poudres atomisées, équipements — CAP Décoration sur céramique",
+  "niveaux": [
+   "Essentiel",
+   "Expert"
+  ],
+  "sources": "Cours « La préparation des pâtes céramiques », CAP"
+ },
+ "personnages": {
+  "nadia": {
+   "nom": "Nadia",
+   "role": "Technicienne de maintenance, elle accueille les stagiaires et guide l'équipe"
+  },
+  "karim": {
+   "nom": "Karim",
+   "role": "Technicien du laboratoire"
+  },
+  "elodie": {
+   "nom": "Élodie",
+   "role": "Conductrice de la salle de broyage"
+  },
+  "hugo": {
+   "nom": "Hugo",
+   "role": "Responsable du hall de production"
+  },
+  "sofiane": {
+   "nom": "Sofiane",
+   "role": "Conducteur de l'atomiseur"
+  },
+  "samia": {
+   "nom": "Samia",
+   "role": "Responsable de l'atelier voie sèche"
+  }
+ },
+ "intro_accueil": "Bonjour, je suis Nadia, technicienne de maintenance de l'usine Terres et Feux. Vendredi, 16 h 50 : la ligne de préparation des pâtes s'est arrêtée d'un coup. Le chef d'atelier est parti en laissant le coffre de relance verrouillé, les écrans sont noirs et les plaques des machines sont tombées. Vous êtes en stage : traversez les cinq salles, résolvez les énigmes, récupérez les cinq mots du coffre et relancez la production avant la fermeture. On commence par le laboratoire ?",
+ "salles": [
+  {
+   "num": 1,
+   "titre": "Le laboratoire",
+   "decor": "laboratoire",
+   "motCle": "BARBOTINE",
+   "lieu": "Le laboratoire de l'usine Terres et Feux",
+   "description": "Une paillasse, une balance de précision, des sacs de poudre numérotés. Au mur, le tableau des mots du métier.",
+   "sens": [
+    "À voir : la balance et le tableau des mots",
+    "À entendre : le bourdonnement des néons",
+    "À sentir : la poussière d'argile"
+   ],
+   "dialogue_intro": {
+    "perso": "karim",
+    "nom": "Karim",
+    "texte": "Entrez, ne touchez à rien. Quand la ligne s'est arrêtée, le chef a verrouillé le coffre de relance. Pour l'ouvrir, il faut cinq mots : un par salle. Le premier est ici. Mais d'abord, montrez-moi que vous connaissez le vocabulaire et les deux méthodes de préparation : voie humide et voie sèche."
+   },
+   "dialogue_reussite": {
+    "perso": "karim",
+    "nom": "Karim",
+    "texte": "Bien. Le mot écrit sur ma fiche est <b>BARBOTINE</b> : le liquide de départ de toute la voie humide. Passez à la salle de broyage, Élodie vous attend."
+   }
+  },
+  {
+   "num": 2,
+   "titre": "La salle de broyage",
+   "decor": "broyage",
+   "motCle": "DÉLAYAGE",
+   "lieu": "La salle de broyage, derrière le laboratoire",
+   "description": "Un grand tambour tourne doucement, un tamis vibre au-dessus d'une cuve où la barbotine est remuée en continu.",
+   "sens": [
+    "À voir : le tambour qui tourne",
+    "À entendre : le tamis qui vibre",
+    "À toucher : une barbotine épaisse comme une crème"
+   ],
+   "dialogue_intro": {
+    "perso": "elodie",
+    "nom": "Élodie",
+    "texte": "Ici, on prépare la barbotine : on pèse, on ajoute l'eau, on broie, on tamise, on délaie. Ces étapes se ressemblent pour tous les produits de la voie humide. Les plaques de mes machines sont tombées et la recette est brouillée. Remettez de l'ordre, et je vous donne le deuxième mot."
+   },
+   "dialogue_reussite": {
+    "perso": "elodie",
+    "nom": "Élodie",
+    "texte": "Les machines ont retrouvé leur nom et la recette est en ordre. Mon mot est <b>DÉLAYAGE</b> : on remue la barbotine sans s'arrêter. Hugo vous attend dans le hall."
+   }
+  },
+  {
+   "num": 3,
+   "titre": "Le hall de production",
+   "decor": "hall",
+   "motCle": "PRODUITS",
+   "lieu": "Le hall de production de l'usine",
+   "description": "Trois chariots attendent côte à côte, devant un filtre-presse, un banc de coulage et une rangée de moules.",
+   "sens": [
+    "À voir : les trois chariots",
+    "À entendre : la pompe qui ronronne",
+    "À sentir : l'argile humide"
+   ],
+   "dialogue_intro": {
+    "perso": "hugo",
+    "nom": "Hugo",
+    "texte": "Bienvenue dans le hall. Après les étapes communes, le procédé change selon le produit : pâtes plastiques, barbotine de coulage ou poudres atomisées. Trois chariots, des commandes de clients qui attendent. Montrez-moi que vous savez qui fait quoi."
+   },
+   "dialogue_reussite": {
+    "perso": "hugo",
+    "nom": "Hugo",
+    "texte": "Les commandes partent chez les bons clients. Mon mot est <b>PRODUITS</b> : trois produits, trois procédés. Sofiane vous attend à la tour d'atomisation."
+   }
+  },
+  {
+   "num": 4,
+   "titre": "La tour d'atomisation",
+   "decor": "atomisation",
+   "motCle": "ATOMISEUR",
+   "lieu": "La tour d'atomisation, au fond du hall",
+   "description": "Une tour métallique domine le hall. À côté, un silo, des tuyaux, et un écran où défilent les étapes.",
+   "sens": [
+    "À voir : la tour et son silo",
+    "À entendre : le souffle de l'air chaud",
+    "À sentir : la chaleur qui monte"
+   ],
+   "dialogue_intro": {
+    "perso": "sofiane",
+    "nom": "Sofiane",
+    "texte": "L'atomiseur est à l'arrêt, et c'est lui qui a déclenché la panne. Avant de le relancer, je dois être sûr que vous connaissez la tour, le silo, les machines du hall, et que vous savez qu'une usine ne fabrique pas forcément les trois produits."
+   },
+   "dialogue_reussite": {
+    "perso": "sofiane",
+    "nom": "Sofiane",
+    "texte": "La tour peut repartir. Mon mot est <b>ATOMISEUR</b>. Il reste la dernière salle, celle de la voie sèche : Samia vous attend."
+   }
+  },
+  {
+   "num": 5,
+   "titre": "L'atelier voie sèche",
+   "decor": "voie-seche",
+   "motCle": "EXTRUSION",
+   "lieu": "L'atelier voie sèche, au bout du bâtiment",
+   "description": "Des blocs d'argile sèche, un concasseur, un mélangeur et une boudineuse-désaéreuse alignés.",
+   "sens": [
+    "À voir : les blocs d'argile sèche",
+    "À entendre : le concasseur",
+    "À sentir : la poussière fine dans l'air"
+   ],
+   "dialogue_intro": {
+    "perso": "samia",
+    "nom": "Samia",
+    "texte": "Dernière salle. Ici, on ne part pas d'une barbotine mais de blocs d'argile sèche. L'eau, on la met peu à peu. Et attention : les poudres sont fines et volatiles. Prouvez-moi que vous connaissez la voie sèche et les bons gestes, et le coffre s'ouvrira."
+   },
+   "dialogue_fin": {
+    "perso": "nadia",
+    "nom": "Nadia",
+    "texte": "Samia vous a donné le dernier mot : <b>EXTRUSION</b>. Vous avez les cinq mots ! Tapez-les dans le coffre de relance, dans l'ordre des salles, et la ligne repartira avant la fermeture. N'oubliez pas : cette usine est un exemple, ailleurs les machines et les étapes peuvent être différentes."
+   }
+  }
+ ]
+}
