@@ -1,0 +1,178 @@
+{
+  "_commentaire": "Brouillon généré par le migrateur : reformuler dans le ton de chaque personnage.",
+  "accueil": {
+    "personnage": "maelle",
+    "texte": "Bonjour, je suis Maëlle, apprentie en deuxième année. Bienvenue à la manufacture des Trois Fours ! Ce soir, le grand four doit cuire la vaisselle commandée par un restaurant. Problème : notre cahier de fabrication a été démonté pour être recopié, et ses cinq fiches sont restées chez cinq collègues. Chacun vous rendra la sienne si vous prouvez que vous maîtrisez la matière. Les cinq mots écrits sur les fiches ouvriront le coffre du cahier. On commence par le magasin ?"
+  },
+  "coffre": {
+    "personnage": "maelle",
+    "texte": "Le coffre ne s'ouvre qu'avec les mots de chaque salle, dans l'ordre. Vous les avez notés, j'espère."
+  },
+  "cinematiques": {
+    "transition-e1": {
+      "titre": "Salle 1 — Le magasin des matières",
+      "plans": [
+        {
+          "decor": "magasin",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "ines",
+          "texte": "Bonjour l'équipe. Maëlle m'a prévenue : vous cherchez les fiches du cahier de fabrication. J'en garde une. Avant de vous la donner, je veux être sûre que vous savez de quoi est faite une pâte. Ici, chaque sac se pèse, et chaque mot compte.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e1": {
+      "titre": "Fin de la salle 1",
+      "plans": [
+        {
+          "decor": "magasin",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "ines",
+          "texte": "Parfait. Le mot écrit sur ma fiche est ARGILE : sans elle, pas de pâte. Montez au laboratoire, Théo vous attend avec la fiche suivante.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e2": {
+      "titre": "Salle 2 — Le laboratoire",
+      "plans": [
+        {
+          "decor": "laboratoire",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "theo",
+          "texte": "Entrez, mais ne touchez pas aux coupelles. La deuxième fiche parle de ce qu'on voit au microscope : les minéraux qui rendent une argile plus ou moins facile à modeler. Montrez-moi que vous savez lire une argile, et la fiche est à vous.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e2": {
+      "titre": "Fin de la salle 2",
+      "plans": [
+        {
+          "decor": "laboratoire",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "theo",
+          "texte": "Bien observé. Ma fiche porte le mot PLASTICITÉ : c'est elle qu'on règle en choisissant ses argiles. Awa a besoin d'aide à la réserve.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e3": {
+      "titre": "Salle 3 — La réserve des argiles",
+      "plans": [
+        {
+          "decor": "reserve",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "awa",
+          "texte": "Le coup de vent de ce matin a fait tomber toutes mes étiquettes. Je ne peux pas livrer l'atelier tant que la réserve n'est pas rangée. Aidez-moi à reconnaître chaque argile et à savoir à quoi elle sert : la troisième fiche est pour vous.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e3": {
+      "titre": "Fin de la salle 3",
+      "plans": [
+        {
+          "decor": "reserve",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "awa",
+          "texte": "La réserve est rangée, merci ! Le mot de ma fiche est KAOLIN , l'argile blanche de la porcelaine. Lucas vous attend en préparation.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e4": {
+      "titre": "Salle 4 — La salle de préparation",
+      "plans": [
+        {
+          "decor": "preparation",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "lucas",
+          "texte": "Ici, on transforme l'argile en pâte. Trop collante, elle se fissure au séchage ; mal protégée, une poudre peut rendre malade. La quatrième fiche explique les dégraissants et les règles de sécurité. Prouvez-moi que vous les connaissez.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e4": {
+      "titre": "Fin de la salle 4",
+      "plans": [
+        {
+          "decor": "preparation",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "lucas",
+          "texte": "Vous pouvez travailler dans ma salle. Le mot de ma fiche est DÉGRAISSANT . Il reste le four : Madame Ferrand n'aime pas attendre.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e5": {
+      "titre": "Salle 5 — Le four",
+      "plans": [
+        {
+          "decor": "four",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "ferrand",
+          "texte": "Le four doit partir ce soir avec la commande du restaurant. Je garde la dernière fiche : les familles de pâtes, leurs températures et nos recettes. Une erreur de température, et toute la fournée est perdue. Montrez-moi que je peux vous faire confiance.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e5": {
+      "titre": "Fin de la salle 5",
+      "plans": [
+        {
+          "decor": "four",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "maelle",
+          "texte": "Madame Ferrand vous a donné le dernier mot : CUISSON . Vous avez les cinq fiches ! Écrivez les cinq mots dans le coffre du cahier de fabrication, dans l'ordre des salles, et le four pourra partir ce soir.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "fin": {
+      "titre": "Fin de « Les fiches du four »",
+      "plans": [
+        {
+          "decor": "four",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "ferrand",
+          "texte": "Le coffre est ouvert : toutes les pages sont rassemblées. Bravo, équipe !",
+          "mouvement": "zoom"
+        }
+      ]
+    }
+  },
+  "fin_escale": {
+    "1": {
+      "personnage": "ines",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "2": {
+      "personnage": "theo",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "3": {
+      "personnage": "awa",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "4": {
+      "personnage": "lucas",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "5": {
+      "personnage": "ferrand",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    }
+  }
+}

@@ -1,0 +1,1536 @@
+{
+ "metadata": {
+  "jeu": "Les fiches du four",
+  "version": 1,
+  "differenciation": "Essentiel (clé cm1) : 3 énigmes par salle (15). Expert (clé cm2) : 4 énigmes par salle (20). Le champ \"niveaux\": [\"CM2\"] réserve une énigme au niveau Expert.",
+  "types": [
+   "qcm",
+   "vraifaux",
+   "association",
+   "ordre",
+   "tri",
+   "trous",
+   "code",
+   "intrus",
+   "plan",
+   "instrument"
+  ],
+  "sources": "Chapitre « Les pâtes céramiques », CAP 1 (document de l'enseignant). Points à confirmer : A-VERIFIER.md.",
+  "media": "Chaque énigme accepte un bloc \"media\" : {\"base\":\"e3-2\",\"legende\":\"…\",\"source\":\"…\"} (image dans assets/images/cartes/)."
+ },
+ "salles": [
+  {
+   "num": 1,
+   "titre": "Le magasin des matières — Les matières premières des pâtes",
+   "enigmes": [
+    {
+     "id": "1-1",
+     "titre": "Les étiquettes du magasin",
+     "type": "association",
+     "consigne": {
+      "cm1": "Relie chaque mot à sa définition : clique sur un mot, puis sur la bonne définition.",
+      "cm2": "Six mots du métier ont perdu leur définition. Reconstitue les six paires."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, encadré « Mots à connaître »",
+     "correction": "Une pâte plastique se modèle sans casser ; trop plastique et collante, elle est « grasse ». Le dégraissant la rend moins collante ; la chamotte en est un exemple (argile cuite puis broyée). L'émail est une poudre de verre délayée dans l'eau ; ce qui est vitrifié est devenu dur et étanche comme du verre.",
+     "indices": {
+      "cm1": [
+       "Les définitions sont dans l'encadré « Mots à connaître ».",
+       "« Plastique » : on peut modeler sans casser.",
+       "La chamotte a déjà connu le four."
+      ],
+      "cm2": [
+       "Commence par les mots que tu es sûr de connaître.",
+       "Émail et vitrifié parlent tous les deux de verre : l'un est une poudre, l'autre un état.",
+       "Pâte grasse = le problème ; dégraissant = la solution."
+      ]
+     },
+     "cm1": {
+      "paires": [
+       {
+        "g": "Plastique",
+        "d": "Se modèle facilement sans se casser"
+       },
+       {
+        "g": "Pâte grasse",
+        "d": "Pâte très plastique et collante"
+       },
+       {
+        "g": "Dégraissant",
+        "d": "Matière ajoutée pour rendre la pâte moins collante"
+       },
+       {
+        "g": "Chamotte",
+        "d": "Argile déjà cuite, puis broyée"
+       }
+      ]
+     },
+     "cm2": {
+      "paires": [
+       {
+        "g": "Plastique",
+        "d": "Se modèle facilement sans se casser"
+       },
+       {
+        "g": "Pâte grasse",
+        "d": "Pâte très plastique et collante"
+       },
+       {
+        "g": "Dégraissant",
+        "d": "Matière ajoutée pour rendre la pâte moins collante"
+       },
+       {
+        "g": "Chamotte",
+        "d": "Argile déjà cuite, puis broyée"
+       },
+       {
+        "g": "Émail",
+        "d": "Poudre de verre délayée dans l'eau, brillante après cuisson"
+       },
+       {
+        "g": "Vitrifié",
+        "d": "Devenu dur et étanche, comme du verre"
+       }
+      ]
+     },
+     "lecon": "pate-composition"
+    },
+    {
+     "id": "1-2",
+     "titre": "Les deux rayons",
+     "type": "tri",
+     "consigne": {
+      "cm1": "Range chaque sac dans le bon rayon : matière plastique ou matière non plastique.",
+      "cm2": "Range les dix sacs : matières plastiques (les argiles) ou matières non plastiques (les dégraissants)."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I",
+     "correction": "Les matières plastiques sont les argiles : elles permettent de modeler la pièce. Les matières non plastiques sont les dégraissants (chamotte, sable, quartz, paille, sciure, feldspath) : on les ajoute pour que la pâte colle moins.",
+     "indices": {
+      "cm1": [
+       "Toutes les argiles sont plastiques.",
+       "Les dégraissants ne sont pas plastiques.",
+       "La chamotte est une argile déjà cuite : elle ne se modèle plus."
+      ],
+      "cm2": [
+       "Le mot « terre », « clay » ou « kaolin » désigne une argile.",
+       "Le feldspath est un dégraissant fondant.",
+       "Paille et sciure brûlent au four : ce sont des dégraissants."
+      ]
+     },
+     "cm1": {
+      "colonnes": [
+       {
+        "id": "pla",
+        "titre": "Matières plastiques"
+       },
+       {
+        "id": "non",
+        "titre": "Matières non plastiques"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Kaolin",
+        "col": "pla"
+       },
+       {
+        "txt": "Ball clay",
+        "col": "pla"
+       },
+       {
+        "txt": "Terre à grès",
+        "col": "pla"
+       },
+       {
+        "txt": "Sable",
+        "col": "non"
+       },
+       {
+        "txt": "Chamotte",
+        "col": "non"
+       },
+       {
+        "txt": "Paille",
+        "col": "non"
+       }
+      ]
+     },
+     "cm2": {
+      "colonnes": [
+       {
+        "id": "pla",
+        "titre": "Matières plastiques"
+       },
+       {
+        "id": "non",
+        "titre": "Matières non plastiques"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Kaolin",
+        "col": "pla"
+       },
+       {
+        "txt": "Ball clay",
+        "col": "pla"
+       },
+       {
+        "txt": "Terre à feu",
+        "col": "pla"
+       },
+       {
+        "txt": "Bentonite",
+        "col": "pla"
+       },
+       {
+        "txt": "Argile commune",
+        "col": "pla"
+       },
+       {
+        "txt": "Chamotte",
+        "col": "non"
+       },
+       {
+        "txt": "Quartz",
+        "col": "non"
+       },
+       {
+        "txt": "Sciure de bois",
+        "col": "non"
+       },
+       {
+        "txt": "Feldspath",
+        "col": "non"
+       },
+       {
+        "txt": "Sable",
+        "col": "non"
+       }
+      ]
+     },
+     "lecon": "pate-composition"
+    },
+    {
+     "id": "1-3",
+     "titre": "Le carnet d'Inès",
+     "type": "vraifaux",
+     "consigne": {
+      "cm1": "Inès a noté quatre phrases dans son carnet. Pour chacune, dis si elle est vraie ou fausse.",
+      "cm2": "Vérifie les cinq phrases du carnet d'Inès : vraie ou fausse ?"
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I",
+     "correction": "Dans une pâte, les quantités sont pesées avec précision. Une pâte trop collante (grasse) reçoit un dégraissant, pas davantage d'argile. La plasticité est la capacité à être modelée sans casser.",
+     "indices": {
+      "cm1": [
+       "Relis le début de la partie I.",
+       "Que fait-on quand la pâte colle trop ?",
+       "La plasticité, c'est se modeler sans casser."
+      ],
+      "cm2": [
+       "Relis le début de la partie I.",
+       "Une argile est un mélange : plusieurs minéraux et d'autres matières.",
+       "Vitrifié veut dire dur et étanche."
+      ]
+     },
+     "cm1": {
+      "affirmations": [
+       {
+        "txt": "Dans une pâte, les quantités de chaque matière sont pesées avec précision.",
+        "vrai": true,
+        "explication": "On pèse pour obtenir toujours le même produit."
+       },
+       {
+        "txt": "Si la pâte est trop collante, on ajoute de l'argile.",
+        "vrai": false,
+        "explication": "On ajoute un dégraissant."
+       },
+       {
+        "txt": "La plasticité, c'est la capacité de l'argile à être modelée sans se casser.",
+        "vrai": true,
+        "explication": "C'est la définition du chapitre."
+       },
+       {
+        "txt": "Le sable est une matière plastique.",
+        "vrai": false,
+        "explication": "C'est un dégraissant, une matière non plastique."
+       }
+      ]
+     },
+     "cm2": {
+      "affirmations": [
+       {
+        "txt": "Une pâte céramique contient des matières plastiques et des matières non plastiques.",
+        "vrai": true,
+        "explication": "Les argiles et les dégraissants."
+       },
+       {
+        "txt": "Une pâte grasse est une pâte très peu plastique.",
+        "vrai": false,
+        "explication": "Elle est très plastique et collante."
+       },
+       {
+        "txt": "Une argile est faite d'un seul minéral argileux.",
+        "vrai": false,
+        "explication": "Elle en contient plusieurs, mélangés à d'autres matières."
+       },
+       {
+        "txt": "Une pièce vitrifiée est dure et étanche.",
+        "vrai": true,
+        "explication": "Comme du verre."
+       },
+       {
+        "txt": "La couleur d'une argile dépend de l'endroit où on l'extrait.",
+        "vrai": true,
+        "explication": "Sa couleur et ses propriétés changent selon le gisement."
+       }
+      ]
+     },
+     "lecon": "pate-composition"
+    },
+    {
+     "id": "1-4",
+     "titre": "La fiche de fabrication",
+     "type": "trous",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Complète la fiche de fabrication avec les bonnes étiquettes. Deux étiquettes sont en trop."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I",
+     "correction": "Une pâte céramique mélange de l'argile et d'autres matières pesées avec précision. L'argile apporte la plasticité ; le dégraissant (chamotte, sable…) rend la pâte moins collante.",
+     "indices": {
+      "cm2": [
+       "Le premier mot manquant est la matière plastique principale.",
+       "« Pesées avec… » : on ne dose pas au hasard.",
+       "Les étiquettes en trop parlent d'émail et de cuisson."
+      ]
+     },
+     "commun": {
+      "texte": "<p>Une pâte céramique est un mélange d'[[argile]] et d'autres matières, [[pesées]] avec précision. L'argile apporte la [[plasticité]] : on peut modeler la pièce sans la casser. Si la pâte est trop [[collante]], on ajoute un [[dégraissant]], par exemple de la chamotte ou du sable.</p>",
+      "etiquettes": [
+       "argile",
+       "pesées",
+       "plasticité",
+       "collante",
+       "dégraissant",
+       "émail",
+       "vitrifiée"
+      ]
+     },
+     "lecon": "pate-composition"
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "titre": "Le laboratoire — Minéraux argileux, argile primaire et secondaire",
+   "enigmes": [
+    {
+     "id": "2-1",
+     "titre": "Sous le microscope",
+     "type": "ordre",
+     "consigne": {
+      "cm1": "Range les trois minéraux argileux de la plasticité la plus faible (en haut) à la plus haute (en bas). Utilise les flèches, puis vérifie.",
+      "cm2": "Classe les trois minéraux argileux, du moins plastique au plus plastique, sans l'aide des repères."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+     "correction": "La kaolinite a une plasticité faible, l'illite une plasticité moyenne, la smectite (par exemple la montmorillonite) une plasticité haute.",
+     "indices": {
+      "cm1": [
+       "Regarde le tableau des minéraux argileux.",
+       "Le kaolin, peu plastique, contient surtout de la kaolinite.",
+       "Le plus plastique a pour exemple la montmorillonite."
+      ],
+      "cm2": [
+       "Il y a trois niveaux : faible, moyenne, haute.",
+       "La kaolinite est en haut.",
+       "La smectite est en bas."
+      ]
+     },
+     "cm1": {
+      "items": [
+       {
+        "txt": "Kaolinite",
+        "sous": "le minéral du kaolin",
+        "rang": 1
+       },
+       {
+        "txt": "Illite",
+        "sous": "plasticité moyenne",
+        "rang": 2
+       },
+       {
+        "txt": "Smectite",
+        "sous": "exemple : la montmorillonite",
+        "rang": 3
+       }
+      ]
+     },
+     "cm2": {
+      "items": [
+       {
+        "txt": "Kaolinite",
+        "rang": 1
+       },
+       {
+        "txt": "Illite",
+        "rang": 2
+       },
+       {
+        "txt": "Smectite (montmorillonite)",
+        "rang": 3
+       }
+      ]
+     },
+     "lecon": "mineraux-argiles"
+    },
+    {
+     "id": "2-2",
+     "titre": "Les questions de Théo",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Théo, le technicien du laboratoire, te pose trois questions. Choisis la bonne réponse à chacune.",
+      "cm2": "Théo veut vérifier que tu as compris ce qu'est une argile. Réponds à ses trois questions."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+     "correction": "Les minéraux argileux sont des particules microscopiques. Une argile est une matière naturelle qui mélange plusieurs minéraux argileux et d'autres matières ; sa couleur et ses propriétés dépendent du lieu d'extraction.",
+     "indices": {
+      "cm1": [
+       "Un minéral argileux est minuscule.",
+       "Une argile, c'est un mélange naturel.",
+       "On en compte trois principaux."
+      ],
+      "cm2": [
+       "Relis « Les minéraux argileux » puis « Les argiles ».",
+       "L'argile n'est pas fabriquée en usine.",
+       "Le lieu d'extraction change la couleur."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "Les minéraux argileux sont…",
+        "options": [
+         "de gros cailloux",
+         "des particules microscopiques",
+         "des morceaux de verre"
+        ],
+        "bonne": 1,
+        "explication": "On ne les voit qu'au microscope."
+       },
+       {
+        "q": "Combien y a-t-il de minéraux argileux principaux ?",
+        "options": [
+         "3",
+         "5",
+         "10"
+        ],
+        "bonne": 0,
+        "explication": "Kaolinite, illite, smectite."
+       },
+       {
+        "q": "Une argile est…",
+        "options": [
+         "une matière fabriquée en usine",
+         "une poudre de verre",
+         "une matière naturelle"
+        ],
+        "bonne": 2,
+        "explication": "On l'extrait du sol."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "Une argile contient…",
+        "options": [
+         "un seul minéral argileux pur",
+         "plusieurs minéraux argileux et d'autres matières (sable, quartz, restes de plantes)",
+         "uniquement du sable"
+        ],
+        "bonne": 1,
+        "explication": "C'est un mélange naturel."
+       },
+       {
+        "q": "Pourquoi deux argiles n'ont-elles pas la même couleur ?",
+        "options": [
+         "Elles viennent d'endroits différents",
+         "On les peint",
+         "Elles ont été cuites"
+        ],
+        "bonne": 0,
+        "explication": "Couleur et propriétés dépendent du lieu d'extraction."
+       },
+       {
+        "q": "Que désigne la plasticité ?",
+        "options": [
+         "La résistance à la chaleur",
+         "La couleur après cuisson",
+         "La capacité à être modelée sans casser"
+        ],
+        "bonne": 2,
+        "explication": "C'est la qualité recherchée pour modeler."
+       }
+      ]
+     },
+     "lecon": "mineraux-argiles"
+    },
+    {
+     "id": "2-3",
+     "titre": "Restée sur place ou voyageuse ?",
+     "type": "tri",
+     "consigne": {
+      "cm1": "Range chaque étiquette : argile primaire ou argile secondaire ?",
+      "cm2": "Range les huit étiquettes : argile primaire ou argile secondaire ? Attention aux phrases."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, encadré « Argile primaire ou argile secondaire ? »",
+     "correction": "Une argile primaire est restée sur place, là où la roche s'est transformée : c'est le cas du kaolin. Une argile secondaire a été transportée par l'eau ou le vent, s'est mélangée à d'autres matières et est plus plastique : ball clay, terre à feu, terre à grès, argiles communes.",
+     "indices": {
+      "cm1": [
+       "Primaire = elle n'a pas bougé.",
+       "Secondaire = elle a voyagé avec l'eau ou le vent.",
+       "Une seule argile du chapitre est primaire : la blanche."
+      ],
+      "cm2": [
+       "Relis l'encadré « Argile primaire ou argile secondaire ? ».",
+       "En voyageant, l'argile se mélange à d'autres matières.",
+       "L'argile secondaire est la plus plastique des deux."
+      ]
+     },
+     "cm1": {
+      "colonnes": [
+       {
+        "id": "pri",
+        "titre": "Argile primaire"
+       },
+       {
+        "id": "sec",
+        "titre": "Argile secondaire"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Restée sur place, là où la roche s'est transformée",
+        "col": "pri"
+       },
+       {
+        "txt": "Le kaolin",
+        "col": "pri"
+       },
+       {
+        "txt": "Transportée par l'eau ou le vent",
+        "col": "sec"
+       },
+       {
+        "txt": "La ball clay",
+        "col": "sec"
+       },
+       {
+        "txt": "Les argiles communes (terre rouge)",
+        "col": "sec"
+       }
+      ]
+     },
+     "cm2": {
+      "colonnes": [
+       {
+        "id": "pri",
+        "titre": "Argile primaire"
+       },
+       {
+        "id": "sec",
+        "titre": "Argile secondaire"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Restée sur place, là où la roche s'est transformée",
+        "col": "pri"
+       },
+       {
+        "txt": "Le kaolin",
+        "col": "pri"
+       },
+       {
+        "txt": "Moins plastique que l'autre type",
+        "col": "pri"
+       },
+       {
+        "txt": "Transportée loin de son origine",
+        "col": "sec"
+       },
+       {
+        "txt": "Mélangée à d'autres matières pendant le voyage",
+        "col": "sec"
+       },
+       {
+        "txt": "La terre à feu",
+        "col": "sec"
+       },
+       {
+        "txt": "La terre à grès",
+        "col": "sec"
+       },
+       {
+        "txt": "La ball clay",
+        "col": "sec"
+       }
+      ]
+     },
+     "lecon": "mineraux-argiles"
+    },
+    {
+     "id": "2-4",
+     "titre": "L'échantillon mal rangé",
+     "type": "intrus",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Ces échantillons sont tous rangés dans le tiroir « argiles secondaires ». Un seul n'a rien à y faire : trouve l'intrus."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+     "correction": "Le kaolin est une argile primaire : il est resté sur place. Ball clay, terre à feu, terre à grès et argiles communes ont été transportées : ce sont des argiles secondaires.",
+     "indices": {
+      "cm2": [
+       "Cherche l'argile qui n'a pas voyagé.",
+       "Elle est blanche.",
+       "Elle sert à la porcelaine."
+      ]
+     },
+     "commun": {
+      "cartes": [
+       {
+        "txt": "Ball clay",
+        "sous": "argile à boulets",
+        "intrus": false
+       },
+       {
+        "txt": "Terre à feu",
+        "sous": "argile réfractaire",
+        "intrus": false
+       },
+       {
+        "txt": "Kaolin",
+        "sous": "argile blanche",
+        "intrus": true
+       },
+       {
+        "txt": "Terre à grès",
+        "sous": "résiste au gel",
+        "intrus": false
+       },
+       {
+        "txt": "Argile commune",
+        "sous": "terre rouge",
+        "intrus": false
+       }
+      ]
+     },
+     "lecon": "mineraux-argiles"
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "titre": "La réserve des argiles — Les principales argiles et leurs usages",
+   "enigmes": [
+    {
+     "id": "3-1",
+     "titre": "Les sacs sans étiquette",
+     "type": "association",
+     "consigne": {
+      "cm1": "Relie chaque argile à sa couleur.",
+      "cm2": "Relie chaque argile à ce qui la caractérise le mieux."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1, « Les principales argiles »",
+     "correction": "Kaolin : blanc. Ball clay : blanc crème à gris clair, très plastique. Terre à feu : beige à brun clair, résiste à environ 1500 °C. Terre à grès : beige à brun, résiste au gel. Argiles communes : rouges, riches en fer. Bentonite : extrêmement plastique.",
+     "indices": {
+      "cm1": [
+       "La porcelaine est blanche : pense à son argile.",
+       "La terre cuite des briques est rouge.",
+       "La ball clay est presque blanche, un peu grise."
+      ],
+      "cm2": [
+       "Regarde le tableau « Les argiles » de la synthèse.",
+       "Le fer donne la couleur rouge.",
+       "Réfractaire = résiste au feu."
+      ]
+     },
+     "cm1": {
+      "paires": [
+       {
+        "g": "Kaolin",
+        "d": "Blanche"
+       },
+       {
+        "g": "Ball clay",
+        "d": "Blanc crème à gris clair"
+       },
+       {
+        "g": "Terre à feu",
+        "d": "Beige à brun clair"
+       },
+       {
+        "g": "Argiles communes",
+        "d": "Rouge"
+       }
+      ]
+     },
+     "cm2": {
+      "paires": [
+       {
+        "g": "Kaolin",
+        "d": "Blanche, argile primaire"
+       },
+       {
+        "g": "Ball clay",
+        "d": "Très plastique, blanc crème à gris clair"
+       },
+       {
+        "g": "Terre à feu",
+        "d": "Résiste à environ 1500 °C"
+       },
+       {
+        "g": "Terre à grès",
+        "d": "Résiste au gel"
+       },
+       {
+        "g": "Argiles communes",
+        "d": "Riches en fer, rouges"
+       },
+       {
+        "g": "Bentonite",
+        "d": "Extrêmement plastique"
+       }
+      ]
+     },
+     "lecon": "principales-argiles"
+    },
+    {
+     "id": "3-2",
+     "titre": "Le rayonnage de la réserve",
+     "type": "plan",
+     "consigne": {
+      "cm1": "Awa range la réserve. Place chaque argile sur la bonne étagère : clique sur une étiquette, puis sur la case. Une étiquette est en trop.",
+      "cm2": "Place chaque argile sur l'étagère qui correspond à son usage. Deux étiquettes sont en trop."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1, « Les principales argiles »",
+     "correction": "Porcelaine et vaisselle fine : kaolin. Briques de four, supports d'enfournement, creusets : terre à feu. Briques et tuiles : argiles communes. Vaisselle, poteries de jardin et carreaux qui résistent au gel : terre à grès. Un peu dans une pâte ou dans un émail : bentonite. Pâtes fines, porcelaine, faïence : ball clay.",
+     "indices": {
+      "cm1": [
+       "Lis l'usage écrit sur chaque étagère.",
+       "Le four a besoin d'une argile qui résiste au feu.",
+       "Tuiles et briques sont rouges."
+      ],
+      "cm2": [
+       "Chaque fiche de la partie I.1 donne les usages.",
+       "La bentonite s'ajoute « un peu » : elle n'est jamais seule.",
+       "La terre à grès résiste au gel : pense au jardin."
+      ]
+     },
+     "cm1": {
+      "titre": "Le rayonnage de la réserve",
+      "colonnes": 2,
+      "cases": [
+       {
+        "libelle": "Étagère 1 : porcelaine et vaisselle fine",
+        "reponse": "Kaolin"
+       },
+       {
+        "libelle": "Étagère 2 : briques de four et creusets",
+        "reponse": "Terre à feu"
+       },
+       {
+        "libelle": "Étagère 3 : briques et tuiles",
+        "reponse": "Argiles communes"
+       },
+       {
+        "libelle": "Étagère 4 : vaisselle, poteries de jardin, carreaux",
+        "reponse": "Terre à grès"
+       }
+      ],
+      "etiquettes": [
+       "Kaolin",
+       "Terre à feu",
+       "Argiles communes",
+       "Terre à grès",
+       "Bentonite"
+      ]
+     },
+     "cm2": {
+      "titre": "Le rayonnage de la réserve",
+      "colonnes": 2,
+      "cases": [
+       {
+        "libelle": "Étagère 1 : porcelaine et vaisselle fine (argile primaire)",
+        "reponse": "Kaolin"
+       },
+       {
+        "libelle": "Étagère 2 : plaques et supports d'enfournement",
+        "reponse": "Terre à feu"
+       },
+       {
+        "libelle": "Étagère 3 : tuiles, riche en fer",
+        "reponse": "Argiles communes"
+       },
+       {
+        "libelle": "Étagère 4 : carreaux qui résistent au gel",
+        "reponse": "Terre à grès"
+       },
+       {
+        "libelle": "Étagère 5 : un peu dans l'émail, pour que la poudre ne tombe pas au fond du seau",
+        "reponse": "Bentonite"
+       },
+       {
+        "libelle": "Étagère 6 : pâtes fines et faïence, très plastique",
+        "reponse": "Ball clay"
+       }
+      ],
+      "etiquettes": [
+       "Kaolin",
+       "Terre à feu",
+       "Argiles communes",
+       "Terre à grès",
+       "Bentonite",
+       "Ball clay",
+       "Chamotte",
+       "Feldspath"
+      ]
+     },
+     "lecon": "principales-argiles"
+    },
+    {
+     "id": "3-3",
+     "titre": "Le bon choix",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Pour chaque commande, choisis la bonne argile.",
+      "cm2": "Trois commandes arrivent à la réserve. Choisis la bonne réponse à chacune."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+     "correction": "Pour une pâte plus plastique, on ajoute un peu de bentonite. Une argile commune rouge foncé contient beaucoup de fer. Le kaolin est fait surtout de kaolinite, peu plastique.",
+     "indices": {
+      "cm1": [
+       "La bentonite est extrêmement plastique.",
+       "Plus il y a de fer, plus l'argile est rouge.",
+       "Le kaolin est blanc."
+      ],
+      "cm2": [
+       "La bentonite s'ajoute en petite quantité.",
+       "Le fer colore l'argile.",
+       "Kaolin vient de kaolinite."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "Pour rendre une pâte plus plastique, on ajoute un peu de…",
+        "options": [
+         "sable",
+         "bentonite",
+         "chamotte"
+        ],
+        "bonne": 1,
+        "explication": "La bentonite est extrêmement plastique."
+       },
+       {
+        "q": "Une argile rouge foncé contient beaucoup de…",
+        "options": [
+         "fer",
+         "kaolin",
+         "verre"
+        ],
+        "bonne": 0,
+        "explication": "Le fer colore les argiles communes."
+       },
+       {
+        "q": "Pour la porcelaine, on choisit…",
+        "options": [
+         "la terre à feu",
+         "l'argile commune",
+         "le kaolin"
+        ],
+        "bonne": 2,
+        "explication": "Le kaolin est blanc."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "Pourquoi met-on un peu de bentonite dans un émail ?",
+        "options": [
+         "Pour le colorer en rouge",
+         "Pour que la poudre ne tombe pas au fond du seau",
+         "Pour qu'il fonde plus vite"
+        ],
+        "bonne": 1,
+        "explication": "Elle garde la poudre en suspension."
+       },
+       {
+        "q": "Le kaolin est fait surtout de…",
+        "options": [
+         "kaolinite, de plasticité faible",
+         "smectite, très plastique",
+         "chamotte"
+        ],
+        "bonne": 0,
+        "explication": "C'est pour cela qu'il est peu plastique."
+       },
+       {
+        "q": "La terre à grès convient aux poteries de jardin car…",
+        "options": [
+         "elle est rouge",
+         "elle fond à 1000 °C",
+         "devenue dure et étanche, elle résiste au gel"
+        ],
+        "bonne": 2,
+        "explication": "Elle se vitrifie à la cuisson."
+       }
+      ]
+     },
+     "lecon": "principales-argiles"
+    },
+    {
+     "id": "3-4",
+     "titre": "Le cadenas de la réserve",
+     "type": "code",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Le cadenas de l'armoire des échantillons a deux molettes. Trouve les deux nombres."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+     "correction": "La terre à feu résiste à environ 1500 °C sans fondre ni se déformer. Il y a 3 minéraux argileux principaux : kaolinite, illite, smectite.",
+     "indices": {
+      "cm2": [
+       "Le premier nombre est une température.",
+       "C'est la température que supporte l'argile réfractaire.",
+       "Le second nombre compte des minéraux du laboratoire."
+      ]
+     },
+     "commun": {
+      "champs": [
+       {
+        "libelle": "Température (°C) que supporte la terre à feu",
+        "valeur": "1500",
+        "longueur": 4
+       },
+       {
+        "libelle": "Nombre de minéraux argileux principaux",
+        "valeur": "3",
+        "longueur": 1
+       }
+      ]
+     },
+     "lecon": "principales-argiles"
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "titre": "La salle de préparation — Les dégraissants et la sécurité",
+   "enigmes": [
+    {
+     "id": "4-1",
+     "titre": "Les quatre bacs",
+     "type": "tri",
+     "consigne": {
+      "cm1": "Lucas prépare les dégraissants. Range chaque matière dans le bon bac.",
+      "cm2": "Range les neuf matières dans le bon bac de dégraissant."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.2",
+     "correction": "Dégraissants simples : chamotte, tessons broyés. Siliceux : sable, quartz, galets de mer broyés. Combustibles : paille, papier, sciure de bois. Fondants : feldspath.",
+     "indices": {
+      "cm1": [
+       "La chamotte est un dégraissant simple.",
+       "Combustible = ça brûle au four.",
+       "Le feldspath aide à fondre."
+      ],
+      "cm2": [
+       "Relis le tableau des dégraissants, partie I.2.",
+       "Siliceux : sable et quartz.",
+       "Les tessons sont des morceaux de poterie sans émail."
+      ]
+     },
+     "cm1": {
+      "colonnes": [
+       {
+        "id": "sim",
+        "titre": "Simples"
+       },
+       {
+        "id": "sil",
+        "titre": "Siliceux"
+       },
+       {
+        "id": "com",
+        "titre": "Combustibles"
+       },
+       {
+        "id": "fon",
+        "titre": "Fondants"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Chamotte",
+        "col": "sim"
+       },
+       {
+        "txt": "Sable",
+        "col": "sil"
+       },
+       {
+        "txt": "Quartz",
+        "col": "sil"
+       },
+       {
+        "txt": "Paille",
+        "col": "com"
+       },
+       {
+        "txt": "Sciure de bois",
+        "col": "com"
+       },
+       {
+        "txt": "Feldspath",
+        "col": "fon"
+       }
+      ]
+     },
+     "cm2": {
+      "colonnes": [
+       {
+        "id": "sim",
+        "titre": "Simples"
+       },
+       {
+        "id": "sil",
+        "titre": "Siliceux"
+       },
+       {
+        "id": "com",
+        "titre": "Combustibles"
+       },
+       {
+        "id": "fon",
+        "titre": "Fondants"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Chamotte",
+        "col": "sim"
+       },
+       {
+        "txt": "Tessons broyés",
+        "col": "sim"
+       },
+       {
+        "txt": "Sable",
+        "col": "sil"
+       },
+       {
+        "txt": "Quartz en poudre",
+        "col": "sil"
+       },
+       {
+        "txt": "Galets de mer broyés",
+        "col": "sil"
+       },
+       {
+        "txt": "Paille",
+        "col": "com"
+       },
+       {
+        "txt": "Papier",
+        "col": "com"
+       },
+       {
+        "txt": "Sciure de bois",
+        "col": "com"
+       },
+       {
+        "txt": "Feldspath",
+        "col": "fon"
+       }
+      ]
+     },
+     "lecon": "degraissants-securite"
+    },
+    {
+     "id": "4-2",
+     "titre": "Les effets du dégraissant",
+     "type": "vraifaux",
+     "consigne": {
+      "cm1": "Lucas explique à quoi sert un dégraissant. Ses phrases sont-elles vraies ou fausses ?",
+      "cm2": "Vrai ou faux : vérifie les cinq affirmations de Lucas sur les dégraissants."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.2",
+     "correction": "Un dégraissant réduit la plasticité : la pâte est moins collante, sèche mieux, se fissure et se déforme moins. Les combustibles laissent de petits trous qui allègent la pièce ; les fondants la rendent dure et vitrifiée.",
+     "indices": {
+      "cm1": [
+       "Un dégraissant réduit la plasticité.",
+       "La pâte sèche mieux.",
+       "Elle se fissure moins, pas plus."
+      ],
+      "cm2": [
+       "Relis la phrase sous le titre « Les matières non plastiques ».",
+       "Les combustibles brûlent : il reste des trous.",
+       "Les fondants aident la pâte à fondre."
+      ]
+     },
+     "cm1": {
+      "affirmations": [
+       {
+        "txt": "Un dégraissant rend la pâte moins collante.",
+        "vrai": true,
+        "explication": "Il réduit sa plasticité."
+       },
+       {
+        "txt": "Avec un dégraissant, la pâte se fissure davantage.",
+        "vrai": false,
+        "explication": "Elle se fissure moins."
+       },
+       {
+        "txt": "Avec un dégraissant, la pâte sèche mieux.",
+        "vrai": true,
+        "explication": "C'est l'un de ses effets."
+       },
+       {
+        "txt": "Un dégraissant rend la pâte plus plastique.",
+        "vrai": false,
+        "explication": "Il réduit la plasticité."
+       }
+      ]
+     },
+     "cm2": {
+      "affirmations": [
+       {
+        "txt": "Un dégraissant réduit la plasticité de l'argile.",
+        "vrai": true,
+        "explication": "C'est son rôle."
+       },
+       {
+        "txt": "Une pâte dégraissée se déforme moins à la cuisson.",
+        "vrai": true,
+        "explication": "Elle est plus stable."
+       },
+       {
+        "txt": "Les dégraissants combustibles rendent la pièce plus lourde.",
+        "vrai": false,
+        "explication": "Ils brûlent et laissent des trous : la pièce est plus légère."
+       },
+       {
+        "txt": "Les dégraissants fondants rendent la pièce dure et vitrifiée.",
+        "vrai": true,
+        "explication": "Ils aident la pâte à fondre."
+       },
+       {
+        "txt": "Les dégraissants siliceux fragilisent la pièce cuite.",
+        "vrai": false,
+        "explication": "Ils résistent à la chaleur et la renforcent."
+       }
+      ]
+     },
+     "lecon": "degraissants-securite"
+    },
+    {
+     "id": "4-3",
+     "titre": "L'armoire des fondants",
+     "type": "intrus",
+     "consigne": {
+      "cm1": "Certaines matières fondantes contiennent du plomb, toxique. Un seul de ces gestes est dangereux : trouve-le.",
+      "cm2": "Devant l'armoire des fondants, un seul de ces gestes ne protège pas du plomb : trouve l'intrus."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, encadré « Sécurité »",
+     "correction": "Le plomb est toxique : on manipule les matières fondantes avec des gants, un masque, et on se lave les mains. Manger ou boire à son poste de travail est dangereux.",
+     "indices": {
+      "cm1": [
+       "Relis l'encadré « Sécurité ».",
+       "Trois gestes protègent.",
+       "On ne mange jamais là où l'on manipule ces poudres."
+      ],
+      "cm2": [
+       "Le plomb peut entrer par la bouche et par le nez.",
+       "Gants, masque, lavage des mains : ce sont les trois réflexes.",
+       "L'intrus fait entrer la poudre dans la bouche."
+      ]
+     },
+     "cm1": {
+      "cartes": [
+       {
+        "txt": "Porter des gants",
+        "intrus": false
+       },
+       {
+        "txt": "Porter un masque",
+        "intrus": false
+       },
+       {
+        "txt": "Goûter la poudre",
+        "intrus": true
+       },
+       {
+        "txt": "Se laver les mains",
+        "intrus": false
+       }
+      ]
+     },
+     "cm2": {
+      "cartes": [
+       {
+        "txt": "Porter des gants",
+        "sous": "les mains protégées",
+        "intrus": false
+       },
+       {
+        "txt": "Porter un masque",
+        "sous": "ne pas respirer la poudre",
+        "intrus": false
+       },
+       {
+        "txt": "Se laver les mains",
+        "sous": "après la manipulation",
+        "intrus": false
+       },
+       {
+        "txt": "Prendre son goûter à son poste",
+        "sous": "pour gagner du temps",
+        "intrus": true
+       }
+      ]
+     },
+     "lecon": "degraissants-securite"
+    },
+    {
+     "id": "4-4",
+     "titre": "Un rôle pour chaque bac",
+     "type": "association",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Relie chaque type de dégraissant à son rôle."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.2",
+     "correction": "Simple : moins collante tout en restant solide. Siliceux : résiste à la chaleur et renforce la pièce cuite. Combustible : brûle et laisse de petits trous, la pièce est plus légère. Fondant : aide la pâte à fondre, la pièce devient dure et vitrifiée.",
+     "indices": {
+      "cm2": [
+       "La colonne « Rôle » du tableau des dégraissants.",
+       "Le combustible disparaît dans le four.",
+       "Le fondant fait fondre."
+      ]
+     },
+     "commun": {
+      "paires": [
+       {
+        "g": "Simple (chamotte)",
+        "d": "Rend la pâte moins collante, tout en la gardant solide"
+       },
+       {
+        "g": "Siliceux (sable, quartz)",
+        "d": "Résiste à la chaleur et renforce la pièce cuite"
+       },
+       {
+        "g": "Combustible (paille, sciure)",
+        "d": "Brûle et laisse de petits trous : la pièce est plus légère"
+       },
+       {
+        "g": "Fondant (feldspath)",
+        "d": "Aide la pâte à fondre : la pièce devient dure et vitrifiée"
+       }
+      ]
+     },
+     "lecon": "degraissants-securite"
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "titre": "Le four — Familles de pâtes, cuisson et recettes",
+   "enigmes": [
+    {
+     "id": "5-1",
+     "titre": "La montée en température",
+     "type": "ordre",
+     "consigne": {
+      "cm1": "Range ces familles de pâtes de la cuisson la moins chaude (en haut) à la plus chaude (en bas).",
+      "cm2": "Classe ces familles de pâtes de la cuisson la moins chaude à la plus chaude. Les températures ne sont pas données."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie II",
+     "correction": "Terre cuite : 1000 °C. Faïence : 1050 °C. Grès : 1280 °C. Porcelaine dure : jusqu'à 1400 °C. Plus la cuisson est chaude, plus la pâte est dure et étanche.",
+     "indices": {
+      "cm1": [
+       "Les repères donnent les objets : pense à leur dureté.",
+       "La terre cuite est la moins chaude.",
+       "La porcelaine dure est la plus chaude."
+      ],
+      "cm2": [
+       "Relis la colonne « Cuisson » de la partie II.",
+       "La faïence cuit un peu plus chaud que la terre cuite.",
+       "Grès et porcelaine sont vitrifiés."
+      ]
+     },
+     "cm1": {
+      "items": [
+       {
+        "txt": "Terre cuite",
+        "sous": "briques, tuiles",
+        "rang": 1
+       },
+       {
+        "txt": "Faïence",
+        "sous": "vaisselle émaillée",
+        "rang": 2
+       },
+       {
+        "txt": "Grès",
+        "sous": "dur et étanche",
+        "rang": 3
+       },
+       {
+        "txt": "Porcelaine dure",
+        "sous": "blanche, translucide",
+        "rang": 4
+       }
+      ]
+     },
+     "cm2": {
+      "items": [
+       {
+        "txt": "Terre cuite",
+        "rang": 1
+       },
+       {
+        "txt": "Faïence",
+        "rang": 2
+       },
+       {
+        "txt": "Grès",
+        "rang": 3
+       },
+       {
+        "txt": "Porcelaine dure",
+        "rang": 4
+       }
+      ]
+     },
+     "lecon": "familles-recettes"
+    },
+    {
+     "id": "5-2",
+     "titre": "Le pyromètre du four",
+     "type": "instrument",
+     "consigne": {
+      "cm1": "Lis la température affichée par le pyromètre pour chaque cuisson, puis écris-la.",
+      "cm2": "Lis la température de la première cuisson, puis règle le pyromètre pour le grès et pour le raku (glisse le niveau)."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie II",
+     "correction": "Le pyromètre mesure la température du four. Faïence : 1050 °C. Grès : 1280 °C. Terre cuite et raku : 1000 °C.",
+     "indices": {
+      "cm1": [
+       "Lis la graduation au niveau du trait.",
+       "Chaque petit trait vaut 10 °C.",
+       "Les nombres sont écrits tous les 100 °C."
+      ],
+      "cm2": [
+       "Relis la colonne « Cuisson » de la partie II.",
+       "Le raku cuit comme la terre cuite.",
+       "Le grès cuit à 1280 °C."
+      ]
+     },
+     "cm1": {
+      "instrument": "thermometre",
+      "unite": "°C",
+      "min": 800,
+      "max": 1400,
+      "pas": 10,
+      "etiquettes": 7,
+      "items": [
+       {
+        "libelle": "Cuisson de la terre cuite",
+        "mode": "lire",
+        "valeur": 1000
+       },
+       {
+        "libelle": "Cuisson de la faïence",
+        "mode": "lire",
+        "valeur": 1050
+       },
+       {
+        "libelle": "Cuisson du grès",
+        "mode": "lire",
+        "valeur": 1280
+       }
+      ]
+     },
+     "cm2": {
+      "instrument": "thermometre",
+      "unite": "°C",
+      "min": 800,
+      "max": 1400,
+      "pas": 10,
+      "etiquettes": 7,
+      "items": [
+       {
+        "libelle": "Pendant une cuisson de faïence",
+        "mode": "lire",
+        "valeur": 1050
+       },
+       {
+        "libelle": "Grès",
+        "mode": "regler",
+        "valeur": 1280
+       },
+       {
+        "libelle": "Raku",
+        "mode": "regler",
+        "valeur": 1000
+       }
+      ]
+     },
+     "lecon": "familles-recettes"
+    },
+    {
+     "id": "5-3",
+     "titre": "Qui suis-je ?",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Madame Ferrand décrit trois pâtes. Retrouve la famille de chacune.",
+      "cm2": "Madame Ferrand décrit trois pâtes sans les nommer. Retrouve chaque famille."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie II",
+     "correction": "Plus la cuisson est chaude, plus la pâte devient dure et étanche. Le raku contient beaucoup de chamotte et supporte les chocs de chaleur. La porcelaine est blanche et translucide quand elle est fine ; le vitreous est blanc, vitrifié, émaillé mais non translucide.",
+     "indices": {
+      "cm1": [
+       "La chamotte aide à supporter les chocs de chaleur.",
+       "Translucide : la lumière passe à travers.",
+       "Chaleur = dureté."
+      ],
+      "cm2": [
+       "Deux pâtes sont blanches et vitrifiées : une seule laisse passer la lumière.",
+       "La terre cuite est souvent sans émail.",
+       "Relis la colonne « De quoi est faite la pâte ? »."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "Plus la cuisson est chaude, plus la pâte devient…",
+        "options": [
+         "dure et étanche",
+         "molle",
+         "collante"
+        ],
+        "bonne": 0,
+        "explication": "C'est la règle de la partie II."
+       },
+       {
+        "q": "« J'ai beaucoup de chamotte et je supporte les chocs de chaleur. »",
+        "options": [
+         "la porcelaine",
+         "le raku",
+         "la faïence"
+        ],
+        "bonne": 1,
+        "explication": "Le raku cuit à 1000 °C."
+       },
+       {
+        "q": "« Je suis blanche et translucide quand je suis fine. »",
+        "options": [
+         "la terre cuite",
+         "le grès",
+         "la porcelaine"
+        ],
+        "bonne": 2,
+        "explication": "Elle est faite surtout de kaolin."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "« Je suis blanche, vitrifiée, toujours émaillée, mais non translucide. »",
+        "options": [
+         "le vitreous",
+         "la porcelaine",
+         "la faïence"
+        ],
+        "bonne": 0,
+        "explication": "Sanitaires, vaisselle d'hôtellerie."
+       },
+       {
+        "q": "« Je suis rouge, riche en fer, souvent sans émail. »",
+        "options": [
+         "le grès",
+         "la terre cuite",
+         "le raku"
+        ],
+        "bonne": 1,
+        "explication": "Briques, tuiles, poteries horticoles."
+       },
+       {
+        "q": "« Ma pâte est faite d'argile commune ou blanche, toujours recouverte d'émail, cuite vers 1050 °C. »",
+        "options": [
+         "la porcelaine",
+         "le vitreous",
+         "la faïence"
+        ],
+        "bonne": 2,
+        "explication": "Vaisselle, plats, carreaux."
+       }
+      ]
+     },
+     "lecon": "familles-recettes"
+    },
+    {
+     "id": "5-4",
+     "titre": "Le cahier de recettes",
+     "type": "code",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Une tache d'huile cache des nombres du cahier de recettes. Retrouve-les (le total d'une recette fait toujours 100 %)."
+     },
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie III",
+     "correction": "Porcelaine : kaolin 25 + ball clay 25 + feldspath 25 + silice 25 = 100 %. Raku : terre à feu 55 + ball clay 25 + chamotte 20 = 100 %. Pour 20 kg de grès : 50 % de terre à feu, soit 10 kg.",
+     "indices": {
+      "cm2": [
+       "Additionne les parts connues, puis enlève-les de 100.",
+       "Raku : 55 + 25 = 80.",
+       "La moitié de 20 kg."
+      ]
+     },
+     "commun": {
+      "champs": [
+       {
+        "libelle": "Porcelaine : part de silice (%)",
+        "valeur": "25",
+        "longueur": 2
+       },
+       {
+        "libelle": "Raku : part de chamotte (%)",
+        "valeur": "20",
+        "longueur": 2
+       },
+       {
+        "libelle": "Masse de terre à feu (kg) pour 20 kg de pâte à grès (50 %)",
+        "valeur": "10",
+        "longueur": 2
+       }
+      ]
+     },
+     "lecon": "familles-recettes"
+    }
+   ]
+  }
+ ]
+}

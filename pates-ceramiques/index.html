@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Les fiches du four — escape game de technologie céramique sur les pâtes céramiques, CAP Décoration sur céramique. 15 énigmes au niveau Essentiel, 20 au niveau Expert.">
+<title>Les fiches du four — Escape game CAP céramique</title>
+<link rel="stylesheet" href="css/style.css?v1">
+<link rel="stylesheet" href="../commun/css/video.css?c1">
+<link rel="stylesheet" href="../commun/css/animations.css?c1">
+<link rel="stylesheet" href="../commun/css/personnages.css?c1">
+<link rel="stylesheet" href="css/enigmes.css?m2">
+<link rel="stylesheet" href="css/print.css?v1">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#0F4C81">
+<link rel="apple-touch-icon" href="../commun/icones/icone-apple-180.png">
+</head>
+<body>
+<div class="drapeau"></div>
+<div id="app">
+
+  <!-- ============ HUD ============ -->
+  <div class="hud" id="hud" style="display:none">
+    <div class="hud-gauche">🏺 Les fiches du four <span style="opacity:.5;font-size:.7rem;font-weight:normal">v1</span></div>
+    <div class="hud-droite">
+      <div class="stat" title="Équipe">👤 <b id="hud-eq-nom">—</b></div>
+      <div class="stat temps" id="hud-temps" title="Temps écoulé">⏱️ <b id="hud-min">00</b>:<b id="hud-sec">00</b></div>
+      <div class="stat" title="Score">⭐ <b id="hud-score-val">0</b></div>
+      <div class="stat" title="Fiches du cahier retrouvées">📜 <b id="hud-cle-val">0</b>/5</div>
+      <button class="hud-bouton" id="btn-lecons" title="Les leçons du jeu">📚 Leçons</button>
+      <button class="hud-bouton" id="btn-reglages" title="Réglages enseignant">⚙️</button>
+      <button class="hud-bouton" id="btn-pause" title="Mettre en pause">⏸</button>
+    </div>
+  </div>
+
+  <!-- ============ ÉCRAN ACCUEIL ============ -->
+  <section class="ecran actif" id="ecran-accueil">
+    <div class="carte">
+      <h1>Les fiches <span class="bleu">du</span> <span class="rouge">four</span></h1>
+      <p class="sstitre">~ Escape game de technologie céramique · Les pâtes céramiques · CAP ~</p>
+      <p class="lien-immersif" style="text-align:center;margin:6px 0 12px"><a href="../immersifs/pates-ceramiques/" style="font-weight:700">✨ Jouer la version immersive</a> <small style="opacity:.8">(décors à explorer, objets cliquables, personnages qui parlent)</small></p>
+
+      <div class="scene scene--media" id="scene-accueil" data-media="salle5">
+        <div class="decor-fallback"></div>
+        <div class="decor-overlay"></div>
+        <div class="decor-contenu">
+          <span class="lieu">Manufacture des Trois Fours, lundi matin</span>
+          <p class="description">Ce soir, le grand four doit cuire la vaisselle d'un restaurant. Mais les <b>cinq fiches du cahier de fabrication</b> sont restées chez cinq collègues. Retrouvez-les, notez le mot écrit sur chacune, et <b>complétez le cahier</b> avant la cuisson.</p>
+        </div>
+      </div>
+
+      <div class="personnage-scene entrer" style="margin-top:18px">
+        <div class="portrait" id="portrait-intro"></div>
+        <div class="bulle">
+          <div class="nom-perso">Maëlle</div>
+          <div class="texte" id="intro-texte"></div>
+          <div class="controles-voix">
+            <button class="btn petit or" id="btn-intro-ecouter">🔊 Écouter</button>
+          </div>
+        </div>
+      </div>
+
+      <details style="margin-top:16px;background:#EEF5FB;border:1px solid var(--parchemin-ombre);border-radius:12px;padding:12px">
+        <summary style="cursor:pointer;font-weight:bold;color:var(--bleu-fonce)">👨‍🏫 Pour l'enseignant</summary>
+        <p style="margin-top:8px;font-size:.92rem">
+          Cinq salles qui suivent le chapitre « Les pâtes céramiques » : matières premières et vocabulaire ;
+          minéraux argileux, argiles primaires et secondaires ; les principales argiles ; dégraissants et sécurité ;
+          familles de pâtes, cuisson et recettes. Une leçon 📚 accompagne chaque salle.
+          Le guide pédagogique et les solutions sont dans le dossier du jeu (README.md).
+        </p>
+      </details>
+
+      <hr style="border:none;border-top:2px dotted var(--parchemin-ombre);margin:22px 0">
+
+      <h3 style="text-align:center">👤 Votre équipe</h3>
+      <input type="text" id="input-equipe" placeholder="Nom de votre équipe (ex. : Les Tourneurs)" maxlength="24" autocomplete="off">
+
+      <h3 style="text-align:center;margin-top:20px">🎯 Votre niveau</h3>
+      <div class="choix-niveau">
+        <div class="opt-niveau" data-niveau="CM1">
+          <div class="gros">Essentiel</div>
+          <div class="petit">15 énigmes · les notions clés du chapitre, avec des repères</div>
+        </div>
+        <div class="opt-niveau" data-niveau="CM2">
+          <div class="gros">Expert</div>
+          <div class="petit">20 énigmes · sans repères, usages précis, calculs de recettes</div>
+        </div>
+      </div>
+      <p id="apercu-niveau" style="text-align:center;font-size:.85rem;opacity:.75;margin-top:8px"></p>
+
+      <div class="boutons">
+        <button class="btn grand bleu" id="btn-demarrer" disabled>📜 Chercher les fiches</button>
+      </div>
+
+      <hr style="border:none;border-top:1px dotted var(--parchemin-ombre);margin:18px 0">
+
+      <details style="text-align:center;font-size:.85rem;opacity:.75">
+        <summary style="cursor:pointer;font-weight:bold;color:var(--bleu-fonce)">🔧 Problème pour démarrer ? (cliquez ici)</summary>
+        <div style="margin-top:12px;padding:12px;background:#EEF5FB;border-radius:10px;border:1px solid var(--parchemin-ombre)">
+          <p style="margin:0 0 10px">Si le jeu ne fonctionne pas correctement, ou si vous arrivez directement à la fin, c'est qu'une ancienne partie est restée en mémoire. Cliquez ci-dessous pour tout effacer et repartir à zéro :</p>
+          <button class="btn gris" id="btn-reset-total">🗑️ Effacer ma sauvegarde et recommencer</button>
+          <p id="reset-msg" style="margin-top:8px;color:var(--vert);font-weight:bold"></p>
+        </div>
+      </details>
+
+      <p class="sr-only" id="msg-accueil" role="status"></p>
+    </div>
+  </section>
+
+  <!-- ============ CONTENEUR SALLES ============ -->
+  <section class="ecran" id="ecran-salle">
+    <div class="carte" id="salle-contenu"></div>
+  </section>
+
+  <!-- ============ ÉCRAN PAUSE ============ -->
+  <section class="ecran" id="ecran-pause">
+    <div class="carte center">
+      <h2>⏸ Partie en pause</h2>
+      <p style="font-size:1.1rem">Le temps est suspendu. Revenez quand vous êtes prêts !</p>
+      <p style="font-style:italic">Astuce : profitez-en pour relire une leçon 📚 ou pour reformuler l'énigme à voix haute, ensemble.</p>
+      <div class="boutons">
+        <button class="btn vert grand" id="btn-reprendre">▶️ Reprendre l'enquête</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÉCRAN FINAL ============ -->
+  <section class="ecran" id="ecran-fin">
+    <div class="carte" id="fin-contenu"></div>
+  </section>
+
+</div>
+
+<!-- ============ MODALS ============ -->
+<div class="overlay-modal" id="overlay-lecons">
+  <div class="modal" id="modal-lecons">
+    <div class="modal-tete">
+      <h3>📚 Les leçons</h3>
+      <button class="fermer" data-close="overlay-lecons" aria-label="Fermer">✕</button>
+    </div>
+    <div class="modal-corps" id="corps-lecons"></div>
+  </div>
+</div>
+
+<div class="overlay-modal" id="overlay-reglages">
+  <div class="modal" id="modal-reglages">
+    <div class="modal-tete">
+      <h3>⚙️ Réglages</h3>
+      <button class="fermer" data-close="overlay-reglages" aria-label="Fermer">✕</button>
+    </div>
+    <div class="modal-corps" id="corps-reglages"></div>
+  </div>
+</div>
+
+<!-- Cinématique plein écran (remplie par js/media.js, invisible sans fichier) -->
+<div class="overlay-cine" id="overlay-cine"></div>
+
+<!-- ============ Scripts (ordre garanti par des balises statiques) ============
+     personnages.js définit htmlPortrait() et activerPortrait() ;
+     media.js DOIT suivre : il remplace activerPortrait() par la
+     cascade vidéo → image → dessin. -->
+<script src="js/jeu.js?c1"></script>
+<script src="js/personnages.js?v1"></script>
+<script src="../commun/js/media.js?c2"></script>
+<script src="../commun/js/audio.js?c1"></script>
+<script src="js/decors.js?v1"></script>
+<script src="../commun/js/narration.js?c1"></script>
+<script src="../commun/js/enigmes.js?c1"></script>
+<script src="js/lecons.js?v1"></script>
+<script src="../commun/js/impression.js?c1"></script>
+<script src="../commun/js/fiche-mission.js?c1"></script>
+<script src="../commun/js/api.js?c1"></script>
+<script src="../commun/js/sync.js?c4"></script>
+<script src="js/reglages.js?m2"></script>
+<script src="js/app.js?m2"></script>
+<script src="../commun/js/transitions.js?c1"></script>
+<script src="../commun/js/accessibilite.js?c1"></script>
+<script src="../commun/js/lecture-consignes.js?c1"></script>
+<script src="../commun/js/palier-decouverte.js?c3"></script>
+<script src="../commun/js/aides-enigmes.js?c1"></script>
+<script src="../commun/js/indices-adaptatifs.js?c1"></script>
+<script src="../commun/js/indices-degressifs.js?c1"></script>
+<script src="../commun/js/minuteur-equipe.js?c1"></script>
+<script src="../commun/js/suivi-enigmes.js?c1"></script>
+<script src="../commun/js/difficulte-enigme.js?c1"></script>
+<script src="../commun/js/joker.js?c1"></script>
+<script src="../commun/js/alerte-seance.js?c1"></script>
+<script src="../commun/js/coup-de-pouce.js?c1"></script>
+<script src="../commun/donnees/catalogue.js?c3"></script>
+<script src="../commun/js/jeu-suivant.js?c2"></script>
+<script src="../commun/js/compte-rendu.js?c3"></script>
+<script src="../commun/donnees/trophees.js?c1"></script>
+<script src="../commun/donnees/mascotte.js?c1"></script>
+<script src="../commun/js/trophees.js?c1"></script>
+<script src="../commun/js/mascotte.js?c1"></script>
+<script src="../commun/js/auto-evaluation.js?c1"></script>
+<script src="../commun/js/mode-solo.js?c1"></script>
+<script src="../commun/js/mode-duel.js?c1"></script>
+<script src="../commun/js/export-partie.js?c1"></script>
+<script src="../commun/js/progression.js?c1"></script>
+<script src="../commun/js/correction-collective.js?c1"></script>
+<script src="../commun/js/pwa.js?c1"></script>
+<script src="../commun/js/variantes.js?c2"></script>
+<script>
+  function initialiserAccueil(){
+    const sc = document.getElementById("scene-accueil");
+    if(sc){
+      const fb = sc.querySelector(".decor-fallback");
+      if(fb && typeof SVG_DECORS === "object") fb.innerHTML = SVG_DECORS["four"];
+      if(typeof installerDecor === "function") installerDecor(sc, "salle5");
+    }
+
+    const p = document.getElementById("portrait-intro");
+    if(!p || typeof htmlPortrait !== "function") return;
+    p.innerHTML = htmlPortrait("maelle");
+    activerPortrait(p.querySelector(".portrait-conteneur"));
+
+    const texteIntro = "Bonjour, je suis Maëlle, apprentie en deuxième année. Bienvenue à la manufacture des Trois Fours ! Ce soir, le grand four doit cuire la vaisselle commandée par un restaurant. Problème : notre cahier de fabrication a été démonté pour être recopié, et ses cinq fiches sont restées chez cinq collègues. Chacun vous rendra la sienne si vous prouvez que vous maîtrisez la matière. Les cinq mots écrits sur les fiches ouvriront le coffre du cahier. On commence par le magasin ?";
+    machineEcrire(document.getElementById("intro-texte"), texteIntro);
+
+    const btnEcouter = document.getElementById("btn-intro-ecouter");
+    if(btnEcouter) btnEcouter.addEventListener("click", ()=>{
+      if(!("speechSynthesis" in window)) return;
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(texteIntro);
+      u.lang = "fr-FR"; u.rate = 0.92;
+      const scene = document.querySelector("#ecran-accueil .personnage-scene");
+      const portrait = scene && scene.querySelector(".portrait");
+      u.onstart = ()=>{
+        if(!portrait) return;
+        portrait.classList.add("parle");
+        if(typeof geste === "function"){
+          geste(portrait, "salue", 1800);
+          setTimeout(()=>geste(portrait, "pointe", 2000), 7000);
+        }
+      };
+      u.onend = ()=>{ if(portrait) portrait.classList.remove("parle"); };
+      speechSynthesis.speak(u);
+    });
+
+    document.querySelectorAll(".fermer").forEach(b=>{
+      b.addEventListener("click", ()=>document.getElementById(b.dataset.close).classList.remove("show"));
+    });
+    document.querySelectorAll(".overlay-modal").forEach(o=>{
+      o.addEventListener("click", e=>{ if(e.target===o) o.classList.remove("show"); });
+    });
+    document.addEventListener("keydown", e=>{
+      if(e.key==="Escape") document.querySelectorAll(".overlay-modal.show").forEach(o=>o.classList.remove("show"));
+    });
+
+    const btnReset = document.getElementById("btn-reset-total");
+    if(btnReset) btnReset.addEventListener("click", ()=>{
+      if(!confirm("Voulez-vous vraiment effacer la sauvegarde ? La partie en cours sera perdue.")) return;
+      try{
+        localStorage.removeItem("escape_renaissance_v1");
+        localStorage.removeItem("escape_app_version_renaissance");
+        localStorage.removeItem("escape_reglages_renaissance");
+      }catch(e){}
+      document.getElementById("reset-msg").textContent = "✅ Sauvegarde effacée. La page va recharger…";
+      setTimeout(()=>location.reload(), 1200);
+    });
+  }
+  if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialiserAccueil);
+  else initialiserAccueil();
+</script>
+<script src="../commun/lycee-pro/libelles.js?l1"></script>
+</body>
+</html>

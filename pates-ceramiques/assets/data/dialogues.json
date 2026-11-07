@@ -1,0 +1,155 @@
+{
+ "metadata": {
+  "jeu": "Les fiches du four",
+  "sujet": "Les pâtes céramiques : matières premières, minéraux argileux, argiles, dégraissants, familles de pâtes, cuisson et recettes — CAP Décoration sur céramique, 1re année",
+  "niveaux": [
+   "Essentiel",
+   "Expert"
+  ],
+  "sources": "Chapitre « Les pâtes céramiques », CAP 1"
+ },
+ "personnages": {
+  "maelle": {
+   "nom": "Maëlle",
+   "role": "Apprentie en 2e année de CAP Décoration sur céramique, elle guide l'équipe"
+  },
+  "ines": {
+   "nom": "Inès",
+   "role": "Magasinière de la manufacture"
+  },
+  "theo": {
+   "nom": "Théo",
+   "role": "Technicien du laboratoire"
+  },
+  "awa": {
+   "nom": "Awa",
+   "role": "Responsable de la réserve des argiles"
+  },
+  "lucas": {
+   "nom": "Lucas",
+   "role": "Préparateur de pâtes"
+  },
+  "ferrand": {
+   "nom": "Madame Ferrand",
+   "role": "Cheffe du four"
+  }
+ },
+ "intro_accueil": "Bonjour, je suis Maëlle, apprentie en deuxième année. Bienvenue à la manufacture des Trois Fours ! Ce soir, le grand four doit cuire la vaisselle commandée par un restaurant. Problème : notre cahier de fabrication a été démonté pour être recopié, et ses cinq fiches sont restées chez cinq collègues. Chacun vous rendra la sienne si vous prouvez que vous maîtrisez la matière. Les cinq mots écrits sur les fiches ouvriront le coffre du cahier. On commence par le magasin ?",
+ "salles": [
+  {
+   "num": 1,
+   "titre": "Le magasin des matières",
+   "decor": "magasin",
+   "motCle": "ARGILE",
+   "lieu": "Le magasin des matières premières de la manufacture des Trois Fours",
+   "description": "Des sacs de 25 kg s'empilent sur des palettes : argiles, sable, chamotte, feldspath. Inès coche une liste sur sa tablette.",
+   "sens": [
+    "À voir : les sacs empilés",
+    "À entendre : le chariot élévateur",
+    "À sentir : la poussière d'argile"
+   ],
+   "dialogue_intro": {
+    "perso": "ines",
+    "nom": "Inès",
+    "texte": "Bonjour l'équipe. Maëlle m'a prévenue : vous cherchez les fiches du cahier de fabrication. J'en garde une. Avant de vous la donner, je veux être sûre que vous savez de quoi est faite une pâte. Ici, chaque sac se pèse, et chaque mot compte."
+   },
+   "dialogue_reussite": {
+    "perso": "ines",
+    "nom": "Inès",
+    "texte": "Parfait. Le mot écrit sur ma fiche est <b>ARGILE</b> : sans elle, pas de pâte. Montez au laboratoire, Théo vous attend avec la fiche suivante."
+   }
+  },
+  {
+   "num": 2,
+   "titre": "Le laboratoire",
+   "decor": "laboratoire",
+   "motCle": "PLASTICITÉ",
+   "lieu": "Le laboratoire d'essais, au premier étage",
+   "description": "Une paillasse blanche, un microscope, des coupelles d'échantillons numérotés. Sur le tableau, trois noms de minéraux.",
+   "sens": [
+    "À voir : la lame sous le microscope",
+    "À entendre : le bourdonnement de la lampe",
+    "À toucher : une boulette d'argile humide"
+   ],
+   "dialogue_intro": {
+    "perso": "theo",
+    "nom": "Théo",
+    "texte": "Entrez, mais ne touchez pas aux coupelles. La deuxième fiche parle de ce qu'on voit au microscope : les minéraux qui rendent une argile plus ou moins facile à modeler. Montrez-moi que vous savez lire une argile, et la fiche est à vous."
+   },
+   "dialogue_reussite": {
+    "perso": "theo",
+    "nom": "Théo",
+    "texte": "Bien observé. Ma fiche porte le mot <b>PLASTICITÉ</b> : c'est elle qu'on règle en choisissant ses argiles. Awa a besoin d'aide à la réserve."
+   }
+  },
+  {
+   "num": 3,
+   "titre": "La réserve des argiles",
+   "decor": "reserve",
+   "motCle": "KAOLIN",
+   "lieu": "La réserve des argiles, derrière l'atelier",
+   "description": "Des bacs d'argile humide sous des bâches, et six étagères dont les étiquettes sont tombées par terre.",
+   "sens": [
+    "À voir : des argiles blanches, beiges et rouges",
+    "À entendre : l'eau qui goutte des bâches",
+    "À sentir : la terre mouillée"
+   ],
+   "dialogue_intro": {
+    "perso": "awa",
+    "nom": "Awa",
+    "texte": "Le coup de vent de ce matin a fait tomber toutes mes étiquettes. Je ne peux pas livrer l'atelier tant que la réserve n'est pas rangée. Aidez-moi à reconnaître chaque argile et à savoir à quoi elle sert : la troisième fiche est pour vous."
+   },
+   "dialogue_reussite": {
+    "perso": "awa",
+    "nom": "Awa",
+    "texte": "La réserve est rangée, merci ! Le mot de ma fiche est <b>KAOLIN</b>, l'argile blanche de la porcelaine. Lucas vous attend en préparation."
+   }
+  },
+  {
+   "num": 4,
+   "titre": "La salle de préparation",
+   "decor": "preparation",
+   "motCle": "DÉGRAISSANT",
+   "lieu": "La salle de préparation des pâtes",
+   "description": "Un malaxeur ronronne. Quatre bacs de dégraissants attendent, et une armoire grillagée porte un pictogramme « toxique ».",
+   "sens": [
+    "À voir : les bacs de dégraissants",
+    "À entendre : le malaxeur",
+    "À sentir : la sciure de bois"
+   ],
+   "dialogue_intro": {
+    "perso": "lucas",
+    "nom": "Lucas",
+    "texte": "Ici, on transforme l'argile en pâte. Trop collante, elle se fissure au séchage ; mal protégée, une poudre peut rendre malade. La quatrième fiche explique les dégraissants et les règles de sécurité. Prouvez-moi que vous les connaissez."
+   },
+   "dialogue_reussite": {
+    "perso": "lucas",
+    "nom": "Lucas",
+    "texte": "Vous pouvez travailler dans ma salle. Le mot de ma fiche est <b>DÉGRAISSANT</b>. Il reste le four : Madame Ferrand n'aime pas attendre."
+   }
+  },
+  {
+   "num": 5,
+   "titre": "Le four",
+   "decor": "four",
+   "motCle": "CUISSON",
+   "lieu": "La halle des fours",
+   "description": "Deux grands fours électriques. Sur l'écran du pyromètre, la température monte doucement.",
+   "sens": [
+    "À voir : la lueur orange par le regard du four",
+    "À entendre : le ronflement des résistances",
+    "À sentir : la chaleur sur le visage"
+   ],
+   "dialogue_intro": {
+    "perso": "ferrand",
+    "nom": "Madame Ferrand",
+    "texte": "Le four doit partir ce soir avec la commande du restaurant. Je garde la dernière fiche : les familles de pâtes, leurs températures et nos recettes. Une erreur de température, et toute la fournée est perdue. Montrez-moi que je peux vous faire confiance."
+   },
+   "dialogue_fin": {
+    "perso": "maelle",
+    "nom": "Maëlle",
+    "texte": "Madame Ferrand vous a donné le dernier mot : <b>CUISSON</b>. Vous avez les cinq fiches ! Écrivez les cinq mots dans le coffre du cahier de fabrication, dans l'ordre des salles, et le four pourra partir ce soir."
+   }
+  }
+ ]
+}

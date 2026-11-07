@@ -1,0 +1,369 @@
+{
+  "decors": {
+    "magasin": {
+      "titre": "Le magasin des matières premières de la manufacture des Trois Fours",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Les étiquettes des sacs",
+          "x": 7.5,
+          "y": 46,
+          "w": 16,
+          "h": 40,
+          "description": "Une palette de kaolin : les étiquettes des sacs se sont décollées."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Les deux rayons",
+          "x": 29,
+          "y": 46,
+          "w": 37,
+          "h": 40,
+          "description": "Deux rayons de sacs, à trier entre matières plastiques et non plastiques."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Le carnet d'Inès",
+          "x": 86,
+          "y": 49,
+          "w": 11,
+          "h": 27,
+          "description": "La tablette où Inès note ce qu'elle vérifie."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "La fiche de fabrication",
+          "x": 71,
+          "y": 46,
+          "w": 15,
+          "h": 40,
+          "description": "Une fiche de fabrication à moitié remplie, posée sur les sacs de sable."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    },
+    "laboratoire": {
+      "titre": "Le laboratoire d'essais, au premier étage",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le tableau des minéraux",
+          "x": 5,
+          "y": 40,
+          "w": 37.5,
+          "h": 27,
+          "description": "Trois noms de minéraux et trois barres de plasticité."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le microscope",
+          "x": 56,
+          "y": 46,
+          "w": 12,
+          "h": 30,
+          "description": "Une lame d'argile sous l'objectif."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Les coupelles d'échantillons",
+          "x": 7,
+          "y": 66,
+          "w": 34,
+          "h": 12,
+          "description": "Cinq coupelles numérotées : d'où viennent ces argiles ?"
+        },
+        {
+          "id": "objet-4",
+          "libelle": "Le tiroir des échantillons",
+          "x": 79,
+          "y": 59,
+          "w": 12,
+          "h": 18,
+          "description": "Le tiroir « argiles secondaires »… un échantillon n'est pas à sa place."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    },
+    "reserve": {
+      "titre": "La réserve des argiles, derrière l'atelier",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Les bacs sans étiquette",
+          "x": 7.5,
+          "y": 68,
+          "w": 31,
+          "h": 20,
+          "description": "Des bacs d'argile humide, rouges, blancs, beiges."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le rayonnage",
+          "x": 54,
+          "y": 39,
+          "w": 42.5,
+          "h": 37,
+          "description": "Six étagères vides d'étiquettes."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Les commandes du jour",
+          "x": 57,
+          "y": 90,
+          "w": 38,
+          "h": 9,
+          "description": "Les bons de commande tombés au sol."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "L'armoire à cadenas",
+          "x": 42,
+          "y": 68,
+          "w": 14,
+          "h": 19,
+          "description": "Le bac de la dernière livraison, fermé par un cadenas à molettes."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    },
+    "preparation": {
+      "titre": "La salle de préparation des pâtes",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Les quatre bacs",
+          "x": 35,
+          "y": 76,
+          "w": 47,
+          "h": 12,
+          "description": "Quatre bacs de dégraissants à remplir."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le malaxeur",
+          "x": 8.5,
+          "y": 55,
+          "w": 18,
+          "h": 34,
+          "description": "Le malaxeur où la pâte prend forme."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "L'armoire des fondants",
+          "x": 80,
+          "y": 46,
+          "w": 15,
+          "h": 42,
+          "description": "Une armoire grillagée, pictogramme « toxique »."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "Les étiquettes des bacs",
+          "x": 35,
+          "y": 66,
+          "w": 47,
+          "h": 10,
+          "description": "Le rôle de chaque bac, à recopier sur son étiquette."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    },
+    "four": {
+      "titre": "La halle des fours",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le grand four",
+          "x": 41,
+          "y": 42,
+          "w": 33,
+          "h": 45,
+          "description": "Le four électrique, son regard orange."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le pyromètre",
+          "x": 8.5,
+          "y": 43,
+          "w": 16,
+          "h": 17,
+          "description": "L'écran qui affiche la température du four."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Les pièces à enfourner",
+          "x": 78,
+          "y": 62,
+          "w": 14,
+          "h": 22,
+          "description": "Des pièces crues de plusieurs familles de pâtes."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "Le cahier de recettes",
+          "x": 11,
+          "y": 75,
+          "w": 11,
+          "h": 13,
+          "description": "Le cahier de recettes taché d'huile."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    }
+  }
+}

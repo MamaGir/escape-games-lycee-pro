@@ -1,0 +1,70 @@
+{
+  "personnages": {
+    "maelle": {
+      "nom": "Maëlle",
+      "court": "Maëlle",
+      "voix": {
+        "rate": 0.95,
+        "pitch": 1.0
+      },
+      "ton": "à préciser",
+      "fiche": "Apprentie en 2e année de CAP Décoration sur céramique, elle guide l'équipe",
+      "portrait": {}
+    },
+    "ines": {
+      "nom": "Inès",
+      "court": "Inès",
+      "voix": {
+        "rate": 1.0,
+        "pitch": 1.15
+      },
+      "ton": "à préciser",
+      "fiche": "Magasinière de la manufacture",
+      "portrait": {}
+    },
+    "theo": {
+      "nom": "Théo",
+      "court": "Théo",
+      "voix": {
+        "rate": 0.9,
+        "pitch": 0.9
+      },
+      "ton": "à préciser",
+      "fiche": "Technicien du laboratoire",
+      "portrait": {}
+    },
+    "awa": {
+      "nom": "Awa",
+      "court": "Awa",
+      "voix": {
+        "rate": 1.05,
+        "pitch": 1.2
+      },
+      "ton": "à préciser",
+      "fiche": "Responsable de la réserve des argiles",
+      "portrait": {}
+    },
+    "lucas": {
+      "nom": "Lucas",
+      "court": "Lucas",
+      "voix": {
+        "rate": 0.92,
+        "pitch": 1.05
+      },
+      "ton": "à préciser",
+      "fiche": "Préparateur de pâtes",
+      "portrait": {}
+    },
+    "ferrand": {
+      "nom": "Madame Ferrand",
+      "court": "Madame",
+      "voix": {
+        "rate": 1.0,
+        "pitch": 0.85
+      },
+      "ton": "à préciser",
+      "fiche": "Cheffe du four",
+      "portrait": {}
+    }
+  }
+}

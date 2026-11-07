@@ -1,0 +1,653 @@
+{
+ "metadata": {
+  "sujet": "Les pâtes céramiques",
+  "niveaux": [
+   "Essentiel",
+   "Expert"
+  ],
+  "programme": "CAP Décoration sur céramique, 1re année — technologie des matériaux : les pâtes céramiques.",
+  "sources": "Chapitre « Les pâtes céramiques », CAP 1"
+ },
+ "quizz_final": {
+  "CM1": [
+   {
+    "q": "Une pâte céramique est un mélange…",
+    "options": [
+     "d'argile et d'autres matières pesées",
+     "de verre et d'eau",
+     "de peinture et de colle"
+    ],
+    "bonne": 0
+   },
+   {
+    "q": "Le minéral argileux le moins plastique est…",
+    "options": [
+     "la smectite",
+     "la kaolinite",
+     "l'illite"
+    ],
+    "bonne": 1
+   },
+   {
+    "q": "Quelle argile est primaire ?",
+    "options": [
+     "la ball clay",
+     "la terre à feu",
+     "le kaolin"
+    ],
+    "bonne": 2
+   },
+   {
+    "q": "Un dégraissant rend la pâte…",
+    "options": [
+     "moins collante",
+     "plus collante",
+     "rouge"
+    ],
+    "bonne": 0
+   },
+   {
+    "q": "Le grès cuit vers…",
+    "options": [
+     "600 °C",
+     "1280 °C",
+     "2000 °C"
+    ],
+    "bonne": 1
+   }
+  ],
+  "CM2": [
+   {
+    "q": "Que fait-on avec une pâte grasse ?",
+    "options": [
+     "on ajoute de la bentonite",
+     "on ajoute un dégraissant",
+     "on la cuit tout de suite"
+    ],
+    "bonne": 1
+   },
+   {
+    "q": "Une argile secondaire est…",
+    "options": [
+     "restée sur place",
+     "faite d'un seul minéral",
+     "transportée par l'eau ou le vent, et plus plastique"
+    ],
+    "bonne": 2
+   },
+   {
+    "q": "Quelle argile résiste à environ 1500 °C ?",
+    "options": [
+     "la terre à feu",
+     "l'argile commune",
+     "la bentonite"
+    ],
+    "bonne": 0
+   },
+   {
+    "q": "Quel dégraissant rend la pièce plus légère ?",
+    "options": [
+     "le feldspath",
+     "la chamotte",
+     "la sciure de bois"
+    ],
+    "bonne": 2
+   },
+   {
+    "q": "Recette du raku : terre à feu 55 %, ball clay 25 %, chamotte… ?",
+    "options": [
+     "20 %",
+     "25 %",
+     "10 %"
+    ],
+    "bonne": 0
+   }
+  ]
+ },
+ "qcm": {
+  "CM1": [
+   {
+    "q": "Combien de minéraux argileux principaux ?",
+    "options": [
+     "2",
+     "3",
+     "6"
+    ],
+    "bonne": 1,
+    "pts": 1
+   },
+   {
+    "q": "Le kaolin est de couleur…",
+    "options": [
+     "rouge",
+     "blanche",
+     "noire"
+    ],
+    "bonne": 1,
+    "pts": 1
+   },
+   {
+    "q": "Les argiles communes sont rouges grâce au…",
+    "options": [
+     "fer",
+     "sable",
+     "kaolin"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "La chamotte est…",
+    "options": [
+     "de la paille",
+     "une argile cuite puis broyée",
+     "un émail"
+    ],
+    "bonne": 1,
+    "pts": 1
+   },
+   {
+    "q": "Quel dégraissant est combustible ?",
+    "options": [
+     "la paille",
+     "le sable",
+     "le feldspath"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le feldspath est un dégraissant…",
+    "options": [
+     "siliceux",
+     "combustible",
+     "fondant"
+    ],
+    "bonne": 2,
+    "pts": 1
+   },
+   {
+    "q": "La faïence cuit vers…",
+    "options": [
+     "1050 °C",
+     "1400 °C",
+     "500 °C"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "La porcelaine est faite surtout de…",
+    "options": [
+     "terre rouge",
+     "kaolin",
+     "chamotte"
+    ],
+    "bonne": 1,
+    "pts": 1
+   },
+   {
+    "q": "Avec les fondants au plomb, on porte…",
+    "options": [
+     "des gants et un masque",
+     "un tablier seulement",
+     "rien de spécial"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le total d'une recette fait…",
+    "options": [
+     "50 %",
+     "100 %",
+     "1000 %"
+    ],
+    "bonne": 1,
+    "pts": 1
+   }
+  ],
+  "CM2": [
+   {
+    "q": "Exemple de smectite :",
+    "options": [
+     "la montmorillonite",
+     "le quartz",
+     "le feldspath"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "La ball clay est…",
+    "options": [
+     "une argile primaire",
+     "très plastique",
+     "réfractaire"
+    ],
+    "bonne": 1,
+    "pts": 1
+   },
+   {
+    "q": "Usage de la terre à feu :",
+    "options": [
+     "tuiles",
+     "porcelaine",
+     "briques de four et creusets"
+    ],
+    "bonne": 2,
+    "pts": 1
+   },
+   {
+    "q": "Pourquoi la terre à grès convient-elle au jardin ?",
+    "options": [
+     "elle résiste au gel",
+     "elle est rouge",
+     "elle est légère"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Rôle des dégraissants siliceux :",
+    "options": [
+     "brûler",
+     "résister à la chaleur et renforcer",
+     "colorer"
+    ],
+    "bonne": 1,
+    "pts": 1
+   },
+   {
+    "q": "La bentonite dans un émail sert à…",
+    "options": [
+     "le colorer",
+     "le faire fondre",
+     "garder la poudre en suspension"
+    ],
+    "bonne": 2,
+    "pts": 1
+   },
+   {
+    "q": "Le vitreous est…",
+    "options": [
+     "blanc, vitrifié, non translucide",
+     "rouge et poreux",
+     "translucide"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le raku supporte…",
+    "options": [
+     "les chocs de chaleur",
+     "le gel",
+     "l'acide"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Grès : terre à feu 50, kaolin 30, feldspath 10, quartz 5, chamotte… ?",
+    "options": [
+     "10 %",
+     "5 %",
+     "15 %"
+    ],
+    "bonne": 1,
+    "pts": 1
+   },
+   {
+    "q": "Pour 10 kg de porcelaine, combien de kaolin ?",
+    "options": [
+     "2,5 kg",
+     "5 kg",
+     "1 kg"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Une argile primaire est…",
+    "options": [
+     "restée sur place",
+     "transportée par le vent",
+     "très plastique"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Les combustibles laissent dans la pièce…",
+    "options": [
+     "de l'émail",
+     "de petits trous",
+     "du fer"
+    ],
+    "bonne": 1,
+    "pts": 1
+   }
+  ]
+ },
+ "questions_fermees": {
+  "CM1": [
+   {
+    "q": "La plasticité, c'est se modeler sans casser.",
+    "type": "vf",
+    "bonne": "vrai",
+    "pts": 1
+   },
+   {
+    "q": "Le sable est une matière plastique.",
+    "type": "vf",
+    "bonne": "faux",
+    "pts": 1
+   },
+   {
+    "q": "Le kaolin est une argile primaire.",
+    "type": "vf",
+    "bonne": "vrai",
+    "pts": 1
+   },
+   {
+    "q": "Plus la cuisson est chaude, plus la pâte est molle.",
+    "type": "vf",
+    "bonne": "faux",
+    "pts": 1
+   },
+   {
+    "q": "Cite les trois minéraux argileux.",
+    "type": "court",
+    "rep": "kaolinite, illite, smectite",
+    "pts": 1
+   },
+   {
+    "q": "Cite un dégraissant.",
+    "type": "court",
+    "rep": "chamotte, sable, quartz, paille, sciure, papier, feldspath…",
+    "pts": 1
+   },
+   {
+    "q": "À quelle température cuit la terre cuite ?",
+    "type": "court",
+    "rep": "1000 °C",
+    "pts": 1
+   },
+   {
+    "q": "Cite un geste de sécurité avec les fondants.",
+    "type": "court",
+    "rep": "gants, masque ou lavage des mains",
+    "pts": 1
+   }
+  ],
+  "CM2": [
+   {
+    "q": "Une argile secondaire est moins plastique qu'une argile primaire.",
+    "type": "vf",
+    "bonne": "faux",
+    "pts": 1
+   },
+   {
+    "q": "Les dégraissants combustibles allègent la pièce.",
+    "type": "vf",
+    "bonne": "vrai",
+    "pts": 1
+   },
+   {
+    "q": "Le vitreous est translucide.",
+    "type": "vf",
+    "bonne": "faux",
+    "pts": 1
+   },
+   {
+    "q": "La porcelaine dure cuit jusqu'à 1400 °C.",
+    "type": "vf",
+    "bonne": "vrai",
+    "pts": 1
+   },
+   {
+    "q": "Définis une argile secondaire.",
+    "type": "court",
+    "rep": "argile transportée par l'eau ou le vent, mélangée à d'autres matières, plus plastique",
+    "pts": 2
+   },
+   {
+    "q": "Explique à quoi sert un dégraissant et cite 3 exemples.",
+    "type": "court",
+    "rep": "réduire la plasticité (moins collante, sèche mieux, moins de fissures) ; chamotte, sable, paille…",
+    "pts": 2
+   },
+   {
+    "q": "Cite la famille de pâte qui contient beaucoup de chamotte.",
+    "type": "court",
+    "rep": "le raku",
+    "pts": 1
+   },
+   {
+    "q": "Calcule la masse de kaolin pour 20 kg de grès (30 %).",
+    "type": "court",
+    "rep": "6 kg",
+    "pts": 1
+   }
+  ]
+ },
+ "etudes_documents": {
+  "CM1": [
+   {
+    "titre": "La recette de la porcelaine",
+    "document": {
+     "contenu": "Kaolin 25 % · Ball clay 25 % · Feldspath 25 % · Silice (quartz) 25 %.",
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie III."
+    },
+    "questions": [
+     {
+      "q": "Combien de matières contient la recette ?",
+      "type": "court",
+      "rep": "4",
+      "pts": 1
+     },
+     {
+      "q": "Quelle matière est un dégraissant fondant ?",
+      "type": "court",
+      "rep": "le feldspath",
+      "pts": 1
+     },
+     {
+      "q": "Pour 10 kg de pâte, combien de kaolin ?",
+      "type": "court",
+      "rep": "2,5 kg",
+      "pts": 1
+     }
+    ]
+   },
+   {
+    "titre": "La fiche de la terre à feu",
+    "document": {
+     "contenu": "Couleur : beige à brun clair. Résiste aux très hautes températures (environ 1500 °C) sans fondre ni se déformer. Utilisée pour les briques de four, les plaques et supports d'enfournement, les creusets.",
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1."
+    },
+    "questions": [
+     {
+      "q": "Quelle est sa couleur ?",
+      "type": "court",
+      "rep": "beige à brun clair",
+      "pts": 1
+     },
+     {
+      "q": "Pourquoi sert-elle à fabriquer des briques de four ?",
+      "type": "court",
+      "rep": "elle résiste à environ 1500 °C",
+      "pts": 1
+     }
+    ]
+   }
+  ],
+  "CM2": [
+   {
+    "titre": "La recette du grès",
+    "document": {
+     "contenu": "Terre à feu 50 % · Kaolin 30 % · Feldspath 10 % · Quartz 5 % · Chamotte 5 %.",
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie III."
+    },
+    "questions": [
+     {
+      "q": "Vérifie que le total fait 100 %.",
+      "type": "court",
+      "rep": "50 + 30 + 10 + 5 + 5 = 100",
+      "pts": 1
+     },
+     {
+      "q": "Classe chaque matière : plastique ou non plastique.",
+      "type": "court",
+      "rep": "plastiques : terre à feu, kaolin ; non plastiques : feldspath, quartz, chamotte",
+      "pts": 2
+     },
+     {
+      "q": "Calcule les masses pour 20 kg de pâte.",
+      "type": "court",
+      "rep": "10 kg ; 6 kg ; 2 kg ; 1 kg ; 1 kg",
+      "pts": 2
+     }
+    ]
+   },
+   {
+    "titre": "Argile primaire ou secondaire ?",
+    "document": {
+     "contenu": "Argile primaire : elle est restée sur place, là où la roche s'est transformée. Argile secondaire : elle a été transportée par l'eau ou le vent, loin de son origine, et s'est mélangée à d'autres matières.",
+     "source": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1."
+    },
+    "questions": [
+     {
+      "q": "Donne un exemple d'argile primaire.",
+      "type": "court",
+      "rep": "le kaolin",
+      "pts": 1
+     },
+     {
+      "q": "Pourquoi l'argile secondaire est-elle souvent colorée ?",
+      "type": "court",
+      "rep": "elle s'est mélangée à d'autres matières (fer…) pendant son transport",
+      "pts": 1
+     }
+    ]
+   }
+  ]
+ },
+ "fiches_preparatoires": [
+  {
+   "salle": 1,
+   "titre": "Le magasin des matières — Les matières premières des pâtes",
+   "objectifs": [
+    "Dire de quoi est faite une pâte céramique",
+    "Distinguer matières plastiques et non plastiques",
+    "Connaître le vocabulaire de base"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "plastique",
+     "def": "se modèle facilement sans se casser"
+    },
+    {
+     "mot": "pâte grasse",
+     "def": "pâte très plastique et collante"
+    },
+    {
+     "mot": "dégraissant",
+     "def": "matière ajoutée pour rendre la pâte moins collante"
+    },
+    {
+     "mot": "chamotte",
+     "def": "argile déjà cuite, puis broyée"
+    }
+   ],
+   "contexte": "Des sacs de 25 kg s'empilent sur des palettes : argiles, sable, chamotte, feldspath. Inès coche une liste sur sa tablette."
+  },
+  {
+   "salle": 2,
+   "titre": "Le laboratoire — Minéraux argileux, argile primaire et secondaire",
+   "objectifs": [
+    "Citer les 3 minéraux argileux et leur plasticité",
+    "Définir une argile",
+    "Distinguer argile primaire et argile secondaire"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "minéral argileux",
+     "def": "particule microscopique qui compose l'argile"
+    },
+    {
+     "mot": "argile primaire",
+     "def": "restée sur place (kaolin)"
+    },
+    {
+     "mot": "argile secondaire",
+     "def": "transportée par l'eau ou le vent, plus plastique"
+    }
+   ],
+   "contexte": "Une paillasse blanche, un microscope, des coupelles d'échantillons numérotés. Sur le tableau, trois noms de minéraux."
+  },
+  {
+   "salle": 3,
+   "titre": "La réserve des argiles — Les principales argiles et leurs usages",
+   "objectifs": [
+    "Reconnaître les principales argiles et leur couleur",
+    "Associer chaque argile à ses usages"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "réfractaire",
+     "def": "qui résiste aux très hautes températures"
+    },
+    {
+     "mot": "kaolin",
+     "def": "argile primaire blanche, base de la porcelaine"
+    }
+   ],
+   "contexte": "Des bacs d'argile humide sous des bâches, et six étagères dont les étiquettes sont tombées par terre."
+  },
+  {
+   "salle": 4,
+   "titre": "La salle de préparation — Les dégraissants et la sécurité",
+   "objectifs": [
+    "Expliquer à quoi sert un dégraissant",
+    "Citer des exemples des quatre types",
+    "Connaître les règles de sécurité avec les fondants"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "combustible",
+     "def": "qui brûle à la cuisson"
+    },
+    {
+     "mot": "fondant",
+     "def": "qui aide la pâte à fondre"
+    },
+    {
+     "mot": "tessons",
+     "def": "morceaux de poterie sans émail"
+    }
+   ],
+   "contexte": "Un malaxeur ronronne. Quatre bacs de dégraissants attendent, et une armoire grillagée porte un pictogramme « toxique »."
+  },
+  {
+   "salle": 5,
+   "titre": "Le four — Familles de pâtes, cuisson et recettes",
+   "objectifs": [
+    "Citer les grandes familles de pâtes et leur température de cuisson",
+    "Lire et compléter une recette en pourcentages"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "translucide",
+     "def": "laisse passer la lumière"
+    },
+    {
+     "mot": "pyromètre",
+     "def": "appareil qui mesure la température du four"
+    }
+   ],
+   "contexte": "Deux grands fours électriques. Sur l'écran du pyromètre, la température monte doucement."
+  }
+ ]
+}

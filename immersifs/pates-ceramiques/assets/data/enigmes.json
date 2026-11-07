@@ -1,0 +1,2030 @@
+{
+  "_commentaire": "Généré par outils/immersif/migrer-jeu.py depuis « pates-ceramiques ». À compléter : voir MIGRATION-RAPPORT.md.",
+  "version": 1,
+  "niveaux": [
+    {
+      "id": "matelot",
+      "nom": "Essentiel",
+      "icone": "🌱",
+      "equivalent": "CAP 1",
+      "profil": "les notions clés du chapitre, avec des repères"
+    },
+    {
+      "id": "timonier",
+      "nom": "Expert",
+      "icone": "🔥",
+      "equivalent": "CAP 1 approfondi",
+      "profil": "sans repères, usages précis, calculs de recettes"
+    }
+  ],
+  "escales": [
+    {
+      "numero": 1,
+      "id": "le-magasin-des-matieres-les-matieres-premieres-des-pates",
+      "titre": "Le magasin des matières",
+      "lieu": "Le magasin des matières premières de la manufacture des Trois Fours",
+      "matiere": "",
+      "periode_conseillee": "",
+      "episode": "Des sacs de 25 kg s'empilent sur des palettes : argiles, sable, chamotte, feldspath. Inès coche une liste sur sa tablette.",
+      "scenarimage": "",
+      "mot": "ARGILE",
+      "mot_origine": "Le mot-clé de la salle 1.",
+      "air": null,
+      "cinematique_ouverture": "transition-e1",
+      "cinematique_fin": "fin-e1",
+      "etats_decor": [],
+      "enigmes": [
+        {
+          "id": "e1-1",
+          "escale": 1,
+          "ordre": 1,
+          "titre": "Les étiquettes du magasin",
+          "decor": "magasin",
+          "objet_principal": "objet-1",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "ines",
+          "probleme_narratif": "Les sacs de la palette ont perdu leurs étiquettes de vocabulaire.",
+          "enjeu": "Sans les bons mots, Inès ne peut pas préparer le bon de sortie.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, encadré « Mots à connaître »",
+          "competence_programme": "Dire de quoi est faite une pâte céramique",
+          "pourquoi_ce_savoir_ici": "On ne commande pas une matière dont on ne connaît pas le nom.",
+          "reaction_du_decor": {
+            "effet": "eclat",
+            "description": "Les étiquettes se recollent une à une sur les sacs."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "pate-composition",
+          "type": "association",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Une pâte plastique se modèle sans casser ; trop plastique et collante, elle est « grasse ». Le dégraissant la rend moins collante ; la chamotte en est un exemple (argile cuite puis broyée). L'émail est une poudre de verre délayée dans l'eau ; ce qui est vitrifié est devenu dur et étanche comme du verre.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "paires": [
+              {
+                "g": "Plastique",
+                "d": "Se modèle facilement sans se casser"
+              },
+              {
+                "g": "Pâte grasse",
+                "d": "Pâte très plastique et collante"
+              },
+              {
+                "g": "Dégraissant",
+                "d": "Matière ajoutée pour rendre la pâte moins collante"
+              },
+              {
+                "g": "Chamotte",
+                "d": "Argile déjà cuite, puis broyée"
+              }
+            ],
+            "consigne": "Relie chaque mot à sa définition : clique sur un mot, puis sur la bonne définition.",
+            "indices": [
+              "Les définitions sont dans l'encadré « Mots à connaître ».",
+              "« Plastique » : on peut modeler sans casser.",
+              "La chamotte a déjà connu le four."
+            ],
+            "dialogue": "Commencez par les mots du métier : relie chaque mot à sa définition."
+          },
+          "timonier": {
+            "paires": [
+              {
+                "g": "Plastique",
+                "d": "Se modèle facilement sans se casser"
+              },
+              {
+                "g": "Pâte grasse",
+                "d": "Pâte très plastique et collante"
+              },
+              {
+                "g": "Dégraissant",
+                "d": "Matière ajoutée pour rendre la pâte moins collante"
+              },
+              {
+                "g": "Chamotte",
+                "d": "Argile déjà cuite, puis broyée"
+              },
+              {
+                "g": "Émail",
+                "d": "Poudre de verre délayée dans l'eau, brillante après cuisson"
+              },
+              {
+                "g": "Vitrifié",
+                "d": "Devenu dur et étanche, comme du verre"
+              }
+            ],
+            "consigne": "Six mots du métier ont perdu leur définition. Reconstitue les six paires.",
+            "indices": [
+              "Commence par les mots que tu es sûr de connaître.",
+              "Émail et vitrifié parlent tous les deux de verre : l'un est une poudre, l'autre un état.",
+              "Pâte grasse = le problème ; dégraissant = la solution."
+            ],
+            "dialogue": "Six mots, six définitions. À l'atelier, on parle juste."
+          }
+        },
+        {
+          "id": "e1-2",
+          "escale": 1,
+          "ordre": 2,
+          "titre": "Les deux rayons",
+          "decor": "magasin",
+          "objet_principal": "objet-2",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "ines",
+          "probleme_narratif": "Un livreur a mélangé les sacs des deux rayons.",
+          "enjeu": "Une pâte avec un sac de sable à la place de l'argile ne se modèle pas.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I",
+          "competence_programme": "Dire de quoi est faite une pâte céramique",
+          "pourquoi_ce_savoir_ici": "Le magasin range les matières selon leur rôle dans la pâte.",
+          "reaction_du_decor": {
+            "effet": "ouverture",
+            "description": "Les deux rayons s'allument : chaque sac est à sa place."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "pate-composition",
+          "type": "tri",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Les matières plastiques sont les argiles : elles permettent de modeler la pièce. Les matières non plastiques sont les dégraissants (chamotte, sable, quartz, paille, sciure, feldspath) : on les ajoute pour que la pâte colle moins.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "colonnes": [
+              {
+                "id": "pla",
+                "titre": "Matières plastiques"
+              },
+              {
+                "id": "non",
+                "titre": "Matières non plastiques"
+              }
+            ],
+            "cartes": [
+              {
+                "txt": "Kaolin",
+                "col": "pla"
+              },
+              {
+                "txt": "Ball clay",
+                "col": "pla"
+              },
+              {
+                "txt": "Terre à grès",
+                "col": "pla"
+              },
+              {
+                "txt": "Sable",
+                "col": "non"
+              },
+              {
+                "txt": "Chamotte",
+                "col": "non"
+              },
+              {
+                "txt": "Paille",
+                "col": "non"
+              }
+            ],
+            "consigne": "Range chaque sac dans le bon rayon : matière plastique ou matière non plastique.",
+            "indices": [
+              "Toutes les argiles sont plastiques.",
+              "Les dégraissants ne sont pas plastiques.",
+              "La chamotte est une argile déjà cuite : elle ne se modèle plus."
+            ],
+            "dialogue": "Remettez chaque sac dans son rayon : celles qui se modèlent, et les autres."
+          },
+          "timonier": {
+            "colonnes": [
+              {
+                "id": "pla",
+                "titre": "Matières plastiques"
+              },
+              {
+                "id": "non",
+                "titre": "Matières non plastiques"
+              }
+            ],
+            "cartes": [
+              {
+                "txt": "Kaolin",
+                "col": "pla"
+              },
+              {
+                "txt": "Ball clay",
+                "col": "pla"
+              },
+              {
+                "txt": "Terre à feu",
+                "col": "pla"
+              },
+              {
+                "txt": "Bentonite",
+                "col": "pla"
+              },
+              {
+                "txt": "Argile commune",
+                "col": "pla"
+              },
+              {
+                "txt": "Chamotte",
+                "col": "non"
+              },
+              {
+                "txt": "Quartz",
+                "col": "non"
+              },
+              {
+                "txt": "Sciure de bois",
+                "col": "non"
+              },
+              {
+                "txt": "Feldspath",
+                "col": "non"
+              },
+              {
+                "txt": "Sable",
+                "col": "non"
+              }
+            ],
+            "consigne": "Range les dix sacs : matières plastiques (les argiles) ou matières non plastiques (les dégraissants).",
+            "indices": [
+              "Le mot « terre », « clay » ou « kaolin » désigne une argile.",
+              "Le feldspath est un dégraissant fondant.",
+              "Paille et sciure brûlent au four : ce sont des dégraissants."
+            ],
+            "dialogue": "Dix sacs. Plastique ou non plastique ? Pas de place pour l'hésitation."
+          }
+        },
+        {
+          "id": "e1-3",
+          "escale": 1,
+          "ordre": 3,
+          "titre": "Le carnet d'Inès",
+          "decor": "magasin",
+          "objet_principal": "objet-3",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "ines",
+          "probleme_narratif": "Inès a noté des phrases, mais certaines sont fausses.",
+          "enjeu": "Une fausse règle dans le carnet, et toute une fournée est ratée.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I",
+          "competence_programme": "Dire de quoi est faite une pâte céramique",
+          "pourquoi_ce_savoir_ici": "Le carnet d'Inès sert de référence à tout l'atelier.",
+          "reaction_du_decor": {
+            "effet": "calme",
+            "description": "La tablette affiche une coche verte à chaque phrase vérifiée."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "pate-composition",
+          "type": "vraifaux",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Dans une pâte, les quantités sont pesées avec précision. Une pâte trop collante (grasse) reçoit un dégraissant, pas davantage d'argile. La plasticité est la capacité à être modelée sans casser.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "affirmations": [
+              {
+                "txt": "Dans une pâte, les quantités de chaque matière sont pesées avec précision.",
+                "vrai": true,
+                "explication": "On pèse pour obtenir toujours le même produit."
+              },
+              {
+                "txt": "Si la pâte est trop collante, on ajoute de l'argile.",
+                "vrai": false,
+                "explication": "On ajoute un dégraissant."
+              },
+              {
+                "txt": "La plasticité, c'est la capacité de l'argile à être modelée sans se casser.",
+                "vrai": true,
+                "explication": "C'est la définition du chapitre."
+              },
+              {
+                "txt": "Le sable est une matière plastique.",
+                "vrai": false,
+                "explication": "C'est un dégraissant, une matière non plastique."
+              }
+            ],
+            "consigne": "Inès a noté quatre phrases dans son carnet. Pour chacune, dis si elle est vraie ou fausse.",
+            "indices": [
+              "Relis le début de la partie I.",
+              "Que fait-on quand la pâte colle trop ?",
+              "La plasticité, c'est se modeler sans casser."
+            ],
+            "dialogue": "Mon carnet contient des erreurs. Vrai ou faux ?"
+          },
+          "timonier": {
+            "affirmations": [
+              {
+                "txt": "Une pâte céramique contient des matières plastiques et des matières non plastiques.",
+                "vrai": true,
+                "explication": "Les argiles et les dégraissants."
+              },
+              {
+                "txt": "Une pâte grasse est une pâte très peu plastique.",
+                "vrai": false,
+                "explication": "Elle est très plastique et collante."
+              },
+              {
+                "txt": "Une argile est faite d'un seul minéral argileux.",
+                "vrai": false,
+                "explication": "Elle en contient plusieurs, mélangés à d'autres matières."
+              },
+              {
+                "txt": "Une pièce vitrifiée est dure et étanche.",
+                "vrai": true,
+                "explication": "Comme du verre."
+              },
+              {
+                "txt": "La couleur d'une argile dépend de l'endroit où on l'extrait.",
+                "vrai": true,
+                "explication": "Sa couleur et ses propriétés changent selon le gisement."
+              }
+            ],
+            "consigne": "Vérifie les cinq phrases du carnet d'Inès : vraie ou fausse ?",
+            "indices": [
+              "Relis le début de la partie I.",
+              "Une argile est un mélange : plusieurs minéraux et d'autres matières.",
+              "Vitrifié veut dire dur et étanche."
+            ],
+            "dialogue": "Vérifiez mes cinq phrases : je recopie seulement les vraies."
+          }
+        },
+        {
+          "id": "e1-4",
+          "escale": 1,
+          "ordre": 4,
+          "titre": "La fiche de fabrication",
+          "decor": "magasin",
+          "objet_principal": "objet-4",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "ines",
+          "probleme_narratif": "La fiche de fabrication est à moitié effacée.",
+          "enjeu": "Sans fiche complète, personne ne sait doser la pâte.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I",
+          "competence_programme": "Dire de quoi est faite une pâte céramique",
+          "pourquoi_ce_savoir_ici": "La fiche de fabrication résume ce qu'est une pâte céramique.",
+          "reaction_du_decor": {
+            "effet": "lumiere",
+            "description": "La fiche se complète et rejoint le cahier."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "pate-composition",
+          "type": "trous",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Une pâte céramique mélange de l'argile et d'autres matières pesées avec précision. L'argile apporte la plasticité ; le dégraissant (chamotte, sable…) rend la pâte moins collante.",
+          "_brouillon": [
+            "zones"
+          ],
+          "niveaux": [
+            "timonier"
+          ],
+          "timonier": {
+            "texte": "<p>Une pâte céramique est un mélange d'[[argile]] et d'autres matières, [[pesées]] avec précision. L'argile apporte la [[plasticité]] : on peut modeler la pièce sans la casser. Si la pâte est trop [[collante]], on ajoute un [[dégraissant]], par exemple de la chamotte ou du sable.</p>",
+            "etiquettes": [
+              "argile",
+              "pesées",
+              "plasticité",
+              "collante",
+              "dégraissant",
+              "émail",
+              "vitrifiée"
+            ],
+            "consigne": "Complète la fiche de fabrication avec les bonnes étiquettes. Deux étiquettes sont en trop.",
+            "indices": [
+              "Le premier mot manquant est la matière plastique principale.",
+              "« Pesées avec… » : on ne dose pas au hasard.",
+              "Les étiquettes en trop parlent d'émail et de cuisson."
+            ],
+            "dialogue": "La fiche de fabrication a des trous. Deux étiquettes sont des pièges."
+          }
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "id": "le-laboratoire-mineraux-argileux-argile-primaire-et-secondaire",
+      "titre": "Le laboratoire",
+      "lieu": "Le laboratoire d'essais, au premier étage",
+      "matiere": "",
+      "periode_conseillee": "",
+      "episode": "Une paillasse blanche, un microscope, des coupelles d'échantillons numérotés. Sur le tableau, trois noms de minéraux.",
+      "scenarimage": "",
+      "mot": "PLASTICITÉ",
+      "mot_origine": "Le mot-clé de la salle 2.",
+      "air": null,
+      "cinematique_ouverture": "transition-e2",
+      "cinematique_fin": "fin-e2",
+      "etats_decor": [],
+      "enigmes": [
+        {
+          "id": "e2-1",
+          "escale": 2,
+          "ordre": 1,
+          "titre": "Sous le microscope",
+          "decor": "laboratoire",
+          "objet_principal": "objet-1",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "theo",
+          "probleme_narratif": "Le tableau des minéraux a été effacé par le chiffon du ménage.",
+          "enjeu": "Théo ne peut pas classer ses échantillons sans cette échelle.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+          "competence_programme": "Citer les 3 minéraux argileux et leur plasticité",
+          "pourquoi_ce_savoir_ici": "La plasticité d'une argile dépend de ses minéraux.",
+          "reaction_du_decor": {
+            "effet": "lumiere",
+            "description": "Les trois barres du tableau se remplissent dans le bon ordre."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "mineraux-argiles",
+          "type": "ordre",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "La kaolinite a une plasticité faible, l'illite une plasticité moyenne, la smectite (par exemple la montmorillonite) une plasticité haute.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "items": [
+              {
+                "txt": "Kaolinite",
+                "sous": "le minéral du kaolin",
+                "rang": 1
+              },
+              {
+                "txt": "Illite",
+                "sous": "plasticité moyenne",
+                "rang": 2
+              },
+              {
+                "txt": "Smectite",
+                "sous": "exemple : la montmorillonite",
+                "rang": 3
+              }
+            ],
+            "consigne": "Range les trois minéraux argileux de la plasticité la plus faible (en haut) à la plus haute (en bas). Utilise les flèches, puis vérifie.",
+            "indices": [
+              "Regarde le tableau des minéraux argileux.",
+              "Le kaolin, peu plastique, contient surtout de la kaolinite.",
+              "Le plus plastique a pour exemple la montmorillonite."
+            ],
+            "dialogue": "Aidez-moi à remettre les trois minéraux dans l'ordre."
+          },
+          "timonier": {
+            "items": [
+              {
+                "txt": "Kaolinite",
+                "rang": 1
+              },
+              {
+                "txt": "Illite",
+                "rang": 2
+              },
+              {
+                "txt": "Smectite (montmorillonite)",
+                "rang": 3
+              }
+            ],
+            "consigne": "Classe les trois minéraux argileux, du moins plastique au plus plastique, sans l'aide des repères.",
+            "indices": [
+              "Il y a trois niveaux : faible, moyenne, haute.",
+              "La kaolinite est en haut.",
+              "La smectite est en bas."
+            ],
+            "dialogue": "Du moins plastique au plus plastique, sans repères cette fois."
+          }
+        },
+        {
+          "id": "e2-2",
+          "escale": 2,
+          "ordre": 2,
+          "titre": "Les questions de Théo",
+          "decor": "laboratoire",
+          "objet_principal": "objet-2",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "theo",
+          "probleme_narratif": "Théo veut vérifier que vous savez ce que vous regardez au microscope.",
+          "enjeu": "Il ne confie pas son laboratoire à quelqu'un qui confond minéral et argile.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+          "competence_programme": "Citer les 3 minéraux argileux et leur plasticité",
+          "pourquoi_ce_savoir_ici": "Le microscope montre les particules qui composent l'argile.",
+          "reaction_du_decor": {
+            "effet": "eclat",
+            "description": "La lame s'éclaire sous l'objectif."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "mineraux-argiles",
+          "type": "qcm",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Les minéraux argileux sont des particules microscopiques. Une argile est une matière naturelle qui mélange plusieurs minéraux argileux et d'autres matières ; sa couleur et ses propriétés dépendent du lieu d'extraction.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "questions": [
+              {
+                "q": "Les minéraux argileux sont…",
+                "options": [
+                  "de gros cailloux",
+                  "des particules microscopiques",
+                  "des morceaux de verre"
+                ],
+                "bonne": 1,
+                "explication": "On ne les voit qu'au microscope."
+              },
+              {
+                "q": "Combien y a-t-il de minéraux argileux principaux ?",
+                "options": [
+                  "3",
+                  "5",
+                  "10"
+                ],
+                "bonne": 0,
+                "explication": "Kaolinite, illite, smectite."
+              },
+              {
+                "q": "Une argile est…",
+                "options": [
+                  "une matière fabriquée en usine",
+                  "une poudre de verre",
+                  "une matière naturelle"
+                ],
+                "bonne": 2,
+                "explication": "On l'extrait du sol."
+              }
+            ],
+            "consigne": "Théo, le technicien du laboratoire, te pose trois questions. Choisis la bonne réponse à chacune.",
+            "indices": [
+              "Un minéral argileux est minuscule.",
+              "Une argile, c'est un mélange naturel.",
+              "On en compte trois principaux."
+            ],
+            "dialogue": "Trois questions, et je vous laisse regarder."
+          },
+          "timonier": {
+            "questions": [
+              {
+                "q": "Une argile contient…",
+                "options": [
+                  "un seul minéral argileux pur",
+                  "plusieurs minéraux argileux et d'autres matières (sable, quartz, restes de plantes)",
+                  "uniquement du sable"
+                ],
+                "bonne": 1,
+                "explication": "C'est un mélange naturel."
+              },
+              {
+                "q": "Pourquoi deux argiles n'ont-elles pas la même couleur ?",
+                "options": [
+                  "Elles viennent d'endroits différents",
+                  "On les peint",
+                  "Elles ont été cuites"
+                ],
+                "bonne": 0,
+                "explication": "Couleur et propriétés dépendent du lieu d'extraction."
+              },
+              {
+                "q": "Que désigne la plasticité ?",
+                "options": [
+                  "La résistance à la chaleur",
+                  "La couleur après cuisson",
+                  "La capacité à être modelée sans casser"
+                ],
+                "bonne": 2,
+                "explication": "C'est la qualité recherchée pour modeler."
+              }
+            ],
+            "consigne": "Théo veut vérifier que tu as compris ce qu'est une argile. Réponds à ses trois questions.",
+            "indices": [
+              "Relis « Les minéraux argileux » puis « Les argiles ».",
+              "L'argile n'est pas fabriquée en usine.",
+              "Le lieu d'extraction change la couleur."
+            ],
+            "dialogue": "Trois questions précises : qu'est-ce qu'une argile, au juste ?"
+          }
+        },
+        {
+          "id": "e2-3",
+          "escale": 2,
+          "ordre": 3,
+          "titre": "Restée sur place ou voyageuse ?",
+          "decor": "laboratoire",
+          "objet_principal": "objet-3",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "theo",
+          "probleme_narratif": "Les coupelles sont mélangées : primaires et secondaires ensemble.",
+          "enjeu": "Un mauvais classement fausse toutes les recettes.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, encadré « Argile primaire ou argile secondaire ? »",
+          "competence_programme": "Citer les 3 minéraux argileux et leur plasticité",
+          "pourquoi_ce_savoir_ici": "L'origine d'une argile explique sa plasticité.",
+          "reaction_du_decor": {
+            "effet": "ouverture",
+            "description": "Les coupelles se rangent en deux rangées."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "mineraux-argiles",
+          "type": "tri",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Une argile primaire est restée sur place, là où la roche s'est transformée : c'est le cas du kaolin. Une argile secondaire a été transportée par l'eau ou le vent, s'est mélangée à d'autres matières et est plus plastique : ball clay, terre à feu, terre à grès, argiles communes.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "colonnes": [
+              {
+                "id": "pri",
+                "titre": "Argile primaire"
+              },
+              {
+                "id": "sec",
+                "titre": "Argile secondaire"
+              }
+            ],
+            "cartes": [
+              {
+                "txt": "Restée sur place, là où la roche s'est transformée",
+                "col": "pri"
+              },
+              {
+                "txt": "Le kaolin",
+                "col": "pri"
+              },
+              {
+                "txt": "Transportée par l'eau ou le vent",
+                "col": "sec"
+              },
+              {
+                "txt": "La ball clay",
+                "col": "sec"
+              },
+              {
+                "txt": "Les argiles communes (terre rouge)",
+                "col": "sec"
+              }
+            ],
+            "consigne": "Range chaque étiquette : argile primaire ou argile secondaire ?",
+            "indices": [
+              "Primaire = elle n'a pas bougé.",
+              "Secondaire = elle a voyagé avec l'eau ou le vent.",
+              "Une seule argile du chapitre est primaire : la blanche."
+            ],
+            "dialogue": "Restée sur place ou voyageuse ? Rangez les étiquettes."
+          },
+          "timonier": {
+            "colonnes": [
+              {
+                "id": "pri",
+                "titre": "Argile primaire"
+              },
+              {
+                "id": "sec",
+                "titre": "Argile secondaire"
+              }
+            ],
+            "cartes": [
+              {
+                "txt": "Restée sur place, là où la roche s'est transformée",
+                "col": "pri"
+              },
+              {
+                "txt": "Le kaolin",
+                "col": "pri"
+              },
+              {
+                "txt": "Moins plastique que l'autre type",
+                "col": "pri"
+              },
+              {
+                "txt": "Transportée loin de son origine",
+                "col": "sec"
+              },
+              {
+                "txt": "Mélangée à d'autres matières pendant le voyage",
+                "col": "sec"
+              },
+              {
+                "txt": "La terre à feu",
+                "col": "sec"
+              },
+              {
+                "txt": "La terre à grès",
+                "col": "sec"
+              },
+              {
+                "txt": "La ball clay",
+                "col": "sec"
+              }
+            ],
+            "consigne": "Range les huit étiquettes : argile primaire ou argile secondaire ? Attention aux phrases.",
+            "indices": [
+              "Relis l'encadré « Argile primaire ou argile secondaire ? ».",
+              "En voyageant, l'argile se mélange à d'autres matières.",
+              "L'argile secondaire est la plus plastique des deux."
+            ],
+            "dialogue": "Huit étiquettes, attention aux phrases : elles décrivent autant que les noms."
+          }
+        },
+        {
+          "id": "e2-4",
+          "escale": 2,
+          "ordre": 4,
+          "titre": "L'échantillon mal rangé",
+          "decor": "laboratoire",
+          "objet_principal": "objet-4",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "theo",
+          "probleme_narratif": "Un échantillon s'est glissé dans le mauvais tiroir.",
+          "enjeu": "Si l'intrus reste là, la prochaine commande sera fausse.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+          "competence_programme": "Citer les 3 minéraux argileux et leur plasticité",
+          "pourquoi_ce_savoir_ici": "Une seule argile du chapitre est primaire.",
+          "reaction_du_decor": {
+            "effet": "calme",
+            "description": "Le tiroir se referme proprement."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "mineraux-argiles",
+          "type": "intrus",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Le kaolin est une argile primaire : il est resté sur place. Ball clay, terre à feu, terre à grès et argiles communes ont été transportées : ce sont des argiles secondaires.",
+          "_brouillon": [
+            "zones"
+          ],
+          "niveaux": [
+            "timonier"
+          ],
+          "timonier": {
+            "cartes": [
+              {
+                "txt": "Ball clay",
+                "sous": "argile à boulets",
+                "intrus": false
+              },
+              {
+                "txt": "Terre à feu",
+                "sous": "argile réfractaire",
+                "intrus": false
+              },
+              {
+                "txt": "Kaolin",
+                "sous": "argile blanche",
+                "intrus": true
+              },
+              {
+                "txt": "Terre à grès",
+                "sous": "résiste au gel",
+                "intrus": false
+              },
+              {
+                "txt": "Argile commune",
+                "sous": "terre rouge",
+                "intrus": false
+              }
+            ],
+            "consigne": "Ces échantillons sont tous rangés dans le tiroir « argiles secondaires ». Un seul n'a rien à y faire : trouve l'intrus.",
+            "indices": [
+              "Cherche l'argile qui n'a pas voyagé.",
+              "Elle est blanche.",
+              "Elle sert à la porcelaine."
+            ],
+            "dialogue": "Un de ces échantillons n'a rien à faire dans le tiroir des argiles secondaires."
+          }
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "id": "la-reserve-des-argiles-les-principales-argiles-et-leurs-usages",
+      "titre": "La réserve des argiles",
+      "lieu": "La réserve des argiles, derrière l'atelier",
+      "matiere": "",
+      "periode_conseillee": "",
+      "episode": "Des bacs d'argile humide sous des bâches, et six étagères dont les étiquettes sont tombées par terre.",
+      "scenarimage": "",
+      "mot": "KAOLIN",
+      "mot_origine": "Le mot-clé de la salle 3.",
+      "air": null,
+      "cinematique_ouverture": "transition-e3",
+      "cinematique_fin": "fin-e3",
+      "etats_decor": [],
+      "enigmes": [
+        {
+          "id": "e3-1",
+          "escale": 3,
+          "ordre": 1,
+          "titre": "Les sacs sans étiquette",
+          "decor": "reserve",
+          "objet_principal": "objet-1",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "awa",
+          "probleme_narratif": "Les bacs d'argile n'ont plus d'étiquette.",
+          "enjeu": "Awa ne peut rien livrer tant qu'elle ne sait pas ce qu'il y a dedans.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1, « Les principales argiles »",
+          "competence_programme": "Reconnaître les principales argiles et leur couleur",
+          "pourquoi_ce_savoir_ici": "La couleur est le premier indice pour reconnaître une argile.",
+          "reaction_du_decor": {
+            "effet": "eclat",
+            "description": "Chaque bac reçoit sa plaque."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "principales-argiles",
+          "type": "association",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Kaolin : blanc. Ball clay : blanc crème à gris clair, très plastique. Terre à feu : beige à brun clair, résiste à environ 1500 °C. Terre à grès : beige à brun, résiste au gel. Argiles communes : rouges, riches en fer. Bentonite : extrêmement plastique.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "paires": [
+              {
+                "g": "Kaolin",
+                "d": "Blanche"
+              },
+              {
+                "g": "Ball clay",
+                "d": "Blanc crème à gris clair"
+              },
+              {
+                "g": "Terre à feu",
+                "d": "Beige à brun clair"
+              },
+              {
+                "g": "Argiles communes",
+                "d": "Rouge"
+              }
+            ],
+            "consigne": "Relie chaque argile à sa couleur.",
+            "indices": [
+              "La porcelaine est blanche : pense à son argile.",
+              "La terre cuite des briques est rouge.",
+              "La ball clay est presque blanche, un peu grise."
+            ],
+            "dialogue": "Regardez les couleurs : quelle argile est dans chaque bac ?"
+          },
+          "timonier": {
+            "paires": [
+              {
+                "g": "Kaolin",
+                "d": "Blanche, argile primaire"
+              },
+              {
+                "g": "Ball clay",
+                "d": "Très plastique, blanc crème à gris clair"
+              },
+              {
+                "g": "Terre à feu",
+                "d": "Résiste à environ 1500 °C"
+              },
+              {
+                "g": "Terre à grès",
+                "d": "Résiste au gel"
+              },
+              {
+                "g": "Argiles communes",
+                "d": "Riches en fer, rouges"
+              },
+              {
+                "g": "Bentonite",
+                "d": "Extrêmement plastique"
+              }
+            ],
+            "consigne": "Relie chaque argile à ce qui la caractérise le mieux.",
+            "indices": [
+              "Regarde le tableau « Les argiles » de la synthèse.",
+              "Le fer donne la couleur rouge.",
+              "Réfractaire = résiste au feu."
+            ],
+            "dialogue": "Reliez chaque argile à ce qui la distingue vraiment."
+          }
+        },
+        {
+          "id": "e3-2",
+          "escale": 3,
+          "ordre": 2,
+          "titre": "Le rayonnage de la réserve",
+          "decor": "reserve",
+          "objet_principal": "objet-2",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "awa",
+          "probleme_narratif": "Les six étagères sont vides.",
+          "enjeu": "L'atelier attend ses argiles pour la journée.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1, « Les principales argiles »",
+          "competence_programme": "Reconnaître les principales argiles et leur couleur",
+          "pourquoi_ce_savoir_ici": "Chaque argile a ses usages : c'est ainsi qu'on les range.",
+          "reaction_du_decor": {
+            "effet": "ouverture",
+            "description": "Le rayonnage se remplit, étagère par étagère."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "principales-argiles",
+          "type": "plan",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Porcelaine et vaisselle fine : kaolin. Briques de four, supports d'enfournement, creusets : terre à feu. Briques et tuiles : argiles communes. Vaisselle, poteries de jardin et carreaux qui résistent au gel : terre à grès. Un peu dans une pâte ou dans un émail : bentonite. Pâtes fines, porcelaine, faïence : ball clay.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "titre": "Le rayonnage de la réserve",
+            "colonnes": 2,
+            "cases": [
+              {
+                "libelle": "Étagère 1 : porcelaine et vaisselle fine",
+                "reponse": "Kaolin"
+              },
+              {
+                "libelle": "Étagère 2 : briques de four et creusets",
+                "reponse": "Terre à feu"
+              },
+              {
+                "libelle": "Étagère 3 : briques et tuiles",
+                "reponse": "Argiles communes"
+              },
+              {
+                "libelle": "Étagère 4 : vaisselle, poteries de jardin, carreaux",
+                "reponse": "Terre à grès"
+              }
+            ],
+            "etiquettes": [
+              "Kaolin",
+              "Terre à feu",
+              "Argiles communes",
+              "Terre à grès",
+              "Bentonite"
+            ],
+            "consigne": "Awa range la réserve. Place chaque argile sur la bonne étagère : clique sur une étiquette, puis sur la case. Une étiquette est en trop.",
+            "indices": [
+              "Lis l'usage écrit sur chaque étagère.",
+              "Le four a besoin d'une argile qui résiste au feu.",
+              "Tuiles et briques sont rouges."
+            ],
+            "dialogue": "Placez chaque argile sur l'étagère de son usage."
+          },
+          "timonier": {
+            "titre": "Le rayonnage de la réserve",
+            "colonnes": 2,
+            "cases": [
+              {
+                "libelle": "Étagère 1 : porcelaine et vaisselle fine (argile primaire)",
+                "reponse": "Kaolin"
+              },
+              {
+                "libelle": "Étagère 2 : plaques et supports d'enfournement",
+                "reponse": "Terre à feu"
+              },
+              {
+                "libelle": "Étagère 3 : tuiles, riche en fer",
+                "reponse": "Argiles communes"
+              },
+              {
+                "libelle": "Étagère 4 : carreaux qui résistent au gel",
+                "reponse": "Terre à grès"
+              },
+              {
+                "libelle": "Étagère 5 : un peu dans l'émail, pour que la poudre ne tombe pas au fond du seau",
+                "reponse": "Bentonite"
+              },
+              {
+                "libelle": "Étagère 6 : pâtes fines et faïence, très plastique",
+                "reponse": "Ball clay"
+              }
+            ],
+            "etiquettes": [
+              "Kaolin",
+              "Terre à feu",
+              "Argiles communes",
+              "Terre à grès",
+              "Bentonite",
+              "Ball clay",
+              "Chamotte",
+              "Feldspath"
+            ],
+            "consigne": "Place chaque argile sur l'étagère qui correspond à son usage. Deux étiquettes sont en trop.",
+            "indices": [
+              "Chaque fiche de la partie I.1 donne les usages.",
+              "La bentonite s'ajoute « un peu » : elle n'est jamais seule.",
+              "La terre à grès résiste au gel : pense au jardin."
+            ],
+            "dialogue": "Six étagères, deux étiquettes en trop. Réfléchissez aux usages."
+          }
+        },
+        {
+          "id": "e3-3",
+          "escale": 3,
+          "ordre": 3,
+          "titre": "Le bon choix",
+          "decor": "reserve",
+          "objet_principal": "objet-3",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "awa",
+          "probleme_narratif": "Trois commandes attendent une réponse.",
+          "enjeu": "Une mauvaise argile, et la commande revient.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+          "competence_programme": "Reconnaître les principales argiles et leur couleur",
+          "pourquoi_ce_savoir_ici": "Choisir une argile, c'est connaître ses propriétés.",
+          "reaction_du_decor": {
+            "effet": "lumiere",
+            "description": "Les bons de commande se tamponnent « validé »."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "principales-argiles",
+          "type": "qcm",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Pour une pâte plus plastique, on ajoute un peu de bentonite. Une argile commune rouge foncé contient beaucoup de fer. Le kaolin est fait surtout de kaolinite, peu plastique.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "questions": [
+              {
+                "q": "Pour rendre une pâte plus plastique, on ajoute un peu de…",
+                "options": [
+                  "sable",
+                  "bentonite",
+                  "chamotte"
+                ],
+                "bonne": 1,
+                "explication": "La bentonite est extrêmement plastique."
+              },
+              {
+                "q": "Une argile rouge foncé contient beaucoup de…",
+                "options": [
+                  "fer",
+                  "kaolin",
+                  "verre"
+                ],
+                "bonne": 0,
+                "explication": "Le fer colore les argiles communes."
+              },
+              {
+                "q": "Pour la porcelaine, on choisit…",
+                "options": [
+                  "la terre à feu",
+                  "l'argile commune",
+                  "le kaolin"
+                ],
+                "bonne": 2,
+                "explication": "Le kaolin est blanc."
+              }
+            ],
+            "consigne": "Pour chaque commande, choisis la bonne argile.",
+            "indices": [
+              "La bentonite est extrêmement plastique.",
+              "Plus il y a de fer, plus l'argile est rouge.",
+              "Le kaolin est blanc."
+            ],
+            "dialogue": "Pour chaque commande, quelle argile ?"
+          },
+          "timonier": {
+            "questions": [
+              {
+                "q": "Pourquoi met-on un peu de bentonite dans un émail ?",
+                "options": [
+                  "Pour le colorer en rouge",
+                  "Pour que la poudre ne tombe pas au fond du seau",
+                  "Pour qu'il fonde plus vite"
+                ],
+                "bonne": 1,
+                "explication": "Elle garde la poudre en suspension."
+              },
+              {
+                "q": "Le kaolin est fait surtout de…",
+                "options": [
+                  "kaolinite, de plasticité faible",
+                  "smectite, très plastique",
+                  "chamotte"
+                ],
+                "bonne": 0,
+                "explication": "C'est pour cela qu'il est peu plastique."
+              },
+              {
+                "q": "La terre à grès convient aux poteries de jardin car…",
+                "options": [
+                  "elle est rouge",
+                  "elle fond à 1000 °C",
+                  "devenue dure et étanche, elle résiste au gel"
+                ],
+                "bonne": 2,
+                "explication": "Elle se vitrifie à la cuisson."
+              }
+            ],
+            "consigne": "Trois commandes arrivent à la réserve. Choisis la bonne réponse à chacune.",
+            "indices": [
+              "La bentonite s'ajoute en petite quantité.",
+              "Le fer colore l'argile.",
+              "Kaolin vient de kaolinite."
+            ],
+            "dialogue": "Trois commandes délicates : répondez comme une professionnelle ou un professionnel."
+          }
+        },
+        {
+          "id": "e3-4",
+          "escale": 3,
+          "ordre": 4,
+          "titre": "Le cadenas de la réserve",
+          "decor": "reserve",
+          "objet_principal": "objet-4",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "awa",
+          "probleme_narratif": "Le bac de la dernière livraison est fermé par un cadenas.",
+          "enjeu": "Sans l'ouvrir, la réserve reste incomplète.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.1",
+          "competence_programme": "Reconnaître les principales argiles et leur couleur",
+          "pourquoi_ce_savoir_ici": "Deux nombres du chapitre ouvrent le cadenas.",
+          "reaction_du_decor": {
+            "effet": "ouverture",
+            "description": "Le cadenas s'ouvre avec un déclic."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "principales-argiles",
+          "type": "code",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "La terre à feu résiste à environ 1500 °C sans fondre ni se déformer. Il y a 3 minéraux argileux principaux : kaolinite, illite, smectite.",
+          "_brouillon": [
+            "zones"
+          ],
+          "niveaux": [
+            "timonier"
+          ],
+          "timonier": {
+            "champs": [
+              {
+                "libelle": "Température (°C) que supporte la terre à feu",
+                "valeur": "1500",
+                "longueur": 4
+              },
+              {
+                "libelle": "Nombre de minéraux argileux principaux",
+                "valeur": "3",
+                "longueur": 1
+              }
+            ],
+            "consigne": "Le cadenas de l'armoire des échantillons a deux molettes. Trouve les deux nombres.",
+            "indices": [
+              "Le premier nombre est une température.",
+              "C'est la température que supporte l'argile réfractaire.",
+              "Le second nombre compte des minéraux du laboratoire."
+            ],
+            "dialogue": "Deux molettes : une température et un nombre du laboratoire."
+          }
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "id": "la-salle-de-preparation-les-degraissants-et-la-securite",
+      "titre": "La salle de préparation",
+      "lieu": "La salle de préparation des pâtes",
+      "matiere": "",
+      "periode_conseillee": "",
+      "episode": "Un malaxeur ronronne. Quatre bacs de dégraissants attendent, et une armoire grillagée porte un pictogramme « toxique ».",
+      "scenarimage": "",
+      "mot": "DÉGRAISSANT",
+      "mot_origine": "Le mot-clé de la salle 4.",
+      "air": null,
+      "cinematique_ouverture": "transition-e4",
+      "cinematique_fin": "fin-e4",
+      "etats_decor": [],
+      "enigmes": [
+        {
+          "id": "e4-1",
+          "escale": 4,
+          "ordre": 1,
+          "titre": "Les quatre bacs",
+          "decor": "preparation",
+          "objet_principal": "objet-1",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "lucas",
+          "probleme_narratif": "Les dégraissants sont dans des sacs sans nom.",
+          "enjeu": "Un mauvais bac, et la pâte se fissure au séchage.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.2",
+          "competence_programme": "Expliquer à quoi sert un dégraissant",
+          "pourquoi_ce_savoir_ici": "Chaque type de dégraissant a son rôle.",
+          "reaction_du_decor": {
+            "effet": "ouverture",
+            "description": "Les quatre bacs se remplissent."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "degraissants-securite",
+          "type": "tri",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Dégraissants simples : chamotte, tessons broyés. Siliceux : sable, quartz, galets de mer broyés. Combustibles : paille, papier, sciure de bois. Fondants : feldspath.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "colonnes": [
+              {
+                "id": "sim",
+                "titre": "Simples"
+              },
+              {
+                "id": "sil",
+                "titre": "Siliceux"
+              },
+              {
+                "id": "com",
+                "titre": "Combustibles"
+              },
+              {
+                "id": "fon",
+                "titre": "Fondants"
+              }
+            ],
+            "cartes": [
+              {
+                "txt": "Chamotte",
+                "col": "sim"
+              },
+              {
+                "txt": "Sable",
+                "col": "sil"
+              },
+              {
+                "txt": "Quartz",
+                "col": "sil"
+              },
+              {
+                "txt": "Paille",
+                "col": "com"
+              },
+              {
+                "txt": "Sciure de bois",
+                "col": "com"
+              },
+              {
+                "txt": "Feldspath",
+                "col": "fon"
+              }
+            ],
+            "consigne": "Lucas prépare les dégraissants. Range chaque matière dans le bon bac.",
+            "indices": [
+              "La chamotte est un dégraissant simple.",
+              "Combustible = ça brûle au four.",
+              "Le feldspath aide à fondre."
+            ],
+            "dialogue": "Rangez chaque matière dans son bac."
+          },
+          "timonier": {
+            "colonnes": [
+              {
+                "id": "sim",
+                "titre": "Simples"
+              },
+              {
+                "id": "sil",
+                "titre": "Siliceux"
+              },
+              {
+                "id": "com",
+                "titre": "Combustibles"
+              },
+              {
+                "id": "fon",
+                "titre": "Fondants"
+              }
+            ],
+            "cartes": [
+              {
+                "txt": "Chamotte",
+                "col": "sim"
+              },
+              {
+                "txt": "Tessons broyés",
+                "col": "sim"
+              },
+              {
+                "txt": "Sable",
+                "col": "sil"
+              },
+              {
+                "txt": "Quartz en poudre",
+                "col": "sil"
+              },
+              {
+                "txt": "Galets de mer broyés",
+                "col": "sil"
+              },
+              {
+                "txt": "Paille",
+                "col": "com"
+              },
+              {
+                "txt": "Papier",
+                "col": "com"
+              },
+              {
+                "txt": "Sciure de bois",
+                "col": "com"
+              },
+              {
+                "txt": "Feldspath",
+                "col": "fon"
+              }
+            ],
+            "consigne": "Range les neuf matières dans le bon bac de dégraissant.",
+            "indices": [
+              "Relis le tableau des dégraissants, partie I.2.",
+              "Siliceux : sable et quartz.",
+              "Les tessons sont des morceaux de poterie sans émail."
+            ],
+            "dialogue": "Neuf matières, quatre bacs : simples, siliceux, combustibles, fondants."
+          }
+        },
+        {
+          "id": "e4-2",
+          "escale": 4,
+          "ordre": 2,
+          "titre": "Les effets du dégraissant",
+          "decor": "preparation",
+          "objet_principal": "objet-2",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "lucas",
+          "probleme_narratif": "Lucas explique son métier, mais il teste votre attention.",
+          "enjeu": "Il ne laisse pas toucher le malaxeur à quelqu'un qui ignore le rôle du dégraissant.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.2",
+          "competence_programme": "Expliquer à quoi sert un dégraissant",
+          "pourquoi_ce_savoir_ici": "Le dégraissant change le comportement de la pâte.",
+          "reaction_du_decor": {
+            "effet": "calme",
+            "description": "Le malaxeur ralentit, la pâte est prête."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "degraissants-securite",
+          "type": "vraifaux",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Un dégraissant réduit la plasticité : la pâte est moins collante, sèche mieux, se fissure et se déforme moins. Les combustibles laissent de petits trous qui allègent la pièce ; les fondants la rendent dure et vitrifiée.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "affirmations": [
+              {
+                "txt": "Un dégraissant rend la pâte moins collante.",
+                "vrai": true,
+                "explication": "Il réduit sa plasticité."
+              },
+              {
+                "txt": "Avec un dégraissant, la pâte se fissure davantage.",
+                "vrai": false,
+                "explication": "Elle se fissure moins."
+              },
+              {
+                "txt": "Avec un dégraissant, la pâte sèche mieux.",
+                "vrai": true,
+                "explication": "C'est l'un de ses effets."
+              },
+              {
+                "txt": "Un dégraissant rend la pâte plus plastique.",
+                "vrai": false,
+                "explication": "Il réduit la plasticité."
+              }
+            ],
+            "consigne": "Lucas explique à quoi sert un dégraissant. Ses phrases sont-elles vraies ou fausses ?",
+            "indices": [
+              "Un dégraissant réduit la plasticité.",
+              "La pâte sèche mieux.",
+              "Elle se fissure moins, pas plus."
+            ],
+            "dialogue": "À quoi sert un dégraissant ? Vrai ou faux ?"
+          },
+          "timonier": {
+            "affirmations": [
+              {
+                "txt": "Un dégraissant réduit la plasticité de l'argile.",
+                "vrai": true,
+                "explication": "C'est son rôle."
+              },
+              {
+                "txt": "Une pâte dégraissée se déforme moins à la cuisson.",
+                "vrai": true,
+                "explication": "Elle est plus stable."
+              },
+              {
+                "txt": "Les dégraissants combustibles rendent la pièce plus lourde.",
+                "vrai": false,
+                "explication": "Ils brûlent et laissent des trous : la pièce est plus légère."
+              },
+              {
+                "txt": "Les dégraissants fondants rendent la pièce dure et vitrifiée.",
+                "vrai": true,
+                "explication": "Ils aident la pâte à fondre."
+              },
+              {
+                "txt": "Les dégraissants siliceux fragilisent la pièce cuite.",
+                "vrai": false,
+                "explication": "Ils résistent à la chaleur et la renforcent."
+              }
+            ],
+            "consigne": "Vrai ou faux : vérifie les cinq affirmations de Lucas sur les dégraissants.",
+            "indices": [
+              "Relis la phrase sous le titre « Les matières non plastiques ».",
+              "Les combustibles brûlent : il reste des trous.",
+              "Les fondants aident la pâte à fondre."
+            ],
+            "dialogue": "Cinq affirmations : certaines sont des pièges classiques."
+          }
+        },
+        {
+          "id": "e4-3",
+          "escale": 4,
+          "ordre": 3,
+          "titre": "L'armoire des fondants",
+          "decor": "preparation",
+          "objet_principal": "objet-3",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "lucas",
+          "probleme_narratif": "L'armoire des fondants contient des poudres au plomb.",
+          "enjeu": "Un geste dangereux peut rendre malade.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, encadré « Sécurité »",
+          "competence_programme": "Expliquer à quoi sert un dégraissant",
+          "pourquoi_ce_savoir_ici": "La sécurité passe avant tout dans la salle de préparation.",
+          "reaction_du_decor": {
+            "effet": "lumiere",
+            "description": "Le voyant de l'armoire passe au vert."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "degraissants-securite",
+          "type": "intrus",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Le plomb est toxique : on manipule les matières fondantes avec des gants, un masque, et on se lave les mains. Manger ou boire à son poste de travail est dangereux.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "cartes": [
+              {
+                "txt": "Porter des gants",
+                "intrus": false
+              },
+              {
+                "txt": "Porter un masque",
+                "intrus": false
+              },
+              {
+                "txt": "Goûter la poudre",
+                "intrus": true
+              },
+              {
+                "txt": "Se laver les mains",
+                "intrus": false
+              }
+            ],
+            "consigne": "Certaines matières fondantes contiennent du plomb, toxique. Un seul de ces gestes est dangereux : trouve-le.",
+            "indices": [
+              "Relis l'encadré « Sécurité ».",
+              "Trois gestes protègent.",
+              "On ne mange jamais là où l'on manipule ces poudres."
+            ],
+            "dialogue": "Un seul de ces gestes est dangereux. Lequel ?"
+          },
+          "timonier": {
+            "cartes": [
+              {
+                "txt": "Porter des gants",
+                "sous": "les mains protégées",
+                "intrus": false
+              },
+              {
+                "txt": "Porter un masque",
+                "sous": "ne pas respirer la poudre",
+                "intrus": false
+              },
+              {
+                "txt": "Se laver les mains",
+                "sous": "après la manipulation",
+                "intrus": false
+              },
+              {
+                "txt": "Prendre son goûter à son poste",
+                "sous": "pour gagner du temps",
+                "intrus": true
+              }
+            ],
+            "consigne": "Devant l'armoire des fondants, un seul de ces gestes ne protège pas du plomb : trouve l'intrus.",
+            "indices": [
+              "Le plomb peut entrer par la bouche et par le nez.",
+              "Gants, masque, lavage des mains : ce sont les trois réflexes.",
+              "L'intrus fait entrer la poudre dans la bouche."
+            ],
+            "dialogue": "Trouvez le geste qui ne protège pas du plomb."
+          }
+        },
+        {
+          "id": "e4-4",
+          "escale": 4,
+          "ordre": 4,
+          "titre": "Un rôle pour chaque bac",
+          "decor": "preparation",
+          "objet_principal": "objet-4",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "lucas",
+          "probleme_narratif": "Les étiquettes des bacs doivent indiquer leur rôle.",
+          "enjeu": "Sans rôle écrit, les apprentis se trompent de bac.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie I.2",
+          "competence_programme": "Expliquer à quoi sert un dégraissant",
+          "pourquoi_ce_savoir_ici": "Connaître le rôle, c'est choisir le bon dégraissant.",
+          "reaction_du_decor": {
+            "effet": "eclat",
+            "description": "Les étiquettes s'impriment et se collent."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "degraissants-securite",
+          "type": "association",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Simple : moins collante tout en restant solide. Siliceux : résiste à la chaleur et renforce la pièce cuite. Combustible : brûle et laisse de petits trous, la pièce est plus légère. Fondant : aide la pâte à fondre, la pièce devient dure et vitrifiée.",
+          "_brouillon": [
+            "zones"
+          ],
+          "niveaux": [
+            "timonier"
+          ],
+          "timonier": {
+            "paires": [
+              {
+                "g": "Simple (chamotte)",
+                "d": "Rend la pâte moins collante, tout en la gardant solide"
+              },
+              {
+                "g": "Siliceux (sable, quartz)",
+                "d": "Résiste à la chaleur et renforce la pièce cuite"
+              },
+              {
+                "g": "Combustible (paille, sciure)",
+                "d": "Brûle et laisse de petits trous : la pièce est plus légère"
+              },
+              {
+                "g": "Fondant (feldspath)",
+                "d": "Aide la pâte à fondre : la pièce devient dure et vitrifiée"
+              }
+            ],
+            "consigne": "Relie chaque type de dégraissant à son rôle.",
+            "indices": [
+              "La colonne « Rôle » du tableau des dégraissants.",
+              "Le combustible disparaît dans le four.",
+              "Le fondant fait fondre."
+            ],
+            "dialogue": "Reliez chaque type de dégraissant à son rôle exact."
+          }
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "id": "le-four-familles-de-pates-cuisson-et-recettes",
+      "titre": "Le four",
+      "lieu": "La halle des fours",
+      "matiere": "",
+      "periode_conseillee": "",
+      "episode": "Deux grands fours électriques. Sur l'écran du pyromètre, la température monte doucement.",
+      "scenarimage": "",
+      "mot": "CUISSON",
+      "mot_origine": "Le mot-clé de la salle 5.",
+      "air": null,
+      "cinematique_ouverture": "transition-e5",
+      "cinematique_fin": "fin-e5",
+      "etats_decor": [],
+      "enigmes": [
+        {
+          "id": "e5-1",
+          "escale": 5,
+          "ordre": 1,
+          "titre": "La montée en température",
+          "decor": "four",
+          "objet_principal": "objet-1",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "ferrand",
+          "probleme_narratif": "Le programme de cuisson est vide.",
+          "enjeu": "Sans ordre de température, le four ne démarre pas.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie II",
+          "competence_programme": "Citer les grandes familles de pâtes et leur température de cuisson",
+          "pourquoi_ce_savoir_ici": "Chaque famille de pâte cuit à sa température.",
+          "reaction_du_decor": {
+            "effet": "lumiere",
+            "description": "Le regard du four rougeoie davantage."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "familles-recettes",
+          "type": "ordre",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Terre cuite : 1000 °C. Faïence : 1050 °C. Grès : 1280 °C. Porcelaine dure : jusqu'à 1400 °C. Plus la cuisson est chaude, plus la pâte est dure et étanche.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "items": [
+              {
+                "txt": "Terre cuite",
+                "sous": "briques, tuiles",
+                "rang": 1
+              },
+              {
+                "txt": "Faïence",
+                "sous": "vaisselle émaillée",
+                "rang": 2
+              },
+              {
+                "txt": "Grès",
+                "sous": "dur et étanche",
+                "rang": 3
+              },
+              {
+                "txt": "Porcelaine dure",
+                "sous": "blanche, translucide",
+                "rang": 4
+              }
+            ],
+            "consigne": "Range ces familles de pâtes de la cuisson la moins chaude (en haut) à la plus chaude (en bas).",
+            "indices": [
+              "Les repères donnent les objets : pense à leur dureté.",
+              "La terre cuite est la moins chaude.",
+              "La porcelaine dure est la plus chaude."
+            ],
+            "dialogue": "Rangez ces pâtes de la moins chaude à la plus chaude."
+          },
+          "timonier": {
+            "items": [
+              {
+                "txt": "Terre cuite",
+                "rang": 1
+              },
+              {
+                "txt": "Faïence",
+                "rang": 2
+              },
+              {
+                "txt": "Grès",
+                "rang": 3
+              },
+              {
+                "txt": "Porcelaine dure",
+                "rang": 4
+              }
+            ],
+            "consigne": "Classe ces familles de pâtes de la cuisson la moins chaude à la plus chaude. Les températures ne sont pas données.",
+            "indices": [
+              "Relis la colonne « Cuisson » de la partie II.",
+              "La faïence cuit un peu plus chaud que la terre cuite.",
+              "Grès et porcelaine sont vitrifiés."
+            ],
+            "dialogue": "Sans repères : de la cuisson la moins chaude à la plus chaude."
+          }
+        },
+        {
+          "id": "e5-2",
+          "escale": 5,
+          "ordre": 2,
+          "titre": "Le pyromètre du four",
+          "decor": "four",
+          "objet_principal": "objet-2",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "ferrand",
+          "probleme_narratif": "Le pyromètre doit être vérifié avant la fournée.",
+          "enjeu": "Une erreur de 100 °C peut faire fondre ou laisser crue la vaisselle.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie II",
+          "competence_programme": "Citer les grandes familles de pâtes et leur température de cuisson",
+          "pourquoi_ce_savoir_ici": "Lire et régler une température fait partie du métier.",
+          "reaction_du_decor": {
+            "effet": "eclat",
+            "description": "L'écran du pyromètre clignote, puis se stabilise."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "familles-recettes",
+          "type": "instrument",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Le pyromètre mesure la température du four. Faïence : 1050 °C. Grès : 1280 °C. Terre cuite et raku : 1000 °C.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "instrument": "thermometre",
+            "unite": "°C",
+            "min": 800,
+            "max": 1400,
+            "pas": 10,
+            "etiquettes": 7,
+            "items": [
+              {
+                "libelle": "Cuisson de la terre cuite",
+                "mode": "lire",
+                "valeur": 1000
+              },
+              {
+                "libelle": "Cuisson de la faïence",
+                "mode": "lire",
+                "valeur": 1050
+              },
+              {
+                "libelle": "Cuisson du grès",
+                "mode": "lire",
+                "valeur": 1280
+              }
+            ],
+            "consigne": "Lis la température affichée par le pyromètre pour chaque cuisson, puis écris-la.",
+            "indices": [
+              "Lis la graduation au niveau du trait.",
+              "Chaque petit trait vaut 10 °C.",
+              "Les nombres sont écrits tous les 100 °C."
+            ],
+            "dialogue": "Lisez les températures sur le pyromètre."
+          },
+          "timonier": {
+            "instrument": "thermometre",
+            "unite": "°C",
+            "min": 800,
+            "max": 1400,
+            "pas": 10,
+            "etiquettes": 7,
+            "items": [
+              {
+                "libelle": "Pendant une cuisson de faïence",
+                "mode": "lire",
+                "valeur": 1050
+              },
+              {
+                "libelle": "Grès",
+                "mode": "regler",
+                "valeur": 1280
+              },
+              {
+                "libelle": "Raku",
+                "mode": "regler",
+                "valeur": 1000
+              }
+            ],
+            "consigne": "Lis la température de la première cuisson, puis règle le pyromètre pour le grès et pour le raku (glisse le niveau).",
+            "indices": [
+              "Relis la colonne « Cuisson » de la partie II.",
+              "Le raku cuit comme la terre cuite.",
+              "Le grès cuit à 1280 °C."
+            ],
+            "dialogue": "Lisez la première, puis réglez le pyromètre pour le grès et le raku."
+          }
+        },
+        {
+          "id": "e5-3",
+          "escale": 5,
+          "ordre": 3,
+          "titre": "Qui suis-je ?",
+          "decor": "four",
+          "objet_principal": "objet-3",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "ferrand",
+          "probleme_narratif": "Des pièces crues attendent, sans étiquette de famille.",
+          "enjeu": "Une pièce dans la mauvaise fournée est perdue.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie II",
+          "competence_programme": "Citer les grandes familles de pâtes et leur température de cuisson",
+          "pourquoi_ce_savoir_ici": "On reconnaît une famille de pâte à sa composition et à son aspect.",
+          "reaction_du_decor": {
+            "effet": "calme",
+            "description": "Les pièces se rangent sur les plaques d'enfournement."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "familles-recettes",
+          "type": "qcm",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Plus la cuisson est chaude, plus la pâte devient dure et étanche. Le raku contient beaucoup de chamotte et supporte les chocs de chaleur. La porcelaine est blanche et translucide quand elle est fine ; le vitreous est blanc, vitrifié, émaillé mais non translucide.",
+          "_brouillon": [
+            "zones"
+          ],
+          "matelot": {
+            "questions": [
+              {
+                "q": "Plus la cuisson est chaude, plus la pâte devient…",
+                "options": [
+                  "dure et étanche",
+                  "molle",
+                  "collante"
+                ],
+                "bonne": 0,
+                "explication": "C'est la règle de la partie II."
+              },
+              {
+                "q": "« J'ai beaucoup de chamotte et je supporte les chocs de chaleur. »",
+                "options": [
+                  "la porcelaine",
+                  "le raku",
+                  "la faïence"
+                ],
+                "bonne": 1,
+                "explication": "Le raku cuit à 1000 °C."
+              },
+              {
+                "q": "« Je suis blanche et translucide quand je suis fine. »",
+                "options": [
+                  "la terre cuite",
+                  "le grès",
+                  "la porcelaine"
+                ],
+                "bonne": 2,
+                "explication": "Elle est faite surtout de kaolin."
+              }
+            ],
+            "consigne": "Madame Ferrand décrit trois pâtes. Retrouve la famille de chacune.",
+            "indices": [
+              "La chamotte aide à supporter les chocs de chaleur.",
+              "Translucide : la lumière passe à travers.",
+              "Chaleur = dureté."
+            ],
+            "dialogue": "Qui suis-je ? Retrouvez chaque famille de pâte."
+          },
+          "timonier": {
+            "questions": [
+              {
+                "q": "« Je suis blanche, vitrifiée, toujours émaillée, mais non translucide. »",
+                "options": [
+                  "le vitreous",
+                  "la porcelaine",
+                  "la faïence"
+                ],
+                "bonne": 0,
+                "explication": "Sanitaires, vaisselle d'hôtellerie."
+              },
+              {
+                "q": "« Je suis rouge, riche en fer, souvent sans émail. »",
+                "options": [
+                  "le grès",
+                  "la terre cuite",
+                  "le raku"
+                ],
+                "bonne": 1,
+                "explication": "Briques, tuiles, poteries horticoles."
+              },
+              {
+                "q": "« Ma pâte est faite d'argile commune ou blanche, toujours recouverte d'émail, cuite vers 1050 °C. »",
+                "options": [
+                  "la porcelaine",
+                  "le vitreous",
+                  "la faïence"
+                ],
+                "bonne": 2,
+                "explication": "Vaisselle, plats, carreaux."
+              }
+            ],
+            "consigne": "Madame Ferrand décrit trois pâtes sans les nommer. Retrouve chaque famille.",
+            "indices": [
+              "Deux pâtes sont blanches et vitrifiées : une seule laisse passer la lumière.",
+              "La terre cuite est souvent sans émail.",
+              "Relis la colonne « De quoi est faite la pâte ? »."
+            ],
+            "dialogue": "Je décris trois pâtes sans les nommer. À vous."
+          }
+        },
+        {
+          "id": "e5-4",
+          "escale": 5,
+          "ordre": 4,
+          "titre": "Le cahier de recettes",
+          "decor": "four",
+          "objet_principal": "objet-4",
+          "objets_cliquables": [
+            "objet-1",
+            "objet-2",
+            "objet-3",
+            "objet-4"
+          ],
+          "personnage_emetteur": "ferrand",
+          "probleme_narratif": "Le cahier de recettes est taché d'huile.",
+          "enjeu": "Sans recette, impossible de préparer le lot de demain.",
+          "episode_du_roman": "Chapitre « Les pâtes céramiques », CAP 1, partie III",
+          "competence_programme": "Citer les grandes familles de pâtes et leur température de cuisson",
+          "pourquoi_ce_savoir_ici": "Une recette se lit en pourcentages, et le total fait toujours 100 %.",
+          "reaction_du_decor": {
+            "effet": "ouverture",
+            "description": "Les chiffres réapparaissent sous la tache."
+          },
+          "liberte_ou_anachronisme": "Manufacture et personnages inventés ; toutes les données techniques viennent du chapitre du cours.",
+          "lecon": "familles-recettes",
+          "type": "code",
+          "niveau_variantes": "Essentiel (grade matelot) : repères et données réduites. Expert (grade timonier) : sans repères, plus de cartes, calculs.",
+          "correction_origine": "Porcelaine : kaolin 25 + ball clay 25 + feldspath 25 + silice 25 = 100 %. Raku : terre à feu 55 + ball clay 25 + chamotte 20 = 100 %. Pour 20 kg de grès : 50 % de terre à feu, soit 10 kg.",
+          "_brouillon": [
+            "zones"
+          ],
+          "niveaux": [
+            "timonier"
+          ],
+          "timonier": {
+            "champs": [
+              {
+                "libelle": "Porcelaine : part de silice (%)",
+                "valeur": "25",
+                "longueur": 2
+              },
+              {
+                "libelle": "Raku : part de chamotte (%)",
+                "valeur": "20",
+                "longueur": 2
+              },
+              {
+                "libelle": "Masse de terre à feu (kg) pour 20 kg de pâte à grès (50 %)",
+                "valeur": "10",
+                "longueur": 2
+              }
+            ],
+            "consigne": "Une tache d'huile cache des nombres du cahier de recettes. Retrouve-les (le total d'une recette fait toujours 100 %).",
+            "indices": [
+              "Additionne les parts connues, puis enlève-les de 100.",
+              "Raku : 55 + 25 = 80.",
+              "La moitié de 20 kg."
+            ],
+            "dialogue": "Retrouvez les nombres cachés : pourcentages et pesée."
+          }
+        }
+      ]
+    }
+  ]
+}
