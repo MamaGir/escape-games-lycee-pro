@@ -9,7 +9,7 @@
 const fs = require("fs"), path = require("path");
 const { charger, compteur, dodo, attendreQue, RACINE } = require("../../outils-tests/charge");
 const T = compteur("Tronc commun et cohérence du moteur"); const ok = T.ok;
-const JEUX8 = ["pates-ceramiques"];
+const JEUX8 = ["pates-ceramiques", "matieres-premieres"];
 const COMMUNS = fs.readdirSync(path.join(RACINE, "commun", "js")).filter(f => f.endsWith(".js"));
 
 function disque(){

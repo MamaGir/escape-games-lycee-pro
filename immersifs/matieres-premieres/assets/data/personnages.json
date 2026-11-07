@@ -1,0 +1,70 @@
+{
+  "personnages": {
+    "maelle": {
+      "nom": "Maëlle",
+      "court": "Maëlle",
+      "voix": {
+        "rate": 0.95,
+        "pitch": 1.0
+      },
+      "ton": "à préciser",
+      "fiche": "Apprentie en 2e année de CAP Décoration sur céramique, elle guide l'équipe",
+      "portrait": {}
+    },
+    "odile": {
+      "nom": "Odile",
+      "court": "Odile",
+      "voix": {
+        "rate": 1.0,
+        "pitch": 1.15
+      },
+      "ton": "à préciser",
+      "fiche": "Cheffe de la carrière",
+      "portrait": {}
+    },
+    "malik": {
+      "nom": "Malik",
+      "court": "Malik",
+      "voix": {
+        "rate": 0.9,
+        "pitch": 0.9
+      },
+      "ton": "à préciser",
+      "fiche": "Responsable du parc d'argile et des silos",
+      "portrait": {}
+    },
+    "karim": {
+      "nom": "Karim",
+      "court": "Karim",
+      "voix": {
+        "rate": 1.05,
+        "pitch": 1.2
+      },
+      "ton": "à préciser",
+      "fiche": "Technicien de l'atelier de broyage",
+      "portrait": {}
+    },
+    "jade": {
+      "nom": "Jade",
+      "court": "Jade",
+      "voix": {
+        "rate": 0.92,
+        "pitch": 1.05
+      },
+      "ton": "à préciser",
+      "fiche": "Technicienne de la station d'épuration",
+      "portrait": {}
+    },
+    "aubry": {
+      "nom": "Madame Aubry",
+      "court": "Madame",
+      "voix": {
+        "rate": 1.0,
+        "pitch": 0.85
+      },
+      "ton": "à préciser",
+      "fiche": "Cheffe du laboratoire des matières dures",
+      "portrait": {}
+    }
+  }
+}

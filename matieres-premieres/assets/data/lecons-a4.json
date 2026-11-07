@@ -1,0 +1,52 @@
+{
+ "_commentaire": "Généré par outils/generer-matieres-premieres.py — ne pas modifier à la main.",
+ "jeu": {
+  "titre": "Le bon de lancement",
+  "matiere": "Technologie céramique",
+  "theme": "La préparation des matières premières",
+  "couleur": "#0F4C81",
+  "accent": "#C2410C",
+  "couleur_pale": "#DCEEFF",
+  "accent_pale": "#FFE9DB"
+ },
+ "lecons": {
+  "gisement-extraction": {
+   "competence": "Expliquer pourquoi on prépare les matières premières ; citer dans l'ordre les étapes de préparation de l'argile.",
+   "visuels": [
+    {
+     "type": "svg",
+     "titre": "Les six étapes de préparation de l'argile",
+     "legende": "De la carrière à la matière prête à l'emploi.",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" role=\"img\" aria-label=\"Les six étapes de préparation de l'argile\" font-family=\"Segoe UI, Helvetica, Arial, sans-serif\"><rect width=\"380\" height=\"150\" fill=\"#f3f8fd\"/><rect x=\"12\" y=\"42\" width=\"54\" height=\"50\" rx=\"6\" fill=\"#2f75b5\"/><text x=\"39\" y=\"22\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f4c81\">1</text><text x=\"39\" y=\"71\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#fff\">Analyser</text><path d=\"M67 67 l5 0\" stroke=\"#0f4c81\" stroke-width=\"2\"/><rect x=\"73\" y=\"42\" width=\"54\" height=\"50\" rx=\"6\" fill=\"#2f75b5\"/><text x=\"100\" y=\"22\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f4c81\">2</text><text x=\"100\" y=\"71\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#fff\">Extraire</text><path d=\"M128 67 l5 0\" stroke=\"#0f4c81\" stroke-width=\"2\"/><rect x=\"134\" y=\"42\" width=\"54\" height=\"50\" rx=\"6\" fill=\"#2f75b5\"/><text x=\"161\" y=\"22\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f4c81\">3</text><text x=\"161\" y=\"71\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#fff\">Pourrissement</text><path d=\"M189 67 l5 0\" stroke=\"#0f4c81\" stroke-width=\"2\"/><rect x=\"195\" y=\"42\" width=\"54\" height=\"50\" rx=\"6\" fill=\"#2f75b5\"/><text x=\"222\" y=\"22\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f4c81\">4</text><text x=\"222\" y=\"71\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#fff\">Broyer</text><path d=\"M250 67 l5 0\" stroke=\"#0f4c81\" stroke-width=\"2\"/><rect x=\"256\" y=\"42\" width=\"54\" height=\"50\" rx=\"6\" fill=\"#2f75b5\"/><text x=\"283\" y=\"22\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f4c81\">5</text><text x=\"283\" y=\"71\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#fff\">Épurer</text><path d=\"M311 67 l5 0\" stroke=\"#0f4c81\" stroke-width=\"2\"/><rect x=\"317\" y=\"42\" width=\"54\" height=\"50\" rx=\"6\" fill=\"#2f75b5\"/><text x=\"344\" y=\"22\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f4c81\">6</text><text x=\"344\" y=\"71\" font-size=\"8.5\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#fff\">Maturation</text><text x=\"190\" y=\"125\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0b2a4a\">De la carrière à la matière prête à l'emploi.</text></svg>",
+     "etiquette": "Schéma",
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie I."
+    }
+   ]
+  },
+  "pourrissement-maturation": {
+   "competence": "Expliquer le pourrissement et la maturation de l'argile.",
+   "visuels": [
+    {
+     "type": "svg",
+     "titre": "Le taux d'humidité de l'argile",
+     "legende": "Avant et après la maturation.",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 170\" role=\"img\" aria-label=\"Taux d'humidité avant et après la maturation\" font-family=\"Segoe UI, Helvetica, Arial, sans-serif\"><rect width=\"380\" height=\"170\" fill=\"#f3f8fd\"/><text x=\"14\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#0b2a4a\">Argile fraîche</text><rect x=\"150\" y=\"40\" width=\"80\" height=\"22\" rx=\"4\" fill=\"#2f75b5\" transform=\"translate(100 0)\"/><text x=\"290\" y=\"56\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#fff\">18 à 22 %</text><text x=\"14\" y=\"106\" font-size=\"12\" font-weight=\"bold\" fill=\"#0b2a4a\">Après maturation</text><rect x=\"150\" y=\"90\" width=\"100\" height=\"22\" rx=\"4\" fill=\"#2f75b5\" transform=\"translate(0 0)\"/><text x=\"200\" y=\"106\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#fff\">13 à 18 %</text><text x=\"190\" y=\"150\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0b2a4a\">Le taux d'humidité baisse pendant la maturation.</text></svg>",
+     "etiquette": "Schéma",
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie III.3."
+    }
+   ]
+  },
+  "broyage": {
+   "competence": "Dire à quoi sert le broyage et connaître le principe des principales machines.",
+   "visuels": []
+  },
+  "epuration-purification": {
+   "competence": "Dire à quoi servent le tamis et le séparateur magnétique ; connaître les règles de sécurité.",
+   "visuels": []
+  },
+  "matieres-dures": {
+   "competence": "Expliquer comment on obtient le sable de silice, la chamotte et le feldspath.",
+   "visuels": []
+  }
+ }
+}

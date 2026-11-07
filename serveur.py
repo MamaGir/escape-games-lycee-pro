@@ -5,7 +5,7 @@
  ESCAPE GAMES PÉDAGOGIQUES — Serveur local · Lycée pro (CAP)
  Sert les jeux (declaration/, tour-du-monde/, mission-geo/,
  constitution/, station-meteo/, melanges/, moyen-age-abbaye/,
- pates-ceramiques/ (jeux du lycée professionnel),
+ pates-ceramiques/, matieres-premieres/ (jeux du lycée professionnel),
  alimentation/, lumiere/, etats-matiere/),
  la page d'accueil et verifier.html, depuis la racine du projet.
 ============================================================
@@ -25,7 +25,7 @@ import socket
 import threading
 
 # Jeux du lycée professionnel servis par ce serveur (dossiers à la racine du dépôt)
-JEUX_LYCEE = ("pates-ceramiques", "preparation-pates")
+JEUX_LYCEE = ("pates-ceramiques", "preparation-pates", "matieres-premieres")
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from socketserver import ThreadingMixIn
 from urllib.parse import urlparse, parse_qs, unquote

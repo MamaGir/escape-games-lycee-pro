@@ -32,7 +32,7 @@ function controleListe(L){
   const absents = L.FICHIERS_CODE.filter(f => !fs.existsSync(path.join(RACINE, f)));
   ok(!absents.length, "fichiers listés présents sur le disque " + absents.slice(0, 5).join(", "));
   const pages = ["index.html", "classement.html", "resultats.html"].concat(
-    ["pates-ceramiques"]
+    ["pates-ceramiques", "matieres-premieres"]
       .flatMap(j => [j + "/index.html", j + "/lecons-imprimables.html"]));
   const manquants = [];
   for (const p of pages) {

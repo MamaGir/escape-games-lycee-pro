@@ -1,0 +1,369 @@
+{
+  "decors": {
+    "carriere": {
+      "titre": "La carrière d'argile, à ciel ouvert",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le panneau des mots",
+          "x": 7,
+          "y": 44,
+          "w": 18,
+          "h": 24,
+          "description": "Un panneau de chantier : six mots du métier, six définitions effacées."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Les gradins",
+          "x": 28,
+          "y": 62,
+          "w": 24,
+          "h": 28,
+          "description": "Les gradins de la carrière, où les panneaux de la filière ont été mélangés par le vent."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "L'engin d'Odile",
+          "x": 58,
+          "y": 58,
+          "w": 14,
+          "h": 28,
+          "description": "L'engin de la cheffe de carrière, avec son carnet posé sur le capot."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "La fiche d'analyse",
+          "x": 80,
+          "y": 58,
+          "w": 16,
+          "h": 30,
+          "description": "La fiche d'analyse du terrain, à moitié effacée."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    },
+    "parc": {
+      "titre": "Le parc d'argile et le silo, derrière la carrière",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le tas sous la pluie",
+          "x": 4,
+          "y": 60,
+          "w": 52,
+          "h": 30,
+          "description": "L'argile fraîchement sortie, qui pourrit dehors sous la pluie."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le silo",
+          "x": 72,
+          "y": 42,
+          "w": 15,
+          "h": 16,
+          "description": "Le silo humide et sombre où l'argile mûrit."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "L'afficheur du parc",
+          "x": 11,
+          "y": 41,
+          "w": 24,
+          "h": 13,
+          "description": "L'afficheur du parc : durées de repos et taux d'humidité."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "Le cadran du silo",
+          "x": 75,
+          "y": 60,
+          "w": 11,
+          "h": 12,
+          "description": "Le cadran à trois molettes qui verrouille la porte du silo."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    },
+    "broyage": {
+      "titre": "L'atelier de broyage",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le panneau des plaques",
+          "x": 86,
+          "y": 41,
+          "w": 12,
+          "h": 15,
+          "description": "Le panneau « Plaques manquantes » : les plaques des machines sont tombées."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Le plan de l'atelier",
+          "x": 30,
+          "y": 6,
+          "w": 22,
+          "h": 24,
+          "description": "Le plan de l'atelier : des postes numérotés, sans nom de machine."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Le poste de Karim",
+          "x": 59,
+          "y": 46,
+          "w": 14,
+          "h": 36,
+          "description": "La grosse machine du technicien : Karim vérifie vos connaissances ici."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "Les machines en marche",
+          "x": 29,
+          "y": 52,
+          "w": 23,
+          "h": 20,
+          "description": "Une machine qui tourne, mais qui ne broie pas."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    },
+    "epuration": {
+      "titre": "La station d'épuration",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le tamis vibrant",
+          "x": 6,
+          "y": 48,
+          "w": 23,
+          "h": 40,
+          "description": "Un tamis vibrant : il trie les grains selon leur taille."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "La cellule de flottation",
+          "x": 56,
+          "y": 45,
+          "w": 28,
+          "h": 44,
+          "description": "La cellule où deux poudres se séparent."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Le panneau de sécurité",
+          "x": 87,
+          "y": 41,
+          "w": 11,
+          "h": 34,
+          "description": "Le panneau des règles de sécurité de la station."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "La fiche de poste",
+          "x": 38,
+          "y": 56,
+          "w": 15,
+          "h": 30,
+          "description": "La fiche de poste, affichée près de l'aimant."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    },
+    "dures": {
+      "titre": "Le laboratoire des matières dures",
+      "reference": null,
+      "ambiance": [
+        "vent"
+      ],
+      "kenBurns": {
+        "echelle": 1.05,
+        "duree": 32
+      },
+      "effets": [
+        {
+          "type": "poussiere",
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100,
+          "nombre": 24
+        },
+        {
+          "type": "vignette",
+          "force": 0.5
+        },
+        {
+          "type": "grain",
+          "force": 0.04
+        }
+      ],
+      "zones": [
+        {
+          "id": "objet-1",
+          "libelle": "Le tableau des étiquettes",
+          "x": 7,
+          "y": 38,
+          "w": 41,
+          "h": 23,
+          "description": "Le tableau du laboratoire : une matière, un rôle, des étiquettes mélangées."
+        },
+        {
+          "id": "objet-2",
+          "libelle": "Les trois bacs",
+          "x": 7,
+          "y": 66,
+          "w": 48,
+          "h": 22,
+          "description": "Trois bacs : feldspath, sable de silice, chamotte."
+        },
+        {
+          "id": "objet-3",
+          "libelle": "Le bureau de Madame Aubry",
+          "x": 77,
+          "y": 54,
+          "w": 12,
+          "h": 32,
+          "description": "La machine de la responsable du laboratoire."
+        },
+        {
+          "id": "objet-4",
+          "libelle": "Le concasseur",
+          "x": 62,
+          "y": 54,
+          "w": 12,
+          "h": 32,
+          "description": "Le concasseur : un bloc de roche y devient poudre."
+        }
+      ],
+      "etats": {
+        "normal": {
+          "filtre": "none"
+        }
+      },
+      "_brouillon": "zones à caler sur l'image (outils/caler-effets.html)"
+    }
+  }
+}

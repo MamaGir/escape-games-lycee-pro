@@ -1,0 +1,178 @@
+{
+  "_commentaire": "Brouillon généré par le migrateur : reformuler dans le ton de chaque personnage.",
+  "accueil": {
+    "personnage": "maelle",
+    "texte": "Bonjour, je suis Maëlle, apprentie en deuxième année. Bienvenue à la manufacture des Trois Fours ! Demain matin, un nouveau lot de pâte doit être lancé. Problème : le bon de lancement n'est pas signé. Pour qu'il le soit, chacune des cinq étapes de la préparation des matières premières doit être validée par son responsable, qui appose son tampon et vous donne un mot. Les cinq mots ouvriront le bon de lancement. On commence par la carrière ?"
+  },
+  "coffre": {
+    "personnage": "maelle",
+    "texte": "Le coffre ne s'ouvre qu'avec les mots de chaque salle, dans l'ordre. Vous les avez notés, j'espère."
+  },
+  "cinematiques": {
+    "transition-e1": {
+      "titre": "Salle 1 — La carrière",
+      "plans": [
+        {
+          "decor": "carriere",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "odile",
+          "texte": "Bienvenue à la carrière. Maëlle m'a prévenue : sans le bon de lancement signé, le lot de pâte de demain ne peut pas partir. Je tamponne la première étape : l'extraction. Avant de vous donner mon tampon, je veux être sûre que vous savez pourquoi on prépare les matières, et comment on trouve la bonne argile.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e1": {
+      "titre": "Fin de la salle 1",
+      "plans": [
+        {
+          "decor": "carriere",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "odile",
+          "texte": "Bien analysé ! Mon tampon porte le mot ANALYSER : on ne creuse jamais au hasard. Malik vous attend au parc d'argile.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e2": {
+      "titre": "Salle 2 — Le parc d'argile et le silo",
+      "plans": [
+        {
+          "decor": "parc",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "malik",
+          "texte": "Ici, on laisse faire le temps. L'argile qui sort de la carrière n'est pas prête : elle passe d'abord dehors, puis dans mon silo. Montrez-moi que vous savez ce qui se passe sous la pluie, et combien de temps ça prend : le tampon de l'étape deux est à ce prix.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e2": {
+      "titre": "Fin de la salle 2",
+      "plans": [
+        {
+          "decor": "parc",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "malik",
+          "texte": "Vous avez compris que le temps travaille pour nous. Mon tampon porte le mot REPOSER : l'argile a besoin de repos. Karim vous attend à l'atelier de broyage.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e3": {
+      "titre": "Salle 3 — L'atelier de broyage",
+      "plans": [
+        {
+          "decor": "broyage",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "karim",
+          "texte": "Ça grince, ça gronde, ça casse : c'est l'atelier de broyage. Pas de panique, mais tous les postes ont perdu leur plaque ce matin, et je ne sais plus quelle machine fait quoi. Aidez-moi à tout remettre en place : le tampon de l'étape trois est pour vous.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e3": {
+      "titre": "Fin de la salle 3",
+      "plans": [
+        {
+          "decor": "broyage",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "karim",
+          "texte": "L'atelier est remis en ordre, merci ! Mon tampon porte le mot BROYER . Jade vous attend à la station d'épuration.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e4": {
+      "titre": "Salle 4 — La station d'épuration",
+      "plans": [
+        {
+          "decor": "epuration",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "jade",
+          "texte": "On passe à la propreté : ici, on enlève ce qui n'a rien à faire dans une pâte. Tamis, aimants, flottation : chaque machine a son rôle. Et ici, la sécurité n'est pas une option : la poussière, ça ne pardonne pas. Prouvez-moi que vous la connaissez, et le tampon est à vous.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e4": {
+      "titre": "Fin de la salle 4",
+      "plans": [
+        {
+          "decor": "epuration",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "jade",
+          "texte": "Station propre, équipe protégée : parfait. Mon tampon porte le mot ÉPURER . Il reste le laboratoire des matières dures : Madame Aubry vous attend.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "transition-e5": {
+      "titre": "Salle 5 — Le laboratoire des matières dures",
+      "plans": [
+        {
+          "decor": "dures",
+          "etat": "normal",
+          "duree": 8,
+          "personnage": "aubry",
+          "texte": "Dernière étape : les matières dures. Le feldspath, le sable de silice, la chamotte : trois matières qui ne se modèlent pas, mais sans lesquelles la pâte ne tiendrait pas. Montrez-moi que vous savez d'où elles viennent et comment on les prépare, et le dernier tampon est à vous.",
+          "mouvement": "zoom"
+        }
+      ]
+    },
+    "fin-e5": {
+      "titre": "Fin de la salle 5",
+      "plans": [
+        {
+          "decor": "dures",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "maelle",
+          "texte": "Madame Aubry vous a donné le dernier mot : CONCASSER . Vous avez les cinq tampons ! Écrivez les cinq mots dans le bon de lancement, dans l'ordre des salles : le lot de pâte pourra partir demain matin.",
+          "mouvement": "glisse"
+        }
+      ]
+    },
+    "fin": {
+      "titre": "Fin de « Le bon de lancement »",
+      "plans": [
+        {
+          "decor": "dures",
+          "etat": "normal",
+          "duree": 7,
+          "personnage": "aubry",
+          "texte": "Le coffre est ouvert : toutes les pages sont rassemblées. Bravo, équipe !",
+          "mouvement": "zoom"
+        }
+      ]
+    }
+  },
+  "fin_escale": {
+    "1": {
+      "personnage": "odile",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "2": {
+      "personnage": "malik",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "3": {
+      "personnage": "karim",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "4": {
+      "personnage": "jade",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    },
+    "5": {
+      "personnage": "aubry",
+      "texte": "Notez le mot de cette salle : il servira à ouvrir le coffre final."
+    }
+  }
+}

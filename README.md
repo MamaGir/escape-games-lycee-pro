@@ -6,6 +6,7 @@ Escape games pédagogiques pour le **CAP Décoration sur céramique**, séparés
 |---|---|---|---|
 | C01 · Les fiches du four | Les pâtes céramiques (CAP 1) | `pates-ceramiques/` | `immersifs/pates-ceramiques/` |
 | C02 · Panne à l'usine | La préparation des pâtes céramiques (CAP) | — (immersif uniquement) | `immersifs/preparation-pates/` |
+| C03 · Le bon de lancement | La préparation des matières premières (CAP) | `matieres-premieres/` | `immersifs/matieres-premieres/` |
 | L01 · Le four verrouillé (version légère, un seul fichier) | Les pâtes céramiques (CAP 1) | `four-verrouille/` | — |
 
 ## Accès aux jeux
@@ -72,6 +73,11 @@ pates-ceramiques/               jeu classique
 immersifs/pates-ceramiques/     jeu immersif (moteur « Vingt mille lieues »)
 preparation-pates/              données sources de « Panne à l'usine » (JSON générés, leçons, évaluations, photos)
 immersifs/preparation-pates/    jeu immersif « Panne à l'usine »
+matieres-premieres/             jeu classique « Le bon de lancement » (C03)
+immersifs/matieres-premieres/   jeu immersif « Le bon de lancement »
+outils/generer-matieres-premieres.py            contenu de « Le bon de lancement » → JSON
+outils/immersif/theme-matieres-premieres.json   thème immersif de « Le bon de lancement »
+outils/immersif/completer-matieres-premieres.py décors, zones et narration de « Le bon de lancement »
 outils/generer-pates-ceramiques.py              contenu du jeu → JSON (ne jamais éditer les JSON à la main)
 outils/immersif/theme-pates-ceramiques.json     thème immersif (mots, grades, palette)
 outils/immersif/completer-pates-ceramiques.py   décors, zones et narration de la version immersive
@@ -109,6 +115,11 @@ node immersifs/pates-ceramiques/tests/test-immersif.js
 python outils/generer-preparation-pates.py
 python preparation-pates/tests/test_json.py
 node immersifs/preparation-pates/tests/test-immersif.js
+
+python outils/generer-matieres-premieres.py
+python matieres-premieres/tests/test_json.py
+node matieres-premieres/tests/test-jeu.js
+node immersifs/matieres-premieres/tests/test-immersif.js
 ```
 
 Les tests Node demandent jsdom une fois : `cd outils-tests`, `npm install`, `cd ..`.

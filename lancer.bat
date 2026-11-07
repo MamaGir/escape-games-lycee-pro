@@ -48,6 +48,11 @@ echo  ^>^> PANNE A L'USINE (preparation des pates) :
 echo      Immersif  : http://127.0.0.1:8000/immersifs/preparation-pates/
 echo      Enseignant: http://127.0.0.1:8000/immersifs/preparation-pates/prof.html
 echo.
+echo  ^>^> LE BON DE LANCEMENT (matieres premieres) :
+echo      Classique : http://127.0.0.1:8000/matieres-premieres/
+echo      Immersif  : http://127.0.0.1:8000/immersifs/matieres-premieres/
+echo      Enseignant: http://127.0.0.1:8000/matieres-premieres/prof.html
+echo.
 echo  ^>^> ESPACE ENSEIGNANT (resultats, passeport, verification) :
 echo      http://127.0.0.1:8000/enseignant.html
 echo      http://127.0.0.1:8000/verifier.html

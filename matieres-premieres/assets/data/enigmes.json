@@ -1,0 +1,1553 @@
+{
+ "metadata": {
+  "jeu": "Le bon de lancement",
+  "version": 1,
+  "differenciation": "Essentiel (clé cm1) : 3 énigmes par salle (15). Expert (clé cm2) : 4 énigmes par salle (20). Le champ \"niveaux\": [\"CM2\"] réserve une énigme au niveau Expert.",
+  "types": [
+   "qcm",
+   "vraifaux",
+   "association",
+   "ordre",
+   "tri",
+   "trous",
+   "code",
+   "intrus",
+   "plan"
+  ],
+  "sources": "Cours « Préparation des matières premières des pâtes céramiques », CAP (document de l'enseignant). Points à confirmer : A-VERIFIER.md.",
+  "media": "Chaque énigme accepte un bloc \"media\" : {\"base\":\"e3-2\",\"legende\":\"…\",\"source\":\"…\"} (image dans assets/images/cartes/)."
+ },
+ "salles": [
+  {
+   "num": 1,
+   "titre": "La carrière — Pourquoi préparer, analyser le terrain, extraire",
+   "enigmes": [
+    {
+     "id": "1-1",
+     "titre": "Les mots du chantier",
+     "type": "association",
+     "consigne": {
+      "cm1": "Relie chaque mot à sa définition : clique sur un mot, puis sur la bonne définition.",
+      "cm2": "Six mots du métier ont perdu leur définition. Reconstitue les six paires."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, encadré « Mots à connaître »",
+     "correction": "Un gisement est l'endroit où une matière s'est accumulée naturellement. Une impureté est une matière qu'on ne veut pas dans la pâte (racines, cailloux, fer). Broyer, c'est réduire en petits morceaux ou en poudre. Tamiser, c'est trier les grains selon leur taille avec une grille. Un dégraissant rend la pâte moins collante ; un fondant l'aide à fondre à la cuisson.",
+     "indices": {
+      "cm1": [
+       "Les définitions sont dans l'encadré « Mots à connaître ».",
+       "Un tamis est une grille.",
+       "Une impureté est un intrus dans la pâte."
+      ],
+      "cm2": [
+       "Commence par les mots que tu connais déjà.",
+       "Dégraissant et fondant ont chacun un effet différent.",
+       "Le feldspath est un fondant."
+      ]
+     },
+     "cm1": {
+      "paires": [
+       {
+        "g": "Gisement",
+        "d": "Endroit où une matière s'est accumulée naturellement"
+       },
+       {
+        "g": "Impureté",
+        "d": "Matière qu'on ne veut pas dans la pâte"
+       },
+       {
+        "g": "Broyer",
+        "d": "Réduire en petits morceaux ou en poudre"
+       },
+       {
+        "g": "Tamiser",
+        "d": "Trier les grains selon leur taille avec une grille"
+       }
+      ]
+     },
+     "cm2": {
+      "paires": [
+       {
+        "g": "Gisement",
+        "d": "Endroit où une matière s'est accumulée naturellement"
+       },
+       {
+        "g": "Impureté",
+        "d": "Racines, cailloux, fer : ce qu'on ne veut pas dans la pâte"
+       },
+       {
+        "g": "Tamiser",
+        "d": "Trier les grains selon leur taille avec un tamis"
+       },
+       {
+        "g": "Plastique",
+        "d": "Se modèle facilement sans se casser"
+       },
+       {
+        "g": "Dégraissant",
+        "d": "Matière ajoutée pour rendre la pâte moins collante"
+       },
+       {
+        "g": "Fondant",
+        "d": "Matière qui aide la pâte à fondre à la cuisson"
+       }
+      ]
+     },
+     "lecon": "gisement-extraction"
+    },
+    {
+     "id": "1-2",
+     "titre": "Les panneaux de la filière",
+     "type": "ordre",
+     "consigne": {
+      "cm1": "Les six panneaux de la filière de l'argile ont été mélangés. Remets les étapes dans l'ordre, de la carrière à la matière prête. Utilise les flèches, puis vérifie.",
+      "cm2": "Remets dans l'ordre les six étapes de préparation de l'argile, sans l'aide des repères."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie I, « Vue d'ensemble »",
+     "correction": "Analyse du terrain, extraction, pourrissement, broyage, épuration, maturation : c'est l'ordre du cours, de la carrière à la matière prête à l'emploi.",
+     "indices": {
+      "cm1": [
+       "La première étape se fait avant de creuser.",
+       "L'argile reste dehors plusieurs mois avant d'être cassée.",
+       "La dernière étape se passe dans un silo."
+      ],
+      "cm2": [
+       "On analyse le terrain avant d'extraire.",
+       "Le pourrissement a lieu avant le broyage.",
+       "L'épuration précède la maturation."
+      ]
+     },
+     "cm1": {
+      "items": [
+       {
+        "txt": "Analyser le terrain",
+        "sous": "échantillons en grille",
+        "rang": 1
+       },
+       {
+        "txt": "Extraire",
+        "sous": "carrière à ciel ouvert",
+        "rang": 2
+       },
+       {
+        "txt": "Pourrissement",
+        "sous": "l'argile reste dehors",
+        "rang": 3
+       },
+       {
+        "txt": "Broyer",
+        "sous": "on casse l'argile",
+        "rang": 4
+       },
+       {
+        "txt": "Épurer",
+        "sous": "tamis et aimants",
+        "rang": 5
+       },
+       {
+        "txt": "Maturation",
+        "sous": "au silo",
+        "rang": 6
+       }
+      ]
+     },
+     "cm2": {
+      "items": [
+       {
+        "txt": "Analyser le terrain",
+        "rang": 1
+       },
+       {
+        "txt": "Extraire",
+        "rang": 2
+       },
+       {
+        "txt": "Pourrissement",
+        "rang": 3
+       },
+       {
+        "txt": "Broyer",
+        "rang": 4
+       },
+       {
+        "txt": "Épurer",
+        "rang": 5
+       },
+       {
+        "txt": "Maturation",
+        "rang": 6
+       }
+      ]
+     },
+     "lecon": "gisement-extraction"
+    },
+    {
+     "id": "1-3",
+     "titre": "Le carnet d'Odile",
+     "type": "vraifaux",
+     "consigne": {
+      "cm1": "Odile, la cheffe de carrière, a noté quatre phrases dans son carnet. Pour chacune, dis si elle est vraie ou fausse.",
+      "cm2": "Vérifie les cinq phrases du carnet d'Odile : vraie ou fausse ?"
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, parties I et II.1",
+     "correction": "Dans la nature, les matières premières ne sont pas prêtes à l'emploi : on les prépare pour obtenir une pâte stable et de qualité constante. Avant d'extraire, on analyse le terrain en prélevant un échantillon par carré d'une grille. L'argile est extraite dans des carrières à ciel ouvert, en général à l'entrée de l'hiver. L'argile grasse, quasiment pure, donne un produit de meilleure qualité que l'argile maigre.",
+     "indices": {
+      "cm1": [
+       "Relis le début de la partie I.",
+       "Un échantillon par carré de la grille.",
+       "Les excavatrices travaillent à ciel ouvert."
+      ],
+      "cm2": [
+       "Un gisement est fait de plusieurs couches.",
+       "L'extraction a lieu à l'entrée de l'hiver.",
+       "Maigre = sableuse, avec beaucoup d'impuretés."
+      ]
+     },
+     "cm1": {
+      "affirmations": [
+       {
+        "txt": "Dans la nature, les matières premières sont prêtes à l'emploi.",
+        "vrai": false,
+        "explication": "Elles contiennent des impuretés, des morceaux trop gros, trop d'eau."
+       },
+       {
+        "txt": "Avant d'extraire l'argile, on analyse le terrain.",
+        "vrai": true,
+        "explication": "On prélève des échantillons pour repérer la meilleure couche."
+       },
+       {
+        "txt": "L'argile est extraite dans une carrière à ciel ouvert.",
+        "vrai": true,
+        "explication": "Avec des excavatrices et des camions-bennes."
+       },
+       {
+        "txt": "On prélève un seul échantillon pour tout le gisement.",
+        "vrai": false,
+        "explication": "On en prélève un par carré de la grille."
+       }
+      ]
+     },
+     "cm2": {
+      "affirmations": [
+       {
+        "txt": "Préparer les matières premières rend la pâte stable et de qualité constante.",
+        "vrai": true,
+        "explication": "La pièce se modèle, sèche et cuit toujours de la même façon."
+       },
+       {
+        "txt": "Toutes les couches d'un gisement sont identiques.",
+        "vrai": false,
+        "explication": "Les strates sont toutes différentes."
+       },
+       {
+        "txt": "On découpe le terrain en carrés et on prélève un échantillon par carré.",
+        "vrai": true,
+        "explication": "On repère ainsi la meilleure couche."
+       },
+       {
+        "txt": "En général, l'extraction a lieu à l'entrée de l'hiver.",
+        "vrai": true,
+        "explication": "C'est l'indication du cours."
+       },
+       {
+        "txt": "Une argile « maigre » donne un produit de meilleure qualité qu'une argile « grasse ».",
+        "vrai": false,
+        "explication": "L'argile grasse est quasiment pure : c'est elle qui donne le meilleur produit."
+       }
+      ]
+     },
+     "lecon": "gisement-extraction"
+    },
+    {
+     "id": "1-4",
+     "titre": "La fiche d'analyse du terrain",
+     "type": "trous",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Complète la fiche d'analyse du terrain avec les bonnes étiquettes. Deux étiquettes sont en trop."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie II.1",
+     "correction": "Avant d'extraire, on analyse le terrain : on le découpe en carrés (une grille) et on prélève un échantillon par carré pour repérer la meilleure couche. L'argile grasse, quasiment pure, donne un produit de meilleure qualité que l'argile maigre, qui contient beaucoup d'impuretés.",
+     "indices": {
+      "cm2": [
+       "Le premier mot manquant est une action qui précède l'extraction.",
+       "On découpe le terrain en carrés : cela dessine une grille.",
+       "Les étiquettes en trop parlent de cuisson et de verre."
+      ]
+     },
+     "commun": {
+      "texte": "<p>Avant d'extraire l'argile, on [[analyse]] le terrain : on le découpe en carrés, c'est une [[grille]], et on prélève un [[échantillon]] par carré. On repère ainsi la meilleure [[couche]]. Une argile « [[grasse]] » est quasiment pure : le produit est de meilleure qualité. Une argile « [[maigre]] » contient beaucoup d'impuretés.</p>",
+      "etiquettes": [
+       "analyse",
+       "grille",
+       "échantillon",
+       "couche",
+       "grasse",
+       "maigre",
+       "émail",
+       "vitrifiée"
+      ]
+     },
+     "lecon": "gisement-extraction"
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "titre": "Le parc d'argile et le silo — Le pourrissement et la maturation",
+   "enigmes": [
+    {
+     "id": "2-1",
+     "titre": "Dehors, sous la pluie",
+     "type": "vraifaux",
+     "consigne": {
+      "cm1": "Malik surveille le parc d'argile. Pour chacune de ses quatre phrases, dis si elle est vraie ou fausse.",
+      "cm2": "Malik a noté cinq phrases sur le pourrissement. Vraie ou fausse ?"
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie II.2",
+     "correction": "Pendant le pourrissement, l'argile est stockée dehors pendant 3 à 24 mois. La pluie, le gel et le dégel fragmentent les grains, et des bactéries décomposent les restes de plantes. L'argile devient plus plastique et plus résistante.",
+     "indices": {
+      "cm1": [
+       "Relis le paragraphe « Le pourrissement ».",
+       "L'argile reste dehors.",
+       "On compte en mois, pas en jours."
+      ],
+      "cm2": [
+       "La durée se compte en mois.",
+       "Gel et dégel fragmentent les grains.",
+       "Les bactéries s'attaquent aux restes de plantes."
+      ]
+     },
+     "cm1": {
+      "affirmations": [
+       {
+        "txt": "Pendant le pourrissement, l'argile est stockée dehors.",
+        "vrai": true,
+        "explication": "Elle subit la pluie, le gel et le dégel."
+       },
+       {
+        "txt": "Le pourrissement dure quelques jours.",
+        "vrai": false,
+        "explication": "Il dure de 3 à 24 mois."
+       },
+       {
+        "txt": "La pluie, le gel et le dégel fragmentent les grains.",
+        "vrai": true,
+        "explication": "C'est ce qui rend l'argile plus fine."
+       },
+       {
+        "txt": "Après le pourrissement, l'argile est plus plastique et plus résistante.",
+        "vrai": true,
+        "explication": "C'est le résultat de cette étape."
+       }
+      ]
+     },
+     "cm2": {
+      "affirmations": [
+       {
+        "txt": "Le pourrissement dure de 3 à 24 mois.",
+        "vrai": true,
+        "explication": "L'argile est stockée dehors pendant tout ce temps."
+       },
+       {
+        "txt": "Des bactéries décomposent les restes de plantes.",
+        "vrai": true,
+        "explication": "Elles nettoient l'argile."
+       },
+       {
+        "txt": "Seule la pluie agit sur l'argile : le gel ne sert à rien.",
+        "vrai": false,
+        "explication": "Le gel et le dégel fragmentent aussi les grains."
+       },
+       {
+        "txt": "Après le pourrissement, l'argile est moins plastique.",
+        "vrai": false,
+        "explication": "Elle devient plus plastique et plus résistante."
+       },
+       {
+        "txt": "L'argile est stockée à l'abri, dans un hangar fermé.",
+        "vrai": false,
+        "explication": "Elle est stockée dehors."
+       }
+      ]
+     },
+     "lecon": "pourrissement-maturation"
+    },
+    {
+     "id": "2-2",
+     "titre": "Le parc ou le silo ?",
+     "type": "tri",
+     "consigne": {
+      "cm1": "Range chaque étiquette : pourrissement (dehors) ou maturation (au silo) ?",
+      "cm2": "Range les huit étiquettes : pourrissement ou maturation ? Attention aux durées."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, parties II.2 et III.3",
+     "correction": "Le pourrissement a lieu dehors, de 3 à 24 mois : pluie, gel, dégel et bactéries rendent l'argile plus plastique et plus résistante. La maturation a lieu dans un silo humide et sombre, au moins 2 semaines : l'humidité baisse.",
+     "indices": {
+      "cm1": [
+       "Pourrissement = dehors, sous la pluie.",
+       "Maturation = dans un silo, à l'abri.",
+       "Le silo est humide et sombre."
+      ],
+      "cm2": [
+       "Les durées ne sont pas les mêmes : mois d'un côté, semaines de l'autre.",
+       "L'humidité baisse pendant la maturation.",
+       "Les bactéries travaillent dehors."
+      ]
+     },
+     "cm1": {
+      "colonnes": [
+       {
+        "id": "pou",
+        "titre": "Pourrissement"
+       },
+       {
+        "id": "mat",
+        "titre": "Maturation"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Stockée dehors",
+        "col": "pou"
+       },
+       {
+        "txt": "Pluie, gel et dégel",
+        "col": "pou"
+       },
+       {
+        "txt": "De 3 à 24 mois",
+        "col": "pou"
+       },
+       {
+        "txt": "Silo humide et sombre",
+        "col": "mat"
+       },
+       {
+        "txt": "Au moins 2 semaines",
+        "col": "mat"
+       },
+       {
+        "txt": "L'humidité baisse",
+        "col": "mat"
+       }
+      ]
+     },
+     "cm2": {
+      "colonnes": [
+       {
+        "id": "pou",
+        "titre": "Pourrissement"
+       },
+       {
+        "id": "mat",
+        "titre": "Maturation"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Stockée dehors",
+        "col": "pou"
+       },
+       {
+        "txt": "Les grains se fragmentent",
+        "col": "pou"
+       },
+       {
+        "txt": "Des bactéries décomposent les restes de plantes",
+        "col": "pou"
+       },
+       {
+        "txt": "De 3 à 24 mois",
+        "col": "pou"
+       },
+       {
+        "txt": "Silo humide et sombre",
+        "col": "mat"
+       },
+       {
+        "txt": "Au moins 2 semaines",
+        "col": "mat"
+       },
+       {
+        "txt": "Le taux d'humidité baisse",
+        "col": "mat"
+       },
+       {
+        "txt": "De 18-22 % à 13-18 % d'humidité",
+        "col": "mat"
+       }
+      ]
+     },
+     "lecon": "pourrissement-maturation"
+    },
+    {
+     "id": "2-3",
+     "titre": "Le taux d'humidité",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Malik te pose trois questions sur l'humidité de l'argile. Choisis la bonne réponse à chacune.",
+      "cm2": "Malik veut vérifier tes chiffres. Réponds à ses trois questions."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie III.3",
+     "correction": "L'argile fraîchement extraite contient de 18 % à 22 % d'eau. Après la maturation (au moins 2 semaines en silo), son taux d'humidité baisse : de 13 % à 18 %.",
+     "indices": {
+      "cm1": [
+       "Le taux d'humidité, c'est la quantité d'eau.",
+       "Il baisse pendant la maturation.",
+       "Regarde le tableau de la partie III.3."
+      ],
+      "cm2": [
+       "Les deux fourchettes se recoupent un peu.",
+       "Fraîche : 18 à 22 %.",
+       "Après maturation : 13 à 18 %."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "L'argile fraîchement extraite contient…",
+        "options": [
+         "de 18 % à 22 % d'eau",
+         "de 50 % à 60 % d'eau",
+         "moins de 5 % d'eau"
+        ],
+        "bonne": 0,
+        "explication": "C'est le taux d'humidité de l'argile fraîche."
+       },
+       {
+        "q": "Pendant la maturation, le taux d'humidité…",
+        "options": [
+         "monte",
+         "baisse",
+         "ne change pas"
+        ],
+        "bonne": 1,
+        "explication": "Ses propriétés changent et son taux d'humidité baisse."
+       },
+       {
+        "q": "L'argile reste en silo au moins…",
+        "options": [
+         "2 jours",
+         "2 semaines",
+         "2 ans"
+        ],
+        "bonne": 1,
+        "explication": "Au moins 2 semaines, dans un silo humide et sombre."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "Après la maturation, le taux d'humidité est de…",
+        "options": [
+         "18 % à 22 %",
+         "13 % à 18 %",
+         "5 % à 8 %"
+        ],
+        "bonne": 1,
+        "explication": "Il baisse par rapport à l'argile fraîchement extraite."
+       },
+       {
+        "q": "Que devient l'argile après le pourrissement ?",
+        "options": [
+         "Plus plastique et plus résistante",
+         "Plus sableuse",
+         "Plus rouge"
+        ],
+        "bonne": 0,
+        "explication": "Les grains se fragmentent et les restes de plantes sont décomposés."
+       },
+       {
+        "q": "Où se fait la maturation ?",
+        "options": [
+         "Dehors, sous la pluie",
+         "Dans un four",
+         "Dans un silo humide et sombre"
+        ],
+        "bonne": 2,
+        "explication": "L'argile y est entreposée au moins 2 semaines."
+       }
+      ]
+     },
+     "lecon": "pourrissement-maturation"
+    },
+    {
+     "id": "2-4",
+     "titre": "Le cadran du silo",
+     "type": "code",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Le cadran du silo a trois molettes. Trouve les trois nombres."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, parties II.2 et III.3",
+     "correction": "Le pourrissement dure au plus 24 mois. La maturation dure au moins 2 semaines. Après la maturation, le taux d'humidité va jusqu'à 18 % au plus.",
+     "indices": {
+      "cm2": [
+       "Le premier nombre est un nombre de mois : le plus grand de la fourchette 3 à 24.",
+       "Le deuxième nombre est un nombre de semaines.",
+       "Le troisième est un pourcentage : le plus grand de la fourchette 13 à 18."
+      ]
+     },
+     "commun": {
+      "champs": [
+       {
+        "libelle": "Durée maximale du pourrissement (mois)",
+        "valeur": "24",
+        "longueur": 2
+       },
+       {
+        "libelle": "Durée minimale de la maturation (semaines)",
+        "valeur": "2",
+        "longueur": 1
+       },
+       {
+        "libelle": "Taux d'humidité maximal après maturation (%)",
+        "valeur": "18",
+        "longueur": 2
+       }
+      ]
+     },
+     "lecon": "pourrissement-maturation"
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "titre": "L'atelier de broyage — Les machines à broyer l'argile",
+   "enigmes": [
+    {
+     "id": "3-1",
+     "titre": "Les plaques des machines",
+     "type": "association",
+     "consigne": {
+      "cm1": "Les plaques de quatre machines sont tombées. Relie chaque machine à sa façon de fonctionner.",
+      "cm2": "Cinq machines de l'atelier ont perdu leur plaque. Relie chaque machine à son principe."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie III.1, tableau des machines",
+     "correction": "Broyeur à meule : deux meules qui tournent écrasent l'argile. Brise-mottes : des rouleaux ou des marteaux cassent les mottes. Désagrégateur : une chemise lisse et une chemise striée avec des lames désagrègent l'argile. Broyeur à marteaux : des marteaux qui tournent vite frappent l'argile. Broyeur à billes : un cylindre rempli de billes qui tourne ; le frottement fragmente l'argile.",
+     "indices": {
+      "cm1": [
+       "Le tableau des machines est dans la partie III.1.",
+       "Les meules écrasent.",
+       "Les billes frottent."
+      ],
+      "cm2": [
+       "Chaque machine a un verbe : écraser, casser, désagréger, frapper, frotter.",
+       "La chemise striée porte des lames.",
+       "Le marteau frappe, le brise-mottes casse."
+      ]
+     },
+     "cm1": {
+      "paires": [
+       {
+        "g": "Broyeur à meule",
+        "d": "Deux meules qui tournent écrasent l'argile"
+       },
+       {
+        "g": "Brise-mottes",
+        "d": "Des rouleaux ou des marteaux cassent les mottes"
+       },
+       {
+        "g": "Broyeur à marteaux",
+        "d": "Des marteaux qui tournent vite frappent l'argile"
+       },
+       {
+        "g": "Broyeur à billes",
+        "d": "Un cylindre qui tourne, rempli de billes"
+       }
+      ]
+     },
+     "cm2": {
+      "paires": [
+       {
+        "g": "Broyeur à meule",
+        "d": "Deux meules qui tournent écrasent l'argile"
+       },
+       {
+        "g": "Brise-mottes",
+        "d": "Des rouleaux ou des marteaux cassent les mottes"
+       },
+       {
+        "g": "Désagrégateur",
+        "d": "Une chemise lisse et une chemise striée avec des lames"
+       },
+       {
+        "g": "Broyeur à marteaux",
+        "d": "Des marteaux qui tournent vite, sortie par une grille"
+       },
+       {
+        "g": "Broyeur à billes (alsing)",
+        "d": "Le frottement des billes dans un cylindre qui tourne"
+       }
+      ]
+     },
+     "lecon": "broyage"
+    },
+    {
+     "id": "3-2",
+     "titre": "Le plan de l'atelier",
+     "type": "plan",
+     "consigne": {
+      "cm1": "Karim range son atelier. Place chaque machine sur le bon poste : clique sur une étiquette, puis sur la case. Une étiquette est en trop.",
+      "cm2": "Place chaque machine sur le poste qui correspond à sa description. Deux étiquettes sont en trop."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie III.1",
+     "correction": "Poste meule : deux meules écrasent l'argile. Poste marteaux : l'argile sort par une grille quand elle est assez fine. Poste billes : un cylindre qui tourne rempli de billes ; broyage à sec ou avec de l'eau. Poste mottes : des rouleaux ou des marteaux cassent les mottes. Poste lames : une chemise lisse et une chemise striée désagrègent l'argile.",
+     "indices": {
+      "cm1": [
+       "Lis la description écrite sur chaque poste.",
+       "Le broyeur à billes contient des billes.",
+       "Le brise-mottes casse les mottes."
+      ],
+      "cm2": [
+       "Chaque machine a une façon de fonctionner différente.",
+       "La grille de sortie est celle du broyeur à marteaux.",
+       "Les lames sont dans le désagrégateur."
+      ]
+     },
+     "cm1": {
+      "titre": "Le plan de l'atelier de broyage",
+      "colonnes": 2,
+      "cases": [
+       {
+        "libelle": "Poste 1 : deux meules qui tournent écrasent l'argile",
+        "reponse": "Broyeur à meule"
+       },
+       {
+        "libelle": "Poste 2 : des marteaux frappent l'argile, qui sort par une grille",
+        "reponse": "Broyeur à marteaux"
+       },
+       {
+        "libelle": "Poste 3 : un cylindre qui tourne, rempli de billes",
+        "reponse": "Broyeur à billes"
+       },
+       {
+        "libelle": "Poste 4 : des rouleaux cassent les mottes",
+        "reponse": "Brise-mottes"
+       }
+      ],
+      "etiquettes": [
+       "Broyeur à meule",
+       "Broyeur à marteaux",
+       "Broyeur à billes",
+       "Brise-mottes",
+       "Tamis vibrant"
+      ]
+     },
+     "cm2": {
+      "titre": "Le plan de l'atelier de broyage",
+      "colonnes": 2,
+      "cases": [
+       {
+        "libelle": "Poste 1 : l'argile sort quand elle est assez fine, à travers une grille",
+        "reponse": "Broyeur à marteaux"
+       },
+       {
+        "libelle": "Poste 2 : deux meules qui tournent",
+        "reponse": "Broyeur à meule"
+       },
+       {
+        "libelle": "Poste 3 : un tiers de billes, un tiers d'argile, un tiers d'eau",
+        "reponse": "Broyeur à billes"
+       },
+       {
+        "libelle": "Poste 4 : une chemise lisse et une chemise striée avec des lames",
+        "reponse": "Désagrégateur"
+       },
+       {
+        "libelle": "Poste 5 : des rouleaux ou des marteaux qui cassent les mottes",
+        "reponse": "Brise-mottes"
+       }
+      ],
+      "etiquettes": [
+       "Broyeur à marteaux",
+       "Broyeur à meule",
+       "Broyeur à billes",
+       "Désagrégateur",
+       "Brise-mottes",
+       "Tamis vibrant",
+       "Concasseur à mâchoires"
+      ]
+     },
+     "lecon": "broyage"
+    },
+    {
+     "id": "3-3",
+     "titre": "Les questions de Karim",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Karim te pose trois questions sur le broyage. Choisis la bonne réponse à chacune.",
+      "cm2": "Karim veut être sûr que tu connais les détails. Réponds à ses trois questions."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie III.1",
+     "correction": "Broyer, c'est casser l'argile en petits morceaux : on réduit sa taille. Dans le broyeur à billes, le frottement des billes fragmente l'argile ; le broyage se fait à sec ou avec de l'eau (un tiers de billes, un tiers d'argile, un tiers d'eau). Dans le broyeur à marteaux, l'argile sort à travers une grille quand elle est assez fine.",
+     "indices": {
+      "cm1": [
+       "Broyer, c'est réduire la taille.",
+       "Les billes frottent contre l'argile.",
+       "La grille laisse passer l'argile assez fine."
+      ],
+      "cm2": [
+       "Relis le tableau des machines.",
+       "Trois tiers égaux.",
+       "Le désagrégateur travaille avec des lames."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "Broyer l'argile, c'est…",
+        "options": [
+         "la casser en petits morceaux",
+         "la faire cuire",
+         "la colorer"
+        ],
+        "bonne": 0,
+        "explication": "On réduit sa taille."
+       },
+       {
+        "q": "Dans un broyeur à billes, l'argile est fragmentée par…",
+        "options": [
+         "des lames",
+         "le frottement des billes",
+         "un aimant"
+        ],
+        "bonne": 1,
+        "explication": "Le cylindre tourne et les billes frottent l'argile."
+       },
+       {
+        "q": "Dans le broyeur à marteaux, l'argile sort…",
+        "options": [
+         "quand elle est assez fine, à travers une grille",
+         "dès qu'elle est entrée",
+         "par le haut, en poussière"
+        ],
+        "bonne": 0,
+        "explication": "La grille ne laisse passer que l'argile assez fine."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "Broyage à l'eau dans un broyeur à billes : les proportions sont…",
+        "options": [
+         "un tiers de billes, un tiers d'argile, un tiers d'eau",
+         "la moitié d'eau, le reste d'argile",
+         "uniquement des billes et de l'eau"
+        ],
+        "bonne": 0,
+        "explication": "Trois tiers égaux, indique le cours."
+       },
+       {
+        "q": "Le broyeur à billes peut broyer…",
+        "options": [
+         "seulement à sec",
+         "à sec ou avec de l'eau",
+         "seulement avec de l'eau"
+        ],
+        "bonne": 1,
+        "explication": "Les deux sont possibles."
+       },
+       {
+        "q": "Le désagrégateur fonctionne avec…",
+        "options": [
+         "deux meules",
+         "une chemise lisse et une chemise striée avec des lames",
+         "un aimant"
+        ],
+        "bonne": 1,
+        "explication": "Les lames désagrègent l'argile."
+       }
+      ]
+     },
+     "lecon": "broyage"
+    },
+    {
+     "id": "3-4",
+     "titre": "La machine qui ne broie pas",
+     "type": "intrus",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Quatre machines de cet atelier broient l'argile. Une seule ne sert pas à la broyer : trouve l'intrus."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, parties III.1 et III.2",
+     "correction": "Le tamis vibrant n'est pas un broyeur : il trie les grains selon leur taille et élimine les impuretés. Il appartient à l'épuration. Meule, marteaux, désagrégateur et brise-mottes cassent ou écrasent l'argile.",
+     "indices": {
+      "cm2": [
+       "Cherche la machine qui ne casse rien.",
+       "Elle trie.",
+       "Elle utilise une grille qui vibre."
+      ]
+     },
+     "commun": {
+      "cartes": [
+       {
+        "txt": "Broyeur à meule",
+        "sous": "deux meules",
+        "intrus": false
+       },
+       {
+        "txt": "Broyeur à marteaux",
+        "sous": "grille de sortie",
+        "intrus": false
+       },
+       {
+        "txt": "Désagrégateur",
+        "sous": "lames",
+        "intrus": false
+       },
+       {
+        "txt": "Tamis vibrant",
+        "sous": "trie les grains",
+        "intrus": true
+       },
+       {
+        "txt": "Brise-mottes",
+        "sous": "casse les mottes",
+        "intrus": false
+       }
+      ]
+     },
+     "lecon": "broyage"
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "titre": "La station d'épuration — Tamisage, déferrage, flottation et sécurité",
+   "enigmes": [
+    {
+     "id": "4-1",
+     "titre": "Tamis ou aimant ?",
+     "type": "tri",
+     "consigne": {
+      "cm1": "Range chaque étiquette : tamisage (tamis vibrant) ou déferrage (aimants) ?",
+      "cm2": "Range les huit étiquettes : tamisage ou déferrage ? Attention aux détails."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie III.2",
+     "correction": "Le tamis vibrant trie les grains selon leur taille : il élimine les impuretés (feuilles, racines) et les grains trop gros. Le déferrage utilise des aimants ou des électro-aimants qui attirent les particules de fer ; il sépare le fer de l'argile, sèche ou en barbotine.",
+     "indices": {
+      "cm1": [
+       "Le tamis a une grille.",
+       "Un aimant attire le fer.",
+       "Le tamis garde les racines et les gros grains."
+      ],
+      "cm2": [
+       "Barbotine = argile avec de l'eau.",
+       "Le tamis trie selon la taille.",
+       "L'aimant ne retient que le fer."
+      ]
+     },
+     "cm1": {
+      "colonnes": [
+       {
+        "id": "tam",
+        "titre": "Tamisage"
+       },
+       {
+        "id": "def",
+        "titre": "Déferrage"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Trie les grains selon leur taille",
+        "col": "tam"
+       },
+       {
+        "txt": "Élimine feuilles et racines",
+        "col": "tam"
+       },
+       {
+        "txt": "Un tamis vibrant",
+        "col": "tam"
+       },
+       {
+        "txt": "Attire les particules de fer",
+        "col": "def"
+       },
+       {
+        "txt": "Des aimants",
+        "col": "def"
+       },
+       {
+        "txt": "Sépare le fer de l'argile",
+        "col": "def"
+       }
+      ]
+     },
+     "cm2": {
+      "colonnes": [
+       {
+        "id": "tam",
+        "titre": "Tamisage"
+       },
+       {
+        "id": "def",
+        "titre": "Déferrage"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Trie les grains selon leur taille",
+        "col": "tam"
+       },
+       {
+        "txt": "Élimine les impuretés",
+        "col": "tam"
+       },
+       {
+        "txt": "Retire les grains trop gros",
+        "col": "tam"
+       },
+       {
+        "txt": "Un tamis vibrant",
+        "col": "tam"
+       },
+       {
+        "txt": "Aimants ou électro-aimants",
+        "col": "def"
+       },
+       {
+        "txt": "Attire les particules de fer",
+        "col": "def"
+       },
+       {
+        "txt": "Fonctionne sur l'argile sèche ou en barbotine",
+        "col": "def"
+       },
+       {
+        "txt": "Épuration magnétique",
+        "col": "def"
+       }
+      ]
+     },
+     "lecon": "epuration-purification"
+    },
+    {
+     "id": "4-2",
+     "titre": "La cellule de flottation",
+     "type": "ordre",
+     "consigne": {
+      "cm1": "Jade te montre la flottation, qui sépare deux poudres. Remets les quatre étapes dans l'ordre.",
+      "cm2": "Remets dans l'ordre les cinq étapes de la flottation, sans l'aide des repères."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie IV.4",
+     "correction": "Flottation : on met de l'eau et de la poudre dans un même mélange, puis on ajoute des réactifs et de l'air. Une des matières s'accroche aux bulles et monte en mousse ; l'autre reste au fond. Exemple : séparer le feldspath de la silice.",
+     "indices": {
+      "cm1": [
+       "On commence par préparer le mélange.",
+       "Les réactifs et l'air viennent avant les bulles.",
+       "La mousse se forme en dernier."
+      ],
+      "cm2": [
+       "Eau et poudre d'abord.",
+       "Réactifs et air ensuite.",
+       "Une matière monte, l'autre reste."
+      ]
+     },
+     "cm1": {
+      "items": [
+       {
+        "txt": "On mélange l'eau et la poudre",
+        "sous": "le point de départ",
+        "rang": 1
+       },
+       {
+        "txt": "On ajoute des réactifs et de l'air",
+        "sous": "des bulles apparaissent",
+        "rang": 2
+       },
+       {
+        "txt": "Une matière s'accroche aux bulles",
+        "sous": "elle est attirée",
+        "rang": 3
+       },
+       {
+        "txt": "Elle monte en mousse, l'autre reste au fond",
+        "sous": "les deux sont séparées",
+        "rang": 4
+       }
+      ]
+     },
+     "cm2": {
+      "items": [
+       {
+        "txt": "On mélange l'eau et la poudre",
+        "rang": 1
+       },
+       {
+        "txt": "On ajoute des réactifs et de l'air",
+        "rang": 2
+       },
+       {
+        "txt": "Une matière s'accroche aux bulles",
+        "rang": 3
+       },
+       {
+        "txt": "Elle monte en mousse",
+        "rang": 4
+       },
+       {
+        "txt": "L'autre matière reste au fond",
+        "rang": 5
+       }
+      ]
+     },
+     "lecon": "epuration-purification"
+    },
+    {
+     "id": "4-3",
+     "titre": "Le panneau de sécurité",
+     "type": "vraifaux",
+     "consigne": {
+      "cm1": "Jade rappelle les règles de sécurité de la station. Pour chaque phrase, dis si elle est vraie ou fausse.",
+      "cm2": "Le panneau de sécurité de la station a cinq phrases. Vraie ou fausse ?"
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, encadré « Sécurité »",
+     "correction": "Le broyage, le concassage et le tamisage produisent des poussières fines (silice, argile sèche) dangereuses pour les poumons. Il faut porter un masque, travailler avec aspiration ou à l'humide, et ne jamais balayer à sec.",
+     "indices": {
+      "cm1": [
+       "Relis l'encadré « Sécurité ».",
+       "Les poussières fines se respirent.",
+       "Balayer à sec soulève la poussière."
+      ],
+      "cm2": [
+       "Le masque protège les poumons.",
+       "À l'humide, la poussière ne vole pas.",
+       "Balayer à sec la remet en l'air."
+      ]
+     },
+     "cm1": {
+      "affirmations": [
+       {
+        "txt": "Le broyage et le tamisage produisent des poussières fines.",
+        "vrai": true,
+        "explication": "De la silice, de l'argile sèche."
+       },
+       {
+        "txt": "Ces poussières sont dangereuses pour les poumons.",
+        "vrai": true,
+        "explication": "On ne les respire pas."
+       },
+       {
+        "txt": "On peut balayer à sec pour nettoyer.",
+        "vrai": false,
+        "explication": "Cela remet la poussière en l'air."
+       },
+       {
+        "txt": "On porte un masque dans la station.",
+        "vrai": true,
+        "explication": "C'est une règle de sécurité."
+       }
+      ]
+     },
+     "cm2": {
+      "affirmations": [
+       {
+        "txt": "Le broyage, le concassage et le tamisage produisent des poussières fines.",
+        "vrai": true,
+        "explication": "Silice et argile sèche."
+       },
+       {
+        "txt": "La poussière d'argile sèche est sans danger pour les poumons.",
+        "vrai": false,
+        "explication": "Elle est dangereuse, comme la silice."
+       },
+       {
+        "txt": "Travailler avec aspiration ou à l'humide réduit les poussières.",
+        "vrai": true,
+        "explication": "Ce sont les deux moyens du cours."
+       },
+       {
+        "txt": "On peut balayer à sec si on est rapide.",
+        "vrai": false,
+        "explication": "On ne balaie jamais à sec."
+       },
+       {
+        "txt": "Le masque est facultatif si on tamise peu de temps.",
+        "vrai": false,
+        "explication": "Le masque se porte pour le broyage, le concassage et le tamisage."
+       }
+      ]
+     },
+     "lecon": "epuration-purification"
+    },
+    {
+     "id": "4-4",
+     "titre": "La fiche de poste",
+     "type": "trous",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Complète la fiche de poste de la station d'épuration avec les bonnes étiquettes. Deux étiquettes sont en trop."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, parties III.2 et IV.4",
+     "correction": "Un tamis vibrant trie selon la taille ; les aimants attirent le fer ; la flottation sépare le feldspath de la silice. Contre les poussières : masque, et jamais de balayage à sec.",
+     "indices": {
+      "cm2": [
+       "Le premier mot est le nom de la machine qui trie.",
+       "Les aimants attirent un métal.",
+       "On travaille avec un masque ; on ne balaie jamais à sec."
+      ]
+     },
+     "commun": {
+      "texte": "<p>Le [[tamis]] vibrant trie les grains selon leur [[taille]]. Les [[aimants]] attirent les particules de [[fer]]. Pour séparer le feldspath de la silice, on utilise la [[flottation]]. Pour se protéger des poussières, on porte un [[masque]] et on ne balaie jamais à [[sec]].</p>",
+      "etiquettes": [
+       "tamis",
+       "taille",
+       "aimants",
+       "fer",
+       "flottation",
+       "masque",
+       "sec",
+       "couleur",
+       "four"
+      ]
+     },
+     "lecon": "epuration-purification"
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "titre": "Le laboratoire des matières dures — Feldspath, sable de silice et chamotte",
+   "enigmes": [
+    {
+     "id": "5-1",
+     "titre": "Les étiquettes du laboratoire",
+     "type": "association",
+     "consigne": {
+      "cm1": "Madame Aubry a mélangé les étiquettes de ses échantillons. Relie chaque matière ou machine à ce qui la décrit.",
+      "cm2": "Relie chacune des six entrées à ce qui la décrit."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie IV",
+     "correction": "Feldspath : fondant, qui aide la pâte à fondre à la cuisson. Sable de silice : dégraissant. Chamotte : argile déjà cuite, puis broyée. Concasseur à mâchoires : la roche est écrasée par pression. Concasseur à percussion : la roche éclate sous les chocs. Tessons broyés : débris de biscuits broyés puis tamisés.",
+     "indices": {
+      "cm1": [
+       "Le feldspath aide à fondre.",
+       "La chamotte a déjà connu le four.",
+       "Le concasseur à mâchoires écrase."
+      ],
+      "cm2": [
+       "Les concasseurs travaillent sur les roches.",
+       "Percussion = chocs.",
+       "Les tessons sont des débris de biscuits."
+      ]
+     },
+     "cm1": {
+      "paires": [
+       {
+        "g": "Feldspath",
+        "d": "Fondant : aide la pâte à fondre à la cuisson"
+       },
+       {
+        "g": "Sable de silice",
+        "d": "Dégraissant : rend la pâte moins collante"
+       },
+       {
+        "g": "Chamotte",
+        "d": "Argile déjà cuite, puis broyée"
+       },
+       {
+        "g": "Concasseur à mâchoires",
+        "d": "La roche est écrasée par pression"
+       }
+      ]
+     },
+     "cm2": {
+      "paires": [
+       {
+        "g": "Feldspath",
+        "d": "Fondant extrait d'un gisement rocheux"
+       },
+       {
+        "g": "Sable de silice",
+        "d": "Dégraissant lavé, tamisé et parfois broyé"
+       },
+       {
+        "g": "Chamotte",
+        "d": "Dégraissant simple, fait d'argile déjà cuite"
+       },
+       {
+        "g": "Concasseur à mâchoires",
+        "d": "La roche est écrasée par pression"
+       },
+       {
+        "g": "Concasseur à percussion",
+        "d": "La roche éclate sous les chocs"
+       },
+       {
+        "g": "Tessons broyés",
+        "d": "Débris de biscuits broyés puis tamisés"
+       }
+      ]
+     },
+     "lecon": "matieres-dures"
+    },
+    {
+     "id": "5-2",
+     "titre": "Les trois échantillons",
+     "type": "tri",
+     "consigne": {
+      "cm1": "Trois bacs attendent : feldspath, sable de silice et chamotte. Range chaque étiquette dans le bon bac.",
+      "cm2": "Range les neuf étiquettes dans le bon bac : feldspath, sable de silice ou chamotte."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, parties IV.1, IV.2 et IV.3",
+     "correction": "Feldspath : gisement rocheux, explosifs, gros blocs concassés puis broyés et tamisés. Sable de silice : en surface (pelleteuse) ou enfoui (on retire la couche supérieure), puis lavé, tamisé, parfois broyé. Chamotte : tessons broyés et tamisés, ou argile calcinée à une température plus haute que la cuisson de la pâte, puis broyée et tamisée.",
+     "indices": {
+      "cm1": [
+       "Les explosifs servent pour la roche.",
+       "Le sable se lave.",
+       "La chamotte vient d'une argile déjà cuite."
+      ],
+      "cm2": [
+       "Les blocs de roche sont ceux du feldspath.",
+       "Fontainebleau : un sable de surface.",
+       "Calcinée = chauffée plus fort que la pâte."
+      ]
+     },
+     "cm1": {
+      "colonnes": [
+       {
+        "id": "fel",
+        "titre": "Feldspath"
+       },
+       {
+        "id": "sab",
+        "titre": "Sable de silice"
+       },
+       {
+        "id": "cha",
+        "titre": "Chamotte"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Extrait avec des explosifs",
+        "col": "fel"
+       },
+       {
+        "txt": "Gros blocs de roche concassés",
+        "col": "fel"
+       },
+       {
+        "txt": "Lavé pour enlever l'argile",
+        "col": "sab"
+       },
+       {
+        "txt": "Extrait avec une pelleteuse",
+        "col": "sab"
+       },
+       {
+        "txt": "Débris de biscuits broyés",
+        "col": "cha"
+       },
+       {
+        "txt": "Argile déjà cuite, puis broyée",
+        "col": "cha"
+       }
+      ]
+     },
+     "cm2": {
+      "colonnes": [
+       {
+        "id": "fel",
+        "titre": "Feldspath"
+       },
+       {
+        "id": "sab",
+        "titre": "Sable de silice"
+       },
+       {
+        "id": "cha",
+        "titre": "Chamotte"
+       }
+      ],
+      "cartes": [
+       {
+        "txt": "Gisement rocheux, techniques minières",
+        "col": "fel"
+       },
+       {
+        "txt": "Concassé, broyé puis tamisé",
+        "col": "fel"
+       },
+       {
+        "txt": "Sert de fondant",
+        "col": "fel"
+       },
+       {
+        "txt": "Sable de Fontainebleau, en surface",
+        "col": "sab"
+       },
+       {
+        "txt": "Couche supérieure du sol retirée pour l'atteindre",
+        "col": "sab"
+       },
+       {
+        "txt": "Lavé, tamisé, parfois broyé",
+        "col": "sab"
+       },
+       {
+        "txt": "Tessons de biscuits broyés puis tamisés",
+        "col": "cha"
+       },
+       {
+        "txt": "Argile calcinée plus fort que la cuisson de la pâte",
+        "col": "cha"
+       },
+       {
+        "txt": "Dégraissant simple",
+        "col": "cha"
+       }
+      ]
+     },
+     "lecon": "matieres-dures"
+    },
+    {
+     "id": "5-3",
+     "titre": "Les questions de Madame Aubry",
+     "type": "qcm",
+     "consigne": {
+      "cm1": "Madame Aubry vérifie tes connaissances. Choisis la bonne réponse à chaque question.",
+      "cm2": "Madame Aubry attend des réponses précises. Réponds à ses trois questions."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, parties IV.2 et IV.3",
+     "correction": "Pour atteindre un sable enfoui, on retire la couche supérieure du sol. Dans un concasseur à percussion, la roche éclate sous les chocs. La chamotte est de l'argile déjà cuite, puis broyée. Une argile calcinée est chauffée à une température plus haute que la cuisson de la pâte, puis broyée et tamisée. Après l'extraction, le sable est lavé, tamisé, et parfois broyé.",
+     "indices": {
+      "cm1": [
+       "Il faut creuser pour atteindre le sable enfoui.",
+       "Percussion = chocs.",
+       "Chamotte = déjà cuite."
+      ],
+      "cm2": [
+       "Calcinée = chauffée plus fort.",
+       "Les tessons sont des débris de biscuits.",
+       "Le sable passe d'abord à l'eau."
+      ]
+     },
+     "cm1": {
+      "questions": [
+       {
+        "q": "Pour atteindre un sable enfoui, on…",
+        "options": [
+         "retire la couche supérieure du sol",
+         "attend la pluie",
+         "utilise un aimant"
+        ],
+        "bonne": 0,
+        "explication": "On dégage le sable en retirant le dessus."
+       },
+       {
+        "q": "Dans un concasseur à percussion, la roche…",
+        "options": [
+         "est écrasée par pression",
+         "éclate sous les chocs",
+         "fond"
+        ],
+        "bonne": 1,
+        "explication": "Elle est projetée à grande vitesse."
+       },
+       {
+        "q": "La chamotte est…",
+        "options": [
+         "de l'argile déjà cuite, puis broyée",
+         "un sable lavé",
+         "un fondant"
+        ],
+        "bonne": 0,
+        "explication": "C'est un dégraissant simple."
+       }
+      ]
+     },
+     "cm2": {
+      "questions": [
+       {
+        "q": "Une argile calcinée est chauffée…",
+        "options": [
+         "moins que la cuisson de la pâte",
+         "à une température plus haute que la cuisson de la pâte",
+         "à la même température que la pâte"
+        ],
+        "bonne": 1,
+        "explication": "Elle est ensuite broyée et tamisée."
+       },
+       {
+        "q": "Après son extraction, le sable de silice est…",
+        "options": [
+         "cuit puis aimanté",
+         "lavé, tamisé et parfois broyé",
+         "mélangé à de l'eau salée"
+        ],
+        "bonne": 1,
+        "explication": "Le lavage enlève l'argile et les impuretés."
+       },
+       {
+        "q": "Pourquoi les concasseurs à mâchoires écrasent-ils la roche ?",
+        "options": [
+         "Par pression",
+         "Par flottation",
+         "Par magnétisme"
+        ],
+        "bonne": 0,
+        "explication": "Mâchoires, giratoire et cône écrasent par pression."
+       }
+      ]
+     },
+     "lecon": "matieres-dures"
+    },
+    {
+     "id": "5-4",
+     "titre": "Du bloc à la poudre",
+     "type": "ordre",
+     "niveaux": [
+      "CM2"
+     ],
+     "consigne": {
+      "cm2": "Remets dans l'ordre les quatre étapes de préparation d'une roche (le feldspath, par exemple), de la carrière à la matière prête."
+     },
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie I, « Vue d'ensemble »",
+     "correction": "Roches et sables : extraire, concasser et broyer, tamiser, puis purifier si besoin (aimants ou flottation).",
+     "indices": {
+      "cm2": [
+       "On commence par sortir la roche du gisement.",
+       "Les blocs sont d'abord concassés, puis broyés.",
+       "La purification n'est faite que si besoin."
+      ]
+     },
+     "commun": {
+      "items": [
+       {
+        "txt": "Extraire",
+        "rang": 1
+       },
+       {
+        "txt": "Concasser et broyer",
+        "rang": 2
+       },
+       {
+        "txt": "Tamiser",
+        "rang": 3
+       },
+       {
+        "txt": "Purifier (si besoin)",
+        "rang": 4
+       }
+      ]
+     },
+     "lecon": "matieres-dures"
+    }
+   ]
+  }
+ ]
+}

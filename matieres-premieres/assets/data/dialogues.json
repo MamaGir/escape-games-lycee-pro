@@ -1,0 +1,155 @@
+{
+ "metadata": {
+  "jeu": "Le bon de lancement",
+  "sujet": "La préparation des matières premières des pâtes céramiques : pourquoi préparer, extraction, pourrissement, broyage, épuration, maturation, feldspath, sable de silice, chamotte — CAP Décoration sur céramique",
+  "niveaux": [
+   "Essentiel",
+   "Expert"
+  ],
+  "sources": "Cours « Préparation des matières premières des pâtes céramiques », CAP"
+ },
+ "personnages": {
+  "maelle": {
+   "nom": "Maëlle",
+   "role": "Apprentie en 2e année de CAP Décoration sur céramique, elle guide l'équipe"
+  },
+  "odile": {
+   "nom": "Odile",
+   "role": "Cheffe de la carrière"
+  },
+  "malik": {
+   "nom": "Malik",
+   "role": "Responsable du parc d'argile et des silos"
+  },
+  "karim": {
+   "nom": "Karim",
+   "role": "Technicien de l'atelier de broyage"
+  },
+  "jade": {
+   "nom": "Jade",
+   "role": "Technicienne de la station d'épuration"
+  },
+  "aubry": {
+   "nom": "Madame Aubry",
+   "role": "Cheffe du laboratoire des matières dures"
+  }
+ },
+ "intro_accueil": "Bonjour, je suis Maëlle, apprentie en deuxième année. Bienvenue à la manufacture des Trois Fours ! Demain matin, un nouveau lot de pâte doit être lancé. Problème : le bon de lancement n'est pas signé. Pour qu'il le soit, chacune des cinq étapes de la préparation des matières premières doit être validée par son responsable, qui appose son tampon et vous donne un mot. Les cinq mots ouvriront le bon de lancement. On commence par la carrière ?",
+ "salles": [
+  {
+   "num": 1,
+   "titre": "La carrière",
+   "decor": "carriere",
+   "motCle": "ANALYSER",
+   "lieu": "La carrière d'argile, à ciel ouvert",
+   "description": "Des gradins d'argile brune, une excavatrice à l'arrêt et un tas fraîchement extrait. Sur un panneau, une grille de carrés numérotés.",
+   "sens": [
+    "À voir : les gradins d'argile brune",
+    "À entendre : le moteur de l'excavatrice",
+    "À sentir : la terre humide"
+   ],
+   "dialogue_intro": {
+    "perso": "odile",
+    "nom": "Odile",
+    "texte": "Bienvenue à la carrière. Maëlle m'a prévenue : sans le bon de lancement signé, le lot de pâte de demain ne peut pas partir. Je tamponne la première étape : l'extraction. Avant de vous donner mon tampon, je veux être sûre que vous savez pourquoi on prépare les matières, et comment on trouve la bonne argile."
+   },
+   "dialogue_reussite": {
+    "perso": "odile",
+    "nom": "Odile",
+    "texte": "Bien analysé ! Mon tampon porte le mot <b>ANALYSER</b> : on ne creuse jamais au hasard. Malik vous attend au parc d'argile."
+   }
+  },
+  {
+   "num": 2,
+   "titre": "Le parc d'argile et le silo",
+   "decor": "parc",
+   "motCle": "REPOSER",
+   "lieu": "Le parc d'argile et le silo, derrière la carrière",
+   "description": "Un grand tas d'argile sous la pluie, et, à côté, un silo sombre et humide. Un tableau affiche des dates et des pourcentages.",
+   "sens": [
+    "À voir : le grand tas sous la pluie",
+    "À entendre : la pluie sur la bâche du silo",
+    "À toucher : l'argile froide et humide"
+   ],
+   "dialogue_intro": {
+    "perso": "malik",
+    "nom": "Malik",
+    "texte": "Ici, on laisse faire le temps. L'argile qui sort de la carrière n'est pas prête : elle passe d'abord dehors, puis dans mon silo. Montrez-moi que vous savez ce qui se passe sous la pluie, et combien de temps ça prend : le tampon de l'étape deux est à ce prix."
+   },
+   "dialogue_reussite": {
+    "perso": "malik",
+    "nom": "Malik",
+    "texte": "Vous avez compris que le temps travaille pour nous. Mon tampon porte le mot <b>REPOSER</b> : l'argile a besoin de repos. Karim vous attend à l'atelier de broyage."
+   }
+  },
+  {
+   "num": 3,
+   "titre": "L'atelier de broyage",
+   "decor": "broyage",
+   "motCle": "BROYER",
+   "lieu": "L'atelier de broyage",
+   "description": "Des machines alignées le long d'un convoyeur : meule, marteaux, cylindre à billes. Chaque poste a perdu sa plaque.",
+   "sens": [
+    "À voir : les machines alignées",
+    "À entendre : le grondement des meules",
+    "À sentir : la poussière d'argile"
+   ],
+   "dialogue_intro": {
+    "perso": "karim",
+    "nom": "Karim",
+    "texte": "Ça grince, ça gronde, ça casse : c'est l'atelier de broyage. Pas de panique, mais tous les postes ont perdu leur plaque ce matin, et je ne sais plus quelle machine fait quoi. Aidez-moi à tout remettre en place : le tampon de l'étape trois est pour vous."
+   },
+   "dialogue_reussite": {
+    "perso": "karim",
+    "nom": "Karim",
+    "texte": "L'atelier est remis en ordre, merci ! Mon tampon porte le mot <b>BROYER</b>. Jade vous attend à la station d'épuration."
+   }
+  },
+  {
+   "num": 4,
+   "titre": "La station d'épuration",
+   "decor": "epuration",
+   "motCle": "ÉPURER",
+   "lieu": "La station d'épuration",
+   "description": "Un tamis qui vibre, un tambour à aimants et une cellule pleine de bulles. Au mur, un panneau de sécurité.",
+   "sens": [
+    "À voir : les bulles de la cellule",
+    "À entendre : la vibration du tamis",
+    "À toucher : l'aimant qui attire un clou"
+   ],
+   "dialogue_intro": {
+    "perso": "jade",
+    "nom": "Jade",
+    "texte": "On passe à la propreté : ici, on enlève ce qui n'a rien à faire dans une pâte. Tamis, aimants, flottation : chaque machine a son rôle. Et ici, la sécurité n'est pas une option : la poussière, ça ne pardonne pas. Prouvez-moi que vous la connaissez, et le tampon est à vous."
+   },
+   "dialogue_reussite": {
+    "perso": "jade",
+    "nom": "Jade",
+    "texte": "Station propre, équipe protégée : parfait. Mon tampon porte le mot <b>ÉPURER</b>. Il reste le laboratoire des matières dures : Madame Aubry vous attend."
+   }
+  },
+  {
+   "num": 5,
+   "titre": "Le laboratoire des matières dures",
+   "decor": "dures",
+   "motCle": "CONCASSER",
+   "lieu": "Le laboratoire des matières dures",
+   "description": "Des bacs d'échantillons, deux concasseurs miniatures et un tableau des matières dures. Madame Aubry vérifie une étiquette.",
+   "sens": [
+    "À voir : les bacs d'échantillons",
+    "À entendre : les cailloux dans le concasseur",
+    "À sentir : le sable lavé"
+   ],
+   "dialogue_intro": {
+    "perso": "aubry",
+    "nom": "Madame Aubry",
+    "texte": "Dernière étape : les matières dures. Le feldspath, le sable de silice, la chamotte : trois matières qui ne se modèlent pas, mais sans lesquelles la pâte ne tiendrait pas. Montrez-moi que vous savez d'où elles viennent et comment on les prépare, et le dernier tampon est à vous."
+   },
+   "dialogue_fin": {
+    "perso": "maelle",
+    "nom": "Maëlle",
+    "texte": "Madame Aubry vous a donné le dernier mot : <b>CONCASSER</b>. Vous avez les cinq tampons ! Écrivez les cinq mots dans le bon de lancement, dans l'ordre des salles : le lot de pâte pourra partir demain matin."
+   }
+  }
+ ]
+}

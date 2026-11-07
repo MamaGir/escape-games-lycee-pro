@@ -1,0 +1,671 @@
+{
+ "metadata": {
+  "sujet": "La préparation des matières premières",
+  "niveaux": [
+   "Essentiel",
+   "Expert"
+  ],
+  "programme": "CAP Décoration sur céramique — technologie des matériaux : préparation des matières premières des pâtes céramiques.",
+  "sources": "Cours « Préparation des matières premières des pâtes céramiques », CAP"
+ },
+ "quizz_final": {
+  "CM1": [
+   {
+    "q": "Pourquoi prépare-t-on les matières premières ?",
+    "options": [
+     "pour qu'elles soient moins chères",
+     "pour obtenir une pâte stable et de qualité constante",
+     "pour les colorer"
+    ],
+    "bonne": 1
+   },
+   {
+    "q": "Quelle est la première étape de préparation de l'argile ?",
+    "options": [
+     "le broyage",
+     "l'analyse du terrain",
+     "la maturation"
+    ],
+    "bonne": 1
+   },
+   {
+    "q": "Pendant le pourrissement, l'argile est stockée…",
+    "options": [
+     "dehors",
+     "dans un four",
+     "dans un silo sombre"
+    ],
+    "bonne": 0
+   },
+   {
+    "q": "Le tamis vibrant sert à…",
+    "options": [
+     "trier les grains selon leur taille",
+     "attirer le fer",
+     "cuire l'argile"
+    ],
+    "bonne": 0
+   },
+   {
+    "q": "La chamotte est…",
+    "options": [
+     "de l'argile déjà cuite, puis broyée",
+     "un sable lavé",
+     "un fondant"
+    ],
+    "bonne": 0
+   }
+  ],
+  "CM2": [
+   {
+    "q": "Combien de temps dure le pourrissement ?",
+    "options": [
+     "quelques jours",
+     "de 3 à 24 mois",
+     "au moins 2 semaines"
+    ],
+    "bonne": 1
+   },
+   {
+    "q": "Après la maturation, le taux d'humidité de l'argile est de…",
+    "options": [
+     "18 % à 22 %",
+     "13 % à 18 %",
+     "5 % à 8 %"
+    ],
+    "bonne": 1
+   },
+   {
+    "q": "Quelle machine broie à l'aide de billes ?",
+    "options": [
+     "le désagrégateur",
+     "le broyeur à billes",
+     "le concasseur à percussion"
+    ],
+    "bonne": 1
+   },
+   {
+    "q": "Quelle technique sépare le feldspath de la silice ?",
+    "options": [
+     "la flottation",
+     "le tamisage",
+     "le déferrage"
+    ],
+    "bonne": 0
+   },
+   {
+    "q": "Pour atteindre un sable enfoui, on…",
+    "options": [
+     "retire la couche supérieure du sol",
+     "utilise des explosifs",
+     "attend la pluie"
+    ],
+    "bonne": 0
+   }
+  ]
+ },
+ "qcm": {
+  "CM1": [
+   {
+    "q": "L'argile est extraite dans…",
+    "options": [
+     "une carrière à ciel ouvert",
+     "un atelier fermé",
+     "un four"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Avant d'extraire, on prélève un échantillon par…",
+    "options": [
+     "carré de la grille",
+     "camion",
+     "mois"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Un gisement, c'est…",
+    "options": [
+     "un endroit où une matière s'est accumulée naturellement",
+     "une machine",
+     "une recette"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le pourrissement dure…",
+    "options": [
+     "de 3 à 24 mois",
+     "quelques heures",
+     "une semaine"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "La maturation a lieu dans…",
+    "options": [
+     "un silo humide et sombre",
+     "un four",
+     "une carrière"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le broyeur à marteaux laisse sortir l'argile par…",
+    "options": [
+     "une grille",
+     "un aimant",
+     "une meule"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Les aimants servent à enlever…",
+    "options": [
+     "le fer",
+     "l'eau",
+     "le sable"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Pour se protéger des poussières, on porte…",
+    "options": [
+     "un masque",
+     "un chapeau",
+     "des lunettes de soleil"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le feldspath est un…",
+    "options": [
+     "fondant",
+     "tamis",
+     "silo"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le sable de silice est un…",
+    "options": [
+     "dégraissant",
+     "fondant",
+     "broyeur"
+    ],
+    "bonne": 0,
+    "pts": 1
+   }
+  ],
+  "CM2": [
+   {
+    "q": "Une argile « grasse » est…",
+    "options": [
+     "quasiment pure",
+     "sableuse",
+     "toujours rouge"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "En général, l'extraction a lieu…",
+    "options": [
+     "à l'entrée de l'hiver",
+     "en plein été",
+     "la nuit"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Pendant le pourrissement, les bactéries…",
+    "options": [
+     "décomposent les restes de plantes",
+     "cuisent l'argile",
+     "colorent l'argile"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "La maturation dure…",
+    "options": [
+     "au moins 2 semaines",
+     "3 à 24 mois",
+     "une heure"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le désagrégateur fonctionne avec…",
+    "options": [
+     "des lames",
+     "des aimants",
+     "des billes seulement"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le broyage à l'eau d'un broyeur à billes : proportions…",
+    "options": [
+     "⅓ billes, ⅓ argile, ⅓ eau",
+     "½ eau, ½ argile",
+     "⅔ billes, ⅓ eau"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le déferrage fonctionne avec l'argile…",
+    "options": [
+     "sèche ou en barbotine",
+     "uniquement cuite",
+     "uniquement gelée"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "La flottation sépare des matières grâce à…",
+    "options": [
+     "des bulles",
+     "des aimants",
+     "des meules"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Un concasseur à percussion…",
+    "options": [
+     "projette la roche à grande vitesse",
+     "écrase par pression",
+     "trie les grains"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "La chamotte « argile calcinée » est chauffée…",
+    "options": [
+     "plus haut que la cuisson de la pâte",
+     "moins que la pâte",
+     "à l'eau froide"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Les tessons broyés sont…",
+    "options": [
+     "des débris de biscuits",
+     "des cailloux de rivière",
+     "des morceaux de verre"
+    ],
+    "bonne": 0,
+    "pts": 1
+   },
+   {
+    "q": "Le sable de Fontainebleau est un exemple de sable…",
+    "options": [
+     "en surface",
+     "enfoui",
+     "calciné"
+    ],
+    "bonne": 0,
+    "pts": 1
+   }
+  ]
+ },
+ "questions_fermees": {
+  "CM1": [
+   {
+    "q": "Dans la nature, les matières premières sont prêtes à l'emploi.",
+    "type": "vf",
+    "bonne": "faux",
+    "pts": 1
+   },
+   {
+    "q": "L'argile est extraite dans des carrières à ciel ouvert.",
+    "type": "vf",
+    "bonne": "vrai",
+    "pts": 1
+   },
+   {
+    "q": "Le déferrage enlève le fer avec des aimants.",
+    "type": "vf",
+    "bonne": "vrai",
+    "pts": 1
+   },
+   {
+    "q": "La chamotte est de l'argile déjà cuite, puis broyée.",
+    "type": "vf",
+    "bonne": "vrai",
+    "pts": 1
+   },
+   {
+    "q": "Cite les six étapes de préparation de l'argile.",
+    "type": "court",
+    "rep": "analyse du terrain, extraction, pourrissement, broyage, épuration, maturation",
+    "pts": 1
+   },
+   {
+    "q": "Cite une machine qui broie l'argile.",
+    "type": "court",
+    "rep": "broyeur à meule, brise-mottes, désagrégateur, broyeur à marteaux, broyeur à billes",
+    "pts": 1
+   },
+   {
+    "q": "À quoi sert un tamis vibrant ?",
+    "type": "court",
+    "rep": "à trier les grains selon leur taille et à éliminer les impuretés",
+    "pts": 1
+   },
+   {
+    "q": "Cite une règle de sécurité face aux poussières.",
+    "type": "court",
+    "rep": "masque, aspiration ou humide, ne jamais balayer à sec",
+    "pts": 1
+   }
+  ],
+  "CM2": [
+   {
+    "q": "Le pourrissement dure quelques jours.",
+    "type": "vf",
+    "bonne": "faux",
+    "pts": 1
+   },
+   {
+    "q": "L'argile « maigre » est quasiment pure.",
+    "type": "vf",
+    "bonne": "faux",
+    "pts": 1
+   },
+   {
+    "q": "La flottation sépare le feldspath de la silice.",
+    "type": "vf",
+    "bonne": "vrai",
+    "pts": 1
+   },
+   {
+    "q": "Le sable de silice se trouve toujours enfoui.",
+    "type": "vf",
+    "bonne": "faux",
+    "pts": 1
+   },
+   {
+    "q": "Explique pourquoi on prépare les matières premières.",
+    "type": "court",
+    "rep": "elles ne sont pas prêtes à l'emploi (impuretés, morceaux trop gros, trop d'eau) ; on obtient une pâte stable et de qualité constante",
+    "pts": 2
+   },
+   {
+    "q": "Décris la maturation de l'argile.",
+    "type": "court",
+    "rep": "au moins 2 semaines dans un silo humide et sombre ; le taux d'humidité baisse (de 18-22 % à 13-18 %)",
+    "pts": 2
+   },
+   {
+    "q": "Distingue un concasseur à mâchoires et un concasseur à percussion.",
+    "type": "court",
+    "rep": "mâchoires : la roche est écrasée par pression ; percussion : la roche éclate sous les chocs",
+    "pts": 2
+   },
+   {
+    "q": "Explique comment on obtient la chamotte (deux types).",
+    "type": "court",
+    "rep": "tessons broyés puis tamisés ; argile calcinée à une température plus haute que la cuisson de la pâte, puis broyée et tamisée",
+    "pts": 2
+   }
+  ]
+ },
+ "etudes_documents": {
+  "CM1": [
+   {
+    "titre": "Le taux d'humidité de l'argile",
+    "document": {
+     "contenu": "Argile fraîchement extraite : 18 % à 22 %. Après la maturation : 13 % à 18 %.",
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie III.3."
+    },
+    "questions": [
+     {
+      "q": "Quelle est l'humidité de l'argile fraîchement extraite ?",
+      "type": "court",
+      "rep": "18 % à 22 %",
+      "pts": 1
+     },
+     {
+      "q": "Que devient le taux d'humidité après la maturation ?",
+      "type": "court",
+      "rep": "il baisse (13 % à 18 %)",
+      "pts": 1
+     }
+    ]
+   },
+   {
+    "titre": "Le panneau de sécurité",
+    "document": {
+     "contenu": "Poussières fines (silice, argile sèche) : danger pour les poumons. Porter un masque. Travailler avec aspiration ou à l'humide. Ne jamais balayer à sec.",
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, encadré « Sécurité »."
+    },
+    "questions": [
+     {
+      "q": "Pourquoi les poussières sont-elles dangereuses ?",
+      "type": "court",
+      "rep": "elles sont dangereuses pour les poumons",
+      "pts": 1
+     },
+     {
+      "q": "Cite deux règles à respecter.",
+      "type": "court",
+      "rep": "porter un masque ; travailler avec aspiration ou à l'humide ; ne jamais balayer à sec",
+      "pts": 2
+     }
+    ]
+   }
+  ],
+  "CM2": [
+   {
+    "titre": "Argile maigre et argile grasse",
+    "document": {
+     "contenu": "Argile « maigre » (sableuse) : beaucoup d'impuretés, produit de moins bonne qualité. Argile « grasse » (plastique) : quasiment pure, produit de meilleure qualité.",
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie II.1."
+    },
+    "questions": [
+     {
+      "q": "Quelle argile est la plus pure ?",
+      "type": "court",
+      "rep": "l'argile grasse",
+      "pts": 1
+     },
+     {
+      "q": "Pourquoi l'argile maigre donne-t-elle un produit de moins bonne qualité ?",
+      "type": "court",
+      "rep": "elle contient beaucoup d'impuretés",
+      "pts": 1
+     },
+     {
+      "q": "Avec quelle méthode repère-t-on la meilleure couche d'un gisement ?",
+      "type": "court",
+      "rep": "on découpe le terrain en carrés (grille) et on prélève un échantillon par carré",
+      "pts": 2
+     }
+    ]
+   },
+   {
+    "titre": "Les deux types de chamotte",
+    "document": {
+     "contenu": "Tessons broyés : des débris de biscuits sont broyés puis tamisés. Argiles calcinées : de l'argile est calcinée à une température plus haute que la cuisson de la pâte, puis broyée et tamisée.",
+     "source": "Cours « Préparation des matières premières des pâtes céramiques », CAP, partie IV.3."
+    },
+    "questions": [
+     {
+      "q": "Qu'est-ce qu'un tesson broyé ?",
+      "type": "court",
+      "rep": "un débris de biscuit (pièce déjà cuite) broyé puis tamisé",
+      "pts": 1
+     },
+     {
+      "q": "Que signifie « calcinée » ici ?",
+      "type": "court",
+      "rep": "chauffée à une température plus haute que la cuisson de la pâte",
+      "pts": 1
+     }
+    ]
+   }
+  ]
+ },
+ "fiches_preparatoires": [
+  {
+   "salle": 1,
+   "titre": "La carrière — Pourquoi préparer, analyser le terrain, extraire",
+   "objectifs": [
+    "Expliquer pourquoi on prépare les matières premières",
+    "Citer dans l'ordre les étapes de préparation de l'argile",
+    "Expliquer comment on trouve et on extrait l'argile"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "gisement",
+     "def": "endroit où une matière (argile, roche, sable) s'est accumulée naturellement"
+    },
+    {
+     "mot": "impureté",
+     "def": "matière qu'on ne veut pas dans la pâte (racines, cailloux, fer)"
+    },
+    {
+     "mot": "strates",
+     "def": "couches d'un gisement, toutes différentes"
+    },
+    {
+     "mot": "argile grasse",
+     "def": "argile plastique, quasiment pure"
+    }
+   ],
+   "contexte": "Des gradins d'argile brune, une excavatrice à l'arrêt et un tas fraîchement extrait. Sur un panneau, une grille de carrés numérotés."
+  },
+  {
+   "salle": 2,
+   "titre": "Le parc d'argile et le silo — Le pourrissement et la maturation",
+   "objectifs": [
+    "Expliquer le pourrissement de l'argile",
+    "Expliquer la maturation et le taux d'humidité"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "pourrissement",
+     "def": "repos de l'argile dehors, 3 à 24 mois"
+    },
+    {
+     "mot": "maturation",
+     "def": "repos de l'argile au silo, au moins 2 semaines"
+    },
+    {
+     "mot": "taux d'humidité",
+     "def": "quantité d'eau contenue dans l'argile"
+    },
+    {
+     "mot": "silo",
+     "def": "grand réservoir où l'on entrepose la matière"
+    }
+   ],
+   "contexte": "Un grand tas d'argile sous la pluie, et, à côté, un silo sombre et humide. Un tableau affiche des dates et des pourcentages."
+  },
+  {
+   "salle": 3,
+   "titre": "L'atelier de broyage — Les machines à broyer l'argile",
+   "objectifs": [
+    "Expliquer ce qu'est le broyage",
+    "Connaître le principe des principales machines à broyer l'argile"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "motte",
+     "def": "gros morceau d'argile compact"
+    },
+    {
+     "mot": "alsing",
+     "def": "autre nom du broyeur à billes"
+    },
+    {
+     "mot": "broyer",
+     "def": "réduire en petits morceaux ou en poudre"
+    },
+    {
+     "mot": "désagréger",
+     "def": "défaire l'argile en séparant ses morceaux"
+    }
+   ],
+   "contexte": "Des machines alignées le long d'un convoyeur : meule, marteaux, cylindre à billes. Chaque poste a perdu sa plaque."
+  },
+  {
+   "salle": 4,
+   "titre": "La station d'épuration — Tamisage, déferrage, flottation et sécurité",
+   "objectifs": [
+    "Dire à quoi servent le tamis vibrant et le séparateur magnétique",
+    "Expliquer la flottation",
+    "Connaître les règles de sécurité face aux poussières"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "épuration",
+     "def": "action d'enlever les impuretés"
+    },
+    {
+     "mot": "barbotine",
+     "def": "argile mélangée à de l'eau"
+    },
+    {
+     "mot": "déferrage",
+     "def": "retrait des particules de fer avec des aimants"
+    },
+    {
+     "mot": "flottation",
+     "def": "séparation de deux matières grâce à des bulles"
+    }
+   ],
+   "contexte": "Un tamis qui vibre, un tambour à aimants et une cellule pleine de bulles. Au mur, un panneau de sécurité."
+  },
+  {
+   "salle": 5,
+   "titre": "Le laboratoire des matières dures — Feldspath, sable de silice et chamotte",
+   "objectifs": [
+    "Dire comment on obtient le feldspath, le sable de silice et la chamotte",
+    "Distinguer les deux types de concasseurs",
+    "Distinguer fondant et dégraissant"
+   ],
+   "vocabulaire": [
+    {
+     "mot": "chamotte",
+     "def": "argile déjà cuite, puis broyée"
+    },
+    {
+     "mot": "fondant",
+     "def": "matière qui aide la pâte à fondre à la cuisson"
+    },
+    {
+     "mot": "concasser",
+     "def": "casser une roche en morceaux de quelques centimètres ou millimètres"
+    },
+    {
+     "mot": "calciner",
+     "def": "chauffer très fort une argile"
+    }
+   ],
+   "contexte": "Des bacs d'échantillons, deux concasseurs miniatures et un tableau des matières dures. Madame Aubry vérifie une étiquette."
+  }
+ ]
+}

@@ -42,6 +42,21 @@ var CATALOGUE = {
    "couleurs": ["#0F4C81", "#C2410C"],
    "resume": "Vendredi, 16 h 50 : la ligne de préparation des pâtes de l'usine Terres et Feux s'est arrêtée. L'équipe de stagiaires traverse cinq salles, rassemble cinq mots et rouvre le coffre de relance avant la fermeture.",
    "programme": []
+  },
+  {
+   "num": "C03",
+   "id": "matieres-premieres",
+   "titre": "Le bon de lancement",
+   "matiere": "Technologie céramique",
+   "classe": "CAP",
+   "periodes": [],
+   "competences": "La préparation des matières premières des pâtes céramiques : analyse du terrain et extraction, pourrissement et maturation, machines à broyer, tamisage, déferrage, flottation et sécurité, feldspath, sable de silice et chamotte.",
+   "dossier": "matieres-premieres",
+   "immersif": "immersifs/matieres-premieres",
+   "icone": "⛏️",
+   "couleurs": ["#0F4C81", "#C2410C"],
+   "resume": "À la manufacture des Trois Fours, le lot de pâte de demain ne peut être lancé que si le bon de lancement porte cinq tampons : de la carrière au laboratoire, l'équipe doit prouver qu'elle maîtrise chaque étape de la préparation.",
+   "programme": []
   }
  ],
  "legers": [
