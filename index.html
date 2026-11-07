@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Escape games · Lycée pro céramique</title>
+<meta name="description" content="Escape games pédagogiques du CAP Décoration sur céramique : versions immersive et classique, niveaux Essentiel et Expert, jouables hors connexion.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0F4C81">
+<link rel="apple-touch-icon" href="commun/icones/icone-apple-180.png">
+<style>
+/* Portail du lycée professionnel — distinct de l'accueil des escape games de l'école.
+   Charte du CAP : bleus (#0F4C81 / #2F75B5 / #DCEEFF), une seule couleur chaude : la terre cuite du four. */
+:root{
+  --fond:#EEF5FB; --carte:#FFFFFF; --encre:#0B2A4A; --doux:#4A6482; --trait:#BCD3E8;
+  --bleu:#0F4C81; --bleu2:#2F75B5; --pale:#DCEEFF; --sur-bleu:#FFFFFF;
+  --terre:#C2410C; --terre-pale:#FFE9DB; --grille:rgba(15,76,129,.06);
+  --police:Calibri,Carlito,"Segoe UI",Arial,sans-serif;
+  --titre:"Bahnschrift","Arial Narrow",Calibri,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --fond:#08203A; --carte:#0E2F52; --encre:#E6F1FB; --doux:#9DB8D3; --trait:#25507C;
+    --bleu:#8CBCEB; --bleu2:#5AA0E0; --pale:#14416C; --sur-bleu:#06213D;
+    --terre:#FF9A55; --terre-pale:#3A2314; --grille:rgba(127,181,232,.08); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --fond:#08203A; --carte:#0E2F52; --encre:#E6F1FB; --doux:#9DB8D3; --trait:#25507C;
+  --bleu:#8CBCEB; --bleu2:#5AA0E0; --pale:#14416C; --sur-bleu:#06213D;
+  --terre:#FF9A55; --terre-pale:#3A2314; --grille:rgba(127,181,232,.08); color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background-color:var(--fond);background-image:linear-gradient(var(--grille) 1px,transparent 1px),linear-gradient(90deg,var(--grille) 1px,transparent 1px);
+  background-size:28px 28px;color:var(--encre);font-family:var(--police);font-size:17px;line-height:1.5}
+.cadre{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--titre);line-height:1.05;margin:0;text-wrap:balance;text-transform:uppercase;letter-spacing:.02em;color:var(--bleu)}
+a{color:var(--bleu2)}
+:focus-visible{outline:3px solid var(--bleu2);outline-offset:2px}
+header{background:var(--carte);border-bottom:3px solid var(--bleu)}
+header .cadre{display:flex;align-items:center;gap:14px;padding-block:14px;flex-wrap:wrap}
+.marque{display:flex;align-items:center;gap:12px;margin-right:auto}
+.marque svg{width:44px;height:44px;flex:none}
+.marque b{display:block;font-family:var(--titre);font-size:1.25rem;text-transform:uppercase;letter-spacing:.06em;color:var(--bleu)}
+.marque span{font-size:.92rem;color:var(--doux)}
+.etiquette{font-family:var(--titre);font-size:.85rem;text-transform:uppercase;letter-spacing:.14em;color:var(--doux)}
+.intro{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:center;padding-block:34px 18px}
+.intro h1{font-size:clamp(2.4rem,7vw,4.2rem);margin:8px 0 14px}
+.intro h1 em{font-style:normal;color:var(--terre)}
+.intro p{max-width:60ch;margin:0}
+.intro .four{width:100%;max-width:300px;justify-self:center;color:var(--bleu)}
+.niveaux{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.niv{border:2px solid var(--trait);background:var(--carte);border-radius:4px;padding:6px 12px;font-size:.95rem}
+.niv b{color:var(--bleu)}
+.jeux{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:18px;margin-block:18px 34px}
+.jeu{background:var(--carte);border:2px solid var(--trait);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.jeu .bandeau{background:var(--pale);border-bottom:2px solid var(--trait);padding:14px 18px;display:flex;gap:14px;align-items:center}
+.jeu .bandeau .num{font-family:var(--titre);font-size:2rem;color:var(--terre);line-height:1}
+.jeu h3{font-size:1.7rem}
+.jeu .corps{padding:14px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.jeu .meta{font-size:.92rem;color:var(--doux)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:4px;padding:9px 16px;border:2px solid var(--bleu);color:var(--bleu);background:transparent}
+.btn.plein{background:var(--terre);border-color:var(--terre);color:#fff}
+:root[data-theme="dark"] .btn.plein{color:#2A1203}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.plein{color:#2A1203}}
+.btn.discret{border-color:var(--trait);color:var(--doux);font-weight:400}
+.btn:hover{filter:brightness(1.08)}
+.prof{background:var(--carte);border:2px dashed var(--bleu2);border-radius:4px;padding:16px 20px;margin-bottom:34px}
+.prof h2{font-size:1.5rem;margin-bottom:8px}
+.prof ol{margin:6px 0 0;padding-left:22px}
+.prof li{margin-bottom:4px}
+code{background:var(--pale);padding:1px 6px;border-radius:3px;font-size:.92em}
+footer{color:var(--doux);font-size:.9rem;padding-block:0 30px}
+@media (max-width:700px){.intro{grid-template-columns:1fr}.intro .four{max-width:180px;justify-self:start}}
+</style>
+</head>
+<body>
+<header>
+  <div class="cadre">
+    <div class="marque">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 44V24C10 13 16 6 24 6s14 7 14 18v20Z" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--bleu)"/><path d="M18 44V33a6 6 0 0 1 12 0v11" fill="var(--terre)"/></svg>
+      <div><b>Escape games · Lycée pro</b><span>CAP Décoration sur céramique</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="cadre">
+  <section class="intro">
+    <div>
+      <p class="etiquette">Technologie céramique · jouable hors connexion</p>
+      <h1>Apprendre la céramique <em>en jouant</em></h1>
+      <p>Chaque jeu reprend un chapitre du cours. Les élèves explorent l'atelier, résolvent des énigmes et récupèrent des mots-clés pour ouvrir le coffre final. Deux versions : <b>immersive</b> (décors à explorer, objets cliquables, personnages qui parlent) et <b>classique</b> (salles successives, impressions, tableau de bord).</p>
+      <div class="niveaux" aria-label="Niveaux de difficulté">
+        <span class="niv"><b>Essentiel</b> · 3 énigmes par salle, avec repères</span>
+        <span class="niv"><b>Expert</b> · 4 énigmes par salle, calculs et justifications</span>
+      </div>
+    </div>
+    <svg class="four" viewBox="0 0 160 120" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M30 112V58c0-24 22-40 50-40s50 16 50 40v54z"/><path d="M58 112V84a22 22 0 0 1 44 0v28"/>
+      <path d="M80 108c-10-7-10-17-2-26 2 6 6 7 7 2 8 7 8 16-5 24z" stroke="var(--terre)"/><path d="M108 24V6h16v28"/>
+      <path d="M8 112h144"/>
+    </svg>
+  </section>
+
+  <h2 class="etiquette" style="font-size:1rem">Les jeux</h2>
+  <div class="jeux" id="jeux"><p>Chargement du catalogue…</p></div>
+
+  <section class="prof" aria-labelledby="t-prof">
+    <h2 id="t-prof">Pour l'enseignant</h2>
+    <ol>
+      <li><b>En ligne</b> : partagez l'adresse de cette page ; chaque jeu s'ouvre dans le navigateur, sans installation.</li>
+      <li><b>En classe sans Internet</b> : double-cliquez sur <code>lancer.bat</code> (Windows) à la racine du dossier. Les élèves se connectent à l'adresse affichée dans la fenêtre noire.</li>
+      <li><b>Suivi des équipes</b> : ouvrez le tableau de bord <i>Enseignant</i> du jeu sur votre poste, pendant que le serveur tourne.</li>
+      <li><b>Leçons A4</b> : chaque jeu propose ses leçons imprimables, aux niveaux Essentiel et Expert.</li>
+    </ol>
+  </section>
+</main>
+<footer class="cadre">Personnages et manufacture inventés. Contenus tirés des cours de l'enseignant. Moteur repris des escape games CM1-CM2 du même auteur.</footer>
+
+<script src="commun/donnees/catalogue.js"></script>
+<script>
+(function(){
+  var cont = document.getElementById("jeux");
+  var esc = function(t){ return String(t||"").replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); };
+  if(typeof CATALOGUE === "undefined"){ cont.innerHTML = "<p>Catalogue introuvable : vérifiez le dossier commun/donnees/.</p>"; return; }
+  cont.innerHTML = CATALOGUE.jeux.map(function(j){
+    var classique = j.dossier ? j.dossier + "/" : "";
+    return '<article class="jeu">' +
+      '<div class="bandeau"><span class="num">' + esc(j.num) + '</span><div><p class="etiquette" style="margin:0">' + esc(j.matiere) + ' · ' + esc(j.classe) + '</p><h3>' + esc(j.titre) + '</h3></div></div>' +
+      '<div class="corps"><p style="margin:0">' + esc(j.resume) + '</p><p class="meta" style="margin:0">' + esc(j.competences) + '</p>' +
+      '<div class="actions">' +
+        (j.immersif ? '<a class="btn plein" href="' + esc(j.immersif) + '/">Jouer en immersif</a>' : '') +
+        (classique ? '<a class="btn" href="' + esc(classique) + '">Version classique</a>' : '') +
+        (classique ? '<a class="btn discret" href="' + esc(classique) + 'prof.html">Enseignant</a>' : '') +
+        (classique ? '<a class="btn discret" href="' + esc(classique) + 'lecons-imprimables.html">Leçons A4</a>' : '') +
+      '</div></div></article>';
+  }).join("");
+})();
+</script>
+</body>
+</html>

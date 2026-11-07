@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+*.pyc
+resultats/
+*.avant-*
+cle-agnes.txt
+cles-api.local
+diag.txt
+RECAP-*.md

@@ -1,0 +1,31 @@
+{
+  "_commentaire": "Thème immersif du jeu « Les fiches du four » (lycée pro céramique). Passé à migrer-jeu.py --theme.",
+  "mots": { "escale": "salle", "escales": "salles" },
+  "textes": {
+    "auteur": "Manufacture des Trois Fours",
+    "titre": "Les fiches du four",
+    "sousTitre": "Cahier de fabrication",
+    "journal": "Le cahier de fabrication",
+    "hud": "🏺 Les fiches du four",
+    "bibliotheque": "La bibliothèque de l'atelier",
+    "coffre": "🔐 Le coffre du cahier",
+    "pause": "⏸ Le jeu est en pause",
+    "mission": "✍️ Fiche de mission",
+    "lecons": "Leçons A4 — La bibliothèque de l'atelier"
+  },
+  "grades": { "cm1": ["matelot"], "cm2": ["timonier"] },
+  "noms_grades": {
+    "matelot":  { "nom": "Essentiel", "icone": "🌱", "equivalent": "CAP 1", "profil": "les notions clés du chapitre, avec des repères" },
+    "timonier": { "nom": "Expert",    "icone": "🔥", "equivalent": "CAP 1 approfondi", "profil": "sans repères, usages précis, calculs de recettes" }
+  },
+  "ambiances": ["vent"],
+  "palette": {
+    "ocean": "#0B2540", "abysse": "#06182B", "laiton": "#2F75B5", "laiton-clair": "#9FD3FF", "laiton-fonce": "#0F4C81",
+    "acajou": "#14304F", "acajou-clair": "#1F4A75", "ambre": "#FF9A55", "cyan": "#BFE3FF", "papier": "#F3F8FD", "encre": "#0B2A4A",
+    "rouge": "#C2410C", "accent": "#0F4C81", "accent-clair": "#DCEEFF", "fond-carte": "#FFFFFF", "fond-colonne": "#E6F0FA",
+    "bord-doux": "#7FA9CF", "bord-clair": "#BCD3E8", "rivet": "#2F75B5"
+  },
+  "style_visuel": "photographie réaliste d'un atelier de céramique contemporain, lumière naturelle froide et lueur orange du four, matières brutes (argile, plâtre, métal), poussière en suspension, profondeur de champ",
+  "negatif": "texte, lettres, logo, filigrane, mains déformées, doigts en trop, visage déformé, personne réelle, style dessin animé",
+  "effets_reaction": ["lumiere", "eclat", "calme", "ouverture"]
+}
